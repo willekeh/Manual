@@ -1,18 +1,135 @@
 {
-    "$schema": "https://github.com/ManualForArchipelago/Manual/raw/main/schemas/Manual.regions.schema.json",
-    "ExampleRegion":{
-        "connects_to": ["Second Region"],
-        "requires": "|Ryu| or {YamlCompare(Example_Range >= example )}",
-        "starting": true
-    },
-    "Second Region": {
-        "requires": "|@Characters:1|",
-        "connects_to": ["Third Region"],
-        "exit_requires": {
-            "Third Region": "|@Characters:5|"
-        }
-    },
-    "Third Region": {
-        "connects_to": []
-    }
+  "Axew's Eye": {
+    "connects_to": [
+      "East Lake Axewell"
+    ],
+    "requires": "|Progressive bike:2| AND |Axew's Eye|"
+  },
+  "Bridge Field": {
+    "connects_to": [
+      "Stony Wilderness",
+      "Motostoke Riverbank"
+    ],
+    "requires": "|Bridge Field|"
+  },
+  "Dappled Grove": {
+    "connects_to": [
+      "West Lake Axewell",
+      "Watchtower Ruins"
+    ],
+    "requires": "|Dappled Grove|"
+  },
+  "Dusty Bowl": {
+    "connects_to": [
+      "Stony Wilderness",
+      "Giant's Mirror",
+      "Giant's Cap"
+    ],
+    "requires": "|Dusty Bowl|"
+  },
+  "East Lake Axewell": {
+    "connects_to": [
+      "North Lake Miloch",
+      "South Lake Miloch",
+      "Watchtower Ruins",
+      "West Lake Axewell",
+      "Axew's Eye"
+    ],
+    "requires": "|East Lake Axewell|"
+  },
+  "Giant's Cap": {
+    "connects_to": [
+      "Hammerlocke Hills",
+      "Stony Wilderness",
+      "Dusty Bowl",
+      "Lake of Outrage"
+    ],
+    "requires": "|Giant's Cap|"
+  },
+  "Giant's Mirror": {
+    "connects_to": [
+      "Hammerlocke Hills",
+      "Stony Wilderness",
+      "Dusty Bowl"
+    ],
+    "requires": "|Giant's Mirror|"
+  },
+  "Giant's Seat": {
+    "connects_to": [
+      "North Lake Miloch",
+      "South Lake Miloch"
+    ],
+    "requires": "|Giant's Seat|"
+  },
+  "Hammerlocke Hills": {
+    "connects_to": [
+      "Giant's Cap",
+      "Dusty Bowl",
+      "Giant's Mirror",
+      "Lake of Outrage"
+    ],
+    "requires": "|Hammerlocke Hills|"
+  },
+  "Lake of Outrage": {
+    "connects_to": [
+      "Giant's Cap"
+    ],
+    "requires": "|Progressive bike:2| AND |Lake of Outrage|"
+  },
+  "Motostoke Riverbank": {
+    "connects_to": [
+      "Bridge Field",
+      "North Lake Miloch"
+    ],
+    "requires": "|Motostoke Riverbank|"
+  },
+  "North Lake Miloch": {
+    "connects_to": [
+      "Motostoke Riverbank",
+      "South Lake Miloch",
+      "Giant's Seat"
+    ],
+    "requires": "|North Lake Miloch|"
+  },
+  "Rolling Fields": {
+    "starting": true,
+    "connects_to": [
+      "West Lake Axewell",
+      "East Lake Axewell",
+      "South Lake Miloch",
+      "Dappled Grove"
+    ],
+    "requires": ""
+  },
+  "South Lake Miloch": {
+    "connects_to": [
+      "North Lake Miloch",
+      "Giant's Seat",
+      "East Lake Axewell"
+    ],
+    "requires": "|South Lake Miloch|"
+  },
+  "Stony Wilderness": {
+    "connects_to": [
+      "Giant's Cap",
+      "Giant's Mirror",
+      "Dusty Bowl",
+      "Bridge Field"
+    ],
+    "requires": "|Stony Wilderness|"
+  },
+  "Watchtower Ruins": {
+    "connects_to": [
+      "West Lake Axewell",
+      "Dappled Grove",
+      "East Lake Axewell"
+    ],
+    "requires": "|Watchtower Ruins|"
+  },
+  "West Lake Axewell": {
+    "connects_to": [
+      "Watchtower Ruins"
+    ],
+    "requires": "|West Lake Axewell|"
+  }
 }

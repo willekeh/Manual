@@ -24,7 +24,7 @@
                     "language": "English",
                     "file_name": "setup_en.md",
                     "link": "setup/en",
-                    "_authors": ["Fuzzy"],
+                    "_authors": "Riannehx",
                     "_comment": "if you don't include the authors it will use creator from game.json"
                 }
             ],
@@ -35,5 +35,7 @@
                 }
             }
         }
-    }
+    },
+    "_comment_":"Enable the generation of puml diagram of your apworld region and locations for debug purposes",
+    "enable_region_diagram": true
 }
