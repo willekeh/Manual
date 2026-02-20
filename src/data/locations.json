@@ -1,288 +1,997 @@
-{
-	"$schema": "https://github.com/ManualForArchipelago/Manual/raw/main/schemas/Manual.locations.schema.json",
-    "data": [
-        {
-            "name": "Example_Range decide the amount of items required for this location",
-            "requires": "{OptionCount(Item Name for OptionCount Example, Example_Range)}"
-        },
-        {
-            "name": "Beat the Game - Ryu",
-            "category": ["Starter Team", "Left Side"],
-            "region": "ExampleRegion"
-        },
-        {
-            "name": "Beat the Game - Chun-Li",
-            "category": ["Starter Team", "Left Side"],
-            "requires": "|Chun-Li| or {YamlCompare(Example_Choice == 1)}"
-        },
-        {
-            "name": "Beat the Game - Akuma",
-            "category": ["Starter Team", "Left Side"],
-            "requires": "|Akuma| or {YamlCompare(Example_Toggle != True)}"
-        },
+[
+  {
+    "name": "Eternatus",
+    "victory": true,
+    "category": [
+      "Win Condition"
+    ],
+    "requires": "|Broken shards:10|"
+  },
+  {
+    "name": "Abomasnow",
+    "category": [
+      "Special overworld spawn",
+      "Axew's Eye",
+      "Giant's Mirror",
+      "Giant's Seat",
+      "Hammerlocke Hills"
+    ],
+    "requires": "(|Axew's Eye| AND (|Snowing| OR |Snowstorm|) AND |Progressive bike:2|) OR (|Giant's Mirror| AND |Snowing|) OR (|Giant's Seat| AND (|Snowing| OR |Snowstorm|)) OR (|Hammerlocke Hills| AND (|Snowing| OR |Snowstorm|))"
+  },
+  {
+    "name": "Aegislash",
+    "category": [
+      "Special overworld spawn",
+      "Giant's Cap"
+    ],
+    "requires": "|Giant's Cap| and |Fog|"
+  },
+  {
+    "name": "Araquanid",
+    "category": [
+      "Special overworld spawn",
+      "Stony Wilderness"
+    ],
+    "requires": "|Stony Wilderness| AND (|Raining| OR |Thunderstorm|)"
+  },
+  {
+    "name": "Avalugg",
+    "category": [
+      "Special overworld spawn",
+      "Lake of Outrage"
+    ],
+    "requires": "|Lake of Outrage| AND (|Snowing| OR |Snowstorm|) AND |Progressive bike:2|"
+  },
+  {
+    "name": "Barbaracle",
+    "category": [
+      "Special overworld spawn",
+      "Dusty Bowl"
+    ],
+    "requires": "|Dusty Bowl| AND (|Overcast| OR |Raining| OR |Thunderstorm|)"
+  },
+  {
+    "name": "Beartic",
+    "category": [
+      "Special overworld spawn",
+      "Bridge Field",
+      "Giant's Cap"
+    ],
+    "requires": "(|Bridge Field| AND |Snowing|) OR (|Giant's Cap| AND (|Snowing| OR |Snowstorm|))"
+  },
+  {
+    "name": "Beheeyem",
+    "category": [
+      "Special overworld spawn",
+      "Bridge Field"
+    ],
+    "requires": "|Bridge Field| AND (|Normal weather| OR |Overcast| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Fog|)"
+  },
+  {
+    "name": "Bellossom",
+    "category": [
+      "Special overworld spawn",
+      "Giant's Mirror"
+    ],
+    "requires": "|Giant's Mirror| AND |Normal weather|"
+  },
+  {
+    "name": "Bewear",
+    "category": [
+      "Special overworld spawn",
+      "Bridge Field",
+      "Dappled Grove"
+    ],
+    "requires": "(|Dappled Grove| AND (|Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|)) OR (|Bridge Field| AND (|Normal weather| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|))"
+  },
+  {
+    "name": "Bisharp",
+    "category": [
+      "Special overworld spawn",
+      "Giant's Seat"
+    ],
+    "requires": "|Giant's Seat| AND (|Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|)"
+  },
+  {
+    "name": "Boltund",
+    "category": [
+      "Special overworld spawn",
+      "North Lake Miloch"
+    ],
+    "requires": "|North Lake Miloch| AND (|Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|)"
+  },
+  {
+    "name": "Bronzong",
+    "category": [
+      "Special overworld spawn",
+      "Bridge Field",
+      "Dusty Bowl",
+      "East Lake Axewell",
+      "Giant's Seat",
+      "Stony Wilderness"
+    ],
+    "requires": "(|Bridge Field| AND (|Raining| OR |Thunderstorm|)) OR (|Dusty Bowl| AND (|Normal weather| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm|)) OR (|East Lake Axewell| AND |Fog|) OR (|Giant's Seat| AND (|Overcast| OR |Raining| OR |Thunderstorm|)) OR (|Stony Wilderness| AND (|Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Fog|))"
+  },
+  {
+    "name": "Chandelure",
+    "category": [
+      "Special overworld spawn",
+      "Lake of Outrage"
+    ],
+    "requires": "|Lake of Outrage| AND |Intense Sun| AND |Progressive bike:2|"
+  },
+  {
+    "name": "Cinccino",
+    "category": [
+      "Special overworld spawn",
+      "Giant's Cap"
+    ],
+    "requires": "|Giant's Cap| AND (|Normal weather| OR |Overcast| OR |Fog|)"
+  },
+  {
+    "name": "Claydol",
+    "category": [
+      "Special overworld spawn",
+      "Bridge Field",
+      "Dappled Grove",
+      "Dusty Bowl",
+      "Stony Wilderness"
+    ],
+    "requires": "(|Bridge Field| AND |Sandstorm|) OR (|Dappled Grove| AND (|Intense Sun| OR |Sandstorm|)) OR (|Dusty Bowl| AND (|Overcast| OR |Intense Sun| OR |Sandstorm| OR |Fog|)) OR (|Stony Wilderness| AND (|Normal weather| OR |Overcast| OR |Intense Sun| OR |Sandstorm|))"
+  },
+  {
+    "name": "Clefable",
+    "category": [
+      "Special overworld spawn",
+      "Motostoke Riverbank"
+    ],
+    "requires": "|Motostoke Riverbank| AND |Fog|"
+  },
+  {
+    "name": "Coalossal",
+    "category": [
+      "Special overworld spawn",
+      "Giant's Cap"
+    ],
+    "requires": "|Giant's Cap| AND (|Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|)"
+  },
+  {
+    "name": "Conkeldurr",
+    "category": [
+      "Special overworld spawn",
+      "Motostoke Riverbank"
+    ],
+    "requires": "|Motostoke Riverbank| AND (|Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Fog|)"
+  },
+  {
+    "name": "Copperajah",
+    "category": [
+      "Special overworld spawn",
+      "Hammerlocke Hills"
+    ],
+    "requires": "|Hammerlocke Hills| AND (|Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|)"
+  },
+  {
+    "name": "Corviknight",
+    "category": [
+      "Special overworld spawn",
+      "Giant's Cap",
+      "Hammerlocke Hills",
+      "Motostoke Riverbank",
+      "North Lake Miloch",
+      "Watchtower Ruins"
 
-        {
-            "name": "Beat the Game - Jill",
-            "category": ["Unlocked Teams", "Left Side"],
-            "requires": "|Jill| and {ItemValue(star:5)}"
-        },
-        {
-            "name": "Beat the Game - Shuma-Gorath",
-            "category": ["Unlocked Teams", "Right Side"],
-            "requires": "|Shuma-Gorath|",
-            "hint_entrance": "Unlock Shuma-Gorath"
-        },
-        {
-            "name": "Beat the Game - Nemesis T-Type",
-            "category": ["Unlocked Teams", "Left Side"],
-            "requires": "|Nemesis T-Type|"
-        },
-        {
-            "name": "Beat the Game - Firebrand",
-            "category": ["Unlocked Teams", "Left Side"],
-            "requires": "|Firebrand|"
-        },
-        {
-            "name": "Beat the Game - Strider Hiryu",
-            "category": ["Unlocked Teams", "Left Side"],
-            "requires": "|Strider Hiryu|"
-        },
-        {
-            "name": "Beat the Game - Phoenix Wright",
-            "category": ["Unlocked Teams", "Left Side"],
-            "requires": "|Phoenix Wright|"
-        },
-        {
-            "name": "Beat the Game - Nova",
-            "category": ["Unlocked Teams", "Right Side"],
-            "requires": "|Nova|"
-        },
-        {
-            "name": "Beat the Game - Ghost Rider",
-            "category": ["Unlocked Teams", "Right Side"],
-            "requires": "|Ghost Rider|"
-        },
-        {
-            "name": "Beat the Game - Hawkeye",
-            "category": ["Unlocked Teams", "Right Side"],
-            "requires": "|Hawkeye|"
-        },
-        {
-            "name": "Beat the Game - Doctor Strange",
-            "category": ["Unlocked Teams", "Right Side"],
-            "requires": "|Doctor Strange|"
-        },
-        {
-            "name": "Beat the Game - Chris",
-            "category": ["Unlocked Teams", "Left Side"],
-            "requires": "|Chris|"
-        },
-        {
-            "name": "Beat the Game - Arthur",
-            "category": ["Unlocked Teams", "Left Side"],
-            "requires": "|Arthur|"
-        },
-        {
-            "name": "Beat the Game - Frank West",
-            "category": ["Unlocked Teams", "Left Side"],
-            "requires": "|Frank West|"
-        },
-        {
-            "name": "Beat the Game - Vergil",
-            "category": ["Unlocked Teams", "Left Side"],
-            "requires": "|Vergil|"
-        },
-        {
-            "name": "Beat the Game - Iron Fist",
-            "category": ["Unlocked Teams", "Right Side"],
-            "requires": "|Iron Fist|"
-        },
-        {
-            "name": "Beat the Game - Rocket Raccoon",
-            "category": ["Unlocked Teams", "Right Side"],
-            "requires": "|Rocket Raccoon|"
-        },
-        {
-            "name": "Beat the Game - Captain America",
-            "category": ["Unlocked Teams", "Right Side"],
-            "requires": "|Captain America|"
-        },
-        {
-            "name": "Beat the Game - Dormammu",
-            "category": ["Unlocked Teams", "Right Side"],
-            "requires": "|Dormammu|"
-        },
-        {
-            "name": "Beat the Game - Wesker",
-            "category": ["Unlocked Teams", "Left Side"],
-            "requires": "|Wesker|"
-        },
-        {
-            "name": "Beat the Game - Zero",
-            "category": ["Unlocked Teams", "Left Side"],
-            "requires": "|Zero|"
-        },
-        {
-            "name": "Beat the Game - Dante",
-            "category": ["Unlocked Teams", "Left Side"],
-            "requires": "|Dante|"
-        },
-        {
-            "name": "Beat the Game - Deadpool",
-            "category": ["Unlocked Teams", "Right Side"],
-            "requires": "|Deadpool| or {YamlEnabled(free_deadpool)}"
-        },
-        {
-            "name": "Beat the Game - Wolverine",
-            "category": ["Unlocked Teams", "Right Side"],
-            "requires": "|Wolverine|"
-        },
-        {
-            "name": "Beat the Game - Iron Man",
-            "category": ["Unlocked Teams", "Right Side"],
-            "requires": "|Iron Man|"
-        },
-        {
-            "name": "Beat the Game - Doctor Doom",
-            "category": ["Unlocked Teams", "Right Side"],
-            "requires": "|Doctor Doom|"
-        },
-        {
-            "name": "Beat the Game - Morrigan",
-            "category": ["Unlocked Teams", "Left Side"],
-            "requires": "|Morrigan|"
-        },
-        {
-            "name": "Beat the Game - Tron",
-            "category": ["Unlocked Teams", "Left Side"],
-            "requires": "|Tron|"
-        },
-        {
-            "name": "Beat the Game - Trish",
-            "category": ["Unlocked Teams", "Left Side"],
-            "requires": "|Trish|"
-        },
-        {
-            "name": "Beat the Game - X-23",
-            "category": ["Unlocked Teams", "Right Side"],
-            "requires": "|X-23|"
-        },
-        {
-            "name": "Beat the Game - Storm",
-            "category": ["Unlocked Teams", "Right Side"],
-            "requires": "|Storm|"
-        },
-        {
-            "name": "Beat the Game - Thor",
-            "category": ["Unlocked Teams", "Right Side"],
-            "requires": "|Thor|"
-        },
-        {
-            "name": "Beat the Game - M.O.D.O.K.",
-            "category": ["Unlocked Teams", "Right Side"],
-            "requires": "|M.O.D.O.K.|"
-        },
-        {
-            "name": "Beat the Game - Felicia",
-            "category": ["Unlocked Teams", "Left Side"],
-            "requires": "|Felicia|"
-        },
-        {
-            "name": "Beat the Game - Spencer",
-            "category": ["Unlocked Teams", "Left Side"],
-            "requires": "|Spencer|"
-        },
-        {
-            "name": "Beat the Game - Viewtiful Joe",
-            "category": ["Unlocked Teams", "Left Side"],
-            "requires": "|Viewtiful Joe|"
-        },
-        {
-            "name": "Beat the Game - Spider-Man",
-            "category": ["Unlocked Teams", "Right Side"],
-            "requires": "|Spider-Man|",
-            "prehint": true
-        },
-        {
-            "name": "Beat the Game - Sentinel",
-            "category": ["Unlocked Teams", "Right Side"],
-            "requires": "|Sentinel|"
-        },
-        {
-            "name": "Beat the Game - Hulk",
-            "category": ["Unlocked Teams", "Right Side"],
-            "requires": "|Hulk|"
-        },
-        {
-            "name": "Beat the Game - Super-Skrull",
-            "category": ["Unlocked Teams", "Right Side"],
-            "requires": "|Super-Skrull|"
-        },
-        {
-            "name": "Beat the Game - Hsien-Ko",
-            "category": ["Unlocked Teams", "Left Side"],
-            "requires": "|Hsien-Ko|"
-        },
-        {
-            "name": "Beat the Game - Haggar",
-            "category": ["Unlocked Teams", "Left Side"],
-            "requires": "|Haggar|"
-        },
-        {
-            "name": "Beat the Game - C. Viper",
-            "category": ["Unlocked Teams", "Left Side"],
-            "requires": "|C. Viper|"
-        },
-        {
-            "name": "Beat the Game - Amaterasu",
-            "category": ["Unlocked Teams", "Left Side"],
-            "requires": "|Amaterasu|"
-        },
-        {
-            "name": "Beat the Game - Phoenix",
-            "category": ["Unlocked Teams", "Right Side"],
-            "requires": "|Phoenix|"
-        },
-        {
-            "name": "Beat the Game - Magneto",
-            "category": ["Unlocked Teams", "Right Side"],
-            "requires": "|Magneto|"
-        },
-        {
-            "name": "Beat the Game - She-Hulk",
-            "category": ["Unlocked Teams", "Right Side"],
-            "requires": "|She-Hulk|"
-        },
-        {
-            "name": "Beat the Game - Taskmaster",
-            "category": ["Unlocked Teams", "Right Side"],
-            "requires": "|Taskmaster|"
-        },
+    ],
+    "requires": "(|Giant's Cap| AND (|Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|)) OR (|Hammerlocke Hills| AND (|Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|)) OR (|Motostoke Riverbank| AND (|Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm|)) OR (|North Lake Miloch| AND (|Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|)) OR (|Watchtower Ruins| AND (|Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|))"
+  },
+  {
+    "name": "Cramorant",
+    "category": [
+      "Special overworld spawn",
+      "Axew's Eye"
+    ],
+    "requires": "|Axew's Eye| AND (|Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|) AND |Progressive bike:2|"
+  },
+  {
+    "name": "Crawdaunt",
+    "category": [
+      "Special overworld spawn",
+      "South Lake Miloch"
+    ],
+    "requires": "|South Lake Miloch| AND (|Normal weather| OR |Thunderstorm|)"
+  },
+  {
+    "name": "Crustle",
+    "category": [
+      "Special overworld spawn",
+      "Rolling Fields",
+      "South Lake Miloch",
+      "Stony Wilderness"
+    ],
+    "requires": "(|Rolling Fields| AND |Sandstorm|) OR (|South Lake Miloch| AND |Intense Sun|) OR (|Stony Wilderness| AND (|Normal weather| OR |Overcast| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|))"
+  },
+  {
+    "name": "Diggersby",
+    "category": [
+      "Special overworld spawn",
+      "Rolling Fields",
+      "West Lake Axewell"
+    ],
+    "requires": "(|Rolling Fields| AND (|Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|)) OR (|West Lake Axewell| AND (|Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm|))"
+  },
+  {
+    "name": "Doublade",
+    "category": [
+      "Special overworld spawn",
+      "Giant's Cap"
+    ],
+    "requires": "|Giant's Cap| AND (|Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm|)"
+  },
+  {
+    "name": "Drapion",
+    "category": [
+      "Special overworld spawn",
+      "Bridge Field",
+      "Motostoke Riverbank"
+    ],
+    "requires": "(|Bridge Field| AND (|Overcast| OR |Intense Sun|)) OR (|Motostoke Riverbank| AND (|Normal weather| OR |Raining| OR |Thunderstorm| OR |Intense Sun| OR |Sandstorm|))"
+  },
+  {
+    "name": "Drednaw",
+    "category": [
+      "Special overworld spawn",
+      "Giant's Cap",
+      "West Lake Axewell"
+    ],
+    "requires": "(|Giant's Cap| AND (|Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|)) OR (|West Lake Axewell| AND (|Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|))"
+  },
+  {
+    "name": "Drifblim",
+    "category": [
+      "Special overworld spawn",
+      "North Lake Miloch",
+      "South Lake Miloch",
+      "Watchtower Ruins"
+    ],
+    "requires": "(|North Lake Miloch| AND |Fog|) OR (|South Lake Miloch| AND |Fog|) OR (|Watchtower Ruins| AND (|Normal weather| OR |Snowing| OR |Intense Sun|))"
+  },
+  {
+    "name": "Dubwool",
+    "category": [
+      "Special overworld spawn",
+      "Rolling Fields"
+    ],
+    "requires": "|Rolling Fields| AND (|Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|)"
+  },
+  {
+    "name": "Duraludon",
+    "category": [
+      "Special overworld spawn",
+      "Giant's Seat"
+    ],
+    "requires": "|Giant's Seat| AND (|Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|)"
+  },
+  {
+    "name": "Dusclops",
+    "category": [
+      "Special overworld spawn",
+      "Giant's Seat",
+      "Watchtower Ruins"
+    ],
+    "requires": "(|Giant's Seat| AND |Fog|) OR (|Watchtower Ruins| AND (|Overcast| OR |Raining| OR |Thunderstorm| OR |Sandstorm|))"
+  },
+  {
+    "name": "Dusknoir",
+    "category": [
+      "Special overworld spawn",
+      "Stony Wilderness"
+    ],
+    "requires": "|Stony Wilderness| AND (|Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|)"
+  },
+  {
+    "name": "Eldegoss",
+    "category": [
+      "Special overworld spawn",
+      "Motostoke Riverbank"
+    ],
+    "requires": "|Motostoke Riverbank| AND (|Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|)"
+  },
+  {
+    "name": "Espeon",
+    "category": [
+      "Special overworld spawn",
+      "Lake of Outrage"
+    ],
+    "requires": "|Lake of Outrage| AND |Overcast| AND |Progressive bike:2|"
+  },
+  {
+    "name": "Excadrill",
+    "category": [
+      "Special overworld spawn",
+      "Giant's Cap"
+    ],
+    "requires": "|Giant's Cap| AND (|Intense Sun| OR |Sandstorm|)"
+  },
+  {
+    "name": "Ferrothorn",
+    "category": [
+      "Special overworld spawn",
+      "Bridge Field"
+    ],
+    "requires": "|Bridge Field| AND (|Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|)"
+  },
+  {
+    "name": "Flareon",
+    "category": [
+      "Special overworld spawn",
+      "Lake of Outrage"
+    ],
+    "requires": "|Lake of Outrage| AND |Intense Sun| AND |Progressive bike:2|"
+  },
+  {
+    "name": "Flygon",
+    "category": [
+      "Special overworld spawn",
+      "Dusty Bowl"
+    ],
+    "requires": "|Dusty Bowl| AND (|Normal weather| OR |Sandstorm|)"
+  },
+  {
+    "name": "Galarian Weezing",
+    "category": [
+      "Special overworld spawn",
+      "East Lake Axewell"
+    ],
+    "requires": "|East Lake Axewell| AND (|Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|)"
+  },
+  {
+    "name": "Gallade",
+    "category": [
+      "Special overworld spawn",
+      "Bridge Field"
+    ],
+    "requires": "|Bridge Field| AND (|Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Intense Sun| OR |Sandstorm|)"
+  },
+  {
+    "name": "Galvantula",
+    "category": [
+      "Special overworld spawn",
+      "Giant's Cap",
+      "Giant's Seat",
+      "South Lake Miloch"
+    ],
+    "requires": "(|Giant's Cap| AND |Thunderstorm|) OR (|Giant's Seat| AND (|Thunderstorm| OR |Raining|)) OR (|South Lake Miloch| AND (|Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|))"
+  },
+  {
+    "name": "Garbodor",
+    "category": [
+      "Special overworld spawn",
+      "Bridge Field",
+      "East Lake Axewell"
+    ],
+    "requires": "(|Bridge Field| AND (|Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|)) OR (|East Lake Axewell| AND (|Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm|))"
+  },
+  {
+    "name": "Gardevoir",
+    "category": [
+      "Special overworld spawn",
+      "Rolling Fields",
+      "Lake of Outrage"
+    ],
+    "requires": "(|Rolling Fields| AND |Fog|) OR (|Lake of Outrage| AND (|Normal weather| OR |Thunderstorm| OR |Fog|) AND |Progressive bike:2|)"
+  },
+  {
+    "name": "Gengar",
+    "category": [
+      "Special overworld spawn",
+      "Giant's Cap"
+    ],
+    "requires": "|Giant's Cap| AND (|Normal weather| OR |Overcast| OR |Fog| OR |Thunderstorm| OR |Intense Sun| OR |Sandstorm|)"
+  },
+  {
+    "name": "Gigalith",
+    "category": [
+      "Special overworld spawn",
+      "Dusty Bowl"
+    ],
+    "requires": "|Dusty Bowl| AND (|Normal weather| OR |Intense Sun| OR |Sandstorm|)"
+  },
+  {
+    "name": "Glaceon",
+    "category": [
+      "Special overworld spawn",
+      "Lake of Outrage"
+    ],
+    "requires": "|Lake of Outrage| AND (|Snowing| OR |Snowstorm|) AND |Progressive bike:2|"
+  },
+  {
+    "name": "Glalie",
+    "category": [
+      "Special overworld spawn",
+      "Giant's Cap",
+      "Giant's Seat",
+      "Watchtower Ruins"
+    ],
+    "requires": "(|Giant's Cap| AND (|Snowing| OR |Snowstorm| )) OR (|Giant's Seat| AND (|Snowing| OR |Snowstorm|)) OR (|Watchtower Ruins| AND (|Snowing| OR |Snowstorm|))"
+  },
+  {
+    "name": "Golisopod",
+    "category": [
+      "Special overworld spawn",
+      "Bridge Field",
+      "Giant's Cap"
+    ],
+    "requires": "(|Bridge Field| AND (|Normal weather| OR |Raining| OR |Thunderstorm| )) OR (|Giant's Cap| AND |Raining|)"
+  },
+  {
+    "name": "Golurk",
+    "category": [
+      "Special overworld spawn",
+      "Dusty Bowl",
+      "Giant's Seat",
+      "Stony Wilderness",
+      "Watchtower Ruins"
+    ],
+    "requires": "(|Dusty Bowl| AND (|Overcast| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Fog|)) OR (|Giant's Seat| AND |Sandstorm|) OR (|Stony Wilderness| AND (|Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|)) OR (|Watchtower Ruins| AND (|Normal weather| OR |Intense Sun| OR |Fog|))"
+  },
+  {
+    "name": "Gourgeist",
+    "category": [
+      "Special overworld spawn",
+      "Hammerlocke Hills"
+    ],
+    "requires": "|Hammerlocke Hills| AND (|Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|)"
+  },
+  {
+    "name": "Grapploct",
+    "category": [
+      "Special overworld spawn",
+      "Lake of Outrage"
+    ],
+    "requires": "|Lake of Outrage| AND (|Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|) AND |Progressive bike:2|"
+  },
+  {
+    "name": "Greedent",
+    "category": [
+      "Special overworld spawn",
+      "Bridge Field"
+    ],
+    "requires": "|Bridge Field| AND (|Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|)"
+  },
+  {
+    "name": "Grimmsnarl",
+    "category": [
+      "Special overworld spawn",
+      "Stony Wilderness"
+    ],
+    "requires": "|Stony Wilderness| AND (|Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|)"
+  },
+  {
+    "name": "Hatterene",
+    "category": [
+      "Special overworld spawn",
+      "Lake of Outrage"
+    ],
+    "requires": "|Lake of Outrage| AND (|Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|) AND |Progressive bike:2|"
+  },
+  {
+    "name": "Haunter",
+    "category": [
+      "Special overworld spawn",
+      "Rolling Fields",
+      "Watchtower Ruins"
+    ],
+    "requires": "(|Rolling Fields| AND (|Raining| OR |Thunderstorm|)) OR (|Watchtower Ruins| AND (|Overcast| OR |Raining| OR |Thunderstorm| OR |Snowstorm| OR |Sandstorm| OR |Fog|))"
+  },
+  {
+    "name": "Hawlucha",
+    "category": [
+      "Special overworld spawn",
+      "Hammerlocke Hills"
+    ],
+    "requires": "|Hammerlocke Hills| AND (|Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|)"
+  },
+  {
+    "name": "Haxorus",
+    "category": [
+      "Special overworld spawn",
+      "Axew's Eye"
+    ],
+    "requires": "|Axew's Eye| AND (|Normal weather| OR |Overcast| OR |Raining| OR |Intense Sun| OR |Sandstorm| OR |Fog|) AND |Progressive bike:2|"
+  },
+  {
+    "name": "Jolteon",
+    "category": [
+      "Special overworld spawn",
+      "Lake of Outrage"
+    ],
+    "requires": "|Lake of Outrage| AND |Thunderstorm| AND |Progressive bike:2|"
+  },
+  {
+    "name": "Kingler",
+    "category": [
+      "Special overworld spawn",
+      "South Lake Miloch",
+      "West Lake Axewell"
+    ],
+    "requires": "(|West Lake Axewell| AND |Normal weather|) OR (|South Lake Miloch| AND |Normal weather|)"
+  },
+  {
+    "name": "Kirlia",
+    "category": [
+      "Special overworld spawn",
+      "Rolling Fields"
+    ],
+    "requires": "|Rolling Fields| AND |Fog|"
+  },
+  {
+    "name": "Klang",
+    "category": [
+      "Special overworld spawn",
+      "Hammerlocke Hills"
+    ],
+    "requires": "|Hammerlocke Hills| AND (|Normal weather| OR |Overcast| OR |Raining| OR |Snowing|)"
+  },
+  {
+    "name": "Klinklang",
+    "category": [
+      "Special overworld spawn",
+      "Hammerlocke Hills"
+    ],
+    "requires": "|Hammerlocke Hills| AND (|Thunderstorm| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm|)"
+  },
+  {
+    "name": "Kommo-o/Tyranitar",
+    "category": [
+      "Special overworld spawn",
+      "Dusty Bowl"
+    ],
+    "requires": "|Dusty Bowl| AND (|Normal weather| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|)"
+  },
+  {
+    "name": "Leafeon",
+    "category": [
+      "Special overworld spawn",
+      "Lake of Outrage"
+    ],
+    "requires": "|Lake of Outrage| AND |Normal weather| AND |Progressive bike:2|"
+  },
+  {
+    "name": "Liepard",
+    "category": [
+      "Special overworld spawn",
+      "North Lake Miloch"
+    ],
+    "requires": "|North Lake Miloch| AND (|Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|)"
+  },
+  {
+    "name": "Linoone",
+    "category": [
+      "Special overworld spawn",
+      "Bridge Field"
+    ],
+    "requires": "|Bridge Field| AND (|Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|)"
+  },
+  {
+    "name": "Lucario",
+    "category": [
+      "Special overworld spawn",
+      "North Lake Miloch"
+    ],
+    "requires": "|North Lake Miloch| AND |Normal weather|"
+  },
+  {
+    "name": "Machamp",
+    "category": [
+      "Special overworld spawn",
+      "Giant's Mirror"
+    ],
+    "requires": "|Giant's Mirror| AND (|Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|)"
+  },
+  {
+    "name": "Machoke",
+    "category": [
+      "Special overworld spawn",
+      "South Lake Miloch"
+    ],
+    "requires": "|South Lake Miloch| AND (|Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|)"
+  },
+  {
+    "name": "Manectric",
+    "category": [
+      "Special overworld spawn",
+      "Rolling Fields"
+    ],
+    "requires": "|Rolling Fields| AND |Thunderstorm|"
+  },
+  {
+    "name": "Mime Jr.",
+    "category": [
+      "Special overworld spawn",
+      "Rolling Fields"
+    ],
+    "requires": "|Rolling Fields| AND |Snowstorm|"
+  },
+  {
+    "name": "Mimikyu",
+    "category": [
+      "Special overworld spawn",
+      "Bridge Field"
+    ],
+    "requires": "|Bridge Field| AND |Fog|"
+  },
+  {
+    "name": "Mudsdale",
+    "category": [
+      "Special overworld spawn",
+      "Rolling Fields",
+      "Dusty Bowl",
+      "East Lake Axewell",
+      "Giant's Seat"
+    ],
+    "requires": "(|Rolling Fields| AND (|Normal weather| OR |Overcast| OR |Intense Sun| OR |Sandstorm| OR |Fog|)) OR (|Dusty Bowl| AND (|Normal weather| OR |Intense Sun| OR |Sandstorm| OR |Fog|)) OR (|East Lake Axewell| AND (|Intense Sun| OR |Sandstorm|)) OR (|Giant's Seat| AND |Intense Sun|)"
+  },
+  {
+    "name": "Musharna",
+    "category": [
+      "Special overworld spawn",
+      "Bridge Field",
+      "Giant's Seat"
+    ],
+    "requires": "(|Bridge Field| AND |Fog|) OR (|Giant's Seat| AND |Fog|)"
+  },
+  {
+    "name": "Ninjask",
+    "category": [
+      "Special overworld spawn",
+      "Rolling Fields"
+    ],
+    "requires": "|Rolling Fields| AND (|Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|)"
+  },
+  {
+    "name": "Noctowl",
+    "category": [
+      "Special overworld spawn",
+      "Bridge Field"
+    ],
+    "requires": "|Bridge Field| AND (|Snowing| OR |Snowstorm|)"
+  },
+  {
+    "name": "Noivern",
+    "category": [
+      "Special overworld spawn",
+      "Bridge Field"
+    ],
+    "requires": "|Bridge Field| AND (|Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|)"
+  },
+  {
+    "name": "Obstagoon",
+    "category": [
+      "Special overworld spawn",
+      "Bridge Field"
+    ],
+    "requires": "|Bridge Field| AND (|Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|)"
+  },
+  {
+    "name": "Onix",
+    "category": [
+      "Special overworld spawn",
+      "Rolling Fields"
+    ],
+    "requires": "|Rolling Fields| AND (|Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|)"
+  },
+  {
+    "name": "Orbeetle",
+    "category": [
+      "Special overworld spawn",
+      "Giant's Cap"
+    ],
+    "requires": "|Giant's Cap| AND (|Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|)"
+  },
+  {
+    "name": "Palpitoad",
+    "category": [
+      "Special overworld spawn",
+      "South Lake Miloch",
+      "West Lake Axewell"
+    ],
+    "requires": "(|South Lake Miloch| AND (|Raining| OR |Thunderstorm|)) OR (|West Lake Axewell| AND (|Overcast| OR |Snowing| OR |Snowstorm| OR |Sandstorm| OR |Fog|))"
+  },
+  {
+    "name": "Pangoro",
+    "category": [
+      "Special overworld spawn",
+      "Rolling Fields",
+      "Bridge Field",
+      "Dappled Grove"
+    ],
+    "requires": "(|Bridge Field| AND (|Overcast| OR |Thunderstorm|)) OR (|Dappled Grove| AND (|Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm|)) OR (|Rolling Fields| AND (|Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Intense Sun|))"
+  },
+  {
+    "name": "Pelipper",
+    "category": [
+      "Special overworld spawn",
+      "Rolling Fields",
+      "East Lake Axewell",
+      "North Lake Miloch",
+      "West Lake Axewell"
+    ],
+    "requires": "(|Rolling Fields| AND |Raining|) OR (|West Lake Axewell| AND (|Raining| OR |Thunderstorm|)) OR (|East Lake Axewell| AND (|Raining| OR |Thunderstorm|)) OR (|North Lake Miloch| AND (|Raining| OR |Thunderstorm|))"
+  },
+  {
+    "name": "Perrserker",
+    "category": [
+      "Special overworld spawn",
+      "Giant's Mirror"
+    ],
+    "requires": "|Giant's Mirror| AND (|Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|)"
+  },
+  {
+    "name": "Pikachu",
+    "category": [
+      "Special overworld spawn",
+      "Rolling Fields"
+    ],
+    "requires": "|Bridge Field| AND |Thunderstorm|"
+  },
+  {
+    "name": "Piloswine",
+    "category": [
+      "Special overworld spawn",
+      "Rolling Fields",
+      "Dusty Bowl",
+      "East Lake Axewell"
+    ],
+    "requires": "(|Rolling Fields| AND (|Snowing| OR |Snowstorm|)) OR (|East Lake Axewell| AND (|Snowing| OR |Snowstorm|)) OR (|Dusty Bowl| AND (|Snowing| OR |Snowstorm|))"
+  },
+  {
+    "name": "Quagsire",
+    "category": [
+      "Special overworld spawn",
+      "West Lake Axewell"
+    ],
+    "requires": "|West Lake Axewell| AND (|Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Fog|)"
+  },
+  {
+    "name": "Rhydon",
+    "category": [
+      "Special overworld spawn",
+      "Bridge Field",
+      "Dusty Bowl",
+      "Giant's Seat",
+      "Lake of Outrage",
+      "Motostoke Riverbank",
+      "Stony Wilderness"
 
-        {
-            "name": "We Saved the World!",
-            "victory": true,
-            "category": ["All Characters Complete!"],
-            "requires": "|Marvel event| and |Capcom event|"
-        },
-        {
-            "name": "Marvel%",
-            "victory": true,
-            "category": ["All Characters Complete!"],
-            "requires": "|Marvel event|"
-        },
-        {
-            "name": "Capcom%",
-            "victory": true,
-            "category": ["All Characters Complete!"],
-            "requires": "|Capcom event|"
-        },
-        {
-            "name": "Stars%",
-            "victory": true,
-            "category": ["All Characters Complete!"],
-            "requires": "{ItemValue(star:10)} and {ItemValue(coins:10)}"
-        }
-    ]
-}
-
+    ],
+    "requires": "(|Bridge Field| AND (|Intense Sun| OR |Sandstorm|)) OR (|Dusty Bowl| AND (|Raining| OR |Thunderstorm| OR |Snowing|)) OR (|Giant's Seat| AND (|Normal weather| OR |Raining|)) OR (|Lake of Outrage| AND |Sandstorm| AND |Progressive bike:2|) OR (|Motostoke Riverbank| AND (|Intense Sun| OR |Sandstorm|)) OR (|Stony Wilderness| AND (|Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|))"
+  },
+  {
+    "name": "Ribombee",
+    "category": [
+      "Special overworld spawn",
+      "Bridge Field",
+      "Motostoke Riverbank"
+    ],
+    "requires": "(|Bridge Field| AND (|Normal weather| OR |Overcast|)) OR (|Motostoke Riverbank| AND (|Overcast| OR |Snowing| OR |Snowstorm| OR |Fog|))"
+  },
+  {
+    "name": "Roselia",
+    "category": [
+      "Special overworld spawn",
+      "Rolling Fields"
+    ],
+    "requires": "|Rolling Fields| AND (|Normal weather| OR |Overcast| OR |Snowing| OR |Intense Sun| OR |Sandstorm| OR |Fog|)"
+  },
+  {
+    "name": "Roserade",
+    "category": [
+      "Special overworld spawn",
+      "Hammerlocke Hills"
+    ],
+    "requires": "|Hammerlocke Hills| AND (|Overcast| OR |Fog|)"
+  },
+  {
+    "name": "Sandaconda",
+    "category": [
+      "Special overworld spawn",
+      "Dusty Bowl"
+    ],
+    "requires": "|Dusty Bowl| AND (|Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|)"
+  },
+  {
+    "name": "Seismitoad",
+    "category": [
+      "Special overworld spawn",
+      "Axew's Eye",
+      "Bridge Field",
+      "Dappled Grove",
+      "Dusty Bowl",
+      "Giant's Cap",
+      "Giant's Mirror",
+      "North Lake Miloch"
+    ],
+    "requires": "(|Axew's Eye| AND |Thunderstorm| AND |Progressive bike:2|) OR (|Bridge Field| AND (|Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Fog|)) OR (|Dappled Grove| AND (|Raining| OR |Thunderstorm|)) OR (|Dusty Bowl| AND (|Raining| OR |Thunderstorm|)) OR (|Giant's Cap| AND |Raining|) OR (|Giant's Mirror| AND |Raining|) OR (|North Lake Miloch| AND (|Overcast| OR |Thunderstorm|))"
+  },
+  {
+    "name": "Shiftry/Ludicolo",
+    "category": [
+      "Special overworld spawn",
+      "Dappled Grove"
+    ],
+    "requires": "|Dappled Grove| AND (|Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Fog|)"
+  },
+  {
+    "name": "Shiinotic",
+    "category": [
+      "Special overworld spawn",
+      "Lake of Outrage"
+    ],
+    "requires": "|Lake of Outrage| AND (|Overcast| OR |Raining| OR |Thunderstorm|) AND |Progressive bike:2|"
+  },
+  {
+    "name": "Shuckle",
+    "category": [
+      "Special overworld spawn",
+      "Dusty Bowl"
+    ],
+    "requires": "|Dusty Bowl| AND (|Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|)"
+  },
+  {
+    "name": "Sigilyph",
+    "category": [
+      "Special overworld spawn",
+      "Dusty Bowl",
+      "Motostoke Riverbank",
+      "Stony Wilderness"
+    ],
+    "requires": "(|Dusty Bowl| AND (|Overcast| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Fog|)) OR (|Motostoke Riverbank| AND (|Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|)) OR (|Stony Wilderness| AND (|Normal weather| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|))"
+  },
+  {
+    "name": "Skuntank",
+    "category": [
+      "Special overworld spawn",
+      "Dusty Bowl",
+      "North Lake Miloch",
+      "South Lake Miloch"
+    ],
+    "requires": "(|Dusty Bowl| AND |Overcast|) OR (|North Lake Miloch| AND (|Raining| OR |Intense Sun| OR |Sandstorm|)) OR (|South Lake Miloch| AND (|Normal weather| OR |Overcast| OR |Snowing| OR |Snowstorm| OR |Sandstorm| OR |Fog|))"
+  },
+  {
+    "name": "Snorlax",
+    "category": [
+      "Special overworld spawn",
+      "Motostoke Riverbank"
+    ],
+    "requires": "|Motostoke Riverbank| AND (|Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm|)"
+  },
+  {
+    "name": "Steelix",
+    "category": [
+      "Special overworld spawn",
+      "Giant's Mirror",
+      "Giant's Seat"
+    ],
+    "requires": "(|Giant's Mirror| AND (|Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|)) OR (|Giant's Seat| AND (|Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|))"
+  },
+  {
+    "name": "Sudowoodo",
+    "category": [
+      "Special overworld spawn",
+      "Dusty Bowl",
+      "Giant's Mirror"
+    ],
+    "requires": "(|Giant's Mirror| AND (|Intense Sun| OR |Fog|)) OR (|Dusty Bowl| AND (|Normal weather| OR |Overcast| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|))"
+  },
+  {
+    "name": "Sylveon",
+    "category": [
+      "Special overworld spawn",
+      "Lake of Outrage"
+    ],
+    "requires": "|Lake of Outrage| AND |Fog| AND |Progressive bike:2|"
+  },
+  {
+    "name": "Thievul",
+    "category": [
+      "Special overworld spawn",
+      "South Lake Miloch"
+    ],
+    "requires": "|South Lake Miloch| AND (|Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|)"
+  },
+  {
+    "name": "Tsareena",
+    "category": [
+      "Special overworld spawn",
+      "Stony Wilderness"
+    ],
+    "requires": "|Stony Wilderness| AND (|Normal weather| OR |Overcast| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|)"
+  },
+  {
+    "name": "Umbreon",
+    "category": [
+      "Special overworld spawn",
+      "Lake of Outrage"
+    ],
+    "requires": "|Lake of Outrage| AND |Sandstorm| AND |Progressive bike:2|"
+  },
+  {
+    "name": "Unfezant",
+    "category": [
+      "Special overworld spawn",
+      "Giant's Mirror",
+      "Stony Wilderness"
+    ],
+    "requires": "(|Giant's Mirror| AND (|Normal weather| OR |Overcast| OR |Intense Sun|)) OR (|Stony Wilderness| AND |Overcast|)"
+  },
+  {
+    "name": "Vanillish",
+    "category": [
+      "Special overworld spawn",
+      "Dappled Grove",
+      "North Lake Miloch"
+    ],
+    "requires": "(|Dappled Grove| AND (|Snowing| OR |Snowstorm|)) OR (|North Lake Miloch| AND (|Snowing| OR |Snowstorm|))"
+  },
+  {
+    "name": "Vanilluxe",
+    "category": [
+      "Special overworld spawn",
+      "Bridge Field"
+    ],
+    "requires": "|Bridge Field| AND (|Snowing| OR |Snowstorm|)"
+  },
+  {
+    "name": "Vaporeon",
+    "category": [
+      "Special overworld spawn",
+      "Lake of Outrage"
+    ],
+    "requires": "|Lake of Outrage| AND |Raining| AND |Progressive bike:2|"
+  },
+  {
+    "name": "Vespiquen",
+    "category": [
+      "Special overworld spawn",
+      "Rolling Fields"
+    ],
+    "requires": "|Rolling Fields| AND |Normal weather|"
+  },
+  {
+    "name": "Vikavolt",
+    "category": [
+      "Special overworld spawn",
+      "Giant's Mirror",
+      "Giant's Seat"
+    ],
+    "requires": "(|Giant's Mirror| AND (|Normal weather| OR |Overcast| OR |Intense Sun| OR |Sandstorm|)) OR (|Giant's Seat| AND (|Normal weather| OR |Overcast| OR |Intense Sun| OR |Sandstorm|))"
+  },
+  {
+    "name": "Vileplume",
+    "category": [
+      "Special overworld spawn",
+      "Dappled Grove",
+      "Giant's Mirror",
+      "Hammerlocke Hills"
+    ],
+    "requires": "(|Dappled Grove| AND (|Normal weather| OR |Overcast| OR |Fog|)) OR (|Giant's Mirror| AND (|Overcast| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Sandstorm|)) OR (|Hammerlocke Hills| AND (|Normal weather| OR |Raining| OR |Thunderstorm| OR |Intense Sun| OR |Sandstorm|))"
+  },
+  {
+    "name": "Weavile",
+    "category": [
+      "Special overworld spawn",
+      "Bridge Field"
+    ],
+    "requires": "|Bridge Field| AND |Snowstorm|"
+  },
+  {
+    "name": "Xatu",
+    "category": [
+      "Special overworld spawn",
+      "East Lake Axewell",
+      "Giant's Mirror",
+      "North Lake Miloch"
+    ],
+    "requires": "(|East Lake Axewell| AND (|Normal weather| OR |Overcast| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|)) OR (|Giant's Mirror| AND (|Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Sandstorm| OR |Fog|)) OR (|North Lake Miloch| AND (|Normal weather| OR |Overcast| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|))"
+  }
+]
