@@ -1,4 +1,4 @@
-# Manual for Archipelago
+# Manual for Archipelago Pokemon Sword And Shield
 
 Manual is a customizable APWorld template for [Archipelago](https://github.com/ArchipelagoMW/Archipelago) that can be applied to any game. 
 
