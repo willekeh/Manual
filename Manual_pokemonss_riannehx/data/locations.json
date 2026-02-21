@@ -57,7 +57,7 @@
       "Bridge Field",
       "Giant's Cap"
     ],
-    "requires": "(|Bridge Field| AND |Snowing|) OR (|Giant's Cap| AND (|Snowing| OR |Snowstorm|))"
+    "requires": "(|Bridge Field| AND |Snowing| AND |Progressive bike:2|) OR (|Giant's Cap| AND (|Snowing| OR |Snowstorm|))"
   },
   {
     "name": "Beheeyem",
@@ -350,7 +350,7 @@
       "Special overworld spawn",
       "Bridge Field"
     ],
-    "requires": "|Bridge Field| AND (|Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Intense Sun| OR |Sandstorm|)"
+    "requires": "|Bridge Field| AND (|Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Intense Sun| OR |Sandstorm|) AND |Progressive bike:2|"
   },
   {
     "name": "Galvantula",
@@ -638,7 +638,7 @@
       "Bridge Field",
       "Giant's Seat"
     ],
-    "requires": "(|Bridge Field| AND |Fog|) OR (|Giant's Seat| AND |Fog|)"
+    "requires": "(|Bridge Field| AND |Fog| AND |Progressive bike:2|) OR (|Giant's Seat| AND |Fog|)"
   },
   {
     "name": "Ninjask",
@@ -982,7 +982,7 @@
       "Special overworld spawn",
       "Bridge Field"
     ],
-    "requires": "|Bridge Field| AND |Snowstorm|"
+    "requires": "|Bridge Field| AND |Snowstorm| AND |Progressive bike:2|"
   },
   {
     "name": "Xatu",
