@@ -26,14 +26,14 @@
             "type": "Toggle",
             "default": true
         },
-        "Example_Toggle":{
+        "Remove_weather_locations":{
             "description": [
-                "This is a Toggle",
-                "A simple boolean, aka True or False set the initial value with \"default\""
+                "no time travel needed",
+                "this excludes certain Pokemon that only appear during certain weather conditions to be considered in logic",
+                "Warning this excludes about 70% of checks"
             ],
             "type": "Toggle",
-            "default": false,
-            "group": "Example Options"
+            "default": false
         },
         "Example_Choice":{
             "type": "Choice",

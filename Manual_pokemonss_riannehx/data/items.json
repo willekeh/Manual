@@ -19,7 +19,8 @@
     "count": 1,
     "name": "Normal weather",
     "category": [
-      "Weather"
+      "Weather",
+      "needsWeather"
     ],
     "progression": true
   },
@@ -27,7 +28,8 @@
     "count": 1,
     "name": "Overcast",
     "category": [
-      "Weather"
+      "Weather",
+      "needsWeather"
     ],
     "progression": true
   },
@@ -35,7 +37,8 @@
     "count": 1,
     "name": "Raining",
     "category": [
-      "Weather"
+      "Weather",
+      "needsWeather"
     ],
     "progression": true
   },
@@ -43,7 +46,8 @@
     "count": 1,
     "name": "Thunderstorm",
     "category": [
-      "Weather"
+      "Weather",
+      "needsWeather"
     ],
     "progression": true
   },
@@ -51,7 +55,8 @@
     "count": 1,
     "name": "Snowing",
     "category": [
-      "Weather"
+      "Weather",
+      "needsWeather"
     ],
     "progression": true
   },
@@ -59,7 +64,8 @@
     "count": 1,
     "name": "Snowstorm",
     "category": [
-      "Weather"
+      "Weather",
+      "needsWeather"
     ],
     "progression": true
   },
@@ -67,7 +73,8 @@
     "count": 1,
     "name": "Intense Sun",
     "category": [
-      "Weather"
+      "Weather",
+      "needsWeather"
     ],
     "progression": true
   },
@@ -75,7 +82,8 @@
     "count": 1,
     "name": "Sandstorm",
     "category": [
-      "Weather"
+      "Weather",
+      "needsWeather"
     ],
     "progression": true
   },
@@ -83,7 +91,8 @@
     "count": 1,
     "name": "Fog",
     "category": [
-      "Weather"
+      "Weather",
+      "needsWeather"
     ],
     "progression": true
   },
@@ -220,6 +229,14 @@
     "name": "Rolling Fields",
     "category": [
       "Locations"
+    ],
+    "progression": true
+  },
+  {
+    "count": 1,
+    "name": "Noweather",
+    "category": [
+      "AllWeather"
     ],
     "progression": true
   }

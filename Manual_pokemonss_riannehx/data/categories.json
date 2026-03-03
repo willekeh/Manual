@@ -1,1 +1,9 @@
-{}
+{
+    "Special overworld spawn": {
+        "hidden": true
+    },
+    "needsWeather": {
+        "hidden": true,
+        "yaml_option": ["!Remove_weather_locations"]
+    }
+}
