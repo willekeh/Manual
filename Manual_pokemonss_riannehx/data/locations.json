@@ -14,7 +14,8 @@
       "Axew's Eye",
       "Giant's Mirror",
       "Giant's Seat",
-      "Hammerlocke Hills"
+      "Hammerlocke Hills",
+      "needsWeather"
     ],
     "requires": "(|Axew's Eye| AND (|Snowing| OR |Snowstorm|) AND |Progressive bike:2|) OR (|Giant's Mirror| AND |Snowing|) OR (|Giant's Seat| AND (|Snowing| OR |Snowstorm|)) OR (|Hammerlocke Hills| AND (|Snowing| OR |Snowstorm|))"
   },
@@ -22,7 +23,8 @@
     "name": "Aegislash",
     "category": [
       "Special overworld spawn",
-      "Giant's Cap"
+      "Giant's Cap",
+      "needsWeather"
     ],
     "requires": "|Giant's Cap| and |Fog|"
   },
@@ -30,7 +32,8 @@
     "name": "Araquanid",
     "category": [
       "Special overworld spawn",
-      "Stony Wilderness"
+      "Stony Wilderness",
+      "needsWeather"
     ],
     "requires": "|Stony Wilderness| AND (|Raining| OR |Thunderstorm|)"
   },
@@ -38,7 +41,8 @@
     "name": "Avalugg",
     "category": [
       "Special overworld spawn",
-      "Lake of Outrage"
+      "Lake of Outrage",
+      "needsWeather"
     ],
     "requires": "|Lake of Outrage| AND (|Snowing| OR |Snowstorm|) AND |Progressive bike:2|"
   },
@@ -46,7 +50,8 @@
     "name": "Barbaracle",
     "category": [
       "Special overworld spawn",
-      "Dusty Bowl"
+      "Dusty Bowl",
+      "needsWeather"
     ],
     "requires": "|Dusty Bowl| AND (|Overcast| OR |Raining| OR |Thunderstorm|)"
   },
@@ -55,7 +60,8 @@
     "category": [
       "Special overworld spawn",
       "Bridge Field",
-      "Giant's Cap"
+      "Giant's Cap",
+      "needsWeather"
     ],
     "requires": "(|Bridge Field| AND |Snowing| AND |Progressive bike:2|) OR (|Giant's Cap| AND (|Snowing| OR |Snowstorm|))"
   },
@@ -63,7 +69,8 @@
     "name": "Beheeyem",
     "category": [
       "Special overworld spawn",
-      "Bridge Field"
+      "Bridge Field",
+      "needsWeather"
     ],
     "requires": "|Bridge Field| AND (|Normal weather| OR |Overcast| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Fog|)"
   },
@@ -71,7 +78,8 @@
     "name": "Bellossom",
     "category": [
       "Special overworld spawn",
-      "Giant's Mirror"
+      "Giant's Mirror",
+      "needsWeather"
     ],
     "requires": "|Giant's Mirror| AND |Normal weather|"
   },
@@ -82,7 +90,7 @@
       "Bridge Field",
       "Dappled Grove"
     ],
-    "requires": "(|Dappled Grove| AND (|Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|)) OR (|Bridge Field| AND (|Normal weather| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|))"
+    "requires": "(|Dappled Grove| AND (|Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|)) OR (|Bridge Field| AND (|Normal weather| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|)) OR (|Dappled Grove| AND |Noweather|)"
   },
   {
     "name": "Bisharp",
@@ -90,7 +98,7 @@
       "Special overworld spawn",
       "Giant's Seat"
     ],
-    "requires": "|Giant's Seat| AND (|Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|)"
+    "requires": "(|Giant's Seat| AND (|Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|)) OR (|Giant's Seat| AND |Noweather|)"
   },
   {
     "name": "Boltund",
@@ -98,7 +106,7 @@
       "Special overworld spawn",
       "North Lake Miloch"
     ],
-    "requires": "|North Lake Miloch| AND (|Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|)"
+    "requires": "(|North Lake Miloch| AND (|Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|)) OR (|North Lake Miloch| AND |Noweather|)"
   },
   {
     "name": "Bronzong",
@@ -108,7 +116,8 @@
       "Dusty Bowl",
       "East Lake Axewell",
       "Giant's Seat",
-      "Stony Wilderness"
+      "Stony Wilderness",
+      "needsWeather"
     ],
     "requires": "(|Bridge Field| AND (|Raining| OR |Thunderstorm|)) OR (|Dusty Bowl| AND (|Normal weather| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm|)) OR (|East Lake Axewell| AND |Fog|) OR (|Giant's Seat| AND (|Overcast| OR |Raining| OR |Thunderstorm|)) OR (|Stony Wilderness| AND (|Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Fog|))"
   },
@@ -116,7 +125,8 @@
     "name": "Chandelure",
     "category": [
       "Special overworld spawn",
-      "Lake of Outrage"
+      "Lake of Outrage",
+      "needsWeather"
     ],
     "requires": "|Lake of Outrage| AND |Intense Sun| AND |Progressive bike:2|"
   },
@@ -124,7 +134,8 @@
     "name": "Cinccino",
     "category": [
       "Special overworld spawn",
-      "Giant's Cap"
+      "Giant's Cap",
+      "needsWeather"
     ],
     "requires": "|Giant's Cap| AND (|Normal weather| OR |Overcast| OR |Fog|)"
   },
@@ -135,7 +146,8 @@
       "Bridge Field",
       "Dappled Grove",
       "Dusty Bowl",
-      "Stony Wilderness"
+      "Stony Wilderness",
+      "needsWeather"
     ],
     "requires": "(|Bridge Field| AND |Sandstorm|) OR (|Dappled Grove| AND (|Intense Sun| OR |Sandstorm|)) OR (|Dusty Bowl| AND (|Overcast| OR |Intense Sun| OR |Sandstorm| OR |Fog|)) OR (|Stony Wilderness| AND (|Normal weather| OR |Overcast| OR |Intense Sun| OR |Sandstorm|))"
   },
@@ -143,7 +155,8 @@
     "name": "Clefable",
     "category": [
       "Special overworld spawn",
-      "Motostoke Riverbank"
+      "Motostoke Riverbank",
+      "needsWeather"
     ],
     "requires": "|Motostoke Riverbank| AND |Fog|"
   },
@@ -153,13 +166,14 @@
       "Special overworld spawn",
       "Giant's Cap"
     ],
-    "requires": "|Giant's Cap| AND (|Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|)"
+    "requires": "(|Giant's Cap| AND (|Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|)) OR (|Giant's Cap| AND |Noweather|) "
   },
   {
     "name": "Conkeldurr",
     "category": [
       "Special overworld spawn",
-      "Motostoke Riverbank"
+      "Motostoke Riverbank",
+      "needsWeather"
     ],
     "requires": "|Motostoke Riverbank| AND (|Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Fog|)"
   },
@@ -169,7 +183,7 @@
       "Special overworld spawn",
       "Hammerlocke Hills"
     ],
-    "requires": "|Hammerlocke Hills| AND (|Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|)"
+    "requires": "(|Hammerlocke Hills| AND (|Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|)) OR (|Hammerlocke Hills| AND |Noweather|)"
   },
   {
     "name": "Corviknight",
@@ -180,9 +194,8 @@
       "Motostoke Riverbank",
       "North Lake Miloch",
       "Watchtower Ruins"
-
     ],
-    "requires": "(|Giant's Cap| AND (|Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|)) OR (|Hammerlocke Hills| AND (|Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|)) OR (|Motostoke Riverbank| AND (|Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm|)) OR (|North Lake Miloch| AND (|Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|)) OR (|Watchtower Ruins| AND (|Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|))"
+    "requires": "(|Giant's Cap| AND (|Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|)) OR (|Hammerlocke Hills| AND (|Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|)) OR (|Motostoke Riverbank| AND (|Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm|)) OR (|North Lake Miloch| AND (|Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|)) OR (|Watchtower Ruins| AND (|Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|)) OR (|Giant's Cap| AND |Noweather|) OR (|Hammerlocke Hills| AND |Noweather|) OR (|North Lake Miloch| AND |Noweather|) OR (|Watchtower Ruins| AND |Noweather|)"
   },
   {
     "name": "Cramorant",
@@ -190,13 +203,14 @@
       "Special overworld spawn",
       "Axew's Eye"
     ],
-    "requires": "|Axew's Eye| AND (|Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|) AND |Progressive bike:2|"
+    "requires": "(|Axew's Eye| AND (|Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|) AND |Progressive bike:2|) OR (|Axew's Eye| AND |Noweather|)"
   },
   {
     "name": "Crawdaunt",
     "category": [
       "Special overworld spawn",
-      "South Lake Miloch"
+      "South Lake Miloch",
+      "needsWeather"
     ],
     "requires": "|South Lake Miloch| AND (|Normal weather| OR |Thunderstorm|)"
   },
@@ -206,7 +220,8 @@
       "Special overworld spawn",
       "Rolling Fields",
       "South Lake Miloch",
-      "Stony Wilderness"
+      "Stony Wilderness",
+      "needsWeather"
     ],
     "requires": "(|Rolling Fields| AND |Sandstorm|) OR (|South Lake Miloch| AND |Intense Sun|) OR (|Stony Wilderness| AND (|Normal weather| OR |Overcast| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|))"
   },
@@ -217,7 +232,7 @@
       "Rolling Fields",
       "West Lake Axewell"
     ],
-    "requires": "(|Rolling Fields| AND (|Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|)) OR (|West Lake Axewell| AND (|Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm|))"
+    "requires": "(|Rolling Fields| AND (|Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|)) OR (|West Lake Axewell| AND (|Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm|)) OR (|Rolling Fields| AND |Noweather|)"
   },
   {
     "name": "Doublade",
@@ -225,14 +240,15 @@
       "Special overworld spawn",
       "Giant's Cap"
     ],
-    "requires": "|Giant's Cap| AND (|Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm|)"
+    "requires": "(|Giant's Cap| AND (|Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm|)) OR (|Giant's Cap| AND |Noweather|)"
   },
   {
     "name": "Drapion",
     "category": [
       "Special overworld spawn",
       "Bridge Field",
-      "Motostoke Riverbank"
+      "Motostoke Riverbank",
+      "needsWeather"
     ],
     "requires": "(|Bridge Field| AND (|Overcast| OR |Intense Sun|)) OR (|Motostoke Riverbank| AND (|Normal weather| OR |Raining| OR |Thunderstorm| OR |Intense Sun| OR |Sandstorm|))"
   },
@@ -243,7 +259,7 @@
       "Giant's Cap",
       "West Lake Axewell"
     ],
-    "requires": "(|Giant's Cap| AND (|Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|)) OR (|West Lake Axewell| AND (|Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|))"
+    "requires": "(|Giant's Cap| AND (|Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|)) OR (|West Lake Axewell| AND (|Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|)) OR (|Giant's Cap| AND |Noweather|) OR (|West Lake Axewell| AND |Noweather|)"
   },
   {
     "name": "Drifblim",
@@ -251,7 +267,8 @@
       "Special overworld spawn",
       "North Lake Miloch",
       "South Lake Miloch",
-      "Watchtower Ruins"
+      "Watchtower Ruins",
+      "needsWeather"
     ],
     "requires": "(|North Lake Miloch| AND |Fog|) OR (|South Lake Miloch| AND |Fog|) OR (|Watchtower Ruins| AND (|Normal weather| OR |Snowing| OR |Intense Sun|))"
   },
@@ -261,7 +278,7 @@
       "Special overworld spawn",
       "Rolling Fields"
     ],
-    "requires": "|Rolling Fields| AND (|Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|)"
+    "requires": "(|Rolling Fields| AND (|Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|)) OR (|Rolling Fields| AND |Noweather|)"
   },
   {
     "name": "Duraludon",
@@ -269,14 +286,15 @@
       "Special overworld spawn",
       "Giant's Seat"
     ],
-    "requires": "|Giant's Seat| AND (|Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|)"
+    "requires": "(|Giant's Seat| AND (|Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|)) OR (|Giant's Seat| AND |Noweather|)"
   },
   {
     "name": "Dusclops",
     "category": [
       "Special overworld spawn",
       "Giant's Seat",
-      "Watchtower Ruins"
+      "Watchtower Ruins",
+      "needsWeather"
     ],
     "requires": "(|Giant's Seat| AND |Fog|) OR (|Watchtower Ruins| AND (|Overcast| OR |Raining| OR |Thunderstorm| OR |Sandstorm|))"
   },
@@ -286,7 +304,7 @@
       "Special overworld spawn",
       "Stony Wilderness"
     ],
-    "requires": "|Stony Wilderness| AND (|Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|)"
+    "requires": "(|Stony Wilderness| AND (|Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|)) OR (|Stony Wilderness| AND |Noweather|)"
   },
   {
     "name": "Eldegoss",
@@ -294,13 +312,14 @@
       "Special overworld spawn",
       "Motostoke Riverbank"
     ],
-    "requires": "|Motostoke Riverbank| AND (|Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|)"
+    "requires": "(|Motostoke Riverbank| AND (|Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|)) OR (|Motostoke Riverbank| AND |Noweather|)"
   },
   {
     "name": "Espeon",
     "category": [
       "Special overworld spawn",
-      "Lake of Outrage"
+      "Lake of Outrage",
+      "needsWeather"
     ],
     "requires": "|Lake of Outrage| AND |Overcast| AND |Progressive bike:2|"
   },
@@ -308,7 +327,8 @@
     "name": "Excadrill",
     "category": [
       "Special overworld spawn",
-      "Giant's Cap"
+      "Giant's Cap",
+      "needsWeather"
     ],
     "requires": "|Giant's Cap| AND (|Intense Sun| OR |Sandstorm|)"
   },
@@ -318,13 +338,14 @@
       "Special overworld spawn",
       "Bridge Field"
     ],
-    "requires": "|Bridge Field| AND (|Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|)"
+    "requires": "(|Bridge Field| AND (|Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|)) OR (|Bridge Field| AND |Noweather|)"
   },
   {
     "name": "Flareon",
     "category": [
       "Special overworld spawn",
-      "Lake of Outrage"
+      "Lake of Outrage",
+      "needsWeather"
     ],
     "requires": "|Lake of Outrage| AND |Intense Sun| AND |Progressive bike:2|"
   },
@@ -332,7 +353,8 @@
     "name": "Flygon",
     "category": [
       "Special overworld spawn",
-      "Dusty Bowl"
+      "Dusty Bowl",
+      "needsWeather"
     ],
     "requires": "|Dusty Bowl| AND (|Normal weather| OR |Sandstorm|)"
   },
@@ -342,13 +364,14 @@
       "Special overworld spawn",
       "East Lake Axewell"
     ],
-    "requires": "|East Lake Axewell| AND (|Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|)"
+    "requires": "(|East Lake Axewell| AND (|Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|)) OR (|East Lake Axewell| AND |Noweather|)"
   },
   {
     "name": "Gallade",
     "category": [
       "Special overworld spawn",
-      "Bridge Field"
+      "Bridge Field",
+      "needsWeather"
     ],
     "requires": "|Bridge Field| AND (|Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Intense Sun| OR |Sandstorm|) AND |Progressive bike:2|"
   },
@@ -360,7 +383,7 @@
       "Giant's Seat",
       "South Lake Miloch"
     ],
-    "requires": "(|Giant's Cap| AND |Thunderstorm|) OR (|Giant's Seat| AND (|Thunderstorm| OR |Raining|)) OR (|South Lake Miloch| AND (|Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|))"
+    "requires": "(|Giant's Cap| AND |Thunderstorm|) OR (|Giant's Seat| AND (|Thunderstorm| OR |Raining|)) OR (|South Lake Miloch| AND (|Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|)) OR (|South Lake Miloch| AND |Noweather|)"
   },
   {
     "name": "Garbodor",
@@ -369,14 +392,15 @@
       "Bridge Field",
       "East Lake Axewell"
     ],
-    "requires": "(|Bridge Field| AND (|Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|)) OR (|East Lake Axewell| AND (|Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm|))"
+    "requires": "(|Bridge Field| AND (|Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|)) OR (|East Lake Axewell| AND (|Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm|)) OR (|Bridge Field| AND |Noweather|) "
   },
   {
     "name": "Gardevoir",
     "category": [
       "Special overworld spawn",
       "Rolling Fields",
-      "Lake of Outrage"
+      "Lake of Outrage",
+      "needsWeather"
     ],
     "requires": "(|Rolling Fields| AND |Fog|) OR (|Lake of Outrage| AND (|Normal weather| OR |Thunderstorm| OR |Fog|) AND |Progressive bike:2|)"
   },
@@ -384,7 +408,8 @@
     "name": "Gengar",
     "category": [
       "Special overworld spawn",
-      "Giant's Cap"
+      "Giant's Cap",
+      "needsWeather"
     ],
     "requires": "|Giant's Cap| AND (|Normal weather| OR |Overcast| OR |Fog| OR |Thunderstorm| OR |Intense Sun| OR |Sandstorm|)"
   },
@@ -392,7 +417,8 @@
     "name": "Gigalith",
     "category": [
       "Special overworld spawn",
-      "Dusty Bowl"
+      "Dusty Bowl",
+      "needsWeather"
     ],
     "requires": "|Dusty Bowl| AND (|Normal weather| OR |Intense Sun| OR |Sandstorm|)"
   },
@@ -400,7 +426,8 @@
     "name": "Glaceon",
     "category": [
       "Special overworld spawn",
-      "Lake of Outrage"
+      "Lake of Outrage",
+      "needsWeather"
     ],
     "requires": "|Lake of Outrage| AND (|Snowing| OR |Snowstorm|) AND |Progressive bike:2|"
   },
@@ -410,7 +437,8 @@
       "Special overworld spawn",
       "Giant's Cap",
       "Giant's Seat",
-      "Watchtower Ruins"
+      "Watchtower Ruins",
+      "needsWeather"
     ],
     "requires": "(|Giant's Cap| AND (|Snowing| OR |Snowstorm| )) OR (|Giant's Seat| AND (|Snowing| OR |Snowstorm|)) OR (|Watchtower Ruins| AND (|Snowing| OR |Snowstorm|))"
   },
@@ -419,7 +447,8 @@
     "category": [
       "Special overworld spawn",
       "Bridge Field",
-      "Giant's Cap"
+      "Giant's Cap",
+      "needsWeather"
     ],
     "requires": "(|Bridge Field| AND (|Normal weather| OR |Raining| OR |Thunderstorm| )) OR (|Giant's Cap| AND |Raining|)"
   },
@@ -432,13 +461,14 @@
       "Stony Wilderness",
       "Watchtower Ruins"
     ],
-    "requires": "(|Dusty Bowl| AND (|Overcast| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Fog|)) OR (|Giant's Seat| AND |Sandstorm|) OR (|Stony Wilderness| AND (|Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|)) OR (|Watchtower Ruins| AND (|Normal weather| OR |Intense Sun| OR |Fog|))"
+    "requires": "(|Dusty Bowl| AND (|Overcast| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Fog|)) OR (|Giant's Seat| AND |Sandstorm|) OR (|Stony Wilderness| AND (|Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|)) OR (|Watchtower Ruins| AND (|Normal weather| OR |Intense Sun| OR |Fog|)) OR (|Stony Wilderness| AND |Noweather|)"
   },
   {
     "name": "Gourgeist",
     "category": [
       "Special overworld spawn",
-      "Hammerlocke Hills"
+      "Hammerlocke Hills",
+      "needsWeather"
     ],
     "requires": "|Hammerlocke Hills| AND (|Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|)"
   },
@@ -448,7 +478,7 @@
       "Special overworld spawn",
       "Lake of Outrage"
     ],
-    "requires": "|Lake of Outrage| AND (|Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|) AND |Progressive bike:2|"
+    "requires": "(|Lake of Outrage| AND (|Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|) AND |Progressive bike:2|) OR (|Lake of Outrage| AND |Noweather| AND |Progressive bike:2|)"
   },
   {
     "name": "Greedent",
@@ -456,7 +486,7 @@
       "Special overworld spawn",
       "Bridge Field"
     ],
-    "requires": "|Bridge Field| AND (|Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|)"
+    "requires": "(|Bridge Field| AND (|Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|)) OR (|Bridge Field| AND |Noweather|)"
   },
   {
     "name": "Grimmsnarl",
@@ -464,7 +494,7 @@
       "Special overworld spawn",
       "Stony Wilderness"
     ],
-    "requires": "|Stony Wilderness| AND (|Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|)"
+    "requires": "(|Stony Wilderness| AND (|Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|)) OR (|Stony Wilderness| AND |Noweather|)"
   },
   {
     "name": "Hatterene",
@@ -472,14 +502,15 @@
       "Special overworld spawn",
       "Lake of Outrage"
     ],
-    "requires": "|Lake of Outrage| AND (|Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|) AND |Progressive bike:2|"
+    "requires": "(|Lake of Outrage| AND (|Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|) AND |Progressive bike:2|) OR (|Lake of Outrage| AND |Noweather| AND |Progressive bike:2|)"
   },
   {
     "name": "Haunter",
     "category": [
       "Special overworld spawn",
       "Rolling Fields",
-      "Watchtower Ruins"
+      "Watchtower Ruins",
+      "needsWeather"
     ],
     "requires": "(|Rolling Fields| AND (|Raining| OR |Thunderstorm|)) OR (|Watchtower Ruins| AND (|Overcast| OR |Raining| OR |Thunderstorm| OR |Snowstorm| OR |Sandstorm| OR |Fog|))"
   },
@@ -489,13 +520,14 @@
       "Special overworld spawn",
       "Hammerlocke Hills"
     ],
-    "requires": "|Hammerlocke Hills| AND (|Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|)"
+    "requires": "(|Hammerlocke Hills| AND (|Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|)) OR (|Hammerlocke Hills| AND |Noweather|)"
   },
   {
     "name": "Haxorus",
     "category": [
       "Special overworld spawn",
-      "Axew's Eye"
+      "Axew's Eye",
+      "needsWeather"
     ],
     "requires": "|Axew's Eye| AND (|Normal weather| OR |Overcast| OR |Raining| OR |Intense Sun| OR |Sandstorm| OR |Fog|) AND |Progressive bike:2|"
   },
@@ -503,7 +535,8 @@
     "name": "Jolteon",
     "category": [
       "Special overworld spawn",
-      "Lake of Outrage"
+      "Lake of Outrage",
+      "needsWeather"
     ],
     "requires": "|Lake of Outrage| AND |Thunderstorm| AND |Progressive bike:2|"
   },
@@ -512,7 +545,8 @@
     "category": [
       "Special overworld spawn",
       "South Lake Miloch",
-      "West Lake Axewell"
+      "West Lake Axewell",
+      "needsWeather"
     ],
     "requires": "(|West Lake Axewell| AND |Normal weather|) OR (|South Lake Miloch| AND |Normal weather|)"
   },
@@ -520,7 +554,8 @@
     "name": "Kirlia",
     "category": [
       "Special overworld spawn",
-      "Rolling Fields"
+      "Rolling Fields",
+      "needsWeather"
     ],
     "requires": "|Rolling Fields| AND |Fog|"
   },
@@ -528,7 +563,8 @@
     "name": "Klang",
     "category": [
       "Special overworld spawn",
-      "Hammerlocke Hills"
+      "Hammerlocke Hills",
+      "needsWeather"
     ],
     "requires": "|Hammerlocke Hills| AND (|Normal weather| OR |Overcast| OR |Raining| OR |Snowing|)"
   },
@@ -536,7 +572,8 @@
     "name": "Klinklang",
     "category": [
       "Special overworld spawn",
-      "Hammerlocke Hills"
+      "Hammerlocke Hills",
+      "needsWeather"
     ],
     "requires": "|Hammerlocke Hills| AND (|Thunderstorm| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm|)"
   },
@@ -544,7 +581,8 @@
     "name": "Kommo-o/Tyranitar",
     "category": [
       "Special overworld spawn",
-      "Dusty Bowl"
+      "Dusty Bowl",
+      "needsWeather"
     ],
     "requires": "|Dusty Bowl| AND (|Normal weather| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|)"
   },
@@ -552,7 +590,8 @@
     "name": "Leafeon",
     "category": [
       "Special overworld spawn",
-      "Lake of Outrage"
+      "Lake of Outrage",
+      "needsWeather"
     ],
     "requires": "|Lake of Outrage| AND |Normal weather| AND |Progressive bike:2|"
   },
@@ -562,7 +601,7 @@
       "Special overworld spawn",
       "North Lake Miloch"
     ],
-    "requires": "|North Lake Miloch| AND (|Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|)"
+    "requires": "(|North Lake Miloch| AND (|Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|)) OR (|North Lake Miloch| AND |Noweather|)"
   },
   {
     "name": "Linoone",
@@ -570,13 +609,14 @@
       "Special overworld spawn",
       "Bridge Field"
     ],
-    "requires": "|Bridge Field| AND (|Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|)"
+    "requires": "(|Bridge Field| AND (|Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|)) OR (|Bridge Field| AND |Noweather|)"
   },
   {
     "name": "Lucario",
     "category": [
       "Special overworld spawn",
-      "North Lake Miloch"
+      "North Lake Miloch",
+      "needsWeather"
     ],
     "requires": "|North Lake Miloch| AND |Normal weather|"
   },
@@ -584,7 +624,8 @@
     "name": "Machamp",
     "category": [
       "Special overworld spawn",
-      "Giant's Mirror"
+      "Giant's Mirror",
+      "needsWeather"
     ],
     "requires": "|Giant's Mirror| AND (|Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|)"
   },
@@ -594,13 +635,14 @@
       "Special overworld spawn",
       "South Lake Miloch"
     ],
-    "requires": "|South Lake Miloch| AND (|Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|)"
+    "requires": "(|South Lake Miloch| AND (|Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|)) OR (|South Lake Miloch| AND |Noweather|)"
   },
   {
     "name": "Manectric",
     "category": [
       "Special overworld spawn",
-      "Rolling Fields"
+      "Rolling Fields",
+      "needsWeather"
     ],
     "requires": "|Rolling Fields| AND |Thunderstorm|"
   },
@@ -608,7 +650,8 @@
     "name": "Mime Jr.",
     "category": [
       "Special overworld spawn",
-      "Rolling Fields"
+      "Rolling Fields",
+      "needsWeather"
     ],
     "requires": "|Rolling Fields| AND |Snowstorm|"
   },
@@ -616,7 +659,8 @@
     "name": "Mimikyu",
     "category": [
       "Special overworld spawn",
-      "Bridge Field"
+      "Bridge Field",
+      "needsWeather"
     ],
     "requires": "|Bridge Field| AND |Fog|"
   },
@@ -627,7 +671,8 @@
       "Rolling Fields",
       "Dusty Bowl",
       "East Lake Axewell",
-      "Giant's Seat"
+      "Giant's Seat",
+      "needsWeather"
     ],
     "requires": "(|Rolling Fields| AND (|Normal weather| OR |Overcast| OR |Intense Sun| OR |Sandstorm| OR |Fog|)) OR (|Dusty Bowl| AND (|Normal weather| OR |Intense Sun| OR |Sandstorm| OR |Fog|)) OR (|East Lake Axewell| AND (|Intense Sun| OR |Sandstorm|)) OR (|Giant's Seat| AND |Intense Sun|)"
   },
@@ -636,7 +681,8 @@
     "category": [
       "Special overworld spawn",
       "Bridge Field",
-      "Giant's Seat"
+      "Giant's Seat",
+      "needsWeather"
     ],
     "requires": "(|Bridge Field| AND |Fog| AND |Progressive bike:2|) OR (|Giant's Seat| AND |Fog|)"
   },
@@ -646,13 +692,14 @@
       "Special overworld spawn",
       "Rolling Fields"
     ],
-    "requires": "|Rolling Fields| AND (|Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|)"
+    "requires": "(|Rolling Fields| AND (|Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|)) OR (|Rolling Fields| AND |Noweather|)"
   },
   {
     "name": "Noctowl",
     "category": [
       "Special overworld spawn",
-      "Bridge Field"
+      "Bridge Field",
+      "needsWeather"
     ],
     "requires": "|Bridge Field| AND (|Snowing| OR |Snowstorm|)"
   },
@@ -660,7 +707,8 @@
     "name": "Noivern",
     "category": [
       "Special overworld spawn",
-      "Bridge Field"
+      "Bridge Field",
+      "needsWeather"
     ],
     "requires": "|Bridge Field| AND (|Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|)"
   },
@@ -670,7 +718,7 @@
       "Special overworld spawn",
       "Bridge Field"
     ],
-    "requires": "|Bridge Field| AND (|Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|)"
+    "requires": "(|Bridge Field| AND (|Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|)) OR (|Bridge Field| AND |Noweather|)"
   },
   {
     "name": "Onix",
@@ -678,22 +726,24 @@
       "Special overworld spawn",
       "Rolling Fields"
     ],
-    "requires": "|Rolling Fields| AND (|Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|)"
+    "requires": "(|Rolling Fields| AND (|Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|)) OR (|Rolling Fields| AND |Noweather|)"
   },
   {
     "name": "Orbeetle",
     "category": [
       "Special overworld spawn",
-      "Giant's Cap"
+      "Giant's Cap",
+      "Dappled Grove"
     ],
-    "requires": "|Giant's Cap| AND (|Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|)"
+    "requires": "(|Giant's Cap| AND (|Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|)) OR (|Giant's Cap| AND |Noweather|) OR (|Dappled Grove| AND (|Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|)) OR (|Dappled Grove| AND |Noweather|)"
   },
   {
     "name": "Palpitoad",
     "category": [
       "Special overworld spawn",
       "South Lake Miloch",
-      "West Lake Axewell"
+      "West Lake Axewell",
+      "needsWeather"
     ],
     "requires": "(|South Lake Miloch| AND (|Raining| OR |Thunderstorm|)) OR (|West Lake Axewell| AND (|Overcast| OR |Snowing| OR |Snowstorm| OR |Sandstorm| OR |Fog|))"
   },
@@ -703,7 +753,8 @@
       "Special overworld spawn",
       "Rolling Fields",
       "Bridge Field",
-      "Dappled Grove"
+      "Dappled Grove",
+      "needsWeather"
     ],
     "requires": "(|Bridge Field| AND (|Overcast| OR |Thunderstorm|)) OR (|Dappled Grove| AND (|Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm|)) OR (|Rolling Fields| AND (|Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Intense Sun|))"
   },
@@ -714,7 +765,8 @@
       "Rolling Fields",
       "East Lake Axewell",
       "North Lake Miloch",
-      "West Lake Axewell"
+      "West Lake Axewell",
+      "needsWeather"
     ],
     "requires": "(|Rolling Fields| AND |Raining|) OR (|West Lake Axewell| AND (|Raining| OR |Thunderstorm|)) OR (|East Lake Axewell| AND (|Raining| OR |Thunderstorm|)) OR (|North Lake Miloch| AND (|Raining| OR |Thunderstorm|))"
   },
@@ -724,13 +776,14 @@
       "Special overworld spawn",
       "Giant's Mirror"
     ],
-    "requires": "|Giant's Mirror| AND (|Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|)"
+    "requires": "(|Giant's Mirror| AND (|Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|)) OR (|Giant's Mirror| AND |Noweather|)"
   },
   {
     "name": "Pikachu",
     "category": [
       "Special overworld spawn",
-      "Rolling Fields"
+      "Rolling Fields",
+      "needsWeather"
     ],
     "requires": "|Bridge Field| AND |Thunderstorm|"
   },
@@ -740,7 +793,8 @@
       "Special overworld spawn",
       "Rolling Fields",
       "Dusty Bowl",
-      "East Lake Axewell"
+      "East Lake Axewell",
+      "needsWeather"
     ],
     "requires": "(|Rolling Fields| AND (|Snowing| OR |Snowstorm|)) OR (|East Lake Axewell| AND (|Snowing| OR |Snowstorm|)) OR (|Dusty Bowl| AND (|Snowing| OR |Snowstorm|))"
   },
@@ -748,7 +802,8 @@
     "name": "Quagsire",
     "category": [
       "Special overworld spawn",
-      "West Lake Axewell"
+      "West Lake Axewell",
+      "needsWeather"
     ],
     "requires": "|West Lake Axewell| AND (|Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Fog|)"
   },
@@ -762,16 +817,16 @@
       "Lake of Outrage",
       "Motostoke Riverbank",
       "Stony Wilderness"
-
     ],
-    "requires": "(|Bridge Field| AND (|Intense Sun| OR |Sandstorm|)) OR (|Dusty Bowl| AND (|Raining| OR |Thunderstorm| OR |Snowing|)) OR (|Giant's Seat| AND (|Normal weather| OR |Raining|)) OR (|Lake of Outrage| AND |Sandstorm| AND |Progressive bike:2|) OR (|Motostoke Riverbank| AND (|Intense Sun| OR |Sandstorm|)) OR (|Stony Wilderness| AND (|Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|))"
+    "requires": "(|Bridge Field| AND (|Intense Sun| OR |Sandstorm|)) OR (|Dusty Bowl| AND (|Raining| OR |Thunderstorm| OR |Snowing|)) OR (|Giant's Seat| AND (|Normal weather| OR |Raining|)) OR (|Lake of Outrage| AND |Sandstorm| AND |Progressive bike:2|) OR (|Motostoke Riverbank| AND (|Intense Sun| OR |Sandstorm|)) OR (|Stony Wilderness| AND (|Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|)) OR (|Stony Wilderness| AND |Noweather|)"
   },
   {
     "name": "Ribombee",
     "category": [
       "Special overworld spawn",
       "Bridge Field",
-      "Motostoke Riverbank"
+      "Motostoke Riverbank",
+      "needsWeather"
     ],
     "requires": "(|Bridge Field| AND (|Normal weather| OR |Overcast|)) OR (|Motostoke Riverbank| AND (|Overcast| OR |Snowing| OR |Snowstorm| OR |Fog|))"
   },
@@ -779,7 +834,8 @@
     "name": "Roselia",
     "category": [
       "Special overworld spawn",
-      "Rolling Fields"
+      "Rolling Fields",
+      "needsWeather"
     ],
     "requires": "|Rolling Fields| AND (|Normal weather| OR |Overcast| OR |Snowing| OR |Intense Sun| OR |Sandstorm| OR |Fog|)"
   },
@@ -787,7 +843,8 @@
     "name": "Roserade",
     "category": [
       "Special overworld spawn",
-      "Hammerlocke Hills"
+      "Hammerlocke Hills",
+      "needsWeather"
     ],
     "requires": "|Hammerlocke Hills| AND (|Overcast| OR |Fog|)"
   },
@@ -797,7 +854,7 @@
       "Special overworld spawn",
       "Dusty Bowl"
     ],
-    "requires": "|Dusty Bowl| AND (|Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|)"
+    "requires": "(|Dusty Bowl| AND (|Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|)) OR (|Dusty Bowl| AND |Noweather|)"
   },
   {
     "name": "Seismitoad",
@@ -809,7 +866,8 @@
       "Dusty Bowl",
       "Giant's Cap",
       "Giant's Mirror",
-      "North Lake Miloch"
+      "North Lake Miloch",
+      "needsWeather"
     ],
     "requires": "(|Axew's Eye| AND |Thunderstorm| AND |Progressive bike:2|) OR (|Bridge Field| AND (|Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Fog|)) OR (|Dappled Grove| AND (|Raining| OR |Thunderstorm|)) OR (|Dusty Bowl| AND (|Raining| OR |Thunderstorm|)) OR (|Giant's Cap| AND |Raining|) OR (|Giant's Mirror| AND |Raining|) OR (|North Lake Miloch| AND (|Overcast| OR |Thunderstorm|))"
   },
@@ -817,7 +875,8 @@
     "name": "Shiftry/Ludicolo",
     "category": [
       "Special overworld spawn",
-      "Dappled Grove"
+      "Dappled Grove",
+      "needsWeather"
     ],
     "requires": "|Dappled Grove| AND (|Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Fog|)"
   },
@@ -825,7 +884,8 @@
     "name": "Shiinotic",
     "category": [
       "Special overworld spawn",
-      "Lake of Outrage"
+      "Lake of Outrage",
+      "needsWeather"
     ],
     "requires": "|Lake of Outrage| AND (|Overcast| OR |Raining| OR |Thunderstorm|) AND |Progressive bike:2|"
   },
@@ -835,7 +895,7 @@
       "Special overworld spawn",
       "Dusty Bowl"
     ],
-    "requires": "|Dusty Bowl| AND (|Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|)"
+    "requires": "(|Dusty Bowl| AND (|Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|)) OR (|Dusty Bowl| AND |Noweather|)"
   },
   {
     "name": "Sigilyph",
@@ -845,7 +905,7 @@
       "Motostoke Riverbank",
       "Stony Wilderness"
     ],
-    "requires": "(|Dusty Bowl| AND (|Overcast| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Fog|)) OR (|Motostoke Riverbank| AND (|Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|)) OR (|Stony Wilderness| AND (|Normal weather| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|))"
+    "requires": "(|Dusty Bowl| AND (|Overcast| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Fog|)) OR (|Motostoke Riverbank| AND (|Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|)) OR (|Stony Wilderness| AND (|Normal weather| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|)) OR (|Motostoke Riverbank| AND |Noweather|)"
   },
   {
     "name": "Skuntank",
@@ -853,7 +913,8 @@
       "Special overworld spawn",
       "Dusty Bowl",
       "North Lake Miloch",
-      "South Lake Miloch"
+      "South Lake Miloch",
+      "needsWeather"
     ],
     "requires": "(|Dusty Bowl| AND |Overcast|) OR (|North Lake Miloch| AND (|Raining| OR |Intense Sun| OR |Sandstorm|)) OR (|South Lake Miloch| AND (|Normal weather| OR |Overcast| OR |Snowing| OR |Snowstorm| OR |Sandstorm| OR |Fog|))"
   },
@@ -861,7 +922,8 @@
     "name": "Snorlax",
     "category": [
       "Special overworld spawn",
-      "Motostoke Riverbank"
+      "Motostoke Riverbank",
+      "needsWeather"
     ],
     "requires": "|Motostoke Riverbank| AND (|Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm|)"
   },
@@ -872,14 +934,15 @@
       "Giant's Mirror",
       "Giant's Seat"
     ],
-    "requires": "(|Giant's Mirror| AND (|Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|)) OR (|Giant's Seat| AND (|Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|))"
+    "requires": "(|Giant's Mirror| AND (|Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|)) OR (|Giant's Seat| AND (|Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|)) OR (|Giant's Mirror| AND |Noweather|) OR (|Giant's Seat| AND |Noweather|)"
   },
   {
     "name": "Sudowoodo",
     "category": [
       "Special overworld spawn",
       "Dusty Bowl",
-      "Giant's Mirror"
+      "Giant's Mirror",
+      "needsWeather"
     ],
     "requires": "(|Giant's Mirror| AND (|Intense Sun| OR |Fog|)) OR (|Dusty Bowl| AND (|Normal weather| OR |Overcast| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|))"
   },
@@ -887,7 +950,8 @@
     "name": "Sylveon",
     "category": [
       "Special overworld spawn",
-      "Lake of Outrage"
+      "Lake of Outrage",
+      "needsWeather"
     ],
     "requires": "|Lake of Outrage| AND |Fog| AND |Progressive bike:2|"
   },
@@ -897,13 +961,14 @@
       "Special overworld spawn",
       "South Lake Miloch"
     ],
-    "requires": "|South Lake Miloch| AND (|Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|)"
+    "requires": "(|South Lake Miloch| AND (|Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|)) OR (|South Lake Miloch| AND |Noweather|)"
   },
   {
     "name": "Tsareena",
     "category": [
       "Special overworld spawn",
-      "Stony Wilderness"
+      "Stony Wilderness",
+      "needsWeather"
     ],
     "requires": "|Stony Wilderness| AND (|Normal weather| OR |Overcast| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|)"
   },
@@ -911,7 +976,8 @@
     "name": "Umbreon",
     "category": [
       "Special overworld spawn",
-      "Lake of Outrage"
+      "Lake of Outrage",
+      "needsWeather"
     ],
     "requires": "|Lake of Outrage| AND |Sandstorm| AND |Progressive bike:2|"
   },
@@ -920,7 +986,8 @@
     "category": [
       "Special overworld spawn",
       "Giant's Mirror",
-      "Stony Wilderness"
+      "Stony Wilderness",
+      "needsWeather"
     ],
     "requires": "(|Giant's Mirror| AND (|Normal weather| OR |Overcast| OR |Intense Sun|)) OR (|Stony Wilderness| AND |Overcast|)"
   },
@@ -929,7 +996,8 @@
     "category": [
       "Special overworld spawn",
       "Dappled Grove",
-      "North Lake Miloch"
+      "North Lake Miloch",
+      "needsWeather"
     ],
     "requires": "(|Dappled Grove| AND (|Snowing| OR |Snowstorm|)) OR (|North Lake Miloch| AND (|Snowing| OR |Snowstorm|))"
   },
@@ -937,7 +1005,8 @@
     "name": "Vanilluxe",
     "category": [
       "Special overworld spawn",
-      "Bridge Field"
+      "Bridge Field",
+      "needsWeather"
     ],
     "requires": "|Bridge Field| AND (|Snowing| OR |Snowstorm|)"
   },
@@ -945,7 +1014,8 @@
     "name": "Vaporeon",
     "category": [
       "Special overworld spawn",
-      "Lake of Outrage"
+      "Lake of Outrage",
+      "needsWeather"
     ],
     "requires": "|Lake of Outrage| AND |Raining| AND |Progressive bike:2|"
   },
@@ -953,7 +1023,8 @@
     "name": "Vespiquen",
     "category": [
       "Special overworld spawn",
-      "Rolling Fields"
+      "Rolling Fields",
+      "needsWeather"
     ],
     "requires": "|Rolling Fields| AND |Normal weather|"
   },
@@ -962,7 +1033,8 @@
     "category": [
       "Special overworld spawn",
       "Giant's Mirror",
-      "Giant's Seat"
+      "Giant's Seat",
+      "needsWeather"
     ],
     "requires": "(|Giant's Mirror| AND (|Normal weather| OR |Overcast| OR |Intense Sun| OR |Sandstorm|)) OR (|Giant's Seat| AND (|Normal weather| OR |Overcast| OR |Intense Sun| OR |Sandstorm|))"
   },
@@ -972,7 +1044,8 @@
       "Special overworld spawn",
       "Dappled Grove",
       "Giant's Mirror",
-      "Hammerlocke Hills"
+      "Hammerlocke Hills",
+      "needsWeather"
     ],
     "requires": "(|Dappled Grove| AND (|Normal weather| OR |Overcast| OR |Fog|)) OR (|Giant's Mirror| AND (|Overcast| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Sandstorm|)) OR (|Hammerlocke Hills| AND (|Normal weather| OR |Raining| OR |Thunderstorm| OR |Intense Sun| OR |Sandstorm|))"
   },
@@ -980,7 +1053,8 @@
     "name": "Weavile",
     "category": [
       "Special overworld spawn",
-      "Bridge Field"
+      "Bridge Field",
+      "needsWeather"
     ],
     "requires": "|Bridge Field| AND |Snowstorm| AND |Progressive bike:2|"
   },
@@ -990,7 +1064,8 @@
       "Special overworld spawn",
       "East Lake Axewell",
       "Giant's Mirror",
-      "North Lake Miloch"
+      "North Lake Miloch",
+      "needsWeather"
     ],
     "requires": "(|East Lake Axewell| AND (|Normal weather| OR |Overcast| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|)) OR (|Giant's Mirror| AND (|Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Sandstorm| OR |Fog|)) OR (|North Lake Miloch| AND (|Normal weather| OR |Overcast| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|))"
   }

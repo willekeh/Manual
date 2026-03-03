@@ -5,7 +5,15 @@
   "filler_item_name": "XP candy",
   "starting_items": [
     {
-            "items": ["Normal weather", "Rolling Fields"]
+            "items": ["Rolling Fields","Bridge Field","Dappled Grove" ,"Dusty Bowl" ,"Giant's Mirror" ,"East Lake Axewell" ,"Giant's Cap" ,"Giant's Seat" ,"Hammerlocke Hills" ,"Motostoke Riverbank" ,"North Lake Miloch" ,"South Lake Miloch" ,"Stony Wilderness" ,"Watchtower Ruins","West Lake Axewell"],
+            "random": 1
+    },
+    {
+            "items": ["Normal weather","Overcast","Raining","Thunderstorm","Snowing" ,"Snowstorm","Intense Sun" ,"Sandstorm","Fog"],
+            "random": 1
+    },
+    {
+            "items": ["Noweather"]
     }
   ]
 }
