@@ -5,5 +5,13 @@
     "needsWeather": {
         "hidden": true,
         "yaml_option": ["!Remove_weather_locations"]
+    },
+    "GameShield": {
+        "hidden": true,
+        "yaml_option": ["!Remove_weather_locations"]
+    },
+    "GameSword": {
+        "hidden": true,
+        "yaml_option": ["!Remove_weather_locations"]
     }
 }

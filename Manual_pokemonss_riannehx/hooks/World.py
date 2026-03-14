@@ -46,6 +46,7 @@ def after_create_regions(world: World, multiworld: MultiWorld, player: int):
     locationNamesToRemove: list[str] = [] # List of location names
 
     # Add your code here to calculate which locations to remove
+    game_version = get_option_value(multiworld, player, "game_version")
 
     for region in multiworld.regions:
         if region.player == player:
