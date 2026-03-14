@@ -578,10 +578,21 @@
     "requires": "|Hammerlocke Hills| AND (|Thunderstorm| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm|)"
   },
   {
-    "name": "Kommo-o/Tyranitar",
+    "name": "Tyranitar",
     "category": [
       "Special overworld spawn",
       "Dusty Bowl",
+      "GameShield",
+      "needsWeather"
+    ],
+    "requires": "|Dusty Bowl| AND (|Normal weather| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|)"
+  },
+  {
+    "name": "Kommo-o",
+    "category": [
+      "Special overworld spawn",
+      "Dusty Bowl",
+      "GameSword",
       "needsWeather"
     ],
     "requires": "|Dusty Bowl| AND (|Normal weather| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|)"
