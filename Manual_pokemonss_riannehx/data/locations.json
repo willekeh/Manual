@@ -785,7 +785,7 @@
       "Rolling Fields",
       "needsWeather"
     ],
-    "requires": "|Bridge Field| AND |Thunderstorm|"
+    "requires": "|Rolling Fields| AND |Thunderstorm|"
   },
   {
     "name": "Piloswine",
@@ -941,10 +941,9 @@
     "category": [
       "Special overworld spawn",
       "Dusty Bowl",
-      "Giant's Mirror",
       "needsWeather"
     ],
-    "requires": "(|Giant's Mirror| AND (|Intense Sun| OR |Fog|)) OR (|Dusty Bowl| AND (|Normal weather| OR |Overcast| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|))"
+    "requires": "(|Dusty Bowl| AND (|Normal weather| OR |Overcast| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|))"
   },
   {
     "name": "Sylveon",
@@ -1032,11 +1031,10 @@
     "name": "Vikavolt",
     "category": [
       "Special overworld spawn",
-      "Giant's Mirror",
       "Giant's Seat",
       "needsWeather"
     ],
-    "requires": "(|Giant's Mirror| AND (|Normal weather| OR |Overcast| OR |Intense Sun| OR |Sandstorm|)) OR (|Giant's Seat| AND (|Normal weather| OR |Overcast| OR |Intense Sun| OR |Sandstorm|))"
+    "requires": "(|Giant's Seat| AND (|Normal weather| OR |Overcast| OR |Intense Sun| OR |Sandstorm|))"
   },
   {
     "name": "Vileplume",
