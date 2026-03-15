@@ -632,6 +632,16 @@
     "requires": "|North Lake Miloch| AND |Normal weather|"
   },
   {
+    "name": "Ludicolo",
+    "category": [
+      "Special overworld spawn",
+      "Dappled Grove",
+      "GameShield",
+      "needsWeather"
+    ],
+    "requires": "|Dappled Grove| AND (|Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Fog|)"
+  },
+  {
     "name": "Machamp",
     "category": [
       "Special overworld spawn",
@@ -883,10 +893,11 @@
     "requires": "(|Axew's Eye| AND |Thunderstorm| AND |Progressive bike:2|) OR (|Bridge Field| AND (|Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Fog|)) OR (|Dappled Grove| AND (|Raining| OR |Thunderstorm|)) OR (|Dusty Bowl| AND (|Raining| OR |Thunderstorm|)) OR (|Giant's Cap| AND |Raining|) OR (|Giant's Mirror| AND |Raining|) OR (|North Lake Miloch| AND (|Overcast| OR |Thunderstorm|))"
   },
   {
-    "name": "Shiftry/Ludicolo",
+    "name": "Shiftry",
     "category": [
       "Special overworld spawn",
       "Dappled Grove",
+      "GameSword",
       "needsWeather"
     ],
     "requires": "|Dappled Grove| AND (|Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Fog|)"

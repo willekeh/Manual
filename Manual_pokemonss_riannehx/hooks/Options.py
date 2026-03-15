@@ -25,9 +25,9 @@ class GameVersion(Choice):
     """Choose which game you are playing. 
     This matters for the different version exclusives. Default removes all exclusives"""
     display_name = "Game Version"
-    option_All = 1
-    option_SH = 2
-    option_SW = 3
+    option_RemoveAll = 1
+    option_Shield = 2
+    option_Sword = 3
     default = 1
 
 # This is called before any manual options are defined, in case you want to define your own with a clean slate or let Manual define over them

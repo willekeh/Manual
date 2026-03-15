@@ -7,11 +7,12 @@
         "yaml_option": ["!Remove_weather_locations"]
     },
     "GameShield": {
-        "hidden": true,
-        "yaml_option": ["!Remove_weather_locations"]
+        "hidden": true
     },
     "GameSword": {
-        "hidden": true,
-        "yaml_option": ["!Remove_weather_locations"]
+        "hidden": true
+    },
+    "AllWeather": {
+        "hidden": true
     }
 }

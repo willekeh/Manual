@@ -48,6 +48,16 @@ def after_create_regions(world: World, multiworld: MultiWorld, player: int):
     # Add your code here to calculate which locations to remove
     game_version = get_option_value(multiworld, player, "game_version")
 
+
+    if game_version == 1:
+        locationNamesToRemove += world.location_name_groups["GameShield"]
+        locationNamesToRemove += world.location_name_groups["GameSword"]
+    if game_version == 2: #Shield
+        locationNamesToRemove += world.location_name_groups["GameSword"]
+    if game_version == 3: #Sword
+        locationNamesToRemove += world.location_name_groups["GameShield"]
+
+        
     for region in multiworld.regions:
         if region.player == player:
             for location in list(region.locations):
