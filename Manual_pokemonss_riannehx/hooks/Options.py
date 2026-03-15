@@ -21,19 +21,18 @@ from typing import Type, Any
 # Then, to see if the option is set, you can call is_option_enabled or get_option_value.
 #####################################################################
 
-
-# To add an option, use the before_options_defined hook below and something like this:
-#   options["total_characters_to_win_with"] = TotalCharactersToWinWith
-#
-class TotalCharactersToWinWith(Range):
-    """Instead of having to beat the game with all characters, you can limit locations to a subset of character victory locations."""
-    display_name = "Number of characters to beat the game with before victory"
-    range_start = 10
-    range_end = 50
-    default = 50
+class GameVersion(Choice):
+    """Choose which game you are playing. 
+    This matters for the different version exclusives. Default removes all exclusives"""
+    display_name = "Game Version"
+    option_RemoveAll = 1
+    option_Shield = 2
+    option_Sword = 3
+    default = 1
 
 # This is called before any manual options are defined, in case you want to define your own with a clean slate or let Manual define over them
 def before_options_defined(options: dict[str, Type[Option[Any]]]) -> dict[str, Type[Option[Any]]]:
+    options["game_version"] = GameVersion
     return options
 
 # This is called after any manual options are defined, in case you want to see what options are defined or want to modify the defined options
