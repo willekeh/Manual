@@ -51,24 +51,9 @@
             "allow_custom_value": false,
             "group": "Example Options"
         },
-        "Example_Range":{
-            "type": "Range",
-            "description": [
-                "This is a Range",
-                "Allow the player to specify a value between 'start' and 'end'",
-                "if you include a \"values\" you can define the label for certain values",
-                "Currently the only use for Range in Manual outside of hooks is 'filler_trap'"
-            ],
-            "range_start": 0,
-            "default": 1,
-            "range_end": 10,
-            "values": {"example": 2},
-            "group": "Example Options"
-        },
-
         "DLC_enabled":{
             "display_name": "DLC Enabled",
-            "description": "Is the Dlc enabled?",
+            "description": "Is the Dlc enabled? Currently doesnt work",
             "type": "Toggle",
             "visibility": [
                 "simple_ui",
