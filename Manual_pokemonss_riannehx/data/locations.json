@@ -238,9 +238,10 @@
     "name": "Doublade",
     "category": [
       "Special overworld spawn",
-      "Giant's Cap"
+      "Giant's Cap",
+      "needsWeather"
     ],
-    "requires": "(|Giant's Cap| AND (|Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm|)) OR (|Giant's Cap| AND |Noweather|)"
+    "requires": "(|Giant's Cap| AND (|Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm|))"
   },
   {
     "name": "Drapion",
