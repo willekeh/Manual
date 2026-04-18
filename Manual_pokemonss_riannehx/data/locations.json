@@ -203,7 +203,7 @@
       "Special overworld spawn",
       "Axew's Eye"
     ],
-    "requires": "(|Axew's Eye| AND (|Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|) AND |Progressive bike:2|) OR (|Axew's Eye| AND |Noweather|)"
+    "requires": "(|Axew's Eye| AND (|Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|) AND |Progressive bike:2|) OR (|Axew's Eye| AND |Noweather| AND |Progressive bike:2|)"
   },
   {
     "name": "Crawdaunt",
