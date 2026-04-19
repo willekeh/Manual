@@ -81,7 +81,7 @@
       "Giant's Mirror",
       "needsWeather"
     ],
-    "requires": "|Giant's Mirror| AND |Normal weather|"
+    "requires": "|Giant's Mirror| AND (|Normal weather| OR |Intense Sun| OR |Fog|)"
   },
   {
     "name": "Bewear",
@@ -295,9 +295,10 @@
       "Special overworld spawn",
       "Giant's Seat",
       "Watchtower Ruins",
+      "Dusty Bowl",
       "needsWeather"
     ],
-    "requires": "(|Giant's Seat| AND |Fog|) OR (|Watchtower Ruins| AND (|Overcast| OR |Raining| OR |Thunderstorm| OR |Sandstorm|))"
+    "requires": "(|Giant's Seat| AND |Fog|) OR (|Watchtower Ruins| AND (|Overcast| OR |Raining| OR |Thunderstorm| OR |Sandstorm|)) OR (|Giant's Seat| AND |Fog|)"
   },
   {
     "name": "Dusknoir",
@@ -421,7 +422,7 @@
       "Dusty Bowl",
       "needsWeather"
     ],
-    "requires": "|Dusty Bowl| AND (|Normal weather| OR |Intense Sun| OR |Sandstorm|)"
+    "requires": "|Dusty Bowl| AND (|Normal weather| OR |Intense Sun|)"
   },
   {
     "name": "Glaceon",
