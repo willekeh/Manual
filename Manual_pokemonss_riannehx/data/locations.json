@@ -629,7 +629,7 @@
       "Giant's Mirror",
       "needsWeather"
     ],
-    "requires": "|Giant's Mirror| AND (|Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|)"
+    "requires": "|Giant's Mirror| AND (|Normal weather| OR |Overcast| OR |Thunderstorm| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|)"
   },
   {
     "name": "Machoke",
