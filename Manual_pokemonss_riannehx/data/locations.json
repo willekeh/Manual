@@ -234,7 +234,7 @@
             "Watchtower Ruins",
             "needsWeather"
         ],
-        "requires": "(|North Lake Miloch| AND |Fog|) OR (|South Lake Miloch| AND |Fog|) OR (|Watchtower Ruins| AND (|Normal weather| OR |Snowing| OR |Intense Sun|))"
+        "requires": "((|North Lake Miloch| OR |South Lake Miloch|) AND (|Fog| OR ((|Normal weather| OR |Overcast| OR |Snowstorm|) AND |Progressive bike:2|))) OR (|Watchtower Ruins| AND (|Normal weather| OR |Snowing| OR |Intense Sun|))"
     },
     {
         "name": "Dubwool",
@@ -401,8 +401,12 @@
     },
     {
         "name": "Grapploct",
-        "category": ["Special overworld spawn", "Lake of Outrage"],
-        "requires": "(|Lake of Outrage| AND (|Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|) AND |Progressive bike:2|) OR (|Lake of Outrage| AND |Noweather| AND |Progressive bike:2|)"
+        "category": [
+            "Special overworld spawn",
+            "Lake of Outrage",
+            "West Lake Axewell"
+        ],
+        "requires": "(|Lake of Outrage| AND (|Noweather| OR |Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|) AND |Progressive bike:2|) OR (|West Lake Axewell| AND (|Normal weather| OR |Overcast| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|) AND |Progressive bike:2|)"
     },
     {
         "name": "Greedent",
@@ -658,12 +662,15 @@
         "category": [
             "Special overworld spawn",
             "Rolling Fields",
+            "Bridge Field",
             "East Lake Axewell",
+            "Lake of Outrage",
             "North Lake Miloch",
             "West Lake Axewell",
+            "South Lake Miloch",
             "needsWeather"
         ],
-        "requires": "(|Rolling Fields| AND |Raining|) OR (|West Lake Axewell| AND (|Raining| OR |Thunderstorm|)) OR (|East Lake Axewell| AND (|Raining| OR |Thunderstorm|)) OR (|North Lake Miloch| AND (|Raining| OR |Thunderstorm|))"
+        "requires": "(|Rolling Fields| AND |Raining|) OR (|South Lake Miloch| AND (|Overcast| OR |Raining| OR |Thunderstorm| OR |Intense Sun|) AND |Progressive bike:2|) OR ((|West Lake Axewell| OR |East Lake Axewell|) AND ((|Raining| OR |Thunderstorm|) OR ((|Normal weather| OR |Overcast| OR |Intense Sun|) AND |Progressive bike:2|))) OR ((|North Lake Miloch|) AND ((|Raining| OR |Thunderstorm|) OR (|Intense Sun| AND |Progressive bike:2|))) OR ((|Bridge Field| OR |Lake of Outrage|) AND |Intense Sun| AND |Progressive bike:2|)"
     },
     {
         "name": "Perrserker",
@@ -882,8 +889,17 @@
     },
     {
         "name": "Vanilluxe",
-        "category": ["Special overworld spawn", "Bridge Field", "needsWeather"],
-        "requires": "|Bridge Field| AND (|Snowing| OR |Snowstorm|)"
+        "category": [
+            "Special overworld spawn",
+            "Bridge Field",
+            "East Lake Axewell",
+            "Lake of Outrage",
+            "North Lake Miloch",
+            "South Lake Miloch",
+            "West Lake Axewell",
+            "needsWeather"
+        ],
+        "requires": "(|Bridge Field| AND (|Snowing| OR |Snowstorm|)) OR ((|East Lake Axewell| OR |Lake of Outrage| OR |North Lake Miloch| OR |South Lake Miloch| OR |West Lake Axewell|) AND (|Snowing| OR |Snowstorm|) AND |Progressive bike:2|)"
     },
     {
         "name": "Vaporeon",
@@ -934,5 +950,119 @@
             "needsWeather"
         ],
         "requires": "(|East Lake Axewell| AND (|Normal weather| OR |Overcast| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|)) OR (|Giant's Mirror| AND (|Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Sandstorm| OR |Fog|)) OR (|North Lake Miloch| AND (|Normal weather| OR |Overcast| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|))"
+    },
+    {
+        "name": "Seaking",
+        "category": [
+            "Special overworld spawn",
+            "Bridge Field",
+            "East Lake Axewell",
+            "Lake of Outrage",
+            "North Lake Miloch",
+            "South Lake Miloch",
+            "West Lake Axewell",
+            "needsWeather"
+        ],
+        "requires": "((|Bridge Field| OR |West Lake Axewell|) AND (|Normal weather| OR |Overcast| OR |Sandstorm|) AND |Progressive bike:2|) OR (|East Lake Axewell| AND (|Normal weather| OR |Overcast| OR |Sandstorm| OR |Intense Sun|) AND |Progressive bike:2|) OR (|Lake of Outrage| AND (|Overcast| OR |Sandstorm| OR |Intense Sun|) AND |Progressive bike:2|) OR (|North Lake Miloch| AND (|Raining| OR |Thunderstorm| OR |Fog|) AND |Progressive bike:2|) OR (|South Lake Miloch| AND (|Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Sandstorm|) AND |Progressive bike:2|)"
+    },
+    {
+        "name": "Lanturn",
+        "category": [
+            "Special overworld spawn",
+            "Bridge Field",
+            "East Lake Axewell",
+            "Lake of Outrage",
+            "South Lake Miloch",
+            "West Lake Axewell",
+            "needsWeather"
+        ],
+        "requires": "((|East Lake Axewell| OR |Lake of Outrage|) AND (|Normal weather| OR |Thunderstorm| OR |Fog|) AND |Progressive bike:2|) OR ((|Bridge Field| OR |South Lake Miloch| OR |West Lake Axewell|) AND |Thunderstorm| AND |Progressive bike:2|)"
+    },
+    {
+        "name": "Gyarados",
+        "category": [
+            "Special overworld spawn",
+            "Bridge Field",
+            "Dusty Bowl",
+            "East Lake Axewell",
+            "Lake of Outrage",
+            "North Lake Miloch",
+            "South Lake Miloch",
+            "West Lake Axewell"
+        ],
+        "requires": "((|Bridge Field| OR |Dusty Bowl| OR |East Lake Axewell| OR |West Lake Axewell|) AND (|Noweather| OR |Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|) AND |Progressive bike:2|) OR ((|Lake of Outrage| OR |South Lake Miloch|) AND (|Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm|) AND |Progressive bike:2|) OR (|North Lake Miloch| AND (|Overcast| OR |Thunderstorm| OR |Intense Sun| OR |Sandstorm|) AND |Progressive bike:2|)"
+    },
+    {
+        "name": "Gastrodon",
+        "category": ["Special overworld spawn", "Giant's Mirror", "Dusty Bowl"],
+        "requires": "(|Giant's Mirror| OR |Dusty Bowl|) AND (|Noweather| OR |Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|) AND |Progressive bike:2|"
+    },
+    {
+        "name": "Jellicent",
+        "category": [
+            "Special overworld spawn",
+            "East Lake Axewell",
+            "Lake of Outrage",
+            "North Lake Miloch",
+            "South Lake Miloch",
+            "West Lake Axewell",
+            "needsWeather"
+        ],
+        "requires": "(|East Lake Axewell| AND (|Normal weather| OR |Overcast| OR |Raining| OR |Fog|) AND |Progressive bike:2|) OR (|Giant's Mirror| AND |Noweather| AND |Progressive bike:2|) OR ((|Lake of Outrage| OR |North Lake Miloch| OR |West Lake Axewell|) AND (|Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Fog|) AND |Progressive bike:2|) OR (|South Lake Miloch| AND (|Raining| OR |Fog|) AND |Progressive bike:2|)"
+    },
+    {
+        "name": "Cloyster",
+        "category": [
+            "Special overworld spawn",
+            "East Lake Axewell",
+            "West Lake Axewell",
+            "needsWeather"
+        ],
+        "requires": "(|East Lake Axewell| AND (|Normal weather| OR |Fog|) AND |Progressive bike:2|) OR (|West Lake Axewell| AND (|Normal weather| OR |Fog|) AND |Progressive bike:2|)"
+    },
+    {
+        "name": "Milotic",
+        "category": [
+            "Special overworld spawn",
+            "Lake of Outrage",
+            "South Lake Miloch",
+            "needsWeather"
+        ],
+        "requires": "(|South Lake Miloch| OR |Lake of Outrage|) AND |Fog| AND |Progressive bike:2|"
+    },
+    {
+        "name": "Lapras",
+        "category": [
+            "Special overworld spawn",
+            "Lake of Outrage",
+            "North Lake Miloch",
+            "West Lake Axewell",
+            "needsWeather"
+        ],
+        "requires": "(|Lake of Outrage| OR |North Lake Miloch| OR |West Lake Axewell|) AND (|Normal weather| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Fog|) AND |Progressive bike:2|"
+    },
+    {
+        "name": "Wailmer",
+        "category": ["Special overworld spawn", "Motostoke Riverbank"],
+        "requires": "|Motostoke Riverbank| AND (|Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog| OR |Noweather|) AND |Progressive bike:2|"
+    },
+    {
+        "name": "Whiscash",
+        "category": [
+            "Special overworld spawn",
+            "North Lake Miloch",
+            "South Lake Miloch",
+            "needsWeather"
+        ],
+        "requires": "((|North Lake Miloch| OR |South Lake Miloch|) AND (|Intense Sun| OR |Sandstorm|) AND |Progressive bike:2|) OR (|South Lake Miloch| AND (|Normal weather| OR |Thunderstorm|) AND |Progressive bike:2|)"
+    },
+    {
+        "name": "Octillery",
+        "category": [
+            "Special overworld spawn",
+            "South Lake Miloch",
+            "needsWeather"
+        ],
+        "requires": "|South Lake Miloch| AND (|Normal weather| OR |Intense Sun| OR |Sandstorm| OR |Fog|) AND |Progressive bike:2|"
     }
 ]
