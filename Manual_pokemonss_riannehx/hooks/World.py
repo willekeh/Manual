@@ -73,6 +73,27 @@ def after_create_regions(world: World, multiworld: MultiWorld, player: int):
 #       will create 5 items that are the "useful trap" class
 # {"Item Name": {ItemClassification.useful: 5}} <- You can also use the classification directly
 def before_create_items_all(item_config: dict[str, int|dict], world: World, multiworld: MultiWorld, player: int) -> dict[str, int|dict]:
+    location_count = len(world.get_locations())
+    shards_total = world.options.broken_shards_total.value
+
+    other_items_count = 0
+    for name, data in item_config.items():
+        if name != "Broken shards":
+            if isinstance(data, dict):
+                other_items_count += sum(data.values())
+            else:
+                other_items_count += data
+
+    free_space = location_count - other_items_count
+
+    if shards_total > free_space:
+        #check if shards total is higher then free space
+        shards_total = max(0, free_space) 
+        world.options.broken_shards_total.value = shards_total
+    
+    #overwrite broken shards amount from yaml
+    item_config["Broken shards"] = shards_total
+    
     return item_config
 
 # The item pool before starting items are processed, in case you want to see the raw item pool at that stage
@@ -114,6 +135,16 @@ def before_set_rules(world: World, multiworld: MultiWorld, player: int):
 # Called after rules for accessing regions and locations are created, in case you want to see or modify that information.
 def after_set_rules(world: World, multiworld: MultiWorld, player: int):
     # Use this hook to modify the access rules for a given location
+    total = world.options.broken_shards_total.value
+    required = world.options.broken_shards_required.value
+    
+    # Failsafe incase of wrong way around
+    final_required = min(total, required)
+    
+    eternatus_loc = multiworld.get_location("Eternatus", player)
+    
+    # Set Broken Shard required
+    eternatus_loc.access_rule = lambda state: state.has("Broken shards", player, final_required)
 
     def Example_Rule(state: CollectionState) -> bool:
         # Calculated rules take a CollectionState object and return a boolean

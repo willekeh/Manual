@@ -32,17 +32,16 @@ class GameVersion(Choice):
 
 class BrokenShardsTotal(Range):
     """Choose the number of Goal items (macguffin hunt goal item) in the pool.
-    This gets reduced automatically if there are too few locations.
-    This is only for the special encounter goal"""
+    This gets reduced automatically if there are too few locations. This is only for the special encounter goal"""
     display_name = "Number of broken shards in the pool"
     range_start = 1
     range_end = 40
-    default = 40
+    default = 15
 
 class BrokenShardsRequired(Range):
-    """Choose the number of Spiritomb wisps required to win.
-    If this is set higher than wisps_total, it is reduced to match."""
-    display_name = "Number of wisps required to win"
+    """Choose the number of Broken shards required to win.
+    If this is set higher than BrokenShardsTotal, it is reduced to match."""
+    display_name = "Number of broken shards required to win"
     range_start = 1
     range_end = 40
     default = 10

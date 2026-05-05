@@ -3,7 +3,7 @@
         "name": "Eternatus",
         "victory": true,
         "category": ["Win Condition"],
-        "requires": "|Broken shards:10|"
+        "requires": "|Broken shards|"
     },
     {
         "name": "Abomasnow",
