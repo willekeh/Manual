@@ -2,13 +2,13 @@
     "$schema": "https://raw.githubusercontent.com/ManualForArchipelago/Manual/main/schemas/Manual.options.schema.json",
     "_comment": "Add a _ before an option name to comment it out and it wont be added to the apworld",
     "core": {
-        "goal":{
+        "goal": {
             "_comment": [
                 "Using 'goal' as the name of an option let you override some of the generated goal parameters"
             ],
             "display_name": "The End Objective",
             "description": "How to End your Randomized playthrough.",
-            "aliases": {"easiest": 0},
+            "aliases": { "easiest": 0 },
             "hidden": false
         },
         "death_link": {
@@ -22,11 +22,7 @@
         }
     },
     "user": {
-        "_commented_out_option":{
-            "type": "Toggle",
-            "default": true
-        },
-        "Remove_weather_locations":{
+        "Remove_weather_locations": {
             "description": [
                 "no time travel needed",
                 "this excludes certain Pokemon that only appear during certain weather conditions to be considered in logic",
@@ -35,48 +31,12 @@
             "type": "Toggle",
             "default": false
         },
-        "Example_Choice":{
-            "type": "Choice",
-            "description": [
-                "This is a Choice",
-                "Let the user pick from a list of values",
-                "allow_custom_value let a player define their own text value",
-                "Currently the only use for Choice in Manual outside of hooks is the goal"
-            ],
-            "values": {
-                "start":0,
-                "test":1
-             },
-            "default": 0,
-            "allow_custom_value": false,
-            "group": "Example Options"
-        },
-        "Example_Range":{
-            "type": "Range",
-            "description": [
-                "This is a Range",
-                "Allow the player to specify a value between 'start' and 'end'",
-                "if you include a \"values\" you can define the label for certain values",
-                "Currently the only use for Range in Manual outside of hooks is 'filler_trap'"
-            ],
-            "range_start": 0,
-            "default": 1,
-            "range_end": 10,
-            "values": {"example": 2},
-            "group": "Example Options"
-        },
-
-        "DLC_enabled":{
+        "DLC_enabled": {
             "display_name": "DLC Enabled",
-            "description": "Is the Dlc enabled?",
+            "description": "Is the Dlc enabled? Currently doesnt work, is a WIP",
             "type": "Toggle",
-            "visibility": [
-                "simple_ui",
-                "complex_ui",
-                "template"
-            ],
+            "visibility": ["simple_ui", "complex_ui", "template"],
             "default": true
         }
     }
-
 }
