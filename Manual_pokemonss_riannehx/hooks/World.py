@@ -83,8 +83,10 @@ def before_create_items_all(item_config: dict[str, int|dict], world: World, mult
                 other_items_count += sum(data.values())
             else:
                 other_items_count += data
-
-    free_space = location_count - other_items_count
+                
+    #To crash less with minimal settings and minimal progression
+    buffer = 3 
+    free_space = location_count - other_items_count - buffer
 
     if shards_total > free_space:
         #check if shards total is higher then free space
