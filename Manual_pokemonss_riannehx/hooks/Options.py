@@ -30,6 +30,13 @@ class GameVersion(Choice):
     option_Sword = 3
     default = 1
 
+class RegionStart(Choice):
+    """Choose either fixed or random start. Fixed will always start you off in Rolling Fields and if enabled Normal weather"""
+    display_name = "Starting Logic"
+    option_fixed = 1
+    option_random = 2
+    default = 1
+
 class BrokenShardsTotal(Range):
     """Choose the number of Goal items (macguffin hunt goal item) in the pool.
     This gets reduced automatically if there are too few locations. This is only for the special encounter goal"""
@@ -51,6 +58,7 @@ def before_options_defined(options: dict[str, Type[Option[Any]]]) -> dict[str, T
     options["game_version"] = GameVersion
     options["broken_shards_total"] = BrokenShardsTotal
     options["broken_shards_required"] = BrokenShardsRequired
+    options["region_start"] = RegionStart
     return options
 
 # This is called after any manual options are defined, in case you want to see what options are defined or want to modify the defined options

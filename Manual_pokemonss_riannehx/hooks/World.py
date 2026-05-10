@@ -100,6 +100,38 @@ def before_create_items_all(item_config: dict[str, int|dict], world: World, mult
 
 # The item pool before starting items are processed, in case you want to see the raw item pool at that stage
 def before_create_items_starting(item_pool: list, world: World, multiworld: MultiWorld, player: int) -> list:
+    start_logic = get_option_value(multiworld, player, "region_start")
+    
+    start_inventory_names = []
+
+    if start_logic == 1: 
+        # Option 1: Fixed start
+        start_inventory_names = ["Rolling Fields", "Normal weather"]
+    else: 
+        # Option 2: Random start
+        locations = [
+            "Rolling Fields", "Bridge Field", "Dappled Grove", "Dusty Bowl", 
+            "Giant's Mirror", "East Lake Axewell", "Giant's Cap", "Giant's Seat", 
+            "Hammerlocke Hills", "Motostoke Riverbank", "North Lake Miloch", 
+            "South Lake Miloch", "Stony Wilderness", "Watchtower Ruins", "West Lake Axewell"
+        ]
+        weather = [
+            "Normal weather", "Overcast", "Raining", "Thunderstorm", 
+            "Snowing", "Snowstorm", "Intense Sun", "Sandstorm", "Fog"
+        ]
+        
+        # Select one random location and one random weather
+        start_inventory_names.append(multiworld.random.choice(locations))
+        start_inventory_names.append(multiworld.random.choice(weather))
+
+    # Process the selected items: push to precollected and remove from the main pool
+    for item_name in start_inventory_names:
+        # Find the item in the pool
+        found_item = next((item for item in item_pool if item.name == item_name), None)
+        
+        if found_item:
+            multiworld.push_precollected(found_item)
+            item_pool.remove(found_item)
     return item_pool
 
 # The item pool after starting items are processed but before filler is added, in case you want to see the raw item pool at that stage
