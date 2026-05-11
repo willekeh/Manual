@@ -31,10 +31,13 @@ class GameVersion(Choice):
     default = 1
 
 class RegionStart(Choice):
-    """Choose either fixed or random start. Fixed will always start you off in Rolling Fields and if enabled Normal weather"""
+    """Choose how much you want to randomize your starting area, Fixed: Rolling fields + Normal weather, Region: Random + Normal weather,
+    Weather: Rolling fields + Random, Both: both random"""
     display_name = "Starting Logic"
-    option_fixed = 1
-    option_random = 2
+    option_Fixed = 1
+    option_Region = 2
+    option_Weather = 3
+    option_Both = 4
     default = 1
 
 class BrokenShardsTotal(Range):
