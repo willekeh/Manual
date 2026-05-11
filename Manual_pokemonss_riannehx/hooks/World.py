@@ -93,13 +93,50 @@ def before_create_items_all(item_config: dict[str, int|dict], world: World, mult
         shards_total = max(0, free_space) 
         world.options.broken_shards_total.value = shards_total
     
-    #overwrite broken shards amount from yaml
     item_config["Broken shards"] = shards_total
     
     return item_config
 
 # The item pool before starting items are processed, in case you want to see the raw item pool at that stage
 def before_create_items_starting(item_pool: list, world: World, multiworld: MultiWorld, player: int) -> list:
+    start_logic = get_option_value(multiworld, player, "region_start")
+    
+    start_inventory_names = []
+
+    locations = [
+        "Rolling Fields", "Bridge Field", "Dappled Grove", "Dusty Bowl", 
+        "Giant's Mirror", "East Lake Axewell", "Giant's Cap", "Giant's Seat", 
+        "Hammerlocke Hills", "Motostoke Riverbank", "North Lake Miloch", 
+        "South Lake Miloch", "Stony Wilderness", "Watchtower Ruins", "West Lake Axewell"
+    ]
+    weather = [
+        "Normal weather", "Overcast", "Raining", "Thunderstorm", 
+        "Snowing", "Snowstorm", "Intense Sun", "Sandstorm", "Fog"
+    ]
+
+    if start_logic == 1: # Fixed
+        start_inventory_names = ["Rolling Fields", "Normal weather"]
+
+    elif start_logic == 2: # Region (Random region, Fixed weather)
+        multiworld.random.shuffle(locations)
+        start_inventory_names = [locations[0], "Normal weather"]
+
+    elif start_logic == 3: # Weather (Fixed region, Random weather)
+        multiworld.random.shuffle(weather)
+        start_inventory_names = ["Rolling Fields", weather[0]]
+
+    elif start_logic == 4: # Both (Both random)
+        multiworld.random.shuffle(locations)
+        multiworld.random.shuffle(weather)
+        start_inventory_names = [locations[0], weather[0]]
+
+    for item_name in start_inventory_names:
+        found_item = next((item for item in item_pool if item.name == item_name), None)
+        
+        if found_item:
+            multiworld.push_precollected(found_item)
+            item_pool.remove(found_item)
+
     return item_pool
 
 # The item pool after starting items are processed but before filler is added, in case you want to see the raw item pool at that stage
