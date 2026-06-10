@@ -33,7 +33,7 @@
         },
         "DLC_enabled": {
             "display_name": "DLC Enabled",
-            "description": "Is the Dlc enabled? Currently doesnt work, is a WIP",
+            "description": "Is the DlC enabled? Currently doesnt work, is a WIP",
             "type": "Toggle",
             "visibility": ["simple_ui", "complex_ui", "template"],
             "default": true

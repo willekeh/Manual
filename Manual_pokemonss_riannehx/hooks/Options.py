@@ -28,6 +28,7 @@ class GameVersion(Choice):
     option_RemoveAll = 1
     option_Shield = 2
     option_Sword = 3
+    option_Both = 4
     default = 1
 
 class RegionStart(Choice):
