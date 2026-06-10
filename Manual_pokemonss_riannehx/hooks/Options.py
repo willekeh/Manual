@@ -56,12 +56,18 @@ class BrokenShardsRequired(Range):
     range_end = 40
     default = 10
 
+class DenSanity(Toggle):
+    """Adds Den Sanity, you only need to see or interact with it."""
+    display_name = "Den sanity"
+    default = 0
+
 # This is called before any manual options are defined, in case you want to define your own with a clean slate or let Manual define over them
 def before_options_defined(options: dict[str, Type[Option[Any]]]) -> dict[str, Type[Option[Any]]]:
     options["game_version"] = GameVersion
     options["broken_shards_total"] = BrokenShardsTotal
     options["broken_shards_required"] = BrokenShardsRequired
     options["region_start"] = RegionStart
+    options["den_sanity"] = DenSanity
     return options
 
 # This is called after any manual options are defined, in case you want to see what options are defined or want to modify the defined options

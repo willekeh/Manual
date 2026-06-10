@@ -1,3 +1,6 @@
+import pkgutil
+import json
+import re
 # called after the game.json file has been loaded
 def after_load_game_file(game_table: dict) -> dict:
     return game_table
@@ -14,6 +17,21 @@ def after_load_progressive_item_file(progressive_item_table: list) -> list:
 # called after the locations.json file has been loaded, before any location loading or processing has occurred
 # if you need access to the locations after processing to add ids, etc., you should use the hooks in World.py
 def after_load_location_file(location_table: list) -> list:
+    package_base_name = re.sub(r'\.hooks\.\w+$', '.Data', __name__)
+    
+    # Extra Locations files
+    extra_location_files = ["data/locations_dens.json"]
+    
+    for file_path in extra_location_files:
+        try:
+            #Parse to json
+            raw_bytes = pkgutil.get_data(package_base_name, file_path)
+            if raw_bytes:
+                extra_data = json.loads(raw_bytes.decode("utf-8"))
+                location_table.extend(extra_data)
+        except Exception as e:
+            print(f"Error loading extra hook location file {file_path}: {e}")
+            
     return location_table
 
 # called after the locations.json file has been loaded, before any location loading or processing has occurred

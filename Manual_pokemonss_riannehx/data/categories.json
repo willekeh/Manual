@@ -14,5 +14,9 @@
     },
     "AllWeather": {
         "hidden": true
+    },
+    "Dens": {
+        "hidden": true,
+        "yaml_option": ["den_sanity"]
     }
 }

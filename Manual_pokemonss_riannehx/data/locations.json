@@ -20,7 +20,7 @@
     {
         "name": "Aegislash",
         "category": ["Special overworld spawn", "Giant's Cap", "needsWeather"],
-        "requires": "|Giant's Cap| and |Fog|"
+        "requires": "|Giant's Cap| AND |Fog|"
     },
     {
         "name": "Araquanid",
