@@ -56,6 +56,7 @@ def after_create_regions(world: World, multiworld: MultiWorld, player: int):
         locationNamesToRemove += world.location_name_groups["GameSword"]
     if game_version == 3: #Sword
         locationNamesToRemove += world.location_name_groups["GameShield"]
+    # 4 == Both games
 
         
     for region in multiworld.regions:
