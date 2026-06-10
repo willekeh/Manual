@@ -1,0 +1,497 @@
+[
+    {
+        "name": "Axew's Eye - Den 1",
+        "category": ["Dens", "Axew's Eye"],
+        "requires": "|Axew's Eye| AND |Progressive bike:2|"
+    },
+    {
+        "name": "Rolling Fields - Den 1",
+        "category": ["Dens", "Rolling Fields"],
+        "requires": "|Rolling Fields|"
+    },
+    {
+        "name": "Rolling Fields - Den 2",
+        "category": ["Dens", "Rolling Fields"],
+        "requires": "|Rolling Fields|"
+    },
+    {
+        "name": "Rolling Fields - Den 3",
+        "category": ["Dens", "Rolling Fields"],
+        "requires": "|Rolling Fields|"
+    },
+    {
+        "name": "Rolling Fields - Den 4",
+        "category": ["Dens", "Rolling Fields"],
+        "requires": "|Rolling Fields|"
+    },
+    {
+        "name": "Rolling Fields - Den 5",
+        "category": ["Dens", "Rolling Fields"],
+        "requires": "|Rolling Fields|"
+    },
+    {
+        "name": "Rolling Fields - Den 6",
+        "category": ["Dens", "Rolling Fields"],
+        "requires": "|Rolling Fields|"
+    },
+    {
+        "name": "Rolling Fields - Den 7",
+        "category": ["Dens", "Rolling Fields"],
+        "requires": "|Rolling Fields|"
+    },
+    {
+        "name": "Rolling Fields - Den 8",
+        "category": ["Dens", "Rolling Fields"],
+        "requires": "|Rolling Fields|"
+    },
+    {
+        "name": "Rolling Fields - Den 9",
+        "category": ["Dens", "Rolling Fields"],
+        "requires": "|Rolling Fields|"
+    },
+    {
+        "name": "Dappled Grove - Den 1",
+        "category": ["Dens", "Dappled Grove"],
+        "requires": "|Dappled Grove|"
+    },
+    {
+        "name": "Dappled Grove - Den 2",
+        "category": ["Dens", "Dappled Grove"],
+        "requires": "|Dappled Grove|"
+    },
+    {
+        "name": "Dappled Grove - Den 3",
+        "category": ["Dens", "Dappled Grove"],
+        "requires": "|Dappled Grove|"
+    },
+    {
+        "name": "Dappled Grove - Den 4",
+        "category": ["Dens", "Dappled Grove"],
+        "requires": "|Dappled Grove|"
+    },
+    {
+        "name": "Dappled Grove - Den 5",
+        "category": ["Dens", "Dappled Grove"],
+        "requires": "|Dappled Grove|"
+    },
+    {
+        "name": "West Lake Axewell - Den 1",
+        "category": ["Dens", "West Lake Axewell"],
+        "requires": "|West Lake Axewell|"
+    },
+    {
+        "name": "West Lake Axewell - Den 2",
+        "category": ["Dens", "West Lake Axewell"],
+        "requires": "|West Lake Axewell|"
+    },
+    {
+        "name": "West Lake Axewell - Den 3",
+        "category": ["Dens", "West Lake Axewell"],
+        "requires": "|West Lake Axewell|"
+    },
+    {
+        "name": "West Lake Axewell - Den 4",
+        "category": ["Dens", "West Lake Axewell"],
+        "requires": "|West Lake Axewell|"
+    },
+    {
+        "name": "West Lake Axewell - Den 5",
+        "category": ["Dens", "West Lake Axewell"],
+        "requires": "|West Lake Axewell| AND |Progressive bike:2|"
+    },
+    {
+        "name": "West Lake Axewell - Den 6",
+        "category": ["Dens", "West Lake Axewell"],
+        "requires": "|West Lake Axewell| AND |Progressive bike:2|"
+    },
+    {
+        "name": "Watchtower Ruins - Den 1",
+        "category": ["Dens", "Watchtower Ruins"],
+        "requires": "|Watchtower Ruins|"
+    },
+    {
+        "name": "Watchtower Ruins - Den 2",
+        "category": ["Dens", "Watchtower Ruins"],
+        "requires": "|Watchtower Ruins|"
+    },
+    {
+        "name": "East Lake Axewell - Den 1",
+        "category": ["Dens", "East Lake Axewell"],
+        "requires": "|East Lake Axewell|"
+    },
+    {
+        "name": "East Lake Axewell - Den 2",
+        "category": ["Dens", "East Lake Axewell"],
+        "requires": "|East Lake Axewell|"
+    },
+    {
+        "name": "East Lake Axewell - Den 3",
+        "category": ["Dens", "East Lake Axewell"],
+        "requires": "|East Lake Axewell|"
+    },
+    {
+        "name": "East Lake Axewell - Den 4",
+        "category": ["Dens", "East Lake Axewell"],
+        "requires": "|East Lake Axewell|"
+    },
+    {
+        "name": "East Lake Axewell - Den 5",
+        "category": ["Dens", "East Lake Axewell"],
+        "requires": "|East Lake Axewell| AND |Progressive bike:2|"
+    },
+    {
+        "name": "North Lake Miloch - Den 1",
+        "category": ["Dens", "North Lake Miloch"],
+        "requires": "|North Lake Miloch|"
+    },
+    {
+        "name": "North Lake Miloch - Den 2",
+        "category": ["Dens", "North Lake Miloch"],
+        "requires": "|North Lake Miloch|"
+    },
+    {
+        "name": "North Lake Miloch - Den 3",
+        "category": ["Dens", "North Lake Miloch"],
+        "requires": "|North Lake Miloch|"
+    },
+    {
+        "name": "North Lake Miloch - Den 4",
+        "category": ["Dens", "North Lake Miloch"],
+        "requires": "|North Lake Miloch|"
+    },
+    {
+        "name": "North Lake Miloch - Den 5",
+        "category": ["Dens", "North Lake Miloch"],
+        "requires": "|North Lake Miloch| AND |Progressive bike:2|"
+    },
+    {
+        "name": "North Lake Miloch - Den 6",
+        "category": ["Dens", "North Lake Miloch"],
+        "requires": "|North Lake Miloch| AND |Progressive bike:2|"
+    },
+    {
+        "name": "Giant's Seat - Den 1",
+        "category": ["Dens", "Giant's Seat"],
+        "requires": "|Giant's Seat|"
+    },
+    {
+        "name": "Giant's Seat - Den 2",
+        "category": ["Dens", "Giant's Seat"],
+        "requires": "|Giant's Seat|"
+    },
+    {
+        "name": "Giant's Seat - Den 3",
+        "category": ["Dens", "Giant's Seat"],
+        "requires": "|Giant's Seat|"
+    },
+    {
+        "name": "Giant's Seat - Den 4",
+        "category": ["Dens", "Giant's Seat"],
+        "requires": "|Giant's Seat|"
+    },
+    {
+        "name": "Giant's Seat - Den 5",
+        "category": ["Dens", "Giant's Seat"],
+        "requires": "|Giant's Seat|"
+    },
+    {
+        "name": "South Lake Miloch - Den 1",
+        "category": ["Dens", "South Lake Miloch"],
+        "requires": "|South Lake Miloch|"
+    },
+    {
+        "name": "South Lake Miloch - Den 2",
+        "category": ["Dens", "South Lake Miloch"],
+        "requires": "|South Lake Miloch|"
+    },
+    {
+        "name": "South Lake Miloch - Den 3",
+        "category": ["Dens", "South Lake Miloch"],
+        "requires": "|South Lake Miloch| AND |Progressive bike:2|"
+    },
+    {
+        "name": "South Lake Miloch - Den 4",
+        "category": ["Dens", "South Lake Miloch"],
+        "requires": "|South Lake Miloch| AND |Progressive bike:2|"
+    },
+    {
+        "name": "South Lake Miloch - Den 5",
+        "category": ["Dens", "South Lake Miloch"],
+        "requires": "|South Lake Miloch| AND |Progressive bike:2|"
+    },
+    {
+        "name": "Motostoke Riverbank - Den 1",
+        "category": ["Dens", "Motostoke Riverbank"],
+        "requires": "|Motostoke Riverbank|"
+    },
+    {
+        "name": "Motostoke Riverbank - Den 2",
+        "category": ["Dens", "Motostoke Riverbank"],
+        "requires": "|Motostoke Riverbank|"
+    },
+    {
+        "name": "Motostoke Riverbank - Den 3",
+        "category": ["Dens", "Motostoke Riverbank"],
+        "requires": "|Motostoke Riverbank|"
+    },
+    {
+        "name": "Motostoke Riverbank - Den 4",
+        "category": ["Dens", "Motostoke Riverbank"],
+        "requires": "|Motostoke Riverbank|"
+    },
+    {
+        "name": "Bridge Field - Den 1",
+        "category": ["Dens", "Bridge Field"],
+        "requires": "|Bridge Field|"
+    },
+    {
+        "name": "Bridge Field - Den 2",
+        "category": ["Dens", "Bridge Field"],
+        "requires": "|Bridge Field|"
+    },
+    {
+        "name": "Bridge Field - Den 3",
+        "category": ["Dens", "Bridge Field"],
+        "requires": "|Bridge Field|"
+    },
+    {
+        "name": "Bridge Field - Den 4",
+        "category": ["Dens", "Bridge Field"],
+        "requires": "|Bridge Field| AND |Progressive bike:2|"
+    },
+    {
+        "name": "Bridge Field - Den 5",
+        "category": ["Dens", "Bridge Field"],
+        "requires": "|Bridge Field|"
+    },
+    {
+        "name": "Bridge Field - Den 6",
+        "category": ["Dens", "Bridge Field"],
+        "requires": "|Bridge Field|"
+    },
+    {
+        "name": "Bridge Field - Den 7",
+        "category": ["Dens", "Bridge Field"],
+        "requires": "|Bridge Field|"
+    },
+    {
+        "name": "Bridge Field - Den 8",
+        "category": ["Dens", "Bridge Field"],
+        "requires": "|Bridge Field|"
+    },
+    {
+        "name": "Bridge Field - Den 9",
+        "category": ["Dens", "Bridge Field"],
+        "requires": "|Bridge Field|"
+    },
+    {
+        "name": "Stony Wilderness - Den 1",
+        "category": ["Dens", "Stony Wilderness"],
+        "requires": "|Stony Wilderness|"
+    },
+    {
+        "name": "Stony Wilderness - Den 2",
+        "category": ["Dens", "Stony Wilderness"],
+        "requires": "|Stony Wilderness|"
+    },
+    {
+        "name": "Stony Wilderness - Den 3",
+        "category": ["Dens", "Stony Wilderness"],
+        "requires": "|Stony Wilderness|"
+    },
+    {
+        "name": "Stony Wilderness - Den 4",
+        "category": ["Dens", "Stony Wilderness"],
+        "requires": "|Stony Wilderness|"
+    },
+    {
+        "name": "Stony Wilderness - Den 5",
+        "category": ["Dens", "Stony Wilderness"],
+        "requires": "|Stony Wilderness|"
+    },
+    {
+        "name": "Stony Wilderness - Den 6",
+        "category": ["Dens", "Stony Wilderness"],
+        "requires": "|Stony Wilderness|"
+    },
+    {
+        "name": "Stony Wilderness - Den 7",
+        "category": ["Dens", "Stony Wilderness"],
+        "requires": "|Stony Wilderness|"
+    },
+    {
+        "name": "Stony Wilderness - Den 8",
+        "category": ["Dens", "Stony Wilderness"],
+        "requires": "|Stony Wilderness|"
+    },
+    {
+        "name": "Stony Wilderness - Den 9",
+        "category": ["Dens", "Stony Wilderness"],
+        "requires": "|Stony Wilderness|"
+    },
+    {
+        "name": "Stony Wilderness - Den 10",
+        "category": ["Dens", "Stony Wilderness"],
+        "requires": "|Stony Wilderness|"
+    },
+    {
+        "name": "Stony Wilderness - Den 11",
+        "category": ["Dens", "Stony Wilderness"],
+        "requires": "|Stony Wilderness|"
+    },
+    {
+        "name": "Stony Wilderness - Den 12",
+        "category": ["Dens", "Stony Wilderness"],
+        "requires": "|Stony Wilderness|"
+    },
+    {
+        "name": "Giant's Mirror - Den 1",
+        "category": ["Dens", "Giant's Mirror"],
+        "requires": "|Giant's Mirror|"
+    },
+    {
+        "name": "Giant's Mirror - Den 2",
+        "category": ["Dens", "Giant's Mirror"],
+        "requires": "|Giant's Mirror|"
+    },
+    {
+        "name": "Giant's Mirror - Den 3",
+        "category": ["Dens", "Giant's Mirror"],
+        "requires": "|Giant's Mirror|"
+    },
+    {
+        "name": "Giant's Mirror - Den 4",
+        "category": ["Dens", "Giant's Mirror"],
+        "requires": "|Giant's Mirror|"
+    },
+    {
+        "name": "Giant's Mirror - Den 5",
+        "category": ["Dens", "Giant's Mirror"],
+        "requires": "|Giant's Mirror|"
+    },
+    {
+        "name": "Dusty Bowl - Den 1",
+        "category": ["Dens", "Dusty Bowl"],
+        "requires": "|Dusty Bowl|"
+    },
+    {
+        "name": "Dusty Bowl - Den 2",
+        "category": ["Dens", "Dusty Bowl"],
+        "requires": "|Dusty Bowl|"
+    },
+    {
+        "name": "Dusty Bowl - Den 3",
+        "category": ["Dens", "Dusty Bowl"],
+        "requires": "|Dusty Bowl|"
+    },
+    {
+        "name": "Dusty Bowl - Den 4",
+        "category": ["Dens", "Dusty Bowl"],
+        "requires": "|Dusty Bowl|"
+    },
+    {
+        "name": "Dusty Bowl - Den 5",
+        "category": ["Dens", "Dusty Bowl"],
+        "requires": "|Dusty Bowl| AND |Progressive bike:2|"
+    },
+    {
+        "name": "Dusty Bowl - Den 6",
+        "category": ["Dens", "Dusty Bowl"],
+        "requires": "|Dusty Bowl|"
+    },
+    {
+        "name": "Dusty Bowl - Den 7",
+        "category": ["Dens", "Dusty Bowl"],
+        "requires": "|Dusty Bowl|"
+    },
+    {
+        "name": "Dusty Bowl - Den 8",
+        "category": ["Dens", "Dusty Bowl"],
+        "requires": "|Dusty Bowl|"
+    },
+    {
+        "name": "Dusty Bowl - Den 9",
+        "category": ["Dens", "Dusty Bowl"],
+        "requires": "|Dusty Bowl|"
+    },
+    {
+        "name": "Hammerlocke Hills - Den 1",
+        "category": ["Dens", "Hammerlocke Hills"],
+        "requires": "|Hammerlocke Hills|"
+    },
+    {
+        "name": "Hammerlocke Hills - Den 2",
+        "category": ["Dens", "Hammerlocke Hills"],
+        "requires": "|Hammerlocke Hills|"
+    },
+    {
+        "name": "Hammerlocke Hills - Den 3",
+        "category": ["Dens", "Hammerlocke Hills"],
+        "requires": "|Hammerlocke Hills|"
+    },
+    {
+        "name": "Hammerlocke Hills - Den 4",
+        "category": ["Dens", "Hammerlocke Hills"],
+        "requires": "|Hammerlocke Hills|"
+    },
+    {
+        "name": "Hammerlocke Hills - Den 5",
+        "category": ["Dens", "Hammerlocke Hills"],
+        "requires": "|Hammerlocke Hills|"
+    },
+    {
+        "name": "Hammerlocke Hills - Den 6",
+        "category": ["Dens", "Hammerlocke Hills"],
+        "requires": "|Hammerlocke Hills|"
+    },
+    {
+        "name": "Hammerlocke Hills - Den 7",
+        "category": ["Dens", "Hammerlocke Hills"],
+        "requires": "|Hammerlocke Hills|"
+    },
+    {
+        "name": "Giant's Cap - Den 1",
+        "category": ["Dens", "Giant's Cap"],
+        "requires": "|Giant's Cap|"
+    },
+    {
+        "name": "Giant's Cap - Den 2",
+        "category": ["Dens", "Giant's Cap"],
+        "requires": "|Giant's Cap|"
+    },
+    {
+        "name": "Giant's Cap - Den 3",
+        "category": ["Dens", "Giant's Cap"],
+        "requires": "|Giant's Cap|"
+    },
+    {
+        "name": "Giant's Cap - Den 4",
+        "category": ["Dens", "Giant's Cap"],
+        "requires": "|Giant's Cap|"
+    },
+    {
+        "name": "Giant's Cap - Den 5",
+        "category": ["Dens", "Giant's Cap"],
+        "requires": "|Giant's Cap|"
+    },
+    {
+        "name": "Lake of Outrage - Den 1",
+        "category": ["Dens", "Lake of Outrage"],
+        "requires": "|Lake of Outrage| AND |Progressive bike:2|"
+    },
+    {
+        "name": "Lake of Outrage - Den 2",
+        "category": ["Dens", "Lake of Outrage"],
+        "requires": "|Lake of Outrage| AND |Progressive bike:2|"
+    },
+    {
+        "name": "Lake of Outrage - Den 3",
+        "category": ["Dens", "Lake of Outrage"],
+        "requires": "|Lake of Outrage| AND |Progressive bike:2|"
+    },
+    {
+        "name": "Lake of Outrage - Den 4",
+        "category": ["Dens", "Lake of Outrage"],
+        "requires": "|Lake of Outrage| AND |Progressive bike:2|"
+    }
+]
