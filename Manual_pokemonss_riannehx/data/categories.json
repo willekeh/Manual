@@ -18,5 +18,23 @@
     "Dens": {
         "hidden": true,
         "yaml_option": ["den_sanity"]
-    }
+    },
+    "Normal": { "hidden": true },
+    "Fire": { "hidden": true },
+    "Water": { "hidden": true },
+    "Grass": { "hidden": true },
+    "Electric": { "hidden": true },
+    "Ice": { "hidden": true },
+    "Fighting": { "hidden": true },
+    "Poison": { "hidden": true },
+    "Ground": { "hidden": true },
+    "Flying": { "hidden": true },
+    "Psychic": { "hidden": true },
+    "Bug": { "hidden": true },
+    "Rock": { "hidden": true },
+    "Ghost": { "hidden": true },
+    "Dragon": { "hidden": true },
+    "Dark": { "hidden": true },
+    "Steel": { "hidden": true },
+    "Fairy": { "hidden": true }
 }

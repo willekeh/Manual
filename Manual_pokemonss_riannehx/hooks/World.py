@@ -38,17 +38,82 @@ def hook_get_filler_item_name(world: World, multiworld: MultiWorld, player: int)
 
 # Called before regions and locations are created. Not clear why you'd want this, but it's here. Victory location is included, but Victory event is not placed yet.
 def before_create_regions(world: World, multiworld: MultiWorld, player: int):
-    pass
+    current_goal_name = ""
+    if hasattr(world, "options") and hasattr(world.options, "goal"):
+        current_goal_name = world.options.goal.current_key
+
+    if str(current_goal_name).lower() != "type master":
+        return
+
+    logging.info(f"[Player {player}] Type Master goal active. Dynamically locking pokemon and compiling rules.")
+
+
+    active_types = set()
+    pokemon_types = ["Normal", "Fire", "Water", "Grass", "Electric", "Ice", "Fighting", 
+                     "Poison", "Ground", "Flying", "Psychic", "Bug", "Rock", "Ghost", 
+                     "Dragon", "Dark", "Steel", "Fairy"]
+    
+    for loc in world.location_table:
+        if "Special overworld spawn" in loc.get("category", []):
+            for p_type in pokemon_types:
+                if p_type in loc.get("category", []):
+                    active_types.add(p_type)
+
+
+    for loc in world.location_table:
+        if "Special overworld spawn" in loc.get("category", []):
+            loc_types = [p_type for p_type in pokemon_types if p_type in loc.get("category", []) and p_type in active_types]
+            
+            if loc_types:
+                type_lock_requirements = [f"|Type Unlock - {p_type} Type:1|" for p_type in loc_types]
+                unlock_logic_str = f"({' AND '.join(type_lock_requirements)})"
+                
+                existing_req = loc.get("requires", "").strip()
+                if existing_req:
+                    loc["requires"] = f"({existing_req}) AND {unlock_logic_str}"
+                else:
+                    loc["requires"] = unlock_logic_str
+
+    type_or_chains = {}
+
+    for loc in world.location_table:
+        if "Type Collection" in loc.get("category", []):
+            for p_type in active_types:
+                if loc["name"] == f"Type Master - {p_type} Type":
+                    
+                    pokemon_requires_list = []
+                    for pokemon in world.location_table:
+                        if "Special overworld spawn" in pokemon.get("category", []) and p_type in pokemon.get("category", []):
+                            req_string = pokemon["requires"].strip()
+                            pokemon_requires_list.append(f"({req_string})")
+
+                    overworld_or_chain = f"({' OR '.join(pokemon_requires_list)})"
+                    type_or_chains[p_type] = overworld_or_chain
+
+                    loc["requires"] = f"{overworld_or_chain} AND |Type Unlock - {p_type} Type:1|"
+                    break
+
+    victory_requirements = []
+    for p_type in active_types:
+        victory_requirements.append(f"({type_or_chains[p_type]} AND |Type Unlock - {p_type} Type:1|)")
+    
+    victory_string = " AND ".join(victory_requirements)
+    
+    for loc in world.location_table:
+        if "Type Master" == loc["name"]:
+            loc["requires"] = victory_string
+            logging.info(f"[Player {player}] Type Master dynamic logic matrix built and locked successfully.")
+            break
+
+
 
 # Called after regions and locations are created, in case you want to see or modify that information. Victory location is included.
 def after_create_regions(world: World, multiworld: MultiWorld, player: int):
     # Use this hook to remove locations from the world
     locationNamesToRemove: list[str] = [] # List of location names
 
-    # Add your code here to calculate which locations to remove
+    # Existing game version filters
     game_version = get_option_value(multiworld, player, "game_version")
-
-
     if game_version == 1:
         locationNamesToRemove += world.location_name_groups["GameShield"]
         locationNamesToRemove += world.location_name_groups["GameSword"]
@@ -56,14 +121,41 @@ def after_create_regions(world: World, multiworld: MultiWorld, player: int):
         locationNamesToRemove += world.location_name_groups["GameSword"]
     if game_version == 3: #Sword
         locationNamesToRemove += world.location_name_groups["GameShield"]
-    # 4 == Both games
 
+    current_goal_name = ""
+    if hasattr(world, "options") and hasattr(world.options, "goal"):
+        current_goal_name = world.options.goal.current_key
+
+    pokemon_types = ["Normal", "Fire", "Water", "Grass", "Electric", "Ice", "Fighting", 
+                     "Poison", "Ground", "Flying", "Psychic", "Bug", "Rock", "Ghost", 
+                     "Dragon", "Dark", "Steel", "Fairy"]
+
+    # Case A: If Type Master is NOT the goal, wipe everything related to it
+    if str(current_goal_name).lower() != "type master":
+        for p_type in pokemon_types:
+            locationNamesToRemove.append(f"Type Master - {p_type} Type")
+        locationNamesToRemove.append("Type Master")
+
+    # Case B: If Type Master IS active, find the missing types and remove their tracker locations
+    else:
+        active_types = set()
+        for loc in world.location_table:
+            if "Special overworld spawn" in loc.get("category", []):
+                for p_type in pokemon_types:
+                    if p_type in loc.get("category", []):
+                        active_types.add(p_type)
+
+        # Gather any inactive checking locations for complete deletion
+        for p_type in pokemon_types:
+            if p_type not in active_types:
+                locationNamesToRemove.append(f"Type Master - {p_type} Type")
         
     for region in multiworld.regions:
         if region.player == player:
             for location in list(region.locations):
                 if location.name in locationNamesToRemove:
                     region.locations.remove(location)
+
 
 # This hook allows you to access the item names & counts before the items are created. Use this to increase/decrease the amount of a specific item in the pool
 # Valid item_config key/values:
@@ -145,14 +237,35 @@ def before_create_items_filler(item_pool: list, world: World, multiworld: MultiW
     # Use this hook to remove items from the item pool
     itemNamesToRemove: list[str] = [] # List of item names
 
-    # Add your code here to calculate which items to remove.
-    #
-    # Because multiple copies of an item can exist, you need to add an item name
-    # to the list multiple times if you want to remove multiple copies of it.
+    current_goal_name = ""
+    if hasattr(world, "options") and hasattr(world.options, "goal"):
+        current_goal_name = world.options.goal.current_key
 
+    pokemon_types = ["Normal", "Fire", "Water", "Grass", "Electric", "Ice", "Fighting", 
+                     "Poison", "Ground", "Flying", "Psychic", "Bug", "Rock", "Ghost", 
+                     "Dragon", "Dark", "Steel", "Fairy"]
+
+    if str(current_goal_name).lower() != "type master":
+        for p_type in pokemon_types:
+            itemNamesToRemove.append(f"Type Unlock - {p_type} Type")
+    else:
+        active_types = set()
+        for loc in world.location_table:
+            if "Special overworld spawn" in loc.get("category", []):
+                for p_type in pokemon_types:
+                    if p_type in loc.get("category", []):
+                        active_types.add(p_type)
+
+        # Voeg de inactieve type unlock items toe aan de verwijderlijst
+        for p_type in pokemon_types:
+            if p_type not in active_types:
+                itemNamesToRemove.append(f"Type Unlock - {p_type} Type")
+
+    # Verwijder de inactieve items fysiek uit de pool
     for itemName in itemNamesToRemove:
-        item = next(i for i in item_pool if i.name == itemName)
-        item_pool.remove(item)
+        item = next((i for i in item_pool if i.name == itemName), None)
+        if item:
+            item_pool.remove(item)
 
     return item_pool
 
@@ -180,11 +293,11 @@ def after_set_rules(world: World, multiworld: MultiWorld, player: int):
     
     # Failsafe incase of wrong way around
     final_required = min(total, required)
+    if "Eternatus" in multiworld.get_locations(player):
+        eternatus_loc = multiworld.get_location("Eternatus", player)
     
-    eternatus_loc = multiworld.get_location("Eternatus", player)
-    
-    # Set Broken Shard required
-    eternatus_loc.access_rule = lambda state: state.has("Broken shards", player, final_required)
+        # Set Broken Shard required
+        eternatus_loc.access_rule = lambda state: state.has("Broken shards", player, final_required)
 
     def Example_Rule(state: CollectionState) -> bool:
         # Calculated rules take a CollectionState object and return a boolean

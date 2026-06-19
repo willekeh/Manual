@@ -1,243 +1,285 @@
 [
-  {
-    "count": "2",
-    "name": "Progressive bike",
-    "category": [
-      "Bikes"
-    ],
-    "progression": true
-  },
-  {
-    "count": "10",
-    "name": "Broken shards",
-    "category": [
-      "Eternatus"
-    ],
-    "progression": true
-  },
-  {
-    "count": 1,
-    "name": "Normal weather",
-    "category": [
-      "Weather",
-      "needsWeather"
-    ],
-    "progression": true
-  },
-  {
-    "count": 1,
-    "name": "Overcast",
-    "category": [
-      "Weather",
-      "needsWeather"
-    ],
-    "progression": true
-  },
-  {
-    "count": 1,
-    "name": "Raining",
-    "category": [
-      "Weather",
-      "needsWeather"
-    ],
-    "progression": true
-  },
-  {
-    "count": 1,
-    "name": "Thunderstorm",
-    "category": [
-      "Weather",
-      "needsWeather"
-    ],
-    "progression": true
-  },
-  {
-    "count": 1,
-    "name": "Snowing",
-    "category": [
-      "Weather",
-      "needsWeather"
-    ],
-    "progression": true
-  },
-  {
-    "count": 1,
-    "name": "Snowstorm",
-    "category": [
-      "Weather",
-      "needsWeather"
-    ],
-    "progression": true
-  },
-  {
-    "count": 1,
-    "name": "Intense Sun",
-    "category": [
-      "Weather",
-      "needsWeather"
-    ],
-    "progression": true
-  },
-  {
-    "count": 1,
-    "name": "Sandstorm",
-    "category": [
-      "Weather",
-      "needsWeather"
-    ],
-    "progression": true
-  },
-  {
-    "count": 1,
-    "name": "Fog",
-    "category": [
-      "Weather",
-      "needsWeather"
-    ],
-    "progression": true
-  },
-  {
-    "count": 1,
-    "name": "Axew's Eye",
-    "category": [
-      "Locations"
-    ],
-    "progression": true
-  },
-  {
-    "count": 1,
-    "name": "Bridge Field",
-    "category": [
-      "Locations"
-    ],
-    "progression": true
-  },
-  {
-    "count": 1,
-    "name": "Dappled Grove",
-    "category": [
-      "Locations"
-    ],
-    "progression": true
-  },
-  {
-    "count": 1,
-    "name": "Dusty Bowl",
-    "category": [
-      "Locations"
-    ],
-    "progression": true
-  },
-  {
-    "count": 1,
-    "name": "East Lake Axewell",
-    "category": [
-      "Locations"
-    ],
-    "progression": true
-  },
-  {
-    "count": 1,
-    "name": "Giant's Cap",
-    "category": [
-      "Locations"
-    ],
-    "progression": true
-  },
-  {
-    "count": 1,
-    "name": "Giant's Mirror",
-    "category": [
-      "Locations"
-    ],
-    "progression": true
-  },
-  {
-    "count": 1,
-    "name": "Giant's Seat",
-    "category": [
-      "Locations"
-    ],
-    "progression": true
-  },
-  {
-    "count": 1,
-    "name": "Hammerlocke Hills",
-    "category": [
-      "Locations"
-    ],
-    "progression": true
-  },
-  {
-    "count": 1,
-    "name": "Lake of Outrage",
-    "category": [
-      "Locations"
-    ],
-    "progression": true
-  },
-  {
-    "count": 1,
-    "name": "Motostoke Riverbank",
-    "category": [
-      "Locations"
-    ],
-    "progression": true
-  },
-  {
-    "count": 1,
-    "name": "North Lake Miloch",
-    "category": [
-      "Locations"
-    ],
-    "progression": true
-  },
-  {
-    "count": 1,
-    "name": "South Lake Miloch",
-    "category": [
-      "Locations"
-    ],
-    "progression": true
-  },
-  {
-    "count": 1,
-    "name": "Stony Wilderness",
-    "category": [
-      "Locations"
-    ],
-    "progression": true
-  },
-  {
-    "count": 1,
-    "name": "Watchtower Ruins",
-    "category": [
-      "Locations"
-    ],
-    "progression": true
-  },
-  {
-    "count": 1,
-    "name": "West Lake Axewell",
-    "category": [
-      "Locations"
-    ],
-    "progression": true
-  },
-  {
-    "count": 1,
-    "name": "Rolling Fields",
-    "category": [
-      "Locations"
-    ],
-    "progression": true
-  },
-  {
-    "count": 1,
-    "name": "Noweather",
-    "category": [
-      "AllWeather"
-    ],
-    "progression": true
-  }
+    {
+        "count": "2",
+        "name": "Progressive bike",
+        "category": ["Bikes"],
+        "progression": true
+    },
+    {
+        "count": "10",
+        "name": "Broken shards",
+        "category": ["Eternatus"],
+        "progression": true
+    },
+    {
+        "count": 1,
+        "name": "Normal weather",
+        "category": ["Weather", "needsWeather"],
+        "progression": true
+    },
+    {
+        "count": 1,
+        "name": "Overcast",
+        "category": ["Weather", "needsWeather"],
+        "progression": true
+    },
+    {
+        "count": 1,
+        "name": "Raining",
+        "category": ["Weather", "needsWeather"],
+        "progression": true
+    },
+    {
+        "count": 1,
+        "name": "Thunderstorm",
+        "category": ["Weather", "needsWeather"],
+        "progression": true
+    },
+    {
+        "count": 1,
+        "name": "Snowing",
+        "category": ["Weather", "needsWeather"],
+        "progression": true
+    },
+    {
+        "count": 1,
+        "name": "Snowstorm",
+        "category": ["Weather", "needsWeather"],
+        "progression": true
+    },
+    {
+        "count": 1,
+        "name": "Intense Sun",
+        "category": ["Weather", "needsWeather"],
+        "progression": true
+    },
+    {
+        "count": 1,
+        "name": "Sandstorm",
+        "category": ["Weather", "needsWeather"],
+        "progression": true
+    },
+    {
+        "count": 1,
+        "name": "Fog",
+        "category": ["Weather", "needsWeather"],
+        "progression": true
+    },
+    {
+        "count": 1,
+        "name": "Axew's Eye",
+        "category": ["Locations"],
+        "progression": true
+    },
+    {
+        "count": 1,
+        "name": "Bridge Field",
+        "category": ["Locations"],
+        "progression": true
+    },
+    {
+        "count": 1,
+        "name": "Dappled Grove",
+        "category": ["Locations"],
+        "progression": true
+    },
+    {
+        "count": 1,
+        "name": "Dusty Bowl",
+        "category": ["Locations"],
+        "progression": true
+    },
+    {
+        "count": 1,
+        "name": "East Lake Axewell",
+        "category": ["Locations"],
+        "progression": true
+    },
+    {
+        "count": 1,
+        "name": "Giant's Cap",
+        "category": ["Locations"],
+        "progression": true
+    },
+    {
+        "count": 1,
+        "name": "Giant's Mirror",
+        "category": ["Locations"],
+        "progression": true
+    },
+    {
+        "count": 1,
+        "name": "Giant's Seat",
+        "category": ["Locations"],
+        "progression": true
+    },
+    {
+        "count": 1,
+        "name": "Hammerlocke Hills",
+        "category": ["Locations"],
+        "progression": true
+    },
+    {
+        "count": 1,
+        "name": "Lake of Outrage",
+        "category": ["Locations"],
+        "progression": true
+    },
+    {
+        "count": 1,
+        "name": "Motostoke Riverbank",
+        "category": ["Locations"],
+        "progression": true
+    },
+    {
+        "count": 1,
+        "name": "North Lake Miloch",
+        "category": ["Locations"],
+        "progression": true
+    },
+    {
+        "count": 1,
+        "name": "South Lake Miloch",
+        "category": ["Locations"],
+        "progression": true
+    },
+    {
+        "count": 1,
+        "name": "Stony Wilderness",
+        "category": ["Locations"],
+        "progression": true
+    },
+    {
+        "count": 1,
+        "name": "Watchtower Ruins",
+        "category": ["Locations"],
+        "progression": true
+    },
+    {
+        "count": 1,
+        "name": "West Lake Axewell",
+        "category": ["Locations"],
+        "progression": true
+    },
+    {
+        "count": 1,
+        "name": "Rolling Fields",
+        "category": ["Locations"],
+        "progression": true
+    },
+    {
+        "count": 1,
+        "name": "Noweather",
+        "category": ["AllWeather"],
+        "progression": true
+    },
+
+    {
+        "name": "Type Unlock - Normal Type",
+        "category": ["Type Collection", "Normal"],
+        "count": 1,
+        "progression": true
+    },
+    {
+        "name": "Type Unlock - Fire Type",
+        "category": ["Type Collection", "Fire"],
+        "count": 1,
+        "progression": true
+    },
+    {
+        "name": "Type Unlock - Water Type",
+        "category": ["Type Collection", "Water"],
+        "count": 1,
+        "progression": true
+    },
+    {
+        "name": "Type Unlock - Grass Type",
+        "category": ["Type Collection", "Grass"],
+        "count": 1,
+        "progression": true
+    },
+    {
+        "name": "Type Unlock - Electric Type",
+        "category": ["Type Collection", "Electric"],
+        "count": 1,
+        "progression": true
+    },
+    {
+        "name": "Type Unlock - Ice Type",
+        "category": ["Type Collection", "Ice"],
+        "count": 1,
+        "progression": true
+    },
+    {
+        "name": "Type Unlock - Fighting Type",
+        "category": ["Type Collection", "Fighting"],
+        "count": 1,
+        "progression": true
+    },
+    {
+        "name": "Type Unlock - Poison Type",
+        "category": ["Type Collection", "Poison"],
+        "count": 1,
+        "progression": true
+    },
+    {
+        "name": "Type Unlock - Ground Type",
+        "category": ["Type Collection", "Ground"],
+        "count": 1,
+        "progression": true
+    },
+    {
+        "name": "Type Unlock - Flying Type",
+        "category": ["Type Collection", "Flying"],
+        "count": 1,
+        "progression": true
+    },
+    {
+        "name": "Type Unlock - Psychic Type",
+        "category": ["Type Collection", "Psychic"],
+        "count": 1,
+        "progression": true
+    },
+    {
+        "name": "Type Unlock - Bug Type",
+        "category": ["Type Collection", "Bug"],
+        "count": 1,
+        "progression": true
+    },
+    {
+        "name": "Type Unlock - Rock Type",
+        "category": ["Type Collection", "Rock"],
+        "count": 1,
+        "progression": true
+    },
+    {
+        "name": "Type Unlock - Ghost Type",
+        "category": ["Type Collection", "Ghost"],
+        "count": 1,
+        "progression": true
+    },
+    {
+        "name": "Type Unlock - Dragon Type",
+        "category": ["Type Collection", "Dragon"],
+        "count": 1,
+        "progression": true
+    },
+    {
+        "name": "Type Unlock - Dark Type",
+        "category": ["Type Collection", "Dark"],
+        "count": 1,
+        "progression": true
+    },
+    {
+        "name": "Type Unlock - Steel Type",
+        "category": ["Type Collection", "Steel"],
+        "count": 1,
+        "progression": true
+    },
+    {
+        "name": "Type Unlock - Fairy Type",
+        "category": ["Type Collection", "Fairy"],
+        "count": 1,
+        "progression": true
+    }
 ]

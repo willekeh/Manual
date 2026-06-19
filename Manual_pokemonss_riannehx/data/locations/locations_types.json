@@ -1,0 +1,74 @@
+[
+    {
+        "name": "Type Master - Normal Type",
+        "category": ["Type Collection"]
+    },
+    {
+        "name": "Type Master - Fire Type",
+        "category": ["Type Collection"]
+    },
+    {
+        "name": "Type Master - Water Type",
+        "category": ["Type Collection"]
+    },
+    {
+        "name": "Type Master - Grass Type",
+        "category": ["Type Collection"]
+    },
+    {
+        "name": "Type Master - Electric Type",
+        "category": ["Type Collection"]
+    },
+    {
+        "name": "Type Master - Ice Type",
+        "category": ["Type Collection"]
+    },
+    {
+        "name": "Type Master - Fighting Type",
+        "category": ["Type Collection"]
+    },
+    {
+        "name": "Type Master - Poison Type",
+        "category": ["Type Collection"]
+    },
+    {
+        "name": "Type Master - Ground Type",
+        "category": ["Type Collection"]
+    },
+    {
+        "name": "Type Master - Flying Type",
+        "category": ["Type Collection"]
+    },
+    {
+        "name": "Type Master - Psychic Type",
+        "category": ["Type Collection"]
+    },
+    {
+        "name": "Type Master - Bug Type",
+        "category": ["Type Collection"]
+    },
+    {
+        "name": "Type Master - Rock Type",
+        "category": ["Type Collection"]
+    },
+    {
+        "name": "Type Master - Ghost Type",
+        "category": ["Type Collection"]
+    },
+    {
+        "name": "Type Master - Dragon Type",
+        "category": ["Type Collection"]
+    },
+    {
+        "name": "Type Master - Dark Type",
+        "category": ["Type Collection"]
+    },
+    {
+        "name": "Type Master - Steel Type",
+        "category": ["Type Collection"]
+    },
+    {
+        "name": "Type Master - Fairy Type",
+        "category": ["Type Collection"]
+    }
+]
