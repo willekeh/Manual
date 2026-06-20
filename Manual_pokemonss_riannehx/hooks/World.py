@@ -54,14 +54,14 @@ def before_create_regions(world: World, multiworld: MultiWorld, player: int):
                      "Dragon", "Dark", "Steel", "Fairy"]
     
     for loc in world.location_table:
-        if "Special overworld spawn" in loc.get("category", []):
+        if "Pokemon" in loc.get("category", []):
             for p_type in pokemon_types:
                 if p_type in loc.get("category", []):
                     active_types.add(p_type)
 
 
     for loc in world.location_table:
-        if "Special overworld spawn" in loc.get("category", []):
+        if "Pokemon" in loc.get("category", []):
             loc_types = [p_type for p_type in pokemon_types if p_type in loc.get("category", []) and p_type in active_types]
             
             if loc_types:
@@ -83,7 +83,7 @@ def before_create_regions(world: World, multiworld: MultiWorld, player: int):
                     
                     pokemon_requires_list = []
                     for pokemon in world.location_table:
-                        if "Special overworld spawn" in pokemon.get("category", []) and p_type in pokemon.get("category", []):
+                        if "Pokemon" in pokemon.get("category", []) and p_type in pokemon.get("category", []):
                             req_string = pokemon["requires"].strip()
                             pokemon_requires_list.append(f"({req_string})")
 
@@ -140,7 +140,7 @@ def after_create_regions(world: World, multiworld: MultiWorld, player: int):
     else:
         active_types = set()
         for loc in world.location_table:
-            if "Special overworld spawn" in loc.get("category", []):
+            if "Pokemon" in loc.get("category", []):
                 for p_type in pokemon_types:
                     if p_type in loc.get("category", []):
                         active_types.add(p_type)
@@ -167,24 +167,33 @@ def after_create_regions(world: World, multiworld: MultiWorld, player: int):
 # {"Item Name": {ItemClassification.useful: 5}} <- You can also use the classification directly
 def before_create_items_all(item_config: dict[str, int|dict], world: World, multiworld: MultiWorld, player: int) -> dict[str, int|dict]:
     location_count = len(world.get_locations())
-    shards_total = world.options.broken_shards_total.value
+    
+    # Check if Eternatus goal is active
+    goal_option = getattr(world.options, "goal", None)
+    is_correct_goal = goal_option and goal_option.value == "Eternatus"
 
-    other_items_count = 0
-    for name, data in item_config.items():
-        if name != "Broken shards":
-            if isinstance(data, dict):
-                other_items_count += sum(data.values())
-            else:
-                other_items_count += data
-                
-    #To crash less with minimal settings and minimal progression
-    buffer = 3 
-    free_space = location_count - other_items_count - buffer
+    if not is_correct_goal:
+        shards_total = 0
+        world.options.broken_shards_total.value = 0
+    else:
+        shards_total = world.options.broken_shards_total.value
 
-    if shards_total > free_space:
-        #check if shards total is higher then free space
-        shards_total = max(0, free_space) 
-        world.options.broken_shards_total.value = shards_total
+        other_items_count = 0
+        for name, data in item_config.items():
+            if name != "Broken shards":
+                if isinstance(data, dict):
+                    other_items_count += sum(data.values())
+                else:
+                    other_items_count += data
+                    
+        # To crash less with minimal settings and minimal progression
+        buffer = 3 
+        free_space = location_count - other_items_count - buffer
+
+        if shards_total > free_space:
+            # Check if shards total is higher than free space
+            shards_total = max(0, free_space) 
+            world.options.broken_shards_total.value = shards_total
     
     item_config["Broken shards"] = shards_total
     
@@ -245,23 +254,23 @@ def before_create_items_filler(item_pool: list, world: World, multiworld: MultiW
                      "Poison", "Ground", "Flying", "Psychic", "Bug", "Rock", "Ghost", 
                      "Dragon", "Dark", "Steel", "Fairy"]
 
+    # Remove if goal is not type master
     if str(current_goal_name).lower() != "type master":
         for p_type in pokemon_types:
             itemNamesToRemove.append(f"Type Unlock - {p_type} Type")
+    # Remove unlocks that dont have a matching location type
     else:
         active_types = set()
         for loc in world.location_table:
-            if "Special overworld spawn" in loc.get("category", []):
+            if "Pokemon" in loc.get("category", []):
                 for p_type in pokemon_types:
                     if p_type in loc.get("category", []):
                         active_types.add(p_type)
 
-        # Voeg de inactieve type unlock items toe aan de verwijderlijst
         for p_type in pokemon_types:
             if p_type not in active_types:
                 itemNamesToRemove.append(f"Type Unlock - {p_type} Type")
 
-    # Verwijder de inactieve items fysiek uit de pool
     for itemName in itemNamesToRemove:
         item = next((i for i in item_pool if i.name == itemName), None)
         if item:

@@ -41,7 +41,7 @@ def after_load_location_file(location_table: list) -> list:
 # Mastery Type Goal events
     type_to_pokemon_map = {p_type: [] for p_type in pokemon_types}
     for loc in location_table:
-        if "Special overworld spawn" in loc.get("category", []):
+        if "Pokemon" in loc.get("category", []):
             for p_type in pokemon_types:
                 if p_type in loc.get("category", []):
                     type_to_pokemon_map[p_type].append(loc["name"])
