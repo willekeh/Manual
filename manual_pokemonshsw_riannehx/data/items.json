@@ -281,5 +281,89 @@
         "category": ["Type Collection", "Fairy"],
         "count": 1,
         "progression": true
+    },
+    {
+        "count": 1,
+        "name": "Route 1 Access",
+        "category": ["Routes"],
+        "progression": true
+    },
+    {
+        "count": 1,
+        "name": "Route 2 Access",
+        "category": ["Routes"],
+        "progression": true
+    },
+    {
+        "count": 1,
+        "name": "Route 3 Access",
+        "category": ["Routes"],
+        "progression": true
+    },
+    {
+        "count": 1,
+        "name": "Route 4 Access",
+        "category": ["Routes"],
+        "progression": true
+    },
+    {
+        "count": 1,
+        "name": "Route 5 Access",
+        "category": ["Routes"],
+        "progression": true
+    },
+    {
+        "count": 1,
+        "name": "Route 6 Access",
+        "category": ["Routes"],
+        "progression": true
+    },
+    {
+        "count": 1,
+        "name": "Route 7 Access",
+        "category": ["Routes"],
+        "progression": true
+    },
+    {
+        "count": 1,
+        "name": "Route 8 Access",
+        "category": ["Routes"],
+        "progression": true
+    },
+    {
+        "count": 1,
+        "name": "Route 9 Access",
+        "category": ["Routes"],
+        "progression": true
+    },
+    {
+        "count": 1,
+        "name": "Route 10 Access",
+        "category": ["Routes"],
+        "progression": true
+    },
+    {
+        "count": 1,
+        "name": "Galar Mine Access",
+        "category": ["Routes"],
+        "progression": true
+    },
+    {
+        "count": 1,
+        "name": "Slumbering Weald Access",
+        "category": ["Routes"],
+        "progression": true
+    },
+    {
+        "count": 1,
+        "name": "Glimwood Tangle Access",
+        "category": ["Routes"],
+        "progression": true
+    },
+    {
+        "count": 1,
+        "name": "Motostoke Outskirts Access",
+        "category":["Routes"],
+        "progression": true
     }
 ]

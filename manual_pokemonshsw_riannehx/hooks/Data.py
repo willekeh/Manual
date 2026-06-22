@@ -28,7 +28,7 @@ def after_load_location_file(location_table: list) -> list:
                      "Dragon", "Dark", "Steel", "Fairy"]
     
     # Extra Locations files
-    extra_location_files = ["data/locations/locations_dens.json", "data/locations/locations_types.json", "data/locations/locations_wanderers.json"]
+    extra_location_files = ["data/locations/locations_dens.json", "data/locations/locations_types.json", "data/locations/locations_wanderers.json", "data/locations/locations_routes.json"]
     for file_path in extra_location_files:
         try:
             raw_bytes = pkgutil.get_data(package_base_name, file_path)

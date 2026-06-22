@@ -1,0 +1,100 @@
+[
+    {
+        "name": "Blipbug",
+        "category": [
+            "Pokemon",
+            "Exclamation mark",
+            "Route 1",
+            "Curry",
+            "Bug"
+        ],
+        "requires": "|Route 1 Access|"
+    },
+    {
+        "name": "Caterpie",
+        "category": [
+            "Pokemon",
+            "Exclamation mark",
+            "Route 1",
+            "Curry",
+            "Bug"
+        ],
+        "requires": "|Route 1 Access|"
+    },
+    {
+        "name": "Grubbin",
+        "category": [
+            "Pokemon",
+            "Exclamation mark",
+            "Route 1",
+            "Curry",
+            "Bug"
+        ],
+        "requires": "|Route 1 Access|"
+    },
+    {
+        "name": "Hoothoot",
+        "category": [
+            "Pokemon",
+            "Exclamation mark",
+            "Route 1",
+            "Curry",
+            "Normal",
+            "Flying"
+        ],
+        "requires": "|Route 1 Access|"
+    },
+    {
+        "name": "Nickit",
+        "category": [
+            "Pokemon",
+            "Route 1",
+            "Dark"
+        ],
+        "requires": "|Route 1 Access|"
+    },
+    {
+        "name": "Rookidee",
+        "category": [
+            "Pokemon",
+            "Route 1",
+            "Flying"
+        ],
+        "requires": "|Route 1 Access|"
+    },
+    {
+        "name": "Skwovet",
+        "category": [
+            "Pokemon",
+            "Route 1",
+            "Curry",
+            "Normal"
+        ],
+        "requires": "|Route 1 Access|"
+    },
+    {
+        "name": "Wooloo",
+        "category": [
+            "Pokemon",
+            "Route 1",
+            "Normal"
+        ],
+        "requires": "|Route 1 Access|"
+    },
+    {
+        "name": "Route 1 item Potion",
+        "category": [
+            "Item",
+            "Route 1"
+        ],
+        "requires": "|Route 1 Access|"
+    },
+    {
+        "name": "Route 1 item Paralyze Heal",
+        "category": [
+            "Item",
+            "Route 1"
+        ],
+        "requires": "|Route 1 Access|"
+    }
+]
