@@ -53,8 +53,8 @@
         "name": "Barbaracle",
         "category": [
             "Pokemon",
-            "Special overworld spawn", 
-            "Dusty Bowl", 
+            "Special overworld spawn",
+            "Dusty Bowl",
             "needsWeather",
             "Rock",
             "Water"
@@ -77,8 +77,8 @@
         "name": "Beheeyem",
         "category": [
             "Pokemon",
-            "Special overworld spawn", 
-            "Bridge Field", 
+            "Special overworld spawn",
+            "Bridge Field",
             "needsWeather",
             "Psychic"
         ],
@@ -111,7 +111,7 @@
         "name": "Bisharp",
         "category": [
             "Pokemon",
-            "Special overworld spawn", 
+            "Special overworld spawn",
             "Giant's Seat",
             "Dark",
             "Steel"
@@ -122,7 +122,7 @@
         "name": "Boltund",
         "category": [
             "Pokemon",
-            "Special overworld spawn", 
+            "Special overworld spawn",
             "North Lake Miloch",
             "Electric"
         ],
@@ -160,8 +160,8 @@
         "name": "Cinccino",
         "category": [
             "Pokemon",
-            "Special overworld spawn", 
-            "Giant's Cap", 
+            "Special overworld spawn",
+            "Giant's Cap",
             "needsWeather",
             "Normal"
         ],
@@ -197,7 +197,7 @@
         "name": "Coalossal",
         "category": [
             "Pokemon",
-            "Special overworld spawn", 
+            "Special overworld spawn",
             "Giant's Cap",
             "Rock",
             "Fire"
@@ -219,7 +219,7 @@
         "name": "Copperajah",
         "category": [
             "Pokemon",
-            "Special overworld spawn", 
+            "Special overworld spawn",
             "Hammerlocke Hills",
             "Steel"
         ],
@@ -244,7 +244,7 @@
         "name": "Cramorant",
         "category": [
             "Pokemon",
-            "Special overworld spawn", 
+            "Special overworld spawn",
             "Axew's Eye",
             "Flying",
             "Water"
@@ -293,8 +293,8 @@
         "name": "Doublade",
         "category": [
             "Pokemon",
-            "Special overworld spawn", 
-            "Giant's Cap", 
+            "Special overworld spawn",
+            "Giant's Cap",
             "needsWeather",
             "Steel",
             "Ghost"
@@ -515,8 +515,8 @@
         "name": "Gengar",
         "category": [
             "Pokemon",
-            "Special overworld spawn", 
-            "Giant's Cap", 
+            "Special overworld spawn",
+            "Giant's Cap",
             "needsWeather",
             "Ghost",
             "Poison"
@@ -527,8 +527,8 @@
         "name": "Gigalith",
         "category": [
             "Pokemon",
-            "Special overworld spawn", 
-            "Dusty Bowl", 
+            "Special overworld spawn",
+            "Dusty Bowl",
             "needsWeather",
             "Rock"
         ],
@@ -1024,12 +1024,12 @@
         "name": "Pikachu",
         "category": [
             "Pokemon",
-            "Special overworld spawn",
+            "Route 4",
             "Rolling Fields",
             "needsWeather",
             "Electric"
         ],
-        "requires": "|Rolling Fields| AND |Thunderstorm|"
+        "requires": "|Rolling Fields| AND |Thunderstorm| OR |Route 4 Access|"
     },
     {
         "name": "Piloswine",
@@ -1114,7 +1114,7 @@
         "name": "Sandaconda",
         "category": [
             "Pokemon",
-            "Special overworld spawn", 
+            "Special overworld spawn",
             "Dusty Bowl",
             "Ground"
         ],
@@ -1167,7 +1167,7 @@
         "name": "Shuckle",
         "category": [
             "Pokemon",
-            "Special overworld spawn", 
+            "Special overworld spawn",
             "Dusty Bowl",
             "Bug",
             "Rock"
@@ -1430,7 +1430,6 @@
         "name": "Gyarados",
         "category": [
             "Pokemon",
-            "Special overworld spawn",
             "Bridge Field",
             "Dusty Bowl",
             "East Lake Axewell",
@@ -1438,17 +1437,18 @@
             "North Lake Miloch",
             "South Lake Miloch",
             "West Lake Axewell",
+            "Route 2",
             "Water",
             "Flying"
         ],
-        "requires": "((|Bridge Field| OR |Dusty Bowl| OR |East Lake Axewell| OR |West Lake Axewell|) AND |Progressive bike:2| AND (|Noweather| OR |Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|)) OR ((|Lake of Outrage| OR |South Lake Miloch|) AND |Progressive bike:2| AND (|Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm|)) OR (|North Lake Miloch| AND |Progressive bike:2| AND (|Overcast| OR |Thunderstorm| OR |Intense Sun| OR |Sandstorm|))"
+        "requires": "((|Bridge Field| OR |Dusty Bowl| OR |East Lake Axewell| OR |West Lake Axewell|) AND |Progressive bike:2| AND (|Noweather| OR |Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|)) OR ((|Lake of Outrage| OR |South Lake Miloch|) AND |Progressive bike:2| AND (|Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm|)) OR (|North Lake Miloch| AND |Progressive bike:2| AND (|Overcast| OR |Thunderstorm| OR |Intense Sun| OR |Sandstorm|)) OR (|Route 2 Access| AND |Progressive bike:2|)"
     },
     {
         "name": "Gastrodon",
         "category": [
             "Pokemon",
-            "Special overworld spawn", 
-            "Giant's Mirror", 
+            "Special overworld spawn",
+            "Giant's Mirror",
             "Dusty Bowl",
             "Water",
             "Ground"
@@ -1514,7 +1514,7 @@
         "name": "Wailmer",
         "category": [
             "Pokemon",
-            "Special overworld spawn", 
+            "Special overworld spawn",
             "Motostoke Riverbank",
             "Water"
         ],
@@ -1543,5 +1543,17 @@
             "Water"
         ],
         "requires": "|South Lake Miloch| AND |Progressive bike:2| AND (|Normal weather| OR |Intense Sun| OR |Sandstorm| OR |Fog|)"
+    },
+    {
+        "name": "Carkol",
+        "category": [
+            "Pokemon",
+            "Routes",
+            "Special overworld spawn",
+            "Galar Mine",
+            "Rock",
+            "Fire"
+        ],
+        "requires": "|Galar Mine Access|"
     }
 ]

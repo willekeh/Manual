@@ -3,98 +3,574 @@
         "name": "Blipbug",
         "category": [
             "Pokemon",
+            "Routes",
             "Exclamation mark",
             "Route 1",
-            "Curry",
+            "Route 2",
             "Bug"
         ],
-        "requires": "|Route 1 Access|"
+        "requires": "|Route 1 Access| OR |Route 2 Access|"
     },
     {
         "name": "Caterpie",
-        "category": [
-            "Pokemon",
-            "Exclamation mark",
-            "Route 1",
-            "Curry",
-            "Bug"
-        ],
+        "category": ["Pokemon", "Routes", "Exclamation mark", "Route 1", "Bug"],
         "requires": "|Route 1 Access|"
     },
     {
         "name": "Grubbin",
-        "category": [
-            "Pokemon",
-            "Exclamation mark",
-            "Route 1",
-            "Curry",
-            "Bug"
-        ],
+        "category": ["Pokemon", "Routes", "Exclamation mark", "Route 1", "Bug"],
         "requires": "|Route 1 Access|"
     },
     {
         "name": "Hoothoot",
         "category": [
             "Pokemon",
+            "Routes",
             "Exclamation mark",
             "Route 1",
-            "Curry",
+            "Route 2",
             "Normal",
             "Flying"
         ],
-        "requires": "|Route 1 Access|"
+        "requires": "|Route 1 Access| OR |Route 2 Access|"
     },
     {
         "name": "Nickit",
-        "category": [
-            "Pokemon",
-            "Route 1",
-            "Dark"
-        ],
-        "requires": "|Route 1 Access|"
+        "category": ["Pokemon", "Routes", "Route 1", "Route 2", "Dark"],
+        "requires": "|Route 1 Access| OR |Route 2 Access|"
     },
     {
         "name": "Rookidee",
         "category": [
             "Pokemon",
+            "Routes",
             "Route 1",
+            "Route 2",
+            "Route 3",
             "Flying"
         ],
-        "requires": "|Route 1 Access|"
+        "requires": "|Route 1 Access| OR |Route 2 Access| OR |Route 3 Access|"
     },
     {
         "name": "Skwovet",
-        "category": [
-            "Pokemon",
-            "Route 1",
-            "Curry",
-            "Normal"
-        ],
-        "requires": "|Route 1 Access|"
+        "category": ["Pokemon", "Routes", "Route 1", "Route 2", "Normal"],
+        "requires": "|Route 1 Access| OR |Route 2 Access|"
     },
     {
         "name": "Wooloo",
+        "category": ["Pokemon", "Routes", "Route 1", "Route 4", "Normal"],
+        "requires": "|Route 1 Access| OR |Route 4 Access|"
+    },
+    {
+        "name": "Lotad",
         "category": [
             "Pokemon",
-            "Route 1",
-            "Normal"
+            "Routes",
+            "Exclamation mark",
+            "Route 2",
+            "GameShield",
+            "Water",
+            "Grass"
         ],
-        "requires": "|Route 1 Access|"
+        "requires": "|Route 2 Access|"
     },
     {
-        "name": "Route 1 item Potion",
+        "name": "Seedot",
         "category": [
-            "Item",
-            "Route 1"
+            "Pokemon",
+            "Routes",
+            "Exclamation mark",
+            "Route 2",
+            "GameSword",
+            "Grass"
         ],
-        "requires": "|Route 1 Access|"
+        "requires": "|Route 2 Access|"
     },
     {
-        "name": "Route 1 item Paralyze Heal",
+        "name": "Purrloin",
         "category": [
-            "Item",
-            "Route 1"
+            "Pokemon",
+            "Routes",
+            "Exclamation mark",
+            "Route 2",
+            "Dark"
         ],
-        "requires": "|Route 1 Access|"
+        "requires": "|Route 2 Access|"
+    },
+    {
+        "name": "Zigzagoon",
+        "category": ["Pokemon", "Routes", "Route 2", "Route 3", "Dark"],
+        "requires": "|Route 2 Access| OR |Route 3 Access|"
+    },
+    {
+        "name": "Chewtle",
+        "category": ["Pokemon", "Routes", "Route 2", "Water"],
+        "requires": "|Route 2 Access|"
+    },
+    {
+        "name": "Yamper",
+        "category": ["Pokemon", "Routes", "Route 2", "Route 4", "Electric"],
+        "requires": "|Route 2 Access| OR |Route 4 Access|"
+    },
+    {
+        "name": "Arrokuda",
+        "category": ["Pokemon", "Routes", "Route 2", "Water"],
+        "requires": "|Route 2 Access| AND |Progressive bike:2|"
+    },
+    {
+        "name": "Barraskewda",
+        "category": ["Pokemon", "Routes", "Route 2", "Water"],
+        "requires": "|Route 2 Access| AND |Progressive bike:2|"
+    },
+    {
+        "name": "Gossifleur",
+        "category": ["Pokemon", "Routes", "Route 2", "Route 3", "Grass"],
+        "requires": "|Route 2 Access| AND |Progressive bike:2| OR |Route 3 Access|"
+    },
+    {
+        "name": "Machop",
+        "category": [
+            "Pokemon",
+            "Routes",
+            "Exclamation mark",
+            "Route 3",
+            "Fighting"
+        ],
+        "requires": "|Route 3 Access|"
+    },
+    {
+        "name": "Klink",
+        "category": [
+            "Pokemon",
+            "Routes",
+            "Exclamation mark",
+            "Route 3",
+            "Steel"
+        ],
+        "requires": "|Route 3 Access|"
+    },
+    {
+        "name": "Pancham",
+        "category": [
+            "Pokemon",
+            "Routes",
+            "Exclamation mark",
+            "Route 3",
+            "Fighting"
+        ],
+        "requires": "|Route 3 Access|"
+    },
+    {
+        "name": "Mudbray",
+        "category": [
+            "Pokemon",
+            "Routes",
+            "Exclamation mark",
+            "Route 3",
+            "Ground"
+        ],
+        "requires": "|Route 3 Access|"
+    },
+    {
+        "name": "Sizzlipede",
+        "category": [
+            "Pokemon",
+            "Routes",
+            "Exclamation mark",
+            "Route 3",
+            "Fire",
+            "Bug"
+        ],
+        "requires": "|Route 3 Access|"
+    },
+    {
+        "name": "Vulpix",
+        "category": ["Pokemon", "Routes", "Route 3", "GameSword", "Fire"],
+        "requires": "|Route 3 Access|"
+    },
+    {
+        "name": "Growlithe",
+        "category": ["Pokemon", "Routes", "Route 3", "GameShield", "Fire"],
+        "requires": "|Route 3 Access|"
+    },
+    {
+        "name": "Tyrogue",
+        "category": ["Pokemon", "Routes", "Route 3", "Fighting"],
+        "requires": "|Route 3 Access|"
+    },
+    {
+        "name": "Stunky",
+        "category": ["Pokemon", "Routes", "Route 3", "Dark", "Poison"],
+        "requires": "|Route 3 Access|"
+    },
+    {
+        "name": "Trubbish",
+        "category": ["Pokemon", "Routes", "Route 3", "Poison"],
+        "requires": "|Route 3 Access|"
+    },
+    {
+        "name": "Rolycoly",
+        "category": ["Pokemon", "Routes", "Route 3", "Galar Mine", "Rock"],
+        "requires": "|Route 3 Access| AND |Galar Mine Access|"
+    },
+    {
+        "name": "Diglett",
+        "category": ["Pokemon", "Routes", "Galar Mine", "Ground"],
+        "requires": "|Galar Mine Access|"
+    },
+    {
+        "name": "Roggenrola",
+        "category": ["Pokemon", "Routes", "Galar Mine", "Rock"],
+        "requires": "|Galar Mine Access|"
+    },
+    {
+        "name": "Woobat",
+        "category": ["Pokemon", "Routes", "Galar Mine", "Psychic", "Flying"],
+        "requires": "|Galar Mine Access|"
+    },
+    {
+        "name": "Drilbur",
+        "category": ["Pokemon", "Routes", "Galar Mine", "Ground"],
+        "requires": "|Galar Mine Access|"
+    },
+    {
+        "name": "Timburr",
+        "category": ["Pokemon", "Routes", "Galar Mine", "Fighting"],
+        "requires": "|Galar Mine Access|"
+    },
+    {
+        "name": "Galarian Meowth",
+        "category": ["Pokemon", "Routes", "Route 4", "Steel"],
+        "requires": "|Route 4 Access|"
+    },
+    {
+        "name": "Budew",
+        "category": [
+            "Pokemon",
+            "Exclamation mark",
+            "Routes",
+            "Route 4",
+            "Grass",
+            "Poison"
+        ],
+        "requires": "|Route 4 Access|"
+    },
+    {
+        "name": "Joltik",
+        "category": [
+            "Pokemon",
+            "Exclamation mark",
+            "Routes",
+            "Route 4",
+            "Bug",
+            "Electric"
+        ],
+        "requires": "|Route 4 Access|"
+    },
+    {
+        "name": "Ferroseed",
+        "category": [
+            "Pokemon",
+            "Exclamation mark",
+            "Routes",
+            "Route 4",
+            "Grass",
+            "Steel"
+        ],
+        "requires": "|Route 4 Access|"
+    },
+    {
+        "name": "Cutiefly",
+        "category": [
+            "Pokemon",
+            "Exclamation mark",
+            "Routes",
+            "Route 4",
+            "Bug",
+            "Fairy"
+        ],
+        "requires": "|Route 4 Access|"
+    },
+    {
+        "name": "Milcery",
+        "category": [
+            "Pokemon",
+            "Exclamation mark",
+            "Routes",
+            "Route 4",
+            "Fairy"
+        ],
+        "requires": "|Route 4 Access|"
+    },
+    {
+        "name": "Eevee",
+        "category": ["Pokemon", "Routes", "Route 4", "Normal"],
+        "requires": "|Route 4 Access|"
+    },
+    {
+        "name": "Electrike",
+        "category": ["Pokemon", "Routes", "Route 4", "Electric"],
+        "requires": "|Route 4 Access|"
+    },
+    {
+        "name": "Pumpkaboo",
+        "category": ["Pokemon", "Routes", "Route 4", "Ghost", "Grass"],
+        "requires": "|Route 4 Access|"
+    },
+    {
+        "name": "Lombre",
+        "category": [
+            "Pokemon",
+            "Routes",
+            "Exclamation mark",
+            "Route 5",
+            "GameShield",
+            "Water",
+            "Grass"
+        ],
+        "requires": "|Route 5 Access|"
+    },
+    {
+        "name": "Nuzleaf",
+        "category": [
+            "Pokemon",
+            "Routes",
+            "Exclamation mark",
+            "Route 5",
+            "GameSword",
+            "Grass",
+            "Dark"
+        ],
+        "requires": "|Route 5 Access|"
+    },
+    {
+        "name": "Nincada",
+        "category": [
+            "Pokemon",
+            "Routes",
+            "Exclamation mark",
+            "Route 5",
+            "Bug",
+            "Ground"
+        ],
+        "requires": "|Route 5 Access|"
+    },
+    {
+        "name": "Espurr",
+        "category": [
+            "Pokemon",
+            "Routes",
+            "Exclamation mark",
+            "Route 5",
+            "Psychic"
+        ],
+        "requires": "|Route 5 Access|"
+    },
+    {
+        "name": "Spritzee",
+        "category": [
+            "Pokemon",
+            "Routes",
+            "Exclamation mark",
+            "Route 5",
+            "GameShield",
+            "Fairy"
+        ],
+        "requires": "|Route 5 Access|"
+    },
+    {
+        "name": "Swirlix",
+        "category": [
+            "Pokemon",
+            "Routes",
+            "Exclamation mark",
+            "Route 5",
+            "GameSword",
+            "Fairy"
+        ],
+        "requires": "|Route 5 Access|"
+    },
+    {
+        "name": "Dewpider",
+        "category": [
+            "Pokemon",
+            "Routes",
+            "Exclamation mark",
+            "Route 5",
+            "Bug",
+            "Water"
+        ],
+        "requires": "|Route 5 Access|"
+    },
+    {
+        "name": "Dottler",
+        "category": [
+            "Pokemon",
+            "Routes",
+            "Exclamation mark",
+            "Route 5",
+            "Bug",
+            "Psychic"
+        ],
+        "requires": "|Route 5 Access|"
+    },
+    {
+        "name": "Applin",
+        "category": [
+            "Pokemon",
+            "Routes",
+            "Exclamation mark",
+            "Route 5",
+            "Grass",
+            "Dragon"
+        ],
+        "requires": "|Route 5 Access|"
+    },
+    {
+        "name": "Galarian Farfetch'd",
+        "category": ["Pokemon", "Routes", "GameSword", "Route 5", "Fighting"],
+        "requires": "|Route 5 Access|"
+    },
+    {
+        "name": "Wobbuffet",
+        "category": ["Pokemon", "Routes", "Route 5", "Psychic"],
+        "requires": "|Route 5 Access|"
+    },
+    {
+        "name": "Drifloon",
+        "category": ["Pokemon", "Routes", "Route 5", "Ghost", "Flying"],
+        "requires": "|Route 5 Access|"
+    },
+    {
+        "name": "Minccino",
+        "category": ["Pokemon", "Routes", "Route 5", "Normal"],
+        "requires": "|Route 5 Access|"
+    },
+    {
+        "name": "Stufful",
+        "category": ["Pokemon", "Routes", "Route 5", "Normal", "Fighting"],
+        "requires": "|Route 5 Access|"
+    },
+    {
+        "name": "Torkoal",
+        "category": [
+            "Pokemon",
+            "Routes",
+            "Exclamation mark",
+            "Route 6",
+            "Fire",
+            "Rock"
+        ],
+        "requires": "|Route 6 Access|"
+    },
+    {
+        "name": "Duskull",
+        "category": [
+            "Pokemon",
+            "Routes",
+            "Exclamation mark",
+            "Route 6",
+            "Ghost"
+        ],
+        "requires": "|Route 6 Access|"
+    },
+    {
+        "name": "Hippopotas",
+        "category": [
+            "Pokemon",
+            "Routes",
+            "Exclamation mark",
+            "Route 6",
+            "Ground"
+        ],
+        "requires": "|Route 6 Access|"
+    },
+    {
+        "name": "Skorupi",
+        "category": [
+            "Pokemon",
+            "Routes",
+            "Exclamation mark",
+            "Route 6",
+            "Poison",
+            "Dark"
+        ],
+        "requires": "|Route 6 Access|"
+    },
+    {
+        "name": "Heatmor",
+        "category": [
+            "Pokemon",
+            "Routes",
+            "Exclamation mark",
+            "Route 6",
+            "Fire"
+        ],
+        "requires": "|Route 6 Access|"
+    },
+    {
+        "name": "Durant",
+        "category": [
+            "Pokemon",
+            "Routes",
+            "Exclamation mark",
+            "Route 6",
+            "Steel",
+            "Bug"
+        ],
+        "requires": "|Route 6 Access|"
+    },
+    {
+        "name": "Hawlucha",
+        "category": [
+            "Pokemon",
+            "Routes",
+            "Exclamation mark",
+            "Route 6",
+            "Flying",
+            "Fighting"
+        ],
+        "requires": "|Route 6 Access|"
+    },
+    {
+        "name": "Silicobra",
+        "category": [
+            "Pokemon",
+            "Routes",
+            "Exclamation mark",
+            "Route 6",
+            "Ground"
+        ],
+        "requires": "|Route 6 Access|"
+    },
+    {
+        "name": "Dugtrio",
+        "category": ["Pokemon", "Routes", "Route 6", "Ground"],
+        "requires": "|Route 6 Access|"
+    },
+    {
+        "name": "Trapinch",
+        "category": ["Pokemon", "Routes", "Route 6", "Ground"],
+        "requires": "|Route 6 Access|"
+    },
+    {
+        "name": "Maractus",
+        "category": ["Pokemon", "Routes", "Route 6", "Grass"],
+        "requires": "|Route 6 Access|"
+    },
+    {
+        "name": "Galarian Yamask",
+        "category": ["Pokemon", "Routes", "Route 6", "Ghost", "Ground"],
+        "requires": "|Route 6 Access|"
+    },
+    {
+        "name": "Axew",
+        "category": ["Pokemon", "Routes", "Route 6", "Dragon"],
+        "requires": "|Route 6 Access|"
+    },
+    {
+        "name": "Helioptile",
+        "category": ["Pokemon", "Routes", "Route 6", "Electric", "Normal"],
+        "requires": "|Route 6 Access|"
     }
 ]
