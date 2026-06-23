@@ -113,6 +113,11 @@
         "requires": "|Route 2 Access| OR |Route 4 Access|"
     },
     {
+        "name": "Gyarados",
+        "category": ["Pokemon", "Routes", "Route 2", "Water", "Flying"],
+        "requires": "|Route 2 Access| AND |Progressive bike:2|"
+    },
+    {
         "name": "Arrokuda",
         "category": ["Pokemon", "Routes", "Route 2", "Water"],
         "requires": "|Route 2 Access| AND |Progressive bike:2|"
@@ -209,6 +214,11 @@
         "requires": "|Route 3 Access|"
     },
     {
+        "name": "Carkol",
+        "category": ["Pokemon", "Routes", "Galar Mine", "Rock", "Fire"],
+        "requires": "|Galar Mine Access|"
+    },
+    {
         "name": "Rolycoly",
         "category": ["Pokemon", "Routes", "Route 3", "Galar Mine", "Rock"],
         "requires": "|Route 3 Access| AND |Galar Mine Access|"
@@ -265,6 +275,11 @@
             "Bug",
             "Electric"
         ],
+        "requires": "|Route 4 Access|"
+    },
+    {
+        "name": "Pikachu",
+        "category": ["Pokemon", "Routes", "Route 4", "Electric"],
         "requires": "|Route 4 Access|"
     },
     {
@@ -572,5 +587,544 @@
         "name": "Helioptile",
         "category": ["Pokemon", "Routes", "Route 6", "Electric", "Normal"],
         "requires": "|Route 6 Access|"
+    },
+    {
+        "name": "Seismitoad",
+        "category": [
+            "Pokemon",
+            "Routes",
+            "Exclamation mark",
+            "Route 7",
+            "Ground",
+            "Water"
+        ],
+        "requires": "|Route 7 Access|"
+    },
+    {
+        "name": "Karrablast",
+        "category": ["Pokemon", "Routes", "Exclamation mark", "Route 7", "Bug"],
+        "requires": "|Route 7 Access|"
+    },
+    {
+        "name": "Shelmet",
+        "category": ["Pokemon", "Routes", "Exclamation mark", "Route 7", "Bug"],
+        "requires": "|Route 7 Access|"
+    },
+    {
+        "name": "Meowstic",
+        "category": [
+            "Pokemon",
+            "Routes",
+            "Exclamation mark",
+            "Route 7",
+            "Psychic"
+        ],
+        "requires": "|Route 7 Access|"
+    },
+    {
+        "name": "Corviknight",
+        "category": [
+            "Pokemon",
+            "Routes",
+            "Exclamation mark",
+            "Route 7",
+            "Steel",
+            "Flying"
+        ],
+        "requires": "|Route 7 Access|"
+    },
+    {
+        "name": "Toxel",
+        "category": [
+            "Pokemon",
+            "Routes",
+            "Exclamation mark",
+            "Route 7",
+            "Electric",
+            "Poison"
+        ],
+        "requires": "|Route 7 Access|"
+    },
+    {
+        "name": "Liepard",
+        "category": ["Pokemon", "Routes", "Route 7", "Route 9", "Dark"],
+        "requires": "|Route 7 Access| OR |Route 9 Access|"
+    },
+    {
+        "name": "Galvantula",
+        "category": ["Pokemon", "Routes", "Route 7", "Bug", "Electric"],
+        "requires": "|Route 7 Access|"
+    },
+    {
+        "name": "Inkay",
+        "category": [
+            "Pokemon",
+            "Routes",
+            "Route 7",
+            "Route 9",
+            "Dark",
+            "Psychic"
+        ],
+        "requires": "|Route 7 Access| OR (|Route 9 Access| AND |Progressive bike:2|)"
+    },
+    {
+        "name": "Thievul",
+        "category": ["Pokemon", "Routes", "Route 7", "Route 9", "Dark"],
+        "requires": "|Route 7 Access| OR |Route 9 Access|"
+    },
+    {
+        "name": "Perrserker",
+        "category": ["Pokemon", "Routes", "Route 7", "Route 9", "Steel"],
+        "requires": "|Route 7 Access| OR |Route 9 Access|"
+    },
+    {
+        "name": "Morpeko",
+        "category": [
+            "Pokemon",
+            "Routes",
+            "Route 7",
+            "Route 9",
+            "Electric",
+            "Dark"
+        ],
+        "requires": "|Route 7 Access| OR |Route 9 Access|"
+    },
+    {
+        "name": "Haunter",
+        "category": [
+            "Pokemon",
+            "Routes",
+            "Exclamation mark",
+            "Route 8",
+            "Ghost",
+            "Poison"
+        ],
+        "requires": "|Route 8 Access|"
+    },
+    {
+        "name": "Rhyhorn",
+        "category": [
+            "Pokemon",
+            "Routes",
+            "Exclamation mark",
+            "Route 8",
+            "Ground",
+            "Rock"
+        ],
+        "requires": "|Route 8 Access|"
+    },
+    {
+        "name": "Dusclops",
+        "category": [
+            "Pokemon",
+            "Routes",
+            "Exclamation mark",
+            "Route 8",
+            "Ghost"
+        ],
+        "requires": "|Route 8 Access|"
+    },
+    {
+        "name": "Bronzong",
+        "category": [
+            "Pokemon",
+            "Routes",
+            "Exclamation mark",
+            "Route 8",
+            "Steel",
+            "Psychic"
+        ],
+        "requires": "|Route 8 Access|"
+    },
+    {
+        "name": "Hippowdon",
+        "category": [
+            "Pokemon",
+            "Routes",
+            "Exclamation mark",
+            "Route 8",
+            "Ground"
+        ],
+        "requires": "|Route 8 Access|"
+    },
+    {
+        "name": "Drapion",
+        "category": [
+            "Pokemon",
+            "Routes",
+            "Exclamation mark",
+            "Route 8",
+            "Dark",
+            "Poison"
+        ],
+        "requires": "|Route 8 Access|"
+    },
+    {
+        "name": "Sandaconda",
+        "category": [
+            "Pokemon",
+            "Routes",
+            "Exclamation mark",
+            "Route 8",
+            "Ground"
+        ],
+        "requires": "|Route 8 Access|"
+    },
+    {
+        "name": "Falinks",
+        "category": [
+            "Pokemon",
+            "Routes",
+            "Exclamation mark",
+            "Route 8",
+            "Fighting"
+        ],
+        "requires": "|Route 8 Access|"
+    },
+    {
+        "name": "Lunatone",
+        "category": [
+            "Pokemon",
+            "Routes",
+            "Route 8",
+            "GameShield",
+            "Rock",
+            "Psychic"
+        ],
+        "requires": "|Route 8 Access|"
+    },
+    {
+        "name": "Solrock",
+        "category": [
+            "Pokemon",
+            "Routes",
+            "Route 8",
+            "GameSword",
+            "Rock",
+            "Psychic"
+        ],
+        "requires": "|Route 8 Access|"
+    },
+    {
+        "name": "Boldore",
+        "category": ["Pokemon", "Routes", "Route 8", "Rock"],
+        "requires": "|Route 8 Access|"
+    },
+    {
+        "name": "Gurdurr",
+        "category": ["Pokemon", "Routes", "Route 8", "Fighting"],
+        "requires": "|Route 8 Access|"
+    },
+    {
+        "name": "Golett",
+        "category": ["Pokemon", "Routes", "Route 8", "Ghost", "Ground"],
+        "requires": "|Route 8 Access|"
+    },
+    {
+        "name": "Pawniard",
+        "category": ["Pokemon", "Routes", "Route 8", "Dark", "Steel"],
+        "requires": "|Route 8 Access|"
+    },
+    {
+        "name": "Vullaby",
+        "category": [
+            "Pokemon",
+            "Routes",
+            "Route 8",
+            "GameShield",
+            "Flying",
+            "Dark"
+        ],
+        "requires": "|Route 8 Access|"
+    },
+    {
+        "name": "Rufflet",
+        "category": [
+            "Pokemon",
+            "Routes",
+            "Route 8",
+            "GameSword",
+            "Flying",
+            "Normal"
+        ],
+        "requires": "|Route 8 Access|"
+    },
+    {
+        "name": "Togedemaru",
+        "category": ["Pokemon", "Routes", "Route 8", "Steel", "Electric"],
+        "requires": "|Route 8 Access|"
+    },
+    {
+        "name": "Sneasel",
+        "category": ["Pokemon", "Routes", "Route 8", "Dark", "Ice"],
+        "requires": "|Route 8 Access|"
+    },
+    {
+        "name": "Delibird",
+        "category": [
+            "Pokemon",
+            "Routes",
+            "Exclamation mark",
+            "Route 8",
+            "Ice",
+            "Flying"
+        ],
+        "requires": "|Route 8 Access|"
+    },
+    {
+        "name": "Snover",
+        "category": [
+            "Pokemon",
+            "Routes",
+            "Route 8",
+            "Route 10",
+            "Grass",
+            "Ice"
+        ],
+        "requires": "|Route 8 Access| OR |Route 10 Access|"
+    },
+    {
+        "name": "Galarian Darumaka",
+        "category": [
+            "Pokemon",
+            "Routes",
+            "Exclamation mark",
+            "Route 8",
+            "Route 10",
+            "GameSword",
+            "Ice"
+        ],
+        "requires": "|Route 8 Access| OR |Route 10 Access|"
+    },
+    {
+        "name": "Snom",
+        "category": ["Pokemon", "Routes", "Route 8", "Route 10", "Bug", "Ice"],
+        "requires": "|Route 8 Access| OR |Route 10 Access|"
+    },
+    {
+        "name": "Snorunt",
+        "category": ["Pokemon", "Routes", "Route 8", "Bug", "Ice"],
+        "requires": "|Route 8 Access|"
+    },
+    {
+        "name": "Throh",
+        "category": ["Pokemon", "Routes", "Route 8", "GameShield", "Fighting"],
+        "requires": "|Route 8 Access|"
+    },
+    {
+        "name": "Sawk",
+        "category": ["Pokemon", "Routes", "Route 8", "GameSword", "Fighting"],
+        "requires": "|Route 8 Access|"
+    },
+    {
+        "name": "Vanillish",
+        "category": ["Pokemon", "Routes", "Route 8", "Route 10", "Ice"],
+        "requires": "|Route 8 Access| OR |Route 10 Access|"
+    },
+    {
+        "name": "Kingler",
+        "category": [
+            "Pokemon",
+            "Routes",
+            "Exclamation mark",
+            "Route 9",
+            "Water"
+        ],
+        "requires": "|Route 9 Access|"
+    },
+    {
+        "name": "Octillery",
+        "category": [
+            "Pokemon",
+            "Routes",
+            "Exclamation mark",
+            "Route 9",
+            "Water"
+        ],
+        "requires": "|Route 9 Access|"
+    },
+    {
+        "name": "Cramorant",
+        "category": [
+            "Pokemon",
+            "Routes",
+            "Exclamation mark",
+            "Route 9",
+            "Water",
+            "Flying"
+        ],
+        "requires": "|Route 9 Access|"
+    },
+    {
+        "name": "Pincurchin",
+        "category": [
+            "Pokemon",
+            "Routes",
+            "Exclamation mark",
+            "Route 9",
+            "Electric"
+        ],
+        "requires": "|Route 9 Access|"
+    },
+    {
+        "name": "Pelipper",
+        "category": ["Pokemon", "Routes", "Route 9", "Water", "Flying"],
+        "requires": "|Route 9 Access|"
+    },
+    {
+        "name": "Gastrodon",
+        "category": ["Pokemon", "Routes", "Route 9", "Water", "Ground"],
+        "requires": "|Route 9 Access|"
+    },
+    {
+        "name": "Jellicent",
+        "category": ["Pokemon", "Routes", "Route 9", "Water", "Ghost"],
+        "requires": "|Route 9 Access|"
+    },
+    {
+        "name": "Mareanie",
+        "category": ["Pokemon", "Routes", "Route 9", "Poison", "Water"],
+        "requires": "|Route 9 Access|"
+    },
+    {
+        "name": "Pyukumuku",
+        "category": ["Pokemon", "Routes", "Route 9", "Water"],
+        "requires": "|Route 9 Access|"
+    },
+    {
+        "name": "Qwilfish",
+        "category": ["Pokemon", "Routes", "Route 9", "Water", "Poison"],
+        "requires": "|Route 9 Access| AND |Progressive bike:2|"
+    },
+    {
+        "name": "Mantyke",
+        "category": ["Pokemon", "Routes", "Route 9", "Water", "Flying"],
+        "requires": "|Route 9 Access| AND |Progressive bike:2|"
+    },
+    {
+        "name": "Bergmite",
+        "category": ["Pokemon", "Routes", "Route 9", "Ice"],
+        "requires": "|Route 9 Access|"
+    },
+    {
+        "name": "Dhelmise",
+        "category": ["Pokemon", "Routes", "Route 9", "Ghost", "Grass"],
+        "requires": "|Route 9 Access|"
+    },
+    {
+        "name": "Clobbopus",
+        "category": ["Pokemon", "Routes", "Route 9", "Fighting"],
+        "requires": "|Route 9 Access|"
+    },
+    {
+        "name": "Toxapex",
+        "category": ["Pokemon", "Routes", "Route 9", "Poison", "Water"],
+        "requires": "(|Route 9 Access| AND |Normal weather|) OR (|Route 9 Access| AND |Progressive bike:2|)"
+    },
+    {
+        "name": "Grapploct",
+        "category": [
+            "Pokemon",
+            "Special overworld spawn",
+            "Routes",
+            "Route 9",
+            "Fighting"
+        ],
+        "requires": "|Route 9 Access| AND |Progressive bike:2|"
+    },
+    {
+        "name": "Rhydon",
+        "category": [
+            "Pokemon",
+            "Routes",
+            "Exclamation mark",
+            "Route 10",
+            "Ground",
+            "Rock"
+        ],
+        "requires": "|Route 10 Access|"
+    },
+    {
+        "name": "Klang",
+        "category": [
+            "Pokemon",
+            "Routes",
+            "Exclamation mark",
+            "Route 10",
+            "Steel"
+        ],
+        "requires": "|Route 10 Access|"
+    },
+    {
+        "name": "Galarian Mr. Mime",
+        "category": ["Pokemon", "Routes", "Route 10", "Ice", "Psychic"],
+        "requires": "|Route 10 Access|"
+    },
+    {
+        "name": "Glalie",
+        "category": ["Pokemon", "Routes", "Route 10", "Ice"],
+        "requires": "|Route 10 Access|"
+    },
+    {
+        "name": "Vanilluxe",
+        "category": ["Pokemon", "Routes", "Route 10", "Ice"],
+        "requires": "|Route 10 Access|"
+    },
+    {
+        "name": "Cubchoo",
+        "category": ["Pokemon", "Routes", "Route 10", "Ice"],
+        "requires": "|Route 10 Access|"
+    },
+    {
+        "name": "Abomasnow",
+        "category": [
+            "Pokemon",
+            "Routes",
+            "Exclamation mark",
+            "Route 10",
+            "Grass",
+            "Ice"
+        ],
+        "requires": "|Route 10 Access|"
+    },
+    {
+        "name": "Beartic",
+        "category": [
+            "Pokemon",
+            "Routes",
+            "Exclamation mark",
+            "Route 10",
+            "Ice"
+        ],
+        "requires": "|Route 10 Access|"
+    },
+    {
+        "name": "Stonjourner",
+        "category": [
+            "Pokemon",
+            "Routes",
+            "Exclamation mark",
+            "Route 10",
+            "GameSword",
+            "Rock"
+        ],
+        "requires": "|Route 10 Access|"
+    },
+    {
+        "name": "Eiscue",
+        "category": [
+            "Pokemon",
+            "Routes",
+            "Exclamation mark",
+            "Route 10",
+            "GameShield",
+            "Ice"
+        ],
+        "requires": "|Route 10 Access|"
+    },
+    {
+        "name": "Duraludon",
+        "category": ["Pokemon", "Routes", "Route 10", "Steel", "Dragon"],
+        "requires": "|Route 10 Access|"
     }
 ]

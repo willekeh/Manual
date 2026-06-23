@@ -1,6 +1,6 @@
 [
     {
-        "name": "Abomasnow",
+        "name": "Wanderer Abomasnow",
         "category": [
             "Pokemon",
             "Special overworld spawn",
@@ -15,7 +15,7 @@
         "requires": "(|Axew's Eye| AND |Progressive bike:2| AND (|Snowing| OR |Snowstorm|)) OR (|Giant's Mirror| AND |Snowing|) OR ((|Giant's Seat| OR |Hammerlocke Hills|) AND (|Snowing| OR |Snowstorm|))"
     },
     {
-        "name": "Aegislash",
+        "name": "Wanderer Aegislash",
         "category": [
             "Pokemon",
             "Special overworld spawn",
@@ -27,7 +27,7 @@
         "requires": "|Giant's Cap| AND |Fog|"
     },
     {
-        "name": "Araquanid",
+        "name": "Wanderer Araquanid",
         "category": [
             "Pokemon",
             "Special overworld spawn",
@@ -39,7 +39,7 @@
         "requires": "|Stony Wilderness| AND (|Raining| OR |Thunderstorm|)"
     },
     {
-        "name": "Avalugg",
+        "name": "Wanderer Avalugg",
         "category": [
             "Pokemon",
             "Special overworld spawn",
@@ -50,7 +50,7 @@
         "requires": "|Lake of Outrage| AND |Progressive bike:2| AND (|Snowing| OR |Snowstorm|)"
     },
     {
-        "name": "Barbaracle",
+        "name": "Wanderer Barbaracle",
         "category": [
             "Pokemon",
             "Special overworld spawn",
@@ -62,7 +62,7 @@
         "requires": "|Dusty Bowl| AND (|Overcast| OR |Raining| OR |Thunderstorm|)"
     },
     {
-        "name": "Beartic",
+        "name": "Wanderer Beartic",
         "category": [
             "Pokemon",
             "Special overworld spawn",
@@ -74,7 +74,7 @@
         "requires": "(|Bridge Field| AND |Progressive bike:2| AND |Snowing|) OR (|Giant's Cap| AND |Snowing|)"
     },
     {
-        "name": "Beheeyem",
+        "name": "Wanderer Beheeyem",
         "category": [
             "Pokemon",
             "Special overworld spawn",
@@ -85,7 +85,7 @@
         "requires": "|Bridge Field| AND (|Normal weather| OR |Overcast| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Fog|)"
     },
     {
-        "name": "Bellossom",
+        "name": "Wanderer Bellossom",
         "category": [
             "Pokemon",
             "Special overworld spawn",
@@ -96,7 +96,7 @@
         "requires": "|Giant's Mirror| AND (|Normal weather| OR |Intense Sun| OR |Fog|)"
     },
     {
-        "name": "Bewear",
+        "name": "Wanderer Bewear",
         "category": [
             "Pokemon",
             "Special overworld spawn",
@@ -108,7 +108,7 @@
         "requires": "(|Dappled Grove| AND (|Noweather| OR |Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|)) OR (|Bridge Field| AND (|Normal weather| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|))"
     },
     {
-        "name": "Bisharp",
+        "name": "Wanderer Bisharp",
         "category": [
             "Pokemon",
             "Special overworld spawn",
@@ -119,7 +119,7 @@
         "requires": "|Giant's Seat| AND (|Noweather| OR |Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|)"
     },
     {
-        "name": "Boltund",
+        "name": "Wanderer Boltund",
         "category": [
             "Pokemon",
             "Special overworld spawn",
@@ -129,7 +129,7 @@
         "requires": "|North Lake Miloch| AND (|Noweather| OR |Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|)"
     },
     {
-        "name": "Bronzong",
+        "name": "Wanderer Bronzong",
         "category": [
             "Pokemon",
             "Special overworld spawn",
@@ -145,7 +145,7 @@
         "requires": "(|Bridge Field| AND (|Raining| OR |Thunderstorm|)) OR (|Dusty Bowl| AND (|Normal weather| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm|)) OR (|East Lake Axewell| AND |Fog|) OR (|Giant's Seat| AND (|Overcast| OR |Raining| OR |Thunderstorm|)) OR (|Stony Wilderness| AND (|Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Fog|))"
     },
     {
-        "name": "Chandelure",
+        "name": "Wanderer Chandelure",
         "category": [
             "Pokemon",
             "Special overworld spawn",
@@ -157,7 +157,7 @@
         "requires": "|Lake of Outrage| AND |Progressive bike:2| AND |Intense Sun|"
     },
     {
-        "name": "Cinccino",
+        "name": "Wanderer Cinccino",
         "category": [
             "Pokemon",
             "Special overworld spawn",
@@ -168,7 +168,7 @@
         "requires": "|Giant's Cap| AND (|Normal weather| OR |Overcast| OR |Fog|)"
     },
     {
-        "name": "Claydol",
+        "name": "Wanderer Claydol",
         "category": [
             "Pokemon",
             "Special overworld spawn",
@@ -183,7 +183,7 @@
         "requires": "(|Bridge Field| AND |Sandstorm|) OR (|Dappled Grove| AND (|Intense Sun| OR |Sandstorm|)) OR (|Dusty Bowl| AND (|Overcast| OR |Intense Sun| OR |Sandstorm| OR |Fog|)) OR (|Stony Wilderness| AND (|Normal weather| OR |Overcast| OR |Intense Sun| OR |Sandstorm|))"
     },
     {
-        "name": "Clefable",
+        "name": "Wanderer Clefable",
         "category": [
             "Pokemon",
             "Special overworld spawn",
@@ -194,7 +194,7 @@
         "requires": "|Motostoke Riverbank| AND |Fog|"
     },
     {
-        "name": "Coalossal",
+        "name": "Wanderer Coalossal",
         "category": [
             "Pokemon",
             "Special overworld spawn",
@@ -205,7 +205,7 @@
         "requires": "|Giant's Cap| AND (|Noweather| OR |Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|)"
     },
     {
-        "name": "Conkeldurr",
+        "name": "Wanderer Conkeldurr",
         "category": [
             "Pokemon",
             "Special overworld spawn",
@@ -216,7 +216,7 @@
         "requires": "|Motostoke Riverbank| AND (|Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Fog|)"
     },
     {
-        "name": "Copperajah",
+        "name": "Wanderer Copperajah",
         "category": [
             "Pokemon",
             "Special overworld spawn",
@@ -226,7 +226,7 @@
         "requires": "|Hammerlocke Hills| AND (|Noweather| OR |Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|)"
     },
     {
-        "name": "Corviknight",
+        "name": "Wanderer Corviknight",
         "category": [
             "Pokemon",
             "Special overworld spawn",
@@ -241,7 +241,7 @@
         "requires": "((|Giant's Cap| OR |Hammerlocke Hills| OR |North Lake Miloch| OR |Watchtower Ruins|) AND (|Noweather| OR |Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|)) OR (|Motostoke Riverbank| AND (|Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm|))"
     },
     {
-        "name": "Cramorant",
+        "name": "Wanderer Cramorant",
         "category": [
             "Pokemon",
             "Special overworld spawn",
@@ -252,7 +252,7 @@
         "requires": "|Axew's Eye| AND (|Noweather| OR |Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|) AND |Progressive bike:2|"
     },
     {
-        "name": "Crawdaunt",
+        "name": "Wanderer Crawdaunt",
         "category": [
             "Pokemon",
             "Special overworld spawn",
@@ -264,7 +264,7 @@
         "requires": "|South Lake Miloch| AND (|Normal weather| OR |Thunderstorm|)"
     },
     {
-        "name": "Crustle",
+        "name": "Wanderer Crustle",
         "category": [
             "Pokemon",
             "Special overworld spawn",
@@ -278,7 +278,7 @@
         "requires": "(|Rolling Fields| AND |Sandstorm|) OR (|South Lake Miloch| AND |Intense Sun|) OR (|Stony Wilderness| AND (|Normal weather| OR |Overcast| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|))"
     },
     {
-        "name": "Diggersby",
+        "name": "Wanderer Diggersby",
         "category": [
             "Pokemon",
             "Special overworld spawn",
@@ -290,7 +290,7 @@
         "requires": "(|Rolling Fields| AND (|Noweather| OR |Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|)) OR (|West Lake Axewell| AND (|Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm|))"
     },
     {
-        "name": "Doublade",
+        "name": "Wanderer Doublade",
         "category": [
             "Pokemon",
             "Special overworld spawn",
@@ -302,7 +302,7 @@
         "requires": "|Giant's Cap| AND (|Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm|)"
     },
     {
-        "name": "Drapion",
+        "name": "Wanderer Drapion",
         "category": [
             "Pokemon",
             "Special overworld spawn",
@@ -315,7 +315,7 @@
         "requires": "(|Bridge Field| AND (|Overcast| OR |Intense Sun|)) OR (|Motostoke Riverbank| AND (|Normal weather| OR |Raining| OR |Thunderstorm| OR |Intense Sun| OR |Sandstorm|))"
     },
     {
-        "name": "Drednaw",
+        "name": "Wanderer Drednaw",
         "category": [
             "Pokemon",
             "Special overworld spawn",
@@ -327,7 +327,7 @@
         "requires": "(|Giant's Cap| OR |West Lake Axewell|) AND (|Noweather| OR |Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|)"
     },
     {
-        "name": "Drifblim",
+        "name": "Wanderer Drifblim",
         "category": [
             "Pokemon",
             "Special overworld spawn",
@@ -341,7 +341,7 @@
         "requires": "((|North Lake Miloch| OR |South Lake Miloch|) AND (|Fog| OR ((|Normal weather| OR |Overcast| OR |Snowstorm|) AND |Progressive bike:2|))) OR (|Watchtower Ruins| AND (|Normal weather| OR |Snowing| OR |Intense Sun|))"
     },
     {
-        "name": "Dubwool",
+        "name": "Wanderer Dubwool",
         "category": [
             "Pokemon",
             "Special overworld spawn",
@@ -351,7 +351,7 @@
         "requires": "|Rolling Fields| AND (|Noweather| OR |Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|)"
     },
     {
-        "name": "Duraludon",
+        "name": "Wanderer Duraludon",
         "category": [
             "Pokemon",
             "Special overworld spawn",
@@ -362,7 +362,7 @@
         "requires": "|Giant's Seat| AND (|Noweather| OR |Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|)"
     },
     {
-        "name": "Dusclops",
+        "name": "Wanderer Dusclops",
         "category": [
             "Pokemon",
             "Special overworld spawn",
@@ -375,7 +375,7 @@
         "requires": "((|Giant's Seat| OR |Dusty Bowl|) AND |Fog|) OR (|Watchtower Ruins| AND (|Overcast| OR |Raining| OR |Thunderstorm|))"
     },
     {
-        "name": "Dusknoir",
+        "name": "Wanderer Dusknoir",
         "category": [
             "Pokemon",
             "Special overworld spawn",
@@ -385,7 +385,7 @@
         "requires": "|Stony Wilderness| AND (|Noweather| OR |Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|)"
     },
     {
-        "name": "Eldegoss",
+        "name": "Wanderer Eldegoss",
         "category": [
             "Pokemon",
             "Special overworld spawn",
@@ -395,7 +395,7 @@
         "requires": "|Motostoke Riverbank| AND (|Noweather| OR |Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|)"
     },
     {
-        "name": "Espeon",
+        "name": "Wanderer Espeon",
         "category": [
             "Pokemon",
             "Special overworld spawn",
@@ -406,7 +406,7 @@
         "requires": "|Lake of Outrage| AND |Progressive bike:2| AND |Overcast|"
     },
     {
-        "name": "Excadrill",
+        "name": "Wanderer Excadrill",
         "category": [
             "Pokemon",
             "Special overworld spawn",
@@ -418,7 +418,7 @@
         "requires": "|Giant's Cap| AND (|Intense Sun| OR |Sandstorm|)"
     },
     {
-        "name": "Ferrothorn",
+        "name": "Wanderer Ferrothorn",
         "category": [
             "Pokemon",
             "Special overworld spawn",
@@ -429,7 +429,7 @@
         "requires": "|Bridge Field| AND (|Noweather| OR |Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|)"
     },
     {
-        "name": "Flareon",
+        "name": "Wanderer Flareon",
         "category": [
             "Pokemon",
             "Special overworld spawn",
@@ -440,7 +440,7 @@
         "requires": "|Lake of Outrage| AND |Progressive bike:2| AND |Intense Sun|"
     },
     {
-        "name": "Flygon",
+        "name": "Wanderer Flygon",
         "category": [
             "Pokemon",
             "Special overworld spawn",
@@ -452,7 +452,7 @@
         "requires": "|Dusty Bowl| AND (|Normal weather| OR |Sandstorm|)"
     },
     {
-        "name": "Galarian Weezing",
+        "name": "Wanderer Galarian Weezing",
         "category": [
             "Pokemon",
             "Special overworld spawn",
@@ -463,7 +463,7 @@
         "requires": "|East Lake Axewell| AND (|Noweather| OR |Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|)"
     },
     {
-        "name": "Gallade",
+        "name": "Wanderer Gallade",
         "category": [
             "Pokemon",
             "Special overworld spawn",
@@ -475,7 +475,7 @@
         "requires": "|Bridge Field| AND (|Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Intense Sun| OR |Sandstorm|) AND |Progressive bike:2|"
     },
     {
-        "name": "Galvantula",
+        "name": "Wanderer Galvantula",
         "category": [
             "Pokemon",
             "Special overworld spawn",
@@ -488,7 +488,7 @@
         "requires": "(|Giant's Cap| AND |Thunderstorm|) OR (|Giant's Seat| AND (|Thunderstorm| OR |Raining|)) OR (|South Lake Miloch| AND (|Noweather| OR |Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|))"
     },
     {
-        "name": "Garbodor",
+        "name": "Wanderer Garbodor",
         "category": [
             "Pokemon",
             "Special overworld spawn",
@@ -499,7 +499,7 @@
         "requires": "(|Bridge Field| AND (|Noweather| OR |Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|)) OR (|East Lake Axewell| AND (|Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm|))"
     },
     {
-        "name": "Gardevoir",
+        "name": "Wanderer Gardevoir",
         "category": [
             "Pokemon",
             "Special overworld spawn",
@@ -512,7 +512,7 @@
         "requires": "(|Rolling Fields| AND |Fog|) OR (|Lake of Outrage| AND |Progressive bike:2| AND (|Normal weather| OR |Fog|))"
     },
     {
-        "name": "Gengar",
+        "name": "Wanderer Gengar",
         "category": [
             "Pokemon",
             "Special overworld spawn",
@@ -524,7 +524,7 @@
         "requires": "|Giant's Cap| AND (|Normal weather| OR |Overcast| OR |Fog| OR |Thunderstorm| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm|)"
     },
     {
-        "name": "Gigalith",
+        "name": "Wanderer Gigalith",
         "category": [
             "Pokemon",
             "Special overworld spawn",
@@ -535,7 +535,7 @@
         "requires": "|Dusty Bowl| AND (|Normal weather| OR |Intense Sun|)"
     },
     {
-        "name": "Glaceon",
+        "name": "Wanderer Glaceon",
         "category": [
             "Pokemon",
             "Special overworld spawn",
@@ -546,7 +546,7 @@
         "requires": "|Lake of Outrage| AND |Progressive bike:2| AND (|Snowing| OR |Snowstorm|)"
     },
     {
-        "name": "Glalie",
+        "name": "Wanderer Glalie",
         "category": [
             "Pokemon",
             "Special overworld spawn",
@@ -559,7 +559,7 @@
         "requires": "(|Giant's Cap| OR |Giant's Seat| OR |Watchtower Ruins|) AND (|Snowing| OR |Snowstorm|)"
     },
     {
-        "name": "Golisopod",
+        "name": "Wanderer Golisopod",
         "category": [
             "Pokemon",
             "Special overworld spawn",
@@ -572,7 +572,7 @@
         "requires": "(|Bridge Field| AND (|Normal weather| OR |Raining| OR |Thunderstorm|)) OR (|Giant's Cap| AND |Raining|)"
     },
     {
-        "name": "Golurk",
+        "name": "Wanderer Golurk",
         "category": [
             "Pokemon",
             "Special overworld spawn",
@@ -586,7 +586,7 @@
         "requires": "(|Dusty Bowl| AND (|Overcast| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Fog|)) OR (|Giant's Seat| AND |Sandstorm|) OR (|Stony Wilderness| AND (|Noweather| OR |Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|)) OR (|Watchtower Ruins| AND (|Normal weather| OR |Intense Sun| OR |Sandstorm| OR |Fog|))"
     },
     {
-        "name": "Gourgeist",
+        "name": "Wanderer Gourgeist",
         "category": [
             "Pokemon",
             "Special overworld spawn",
@@ -598,7 +598,7 @@
         "requires": "|Hammerlocke Hills| AND (|Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|)"
     },
     {
-        "name": "Grapploct",
+        "name": "Wanderer Grapploct",
         "category": [
             "Pokemon",
             "Special overworld spawn",
@@ -609,7 +609,7 @@
         "requires": "(|Lake of Outrage| AND |Progressive bike:2| AND (|Noweather| OR |Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|)) OR (|West Lake Axewell| AND |Progressive bike:2| AND (|Normal weather| OR |Overcast| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|))"
     },
     {
-        "name": "Greedent",
+        "name": "Wanderer Greedent",
         "category": [
             "Pokemon",
             "Special overworld spawn",
@@ -619,7 +619,7 @@
         "requires": "|Bridge Field| AND (|Noweather| OR |Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|)"
     },
     {
-        "name": "Grimmsnarl",
+        "name": "Wanderer Grimmsnarl",
         "category": [
             "Pokemon",
             "Special overworld spawn",
@@ -630,7 +630,7 @@
         "requires": "|Stony Wilderness| AND (|Noweather| OR |Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|)"
     },
     {
-        "name": "Hatterene",
+        "name": "Wanderer Hatterene",
         "category": [
             "Pokemon",
             "Special overworld spawn",
@@ -641,7 +641,7 @@
         "requires": "|Lake of Outrage| AND |Progressive bike:2| AND (|Noweather| OR |Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|)"
     },
     {
-        "name": "Haunter",
+        "name": "Wanderer Haunter",
         "category": [
             "Pokemon",
             "Special overworld spawn",
@@ -654,7 +654,7 @@
         "requires": "(|Rolling Fields| AND (|Raining| OR |Thunderstorm|)) OR (|Watchtower Ruins| AND (|Overcast| OR |Raining| OR |Thunderstorm| OR |Snowstorm| OR |Sandstorm| OR |Fog|))"
     },
     {
-        "name": "Hawlucha",
+        "name": "Wanderer Hawlucha",
         "category": [
             "Pokemon",
             "Special overworld spawn",
@@ -665,7 +665,7 @@
         "requires": "|Hammerlocke Hills| AND (|Noweather| OR |Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|)"
     },
     {
-        "name": "Haxorus",
+        "name": "Wanderer Haxorus",
         "category": [
             "Pokemon",
             "Special overworld spawn",
@@ -676,7 +676,7 @@
         "requires": "|Axew's Eye| AND |Progressive bike:2| AND (|Normal weather| OR |Overcast| OR |Raining| OR |Intense Sun| OR |Sandstorm| OR |Fog|)"
     },
     {
-        "name": "Jolteon",
+        "name": "Wanderer Jolteon",
         "category": [
             "Pokemon",
             "Special overworld spawn",
@@ -687,7 +687,7 @@
         "requires": "|Lake of Outrage| AND |Progressive bike:2| AND |Thunderstorm|"
     },
     {
-        "name": "Kingler",
+        "name": "Wanderer Kingler",
         "category": [
             "Pokemon",
             "Special overworld spawn",
@@ -699,7 +699,7 @@
         "requires": "(|West Lake Axewell| OR |South Lake Miloch|) AND |Normal weather|"
     },
     {
-        "name": "Kirlia",
+        "name": "Wanderer Kirlia",
         "category": [
             "Pokemon",
             "Special overworld spawn",
@@ -711,7 +711,7 @@
         "requires": "|Rolling Fields| AND |Fog|"
     },
     {
-        "name": "Klang",
+        "name": "Wanderer Klang",
         "category": [
             "Pokemon",
             "Special overworld spawn",
@@ -722,7 +722,7 @@
         "requires": "|Hammerlocke Hills| AND (|Normal weather| OR |Overcast| OR |Raining| OR |Snowing|)"
     },
     {
-        "name": "Klinklang",
+        "name": "Wanderer Klinklang",
         "category": [
             "Pokemon",
             "Special overworld spawn",
@@ -733,7 +733,7 @@
         "requires": "|Hammerlocke Hills| AND (|Thunderstorm| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm|)"
     },
     {
-        "name": "Tyranitar",
+        "name": "Wanderer Tyranitar",
         "category": [
             "Pokemon",
             "Special overworld spawn",
@@ -746,7 +746,7 @@
         "requires": "|Dusty Bowl| AND (|Normal weather| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|)"
     },
     {
-        "name": "Kommo-o",
+        "name": "Wanderer Kommo-o",
         "category": [
             "Pokemon",
             "Special overworld spawn",
@@ -759,7 +759,7 @@
         "requires": "|Dusty Bowl| AND (|Normal weather| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|)"
     },
     {
-        "name": "Leafeon",
+        "name": "Wanderer Leafeon",
         "category": [
             "Pokemon",
             "Special overworld spawn",
@@ -770,7 +770,7 @@
         "requires": "|Lake of Outrage| AND |Progressive bike:2| AND |Normal weather|"
     },
     {
-        "name": "Liepard",
+        "name": "Wanderer Liepard",
         "category": [
             "Pokemon",
             "Special overworld spawn",
@@ -780,7 +780,7 @@
         "requires": "|North Lake Miloch| AND (|Noweather| OR |Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|)"
     },
     {
-        "name": "Linoone",
+        "name": "Wanderer Linoone",
         "category": [
             "Pokemon",
             "Special overworld spawn",
@@ -790,7 +790,7 @@
         "requires": "|Bridge Field| AND (|Noweather| OR |Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|)"
     },
     {
-        "name": "Lucario",
+        "name": "Wanderer Lucario",
         "category": [
             "Pokemon",
             "Special overworld spawn",
@@ -802,7 +802,7 @@
         "requires": "|North Lake Miloch| AND |Normal weather|"
     },
     {
-        "name": "Ludicolo",
+        "name": "Wanderer Ludicolo",
         "category": [
             "Pokemon",
             "Special overworld spawn",
@@ -815,7 +815,7 @@
         "requires": "|Dappled Grove| AND (|Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Fog|)"
     },
     {
-        "name": "Machamp",
+        "name": "Wanderer Machamp",
         "category": [
             "Pokemon",
             "Special overworld spawn",
@@ -826,7 +826,7 @@
         "requires": "|Giant's Mirror| AND (|Normal weather| OR |Overcast| OR |Thunderstorm| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|)"
     },
     {
-        "name": "Machoke",
+        "name": "Wanderer Machoke",
         "category": [
             "Pokemon",
             "Special overworld spawn",
@@ -836,7 +836,7 @@
         "requires": "|South Lake Miloch| AND (|Noweather| OR |Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|)"
     },
     {
-        "name": "Manectric",
+        "name": "Wanderer Manectric",
         "category": [
             "Pokemon",
             "Special overworld spawn",
@@ -847,7 +847,7 @@
         "requires": "|Rolling Fields| AND |Thunderstorm|"
     },
     {
-        "name": "Mime Jr.",
+        "name": "Wanderer Mime Jr.",
         "category": [
             "Pokemon",
             "Special overworld spawn",
@@ -859,7 +859,7 @@
         "requires": "|Rolling Fields| AND |Snowstorm|"
     },
     {
-        "name": "Mimikyu",
+        "name": "Wanderer Mimikyu",
         "category": [
             "Pokemon",
             "Special overworld spawn",
@@ -871,7 +871,7 @@
         "requires": "|Bridge Field| AND |Fog|"
     },
     {
-        "name": "Mudsdale",
+        "name": "Wanderer Mudsdale",
         "category": [
             "Pokemon",
             "Special overworld spawn",
@@ -885,7 +885,7 @@
         "requires": "(|Rolling Fields| AND (|Normal weather| OR |Overcast| OR |Intense Sun| OR |Sandstorm| OR |Fog|)) OR (|Dusty Bowl| AND (|Normal weather| OR |Intense Sun| OR |Sandstorm| OR |Fog|)) OR (|East Lake Axewell| AND (|Intense Sun| OR |Sandstorm|)) OR (|Giant's Seat| AND |Intense Sun|)"
     },
     {
-        "name": "Musharna",
+        "name": "Wanderer Musharna",
         "category": [
             "Pokemon",
             "Special overworld spawn",
@@ -897,7 +897,7 @@
         "requires": "(|Bridge Field| AND |Progressive bike:2| AND |Fog|) OR (|Giant's Seat| AND |Fog|)"
     },
     {
-        "name": "Ninjask",
+        "name": "Wanderer Ninjask",
         "category": [
             "Pokemon",
             "Special overworld spawn",
@@ -908,7 +908,7 @@
         "requires": "|Rolling Fields| AND (|Noweather| OR |Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|)"
     },
     {
-        "name": "Noctowl",
+        "name": "Wanderer Noctowl",
         "category": [
             "Pokemon",
             "Special overworld spawn",
@@ -920,7 +920,7 @@
         "requires": "|Bridge Field| AND |Snowing|"
     },
     {
-        "name": "Noivern",
+        "name": "Wanderer Noivern",
         "category": [
             "Pokemon",
             "Special overworld spawn",
@@ -932,7 +932,7 @@
         "requires": "|Bridge Field| AND (|Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|)"
     },
     {
-        "name": "Obstagoon",
+        "name": "Wanderer Obstagoon",
         "category": [
             "Pokemon",
             "Special overworld spawn",
@@ -943,7 +943,7 @@
         "requires": "|Bridge Field| AND (|Noweather| OR |Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|)"
     },
     {
-        "name": "Onix",
+        "name": "Wanderer Onix",
         "category": [
             "Pokemon",
             "Special overworld spawn",
@@ -954,7 +954,7 @@
         "requires": "|Rolling Fields| AND (|Noweather| OR |Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|)"
     },
     {
-        "name": "Orbeetle",
+        "name": "Wanderer Orbeetle",
         "category": [
             "Pokemon",
             "Special overworld spawn",
@@ -966,7 +966,7 @@
         "requires": "(|Giant's Cap| OR |Dappled Grove|) AND (|Noweather| OR |Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|)"
     },
     {
-        "name": "Palpitoad",
+        "name": "Wanderer Palpitoad",
         "category": [
             "Pokemon",
             "Special overworld spawn",
@@ -979,7 +979,7 @@
         "requires": "(|South Lake Miloch| AND (|Raining| OR |Thunderstorm|)) OR (|West Lake Axewell| AND (|Overcast| OR |Snowing| OR |Snowstorm| OR |Sandstorm| OR |Fog|))"
     },
     {
-        "name": "Pangoro",
+        "name": "Wanderer Pangoro",
         "category": [
             "Pokemon",
             "Special overworld spawn",
@@ -993,7 +993,7 @@
         "requires": "(|Bridge Field| AND (|Overcast| OR |Intense Sun|)) OR (|Dappled Grove| AND (|Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm|)) OR (|Rolling Fields| AND (|Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Intense Sun|))"
     },
     {
-        "name": "Pelipper",
+        "name": "Wanderer Pelipper",
         "category": [
             "Pokemon",
             "Special overworld spawn",
@@ -1011,7 +1011,7 @@
         "requires": "(|Rolling Fields| AND |Raining|) OR (|South Lake Miloch| AND |Progressive bike:2| AND (|Overcast| OR |Raining| OR |Thunderstorm| OR |Intense Sun|)) OR ((|West Lake Axewell| OR |East Lake Axewell|) AND ((|Raining| OR |Thunderstorm|) OR (|Progressive bike:2| AND (|Normal weather| OR |Overcast| OR |Intense Sun|)))) OR (|North Lake Miloch| AND ((|Raining| OR |Thunderstorm|) OR (|Progressive bike:2| AND |Intense Sun|))) OR ((|Bridge Field| OR |Lake of Outrage|) AND |Progressive bike:2| AND |Intense Sun|)"
     },
     {
-        "name": "Perrserker",
+        "name": "Wanderer Perrserker",
         "category": [
             "Pokemon",
             "Special overworld spawn",
@@ -1021,18 +1021,18 @@
         "requires": "|Giant's Mirror| AND (|Noweather| OR |Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|)"
     },
     {
-        "name": "Pikachu",
+        "name": "Wanderer Pikachu",
         "category": [
             "Pokemon",
-            "Route 4",
+            "Special overworld spawn",
             "Rolling Fields",
             "needsWeather",
             "Electric"
         ],
-        "requires": "|Rolling Fields| AND |Thunderstorm| OR |Route 4 Access|"
+        "requires": "|Rolling Fields| AND |Thunderstorm|"
     },
     {
-        "name": "Piloswine",
+        "name": "Wanderer Piloswine",
         "category": [
             "Pokemon",
             "Special overworld spawn",
@@ -1046,7 +1046,7 @@
         "requires": "(|Rolling Fields| OR |East Lake Axewell| OR |Dusty Bowl|) AND (|Snowing| OR |Snowstorm|)"
     },
     {
-        "name": "Quagsire",
+        "name": "Wanderer Quagsire",
         "category": [
             "Pokemon",
             "Special overworld spawn",
@@ -1058,7 +1058,7 @@
         "requires": "|West Lake Axewell| AND (|Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Fog|)"
     },
     {
-        "name": "Rhydon",
+        "name": "Wanderer Rhydon",
         "category": [
             "Pokemon",
             "Special overworld spawn",
@@ -1074,7 +1074,7 @@
         "requires": "((|Bridge Field| OR |Motostoke Riverbank|) AND (|Intense Sun| OR |Sandstorm|)) OR (|Dusty Bowl| AND (|Raining| OR |Thunderstorm| OR |Snowing|)) OR (|Giant's Seat| AND (|Normal weather| OR |Raining|)) OR (|Lake of Outrage| AND |Progressive bike:2| AND |Sandstorm|) OR (|Stony Wilderness| AND (|Noweather| OR |Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|))"
     },
     {
-        "name": "Ribombee",
+        "name": "Wanderer Ribombee",
         "category": [
             "Pokemon",
             "Special overworld spawn",
@@ -1087,7 +1087,7 @@
         "requires": "(|Bridge Field| AND (|Normal weather| OR |Overcast|)) OR (|Motostoke Riverbank| AND (|Overcast| OR |Snowing| OR |Snowstorm| OR |Fog|))"
     },
     {
-        "name": "Roselia",
+        "name": "Wanderer Roselia",
         "category": [
             "Pokemon",
             "Special overworld spawn",
@@ -1099,7 +1099,7 @@
         "requires": "|Rolling Fields| AND (|Normal weather| OR |Overcast| OR |Snowing| OR |Intense Sun| OR |Sandstorm| OR |Fog|)"
     },
     {
-        "name": "Roserade",
+        "name": "Wanderer Roserade",
         "category": [
             "Pokemon",
             "Special overworld spawn",
@@ -1111,7 +1111,7 @@
         "requires": "|Hammerlocke Hills| AND (|Overcast| OR |Fog|)"
     },
     {
-        "name": "Sandaconda",
+        "name": "Wanderer Sandaconda",
         "category": [
             "Pokemon",
             "Special overworld spawn",
@@ -1121,7 +1121,7 @@
         "requires": "|Dusty Bowl| AND (|Noweather| OR |Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|)"
     },
     {
-        "name": "Seismitoad",
+        "name": "Wanderer Seismitoad",
         "category": [
             "Pokemon",
             "Special overworld spawn",
@@ -1139,7 +1139,7 @@
         "requires": "(|Axew's Eye| AND |Progressive bike:2| AND |Thunderstorm|) OR (|Bridge Field| AND (|Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Fog|)) OR ((|Dappled Grove| OR |Dusty Bowl|) AND (|Raining| OR |Thunderstorm|)) OR ((|Giant's Cap| OR |Giant's Mirror|) AND |Raining|) OR (|North Lake Miloch| AND (|Overcast| OR |Thunderstorm|))"
     },
     {
-        "name": "Shiftry",
+        "name": "Wanderer Shiftry",
         "category": [
             "Pokemon",
             "Special overworld spawn",
@@ -1152,7 +1152,7 @@
         "requires": "|Dappled Grove| AND (|Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Fog|)"
     },
     {
-        "name": "Shiinotic",
+        "name": "Wanderer Shiinotic",
         "category": [
             "Pokemon",
             "Special overworld spawn",
@@ -1164,7 +1164,7 @@
         "requires": "|Lake of Outrage| AND |Progressive bike:2| AND (|Overcast| OR |Raining| OR |Thunderstorm|)"
     },
     {
-        "name": "Shuckle",
+        "name": "Wanderer Shuckle",
         "category": [
             "Pokemon",
             "Special overworld spawn",
@@ -1175,7 +1175,7 @@
         "requires": "|Dusty Bowl| AND (|Noweather| OR |Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|)"
     },
     {
-        "name": "Sigilyph",
+        "name": "Wanderer Sigilyph",
         "category": [
             "Pokemon",
             "Special overworld spawn",
@@ -1188,7 +1188,7 @@
         "requires": "(|Dusty Bowl| AND (|Overcast| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Fog|)) OR (|Motostoke Riverbank| AND (|Noweather| OR |Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|)) OR (|Stony Wilderness| AND (|Normal weather| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|))"
     },
     {
-        "name": "Skuntank",
+        "name": "Wanderer Skuntank",
         "category": [
             "Pokemon",
             "Special overworld spawn",
@@ -1202,7 +1202,7 @@
         "requires": "(|Dusty Bowl| AND |Overcast|) OR (|North Lake Miloch| AND (|Raining| OR |Intense Sun| OR |Sandstorm|)) OR (|South Lake Miloch| AND (|Normal weather| OR |Overcast| OR |Snowing| OR |Snowstorm| OR |Sandstorm| OR |Fog|))"
     },
     {
-        "name": "Snorlax",
+        "name": "Wanderer Snorlax",
         "category": [
             "Pokemon",
             "Special overworld spawn",
@@ -1213,7 +1213,7 @@
         "requires": "|Motostoke Riverbank| AND (|Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm|)"
     },
     {
-        "name": "Steelix",
+        "name": "Wanderer Steelix",
         "category": [
             "Pokemon",
             "Special overworld spawn",
@@ -1225,7 +1225,7 @@
         "requires": "(|Giant's Mirror| OR |Giant's Seat|) AND (|Noweather| OR |Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|)"
     },
     {
-        "name": "Sudowoodo",
+        "name": "Wanderer Sudowoodo",
         "category": [
             "Pokemon",
             "Special overworld spawn",
@@ -1236,7 +1236,7 @@
         "requires": "|Dusty Bowl| AND (|Normal weather| OR |Overcast| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|)"
     },
     {
-        "name": "Sylveon",
+        "name": "Wanderer Sylveon",
         "category": [
             "Pokemon",
             "Special overworld spawn",
@@ -1247,7 +1247,7 @@
         "requires": "|Lake of Outrage| AND |Progressive bike:2| AND |Fog|"
     },
     {
-        "name": "Thievul",
+        "name": "Wanderer Thievul",
         "category": [
             "Pokemon",
             "Special overworld spawn",
@@ -1257,7 +1257,7 @@
         "requires": "|South Lake Miloch| AND (|Noweather| OR |Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|)"
     },
     {
-        "name": "Tsareena",
+        "name": "Wanderer Tsareena",
         "category": [
             "Pokemon",
             "Special overworld spawn",
@@ -1268,7 +1268,7 @@
         "requires": "|Stony Wilderness| AND (|Normal weather| OR |Overcast| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|)"
     },
     {
-        "name": "Umbreon",
+        "name": "Wanderer Umbreon",
         "category": [
             "Pokemon",
             "Special overworld spawn",
@@ -1279,7 +1279,7 @@
         "requires": "|Lake of Outrage| AND |Progressive bike:2| AND |Sandstorm|"
     },
     {
-        "name": "Unfezant",
+        "name": "Wanderer Unfezant",
         "category": [
             "Pokemon",
             "Special overworld spawn",
@@ -1292,7 +1292,7 @@
         "requires": "(|Giant's Mirror| AND (|Normal weather| OR |Overcast| OR |Intense Sun|)) OR (|Stony Wilderness| AND |Overcast|)"
     },
     {
-        "name": "Vanillish",
+        "name": "Wanderer Vanillish",
         "category": [
             "Pokemon",
             "Special overworld spawn",
@@ -1304,7 +1304,7 @@
         "requires": "(|Dappled Grove| OR |North Lake Miloch|) AND (|Snowing| OR |Snowstorm|)"
     },
     {
-        "name": "Vanilluxe",
+        "name": "Wanderer Vanilluxe",
         "category": [
             "Pokemon",
             "Special overworld spawn",
@@ -1320,7 +1320,7 @@
         "requires": "(|Bridge Field| AND (|Snowing| OR |Snowstorm|)) OR ((|East Lake Axewell| OR |Lake of Outrage| OR |North Lake Miloch| OR |South Lake Miloch| OR |West Lake Axewell|) AND |Progressive bike:2| AND (|Snowing| OR |Snowstorm|))"
     },
     {
-        "name": "Vaporeon",
+        "name": "Wanderer Vaporeon",
         "category": [
             "Pokemon",
             "Special overworld spawn",
@@ -1331,7 +1331,7 @@
         "requires": "|Lake of Outrage| AND |Progressive bike:2| AND |Raining|"
     },
     {
-        "name": "Vespiquen",
+        "name": "Wanderer Vespiquen",
         "category": [
             "Pokemon",
             "Special overworld spawn",
@@ -1343,7 +1343,7 @@
         "requires": "|Rolling Fields| AND |Normal weather|"
     },
     {
-        "name": "Vikavolt",
+        "name": "Wanderer Vikavolt",
         "category": [
             "Pokemon",
             "Special overworld spawn",
@@ -1355,7 +1355,7 @@
         "requires": "|Giant's Seat| AND (|Normal weather| OR |Overcast| OR |Intense Sun| OR |Sandstorm|)"
     },
     {
-        "name": "Vileplume",
+        "name": "Wanderer Vileplume",
         "category": [
             "Pokemon",
             "Special overworld spawn",
@@ -1369,7 +1369,7 @@
         "requires": "(|Dappled Grove| AND (|Normal weather| OR |Overcast| OR |Fog|)) OR (|Giant's Mirror| AND (|Overcast| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Sandstorm|)) OR (|Hammerlocke Hills| AND (|Normal weather| OR |Raining| OR |Thunderstorm| OR |Intense Sun| OR |Sandstorm|))"
     },
     {
-        "name": "Weavile",
+        "name": "Wanderer Weavile",
         "category": [
             "Pokemon",
             "Special overworld spawn",
@@ -1381,7 +1381,7 @@
         "requires": "|Bridge Field| AND |Progressive bike:2| AND |Snowstorm|"
     },
     {
-        "name": "Xatu",
+        "name": "Wanderer Xatu",
         "category": [
             "Pokemon",
             "Special overworld spawn",
@@ -1395,7 +1395,7 @@
         "requires": "((|East Lake Axewell| OR |North Lake Miloch|) AND (|Normal weather| OR |Overcast| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|)) OR (|Giant's Mirror| AND (|Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Sandstorm| OR |Fog|))"
     },
     {
-        "name": "Seaking",
+        "name": "Wanderer Seaking",
         "category": [
             "Pokemon",
             "Special overworld spawn",
@@ -1411,7 +1411,7 @@
         "requires": "((|Bridge Field| OR |West Lake Axewell|) AND |Progressive bike:2| AND (|Normal weather| OR |Overcast| OR |Sandstorm|)) OR (|East Lake Axewell| AND |Progressive bike:2| AND (|Normal weather| OR |Overcast| OR |Sandstorm| OR |Intense Sun|)) OR (|Lake of Outrage| AND |Progressive bike:2| AND (|Overcast| OR |Sandstorm| OR |Intense Sun|)) OR (|North Lake Miloch| AND |Progressive bike:2| AND (|Raining| OR |Thunderstorm| OR |Fog|)) OR (|South Lake Miloch| AND |Progressive bike:2| AND (|Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Sandstorm|))"
     },
     {
-        "name": "Lanturn",
+        "name": "Wanderer Lanturn",
         "category": [
             "Pokemon",
             "Special overworld spawn",
@@ -1427,9 +1427,10 @@
         "requires": "((|East Lake Axewell| OR |Lake of Outrage|) AND |Progressive bike:2| AND (|Normal weather| OR |Thunderstorm| OR |Fog|)) OR ((|Bridge Field| OR |South Lake Miloch| OR |West Lake Axewell|) AND |Progressive bike:2| AND |Thunderstorm|)"
     },
     {
-        "name": "Gyarados",
+        "name": "Wanderer Gyarados",
         "category": [
             "Pokemon",
+            "Special overworld spawn",
             "Bridge Field",
             "Dusty Bowl",
             "East Lake Axewell",
@@ -1437,14 +1438,13 @@
             "North Lake Miloch",
             "South Lake Miloch",
             "West Lake Axewell",
-            "Route 2",
             "Water",
             "Flying"
         ],
-        "requires": "((|Bridge Field| OR |Dusty Bowl| OR |East Lake Axewell| OR |West Lake Axewell|) AND |Progressive bike:2| AND (|Noweather| OR |Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|)) OR ((|Lake of Outrage| OR |South Lake Miloch|) AND |Progressive bike:2| AND (|Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm|)) OR (|North Lake Miloch| AND |Progressive bike:2| AND (|Overcast| OR |Thunderstorm| OR |Intense Sun| OR |Sandstorm|)) OR (|Route 2 Access| AND |Progressive bike:2|)"
+        "requires": "((|Bridge Field| OR |Dusty Bowl| OR |East Lake Axewell| OR |West Lake Axewell|) AND |Progressive bike:2| AND (|Noweather| OR |Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|)) OR ((|Lake of Outrage| OR |South Lake Miloch|) AND |Progressive bike:2| AND (|Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm|)) OR (|North Lake Miloch| AND |Progressive bike:2| AND (|Overcast| OR |Thunderstorm| OR |Intense Sun| OR |Sandstorm|))"
     },
     {
-        "name": "Gastrodon",
+        "name": "Wanderer Gastrodon",
         "category": [
             "Pokemon",
             "Special overworld spawn",
@@ -1456,7 +1456,7 @@
         "requires": "(|Giant's Mirror| OR |Dusty Bowl|) AND |Progressive bike:2| AND (|Noweather| OR |Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|)"
     },
     {
-        "name": "Jellicent",
+        "name": "Wanderer Jellicent",
         "category": [
             "Pokemon",
             "Special overworld spawn",
@@ -1472,7 +1472,7 @@
         "requires": "(|East Lake Axewell| AND |Progressive bike:2| AND (|Normal weather| OR |Overcast| OR |Raining| OR |Fog|)) OR (|Giant's Mirror| AND |Progressive bike:2| AND |Noweather|) OR ((|Lake of Outrage| OR |North Lake Miloch| OR |West Lake Axewell|) AND |Progressive bike:2| AND (|Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Fog|)) OR (|South Lake Miloch| AND |Progressive bike:2| AND (|Raining| OR |Fog|))"
     },
     {
-        "name": "Cloyster",
+        "name": "Wanderer Cloyster",
         "category": [
             "Pokemon",
             "Special overworld spawn",
@@ -1485,7 +1485,7 @@
         "requires": "(|East Lake Axewell| OR |West Lake Axewell|) AND |Progressive bike:2| AND (|Normal weather| OR |Fog|)"
     },
     {
-        "name": "Milotic",
+        "name": "Wanderer Milotic",
         "category": [
             "Pokemon",
             "Special overworld spawn",
@@ -1497,7 +1497,7 @@
         "requires": "(|South Lake Miloch| OR |Lake of Outrage|) AND |Progressive bike:2| AND |Fog|"
     },
     {
-        "name": "Lapras",
+        "name": "Wanderer Lapras",
         "category": [
             "Pokemon",
             "Special overworld spawn",
@@ -1511,7 +1511,7 @@
         "requires": "(|Lake of Outrage| OR |North Lake Miloch| OR |West Lake Axewell|) AND |Progressive bike:2| AND (|Normal weather| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Fog|)"
     },
     {
-        "name": "Wailmer",
+        "name": "Wanderer Wailmer",
         "category": [
             "Pokemon",
             "Special overworld spawn",
@@ -1521,7 +1521,7 @@
         "requires": "|Motostoke Riverbank| AND |Progressive bike:2| AND (|Noweather| OR |Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|)"
     },
     {
-        "name": "Whiscash",
+        "name": "Wanderer Whiscash",
         "category": [
             "Pokemon",
             "Special overworld spawn",
@@ -1534,7 +1534,7 @@
         "requires": "((|North Lake Miloch| OR |South Lake Miloch|) AND |Progressive bike:2| AND (|Intense Sun| OR |Sandstorm|)) OR (|South Lake Miloch| AND |Progressive bike:2| AND (|Normal weather| OR |Thunderstorm|))"
     },
     {
-        "name": "Octillery",
+        "name": "Wanderer Octillery",
         "category": [
             "Pokemon",
             "Special overworld spawn",
@@ -1543,17 +1543,5 @@
             "Water"
         ],
         "requires": "|South Lake Miloch| AND |Progressive bike:2| AND (|Normal weather| OR |Intense Sun| OR |Sandstorm| OR |Fog|)"
-    },
-    {
-        "name": "Carkol",
-        "category": [
-            "Pokemon",
-            "Routes",
-            "Special overworld spawn",
-            "Galar Mine",
-            "Rock",
-            "Fire"
-        ],
-        "requires": "|Galar Mine Access|"
     }
 ]

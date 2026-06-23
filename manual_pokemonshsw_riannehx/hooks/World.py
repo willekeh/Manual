@@ -167,31 +167,32 @@ def after_create_regions(world: World, multiworld: MultiWorld, player: int):
 # {"Item Name": {ItemClassification.useful: 5}} <- You can also use the classification directly
 def before_create_items_all(item_config: dict[str, int|dict], world: World, multiworld: MultiWorld, player: int) -> dict[str, int|dict]:
     location_count = len(world.get_locations())
-    
-    # Check if Eternatus goal is active
-    goal_option = getattr(world.options, "goal", None)
-    is_correct_goal = goal_option and goal_option.value == "Eternatus"
+    current_goal_name = ""
+    other_items_count = 0
 
-    if not is_correct_goal:
+    # Check if Mend The Broken Shield/Sword goal is active
+    current_goal_name = world.options.goal.current_key
+    
+    if current_goal_name != "mend the broken shield/sword":
+        # Set shards to 0 when not the correct goal
         shards_total = 0
         world.options.broken_shards_total.value = 0
     else:
         shards_total = world.options.broken_shards_total.value
 
-        other_items_count = 0
         for name, data in item_config.items():
             if name != "Broken shards":
                 if isinstance(data, dict):
                     other_items_count += sum(data.values())
                 else:
                     other_items_count += data
-                    
-        # To crash less with minimal settings and minimal progression
+                                        
+        # To crash less with minimal settings 
         buffer = 3 
         free_space = location_count - other_items_count - buffer
 
         if shards_total > free_space:
-            # Check if shards total is higher than free space
+            # Check if shards total is higher than free space if yes turn down shards
             shards_total = max(0, free_space) 
             world.options.broken_shards_total.value = shards_total
     
@@ -302,10 +303,11 @@ def after_set_rules(world: World, multiworld: MultiWorld, player: int):
     
     # Failsafe incase of wrong way around
     final_required = min(total, required)
-    if "Eternatus" in multiworld.get_locations(player):
-        eternatus_loc = multiworld.get_location("Eternatus", player)
+    location_names = [loc.name for loc in multiworld.get_locations(player)]
     
+    if "Mend The Broken Shield/Sword" in location_names:
         # Set Broken Shard required
+        eternatus_loc = multiworld.get_location("Mend The Broken Shield/Sword", player)
         eternatus_loc.access_rule = lambda state: state.has("Broken shards", player, final_required)
 
     def Example_Rule(state: CollectionState) -> bool:

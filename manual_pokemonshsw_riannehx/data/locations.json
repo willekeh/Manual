@@ -1,6 +1,6 @@
 [
     {
-        "name": "Eternatus",
+        "name": "Mend The Broken Shield/Sword",
         "victory": true,
         "category": ["Win Condition"],
         "requires": "|Broken shards|"

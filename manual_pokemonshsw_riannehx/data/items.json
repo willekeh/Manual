@@ -8,7 +8,7 @@
     {
         "count": "10",
         "name": "Broken shards",
-        "category": ["Eternatus"],
+        "category": ["Broken shards"],
         "progression": true
     },
     {
@@ -68,103 +68,103 @@
     {
         "count": 1,
         "name": "Axew's Eye",
-        "category": ["Locations"],
+        "category": ["Location Unlocks"],
         "progression": true
     },
     {
         "count": 1,
         "name": "Bridge Field",
-        "category": ["Locations"],
+        "category": ["Location Unlocks"],
         "progression": true
     },
     {
         "count": 1,
         "name": "Dappled Grove",
-        "category": ["Locations"],
+        "category": ["Location Unlocks"],
         "progression": true
     },
     {
         "count": 1,
         "name": "Dusty Bowl",
-        "category": ["Locations"],
+        "category": ["Location Unlocks"],
         "progression": true
     },
     {
         "count": 1,
         "name": "East Lake Axewell",
-        "category": ["Locations"],
+        "category": ["Location Unlocks"],
         "progression": true
     },
     {
         "count": 1,
         "name": "Giant's Cap",
-        "category": ["Locations"],
+        "category": ["Location Unlocks"],
         "progression": true
     },
     {
         "count": 1,
         "name": "Giant's Mirror",
-        "category": ["Locations"],
+        "category": ["Location Unlocks"],
         "progression": true
     },
     {
         "count": 1,
         "name": "Giant's Seat",
-        "category": ["Locations"],
+        "category": ["Location Unlocks"],
         "progression": true
     },
     {
         "count": 1,
         "name": "Hammerlocke Hills",
-        "category": ["Locations"],
+        "category": ["Location Unlocks"],
         "progression": true
     },
     {
         "count": 1,
         "name": "Lake of Outrage",
-        "category": ["Locations"],
+        "category": ["Location Unlocks"],
         "progression": true
     },
     {
         "count": 1,
         "name": "Motostoke Riverbank",
-        "category": ["Locations"],
+        "category": ["Location Unlocks"],
         "progression": true
     },
     {
         "count": 1,
         "name": "North Lake Miloch",
-        "category": ["Locations"],
+        "category": ["Location Unlocks"],
         "progression": true
     },
     {
         "count": 1,
         "name": "South Lake Miloch",
-        "category": ["Locations"],
+        "category": ["Location Unlocks"],
         "progression": true
     },
     {
         "count": 1,
         "name": "Stony Wilderness",
-        "category": ["Locations"],
+        "category": ["Location Unlocks"],
         "progression": true
     },
     {
         "count": 1,
         "name": "Watchtower Ruins",
-        "category": ["Locations"],
+        "category": ["Location Unlocks"],
         "progression": true
     },
     {
         "count": 1,
         "name": "West Lake Axewell",
-        "category": ["Locations"],
+        "category": ["Location Unlocks"],
         "progression": true
     },
     {
         "count": 1,
         "name": "Rolling Fields",
-        "category": ["Locations"],
+        "category": ["Location Unlocks"],
         "progression": true
     },
     {
@@ -285,85 +285,91 @@
     {
         "count": 1,
         "name": "Route 1 Access",
-        "category": ["Routes"],
+        "category": ["Location Unlocks"],
         "progression": true
     },
     {
         "count": 1,
         "name": "Route 2 Access",
-        "category": ["Routes"],
+        "category": ["Location Unlocks"],
         "progression": true
     },
     {
         "count": 1,
         "name": "Route 3 Access",
-        "category": ["Routes"],
+        "category": ["Location Unlocks"],
         "progression": true
     },
     {
         "count": 1,
         "name": "Route 4 Access",
-        "category": ["Routes"],
+        "category": ["Location Unlocks"],
         "progression": true
     },
     {
         "count": 1,
         "name": "Route 5 Access",
-        "category": ["Routes"],
+        "category": ["Location Unlocks"],
         "progression": true
     },
     {
         "count": 1,
         "name": "Route 6 Access",
-        "category": ["Routes"],
+        "category": ["Location Unlocks"],
         "progression": true
     },
     {
         "count": 1,
         "name": "Route 7 Access",
-        "category": ["Routes"],
+        "category": ["Location Unlocks"],
         "progression": true
     },
     {
         "count": 1,
         "name": "Route 8 Access",
-        "category": ["Routes"],
+        "category": ["Location Unlocks"],
         "progression": true
     },
     {
         "count": 1,
         "name": "Route 9 Access",
-        "category": ["Routes"],
+        "category": ["Location Unlocks"],
         "progression": true
     },
     {
         "count": 1,
         "name": "Route 10 Access",
-        "category": ["Routes"],
+        "category": ["Location Unlocks"],
         "progression": true
     },
     {
         "count": 1,
         "name": "Galar Mine Access",
-        "category": ["Routes"],
+        "category": ["Location Unlocks"],
+        "progression": true
+    },
+    {
+        "count": 1,
+        "name": "Galar Mine 2 Access",
+        "category": ["Location Unlocks"],
         "progression": true
     },
     {
         "count": 1,
         "name": "Slumbering Weald Access",
-        "category": ["Routes"],
+        "category": ["Location Unlocks"],
         "progression": true
     },
     {
         "count": 1,
         "name": "Glimwood Tangle Access",
-        "category": ["Routes"],
+        "category": ["Location Unlocks"],
         "progression": true
     },
     {
         "count": 1,
         "name": "Motostoke Outskirts Access",
-        "category":["Routes"],
+        "category": ["Location Unlocks"],
         "progression": true
     }
 ]
