@@ -36,5 +36,8 @@
     "Dragon": { "hidden": true },
     "Dark": { "hidden": true },
     "Steel": { "hidden": true },
-    "Fairy": { "hidden": true }
+    "Fairy": { "hidden": true },
+    "Exclamation mark": { "hidden": true },
+    "Pokemon": { "hidden": true },
+    "Routes": { "hidden": true }
 }

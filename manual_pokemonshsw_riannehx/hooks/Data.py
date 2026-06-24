@@ -40,22 +40,37 @@ def after_load_location_file(location_table: list) -> list:
 
 # Mastery Type Goal events
     type_to_pokemon_map = {p_type: [] for p_type in pokemon_types}
+
+    pokemon_requires_map = {}
     for loc in location_table:
         if "Pokemon" in loc.get("category", []):
+            pokemon_requires_map[loc["name"]] = loc.get("requires", "")
+            
             for p_type in pokemon_types:
                 if p_type in loc.get("category", []):
                     type_to_pokemon_map[p_type].append(loc["name"])
 
     
     for p_type, pokemon_list in type_to_pokemon_map.items():
-        if pokemon_list:  #Only pokemon that have been assigned a type
+        # Only pokemon that have been assigned a type
+        if pokemon_list: 
+            sub_requirements = []
+            for poke in pokemon_list:
+                req = pokemon_requires_map.get(poke, "")
+                if req:
+                    sub_requirements.append(f"({req})")
+                else:
+                    sub_requirements.append(f"|{poke} Access|") 
+
+            # Add requires together with OR
+            combined_requires = " OR ".join(sub_requirements)
+
             event_item = {
                 "name": f"Event - {p_type} Type Caught",
                 "category": [p_type],
-                "copy_location": pokemon_list 
+                "requires": combined_requires
             }
             _generated_events.append(event_item)
-            logging.info(f"Generated backend event: '{event_item['name']}' linking to {len(pokemon_list)} pokemon.")
             
     return location_table
 

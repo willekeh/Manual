@@ -130,13 +130,13 @@ def after_create_regions(world: World, multiworld: MultiWorld, player: int):
                      "Poison", "Ground", "Flying", "Psychic", "Bug", "Rock", "Ghost", 
                      "Dragon", "Dark", "Steel", "Fairy"]
 
-    # Case A: If Type Master is NOT the goal, wipe everything related to it
+    # If Type Master is NOT the goal, wipe everything related to it
     if str(current_goal_name).lower() != "type master":
         for p_type in pokemon_types:
             locationNamesToRemove.append(f"Type Master - {p_type} Type")
         locationNamesToRemove.append("Type Master")
 
-    # Case B: If Type Master IS active, find the missing types and remove their tracker locations
+    # If Type Master is active, find the missing types and remove their tracker locations
     else:
         active_types = set()
         for loc in world.location_table:
@@ -218,7 +218,7 @@ def before_create_items_starting(item_pool: list, world: World, multiworld: Mult
     ]
 
     if start_logic == 1: # Fixed
-        start_inventory_names = ["Rolling Fields", "Normal weather"]
+        start_inventory_names = ["Rolling Fields", "Normal weather", "Type Unlock - Bug Type", "Route 1 Access"]
 
     elif start_logic == 2: # Region (Random region, Fixed weather)
         multiworld.random.shuffle(locations)
