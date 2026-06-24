@@ -4,12 +4,13 @@
         "category": [
             "Pokemon",
             "Routes",
+            "Slumbering Weald",
             "Exclamation mark",
             "Route 1",
             "Route 2",
             "Bug"
         ],
-        "requires": "|Route 1 Access| OR |Route 2 Access|"
+        "requires": "|Route 1 Access| OR |Route 2 Access| OR |Slumbering Weald Access|"
     },
     {
         "name": "Caterpie",
@@ -18,21 +19,29 @@
     },
     {
         "name": "Grubbin",
-        "category": ["Pokemon", "Routes", "Exclamation mark", "Route 1", "Bug"],
-        "requires": "|Route 1 Access|"
+        "category": [
+            "Pokemon",
+            "Routes",
+            "Slumbering Weald",
+            "Exclamation mark",
+            "Route 1",
+            "Bug"
+        ],
+        "requires": "|Route 1 Access| OR |Slumbering Weald Access|"
     },
     {
         "name": "Hoothoot",
         "category": [
             "Pokemon",
             "Routes",
+            "Slumbering Weald",
             "Exclamation mark",
             "Route 1",
             "Route 2",
             "Normal",
             "Flying"
         ],
-        "requires": "|Route 1 Access| OR |Route 2 Access|"
+        "requires": "|Route 1 Access| OR |Route 2 Access| OR |Slumbering Weald Access|"
     },
     {
         "name": "Nickit",
@@ -44,17 +53,25 @@
         "category": [
             "Pokemon",
             "Routes",
+            "Slumbering Weald",
             "Route 1",
             "Route 2",
             "Route 3",
             "Flying"
         ],
-        "requires": "|Route 1 Access| OR |Route 2 Access| OR |Route 3 Access|"
+        "requires": "|Route 1 Access| OR |Route 2 Access| OR |Route 3 Access| OR |Slumbering Weald Access|"
     },
     {
         "name": "Skwovet",
-        "category": ["Pokemon", "Routes", "Route 1", "Route 2", "Normal"],
-        "requires": "|Route 1 Access| OR |Route 2 Access|"
+        "category": [
+            "Pokemon",
+            "Routes",
+            "Slumbering Weald",
+            "Route 1",
+            "Route 2",
+            "Normal"
+        ],
+        "requires": "|Route 1 Access| OR |Route 2 Access| OR |Slumbering Weald Access|"
     },
     {
         "name": "Wooloo",
@@ -104,8 +121,15 @@
     },
     {
         "name": "Chewtle",
-        "category": ["Pokemon", "Routes", "Route 2", "Water"],
-        "requires": "|Route 2 Access|"
+        "category": [
+            "Pokemon",
+            "Routes",
+            "Route 2",
+            "Galar Mine 2",
+            "Motostoke Outskirts",
+            "Water"
+        ],
+        "requires": "|Route 2 Access| OR |Galar Mine 2 Access| OR |Motostoke Outskirts Access|"
     },
     {
         "name": "Yamper",
@@ -230,8 +254,14 @@
     },
     {
         "name": "Roggenrola",
-        "category": ["Pokemon", "Routes", "Galar Mine", "Rock"],
-        "requires": "|Galar Mine Access|"
+        "category": [
+            "Pokemon",
+            "Routes",
+            "Galar Mine",
+            "Motostoke Outskirts",
+            "Rock"
+        ],
+        "requires": "|Galar Mine Access| OR |Motostoke Outskirts Access|"
     },
     {
         "name": "Woobat",
@@ -386,24 +416,26 @@
         "category": [
             "Pokemon",
             "Routes",
+            "Glimwood Tangle",
             "Exclamation mark",
             "Route 5",
             "GameShield",
             "Fairy"
         ],
-        "requires": "|Route 5 Access|"
+        "requires": "|Route 5 Access| OR |Glimwood Tangle Access|"
     },
     {
         "name": "Swirlix",
         "category": [
             "Pokemon",
             "Routes",
+            "Glimwood Tangle",
             "Exclamation mark",
             "Route 5",
             "GameSword",
             "Fairy"
         ],
-        "requires": "|Route 5 Access|"
+        "requires": "|Route 5 Access| OR |Glimwood Tangle Access|"
     },
     {
         "name": "Dewpider",
@@ -626,12 +658,13 @@
         "category": [
             "Pokemon",
             "Routes",
+            "Slumbering Weald",
             "Exclamation mark",
             "Route 7",
             "Steel",
             "Flying"
         ],
-        "requires": "|Route 7 Access|"
+        "requires": "|Route 7 Access| OR |Slumbering Weald Access|"
     },
     {
         "name": "Toxel",
@@ -822,8 +855,15 @@
     },
     {
         "name": "Pawniard",
-        "category": ["Pokemon", "Routes", "Route 8", "Dark", "Steel"],
-        "requires": "|Route 8 Access|"
+        "category": [
+            "Pokemon",
+            "Routes",
+            "Route 8",
+            "Motostoke Outskirts",
+            "Dark",
+            "Steel"
+        ],
+        "requires": "|Route 8 Access| OR |Motostoke Outskirts Access|"
     },
     {
         "name": "Vullaby",
@@ -1126,5 +1166,140 @@
         "name": "Duraludon",
         "category": ["Pokemon", "Routes", "Route 10", "Steel", "Dragon"],
         "requires": "|Route 10 Access|"
-    }
+    },
+    {
+        "name": "Shuckle",
+        "category": [
+            "Pokemon",
+            "Galar Mine 2",
+            "Bug",
+            "Rock"
+        ],
+        "requires": "|Galar Mine 2 Access|"
+    },
+    {
+        "name": "Shellos",
+        "category": [
+            "Pokemon",
+            "Galar Mine 2",
+            "Water"
+        ],
+        "requires": "|Galar Mine 2 Access|"
+    },
+    {
+        "name": "Croagunk",
+        "category": [
+            "Pokemon",
+            "Galar Mine 2",
+            "Motostoke Outskirts",
+            "GameShield",
+            "Poison",
+            "Fighting"
+        ],
+        "requires": "|Galar Mine 2 Access| OR |Motostoke Outskirts Access|"
+    },
+    {
+        "name": "Scraggy",
+        "category": [
+            "Pokemon",
+            "Galar Mine 2",
+            "Motostoke Outskirts",
+            "GameSword",
+            "Dark",
+            "Fighting"
+        ],
+        "requires": "|Galar Mine 2 Access| OR |Motostoke Outskirts Access|"
+    },
+    {
+        "name": "Binacle",
+        "category": [
+            "Pokemon",
+            "Galar Mine 2",
+            "Rock",
+            "Water"
+        ],
+        "requires": "|Galar Mine 2 Access|"
+    },
+    {
+        "name": "Noibat",
+        "category": [
+            "Pokemon",
+            "Galar Mine 2",
+            "Flying",
+            "Dragon"
+        ],
+        "requires": "|Galar Mine 2 Access|"
+    },
+    {
+        "name": "Wimpod",
+        "category": [
+            "Pokemon",
+            "Galar Mine 2",
+            "Bug",
+            "Water"
+        ],
+        "requires": "|Galar Mine 2 Access|"
+    },
+    {
+        "name": "Butterfree",
+        "category": [
+            "Pokemon",
+            "Slumbering Weald",
+            "Bug",
+            "Flying"
+        ],
+        "requires": "|Slumbering Weald Access|"
+    },
+    {
+        "name": "Galarian Weezing",
+        "category": [
+            "Pokemon",
+            "Slumbering Weald",
+            "Poison",
+            "Fairy"
+        ],
+        "requires": "|Slumbering Weald Access|"
+    },
+    {
+        "name": "Munna",
+        "category": [
+            "Pokemon",
+            "Slumbering Weald",
+            "Psychic"
+        ],
+        "requires": "|Slumbering Weald Access|"
+    },
+    {
+        "name": "Orbeetle",
+        "category": [
+            "Pokemon",
+            "Slumbering Weald",
+            "Bug",
+            "Psychic"
+        ],
+        "requires": "|Slumbering Weald Access|"
+    },
+    {
+        "name": "Galarian Stunfisk",
+        "category": [
+            "Pokemon",
+            "Slumbering Weald",
+            "Galar Mine 2",
+            "Ground",
+            "Steel"
+        ],
+        "requires": "|Slumbering Weald Access| OR |Galar Mine 2 Access|"
+    },
+    {
+    "name": "Impidimp",
+    "category": [
+        "Pokemon",
+        "Motostoke Outskirts",
+        "Glimwood Tangle",
+        "Dark",
+        "Fairy"
+    ],
+    "requires": "|Motostoke Outskirts Access| OR |Glimwood Tangle Access|"
+}
+
 ]
