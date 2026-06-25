@@ -6,7 +6,7 @@
         "requires": "|Broken shards|"
     },
     {
-        "name": "Type Master",
+        "name": "Type Researcher",
         "category": ["Win Condition"],
         "victory": true
     }

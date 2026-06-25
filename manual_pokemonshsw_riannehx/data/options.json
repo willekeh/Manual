@@ -22,21 +22,5 @@
         }
     },
     "user": {
-        "Remove_weather_locations": {
-            "description": [
-                "no time travel needed",
-                "this excludes certain Pokemon that only appear during certain weather conditions to be considered in logic",
-                "Warning this excludes about 70% of checks"
-            ],
-            "type": "Toggle",
-            "default": false
-        },
-        "DLC_enabled": {
-            "display_name": "DLC Enabled",
-            "description": "Is the DlC enabled? Currently doesnt work, is a WIP",
-            "type": "Toggle",
-            "visibility": ["simple_ui", "complex_ui", "template"],
-            "default": true
-        }
     }
 }

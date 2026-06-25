@@ -42,10 +42,10 @@ def before_create_regions(world: World, multiworld: MultiWorld, player: int):
     if hasattr(world, "options") and hasattr(world.options, "goal"):
         current_goal_name = world.options.goal.current_key
 
-    if str(current_goal_name).lower() != "type master":
+    if str(current_goal_name).lower() != "type researcher":
         return
 
-    logging.info(f"[Player {player}] Type Master goal active. Dynamically locking pokemon and compiling rules.")
+    logging.info(f"[Player {player}] Type Researcher goal active. Dynamically locking pokemon and compiling rules.")
 
 
     active_types = set()
@@ -79,7 +79,7 @@ def before_create_regions(world: World, multiworld: MultiWorld, player: int):
     for loc in world.location_table:
         if "Type Collection" in loc.get("category", []):
             for p_type in active_types:
-                if loc["name"] == f"Type Master - {p_type} Type":
+                if loc["name"] == f"Type Researched - {p_type} Type":
                     
                     pokemon_requires_list = []
                     for pokemon in world.location_table:
@@ -100,9 +100,9 @@ def before_create_regions(world: World, multiworld: MultiWorld, player: int):
     victory_string = " AND ".join(victory_requirements)
     
     for loc in world.location_table:
-        if "Type Master" == loc["name"]:
+        if "Type Researcher" == loc["name"]:
             loc["requires"] = victory_string
-            logging.info(f"[Player {player}] Type Master dynamic logic matrix built and locked successfully.")
+            logging.info(f"Type Researcher dynamic logic matrix built and locked successfully.")
             break
 
 
@@ -112,7 +112,7 @@ def after_create_regions(world: World, multiworld: MultiWorld, player: int):
     # Use this hook to remove locations from the world
     locationNamesToRemove: list[str] = [] # List of location names
 
-    # Existing game version filters
+    #game version filters
     game_version = get_option_value(multiworld, player, "game_version")
     if game_version == 1:
         locationNamesToRemove += world.location_name_groups["GameShield"]
@@ -130,13 +130,12 @@ def after_create_regions(world: World, multiworld: MultiWorld, player: int):
                      "Poison", "Ground", "Flying", "Psychic", "Bug", "Rock", "Ghost", 
                      "Dragon", "Dark", "Steel", "Fairy"]
 
-    # If Type Master is NOT the goal, wipe everything related to it
-    if str(current_goal_name).lower() != "type master":
+    # If Type Researcher is NOT the goal, wipe everything related to it
+    if str(current_goal_name).lower() != "type researcher":
         for p_type in pokemon_types:
-            locationNamesToRemove.append(f"Type Master - {p_type} Type")
-        locationNamesToRemove.append("Type Master")
+            locationNamesToRemove.append(f"Type Researched - {p_type} Type")
 
-    # If Type Master is active, find the missing types and remove their tracker locations
+    # If Type Researcher is active, find the missing types and remove their tracker locations
     else:
         active_types = set()
         for loc in world.location_table:
@@ -148,7 +147,7 @@ def after_create_regions(world: World, multiworld: MultiWorld, player: int):
         # Gather any inactive checking locations for complete deletion
         for p_type in pokemon_types:
             if p_type not in active_types:
-                locationNamesToRemove.append(f"Type Master - {p_type} Type")
+                locationNamesToRemove.append(f"Type Researched - {p_type} Type")
         
     for region in multiworld.regions:
         if region.player == player:
@@ -255,8 +254,8 @@ def before_create_items_filler(item_pool: list, world: World, multiworld: MultiW
                      "Poison", "Ground", "Flying", "Psychic", "Bug", "Rock", "Ghost", 
                      "Dragon", "Dark", "Steel", "Fairy"]
 
-    # Remove if goal is not type master
-    if str(current_goal_name).lower() != "type master":
+    # Remove if goal is not Type Researcher
+    if str(current_goal_name).lower() != "type researcher":
         for p_type in pokemon_types:
             itemNamesToRemove.append(f"Type Unlock - {p_type} Type")
     # Remove unlocks that dont have a matching location type

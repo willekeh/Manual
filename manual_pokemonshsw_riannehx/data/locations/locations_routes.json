@@ -36,6 +36,7 @@
             "Routes",
             "Slumbering Weald",
             "Exclamation mark",
+            "LowPercentage",
             "Route 1",
             "Route 2",
             "Normal",
@@ -46,7 +47,7 @@
     {
         "name": "Nickit",
         "category": ["Pokemon", "Routes", "Route 1", "Route 2", "Dark"],
-        "requires": "|Route 1 Access| OR |Route 2 Access|"
+        "requires": "|Route 1 Access| AND |LowEncounter| OR |Route 2 Access|"
     },
     {
         "name": "Rookidee",
@@ -116,7 +117,7 @@
     },
     {
         "name": "Zigzagoon",
-        "category": ["Pokemon", "Routes", "Route 2", "Route 3", "Dark"],
+        "category": ["Pokemon", "Routes", "LowPercentage", "Route 2", "Route 3", "Dark"],
         "requires": "|Route 2 Access| OR |Route 3 Access|"
     },
     {

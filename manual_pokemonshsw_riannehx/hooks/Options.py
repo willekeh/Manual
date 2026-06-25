@@ -58,9 +58,34 @@ class BrokenShardsRequired(Range):
     default = 10
 
 class DenSanity(Toggle):
-    """Adds Den Sanity, you only need to see or interact with it."""
+    """Adds Den Sanity, you only need to see or interact with the den."""
     display_name = "Den sanity"
     default = 0
+
+class BerryTreeSanity(Toggle):
+    """Adds Berry Tree Sanity, you only need to see or interact with the berry tree."""
+    display_name = "Berry Tree Sanity"
+    default = 0
+
+class AddTimeTravel(Toggle):
+    """Adds Time Travel checks, Currently this adds extra pokemon that can only appear in some weathers"""
+    display_name = "Add Time Travel"
+    default = 0
+
+class WanderSanity(Toggle):
+    """Adds Wild Area 1 time a day spawns, This is will automatically turn on with the Mend The Broken Shield/Sword goal and have Wild Area location sanity """
+    display_name = "add wander sanity"
+    default = 0  
+
+class RouteSanity(Toggle):
+    """Adds all pokemon locations in a route, with that you have to find the route unlocks to continue"""
+    display_name = "route sanity"
+    default = 0    
+
+class RemoveLowPercentage(Toggle):
+    """Removes all route pokemon below 5% encounter rate"""
+    display_name = "Remove Low percentage"
+    default = 0    
 
 # This is called before any manual options are defined, in case you want to define your own with a clean slate or let Manual define over them
 def before_options_defined(options: dict[str, Type[Option[Any]]]) -> dict[str, Type[Option[Any]]]:
@@ -68,7 +93,12 @@ def before_options_defined(options: dict[str, Type[Option[Any]]]) -> dict[str, T
     options["broken_shards_total"] = BrokenShardsTotal
     options["broken_shards_required"] = BrokenShardsRequired
     options["region_start"] = RegionStart
+    options["berry_tree_sanity"] = BerryTreeSanity
+    options["WanderSanity"] = WanderSanity
     options["den_sanity"] = DenSanity
+    options["add_time_travel"] = AddTimeTravel
+    options["route_sanity"] = RouteSanity
+    options["remove_low_percentage"] = RemoveLowPercentage
     return options
 
 # This is called after any manual options are defined, in case you want to see what options are defined or want to modify the defined options
@@ -86,6 +116,9 @@ def after_options_defined(options: Type[PerGameCommonOptions]):
 # Use this Hook if you want to add your Option to an Option group (existing or not)
 def before_option_groups_created(groups: dict[str, list[Type[Option[Any]]]]) -> dict[str, list[Type[Option[Any]]]]:
     # Uses the format groups['GroupName'] = [TotalCharactersToWinWith]
+    groups['Mend The Broken Shield/Sword goal options'] = [BrokenShardsTotal, BrokenShardsRequired]
+    groups['Wild Area Options'] = [WanderSanity, DenSanity, AddTimeTravel]
+    groups['Route Options'] = [RouteSanity, RemoveLowPercentage]
     return groups
 
 def after_option_groups_created(groups: list[OptionGroup]) -> list[OptionGroup]:

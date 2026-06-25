@@ -4,7 +4,7 @@
     },
     "needsWeather": {
         "hidden": true,
-        "yaml_option": ["!Remove_weather_locations"]
+        "yaml_option": ["add_time_travel"]
     },
     "GameShield": {
         "hidden": true
@@ -15,6 +15,15 @@
     "AllWeather": {
         "hidden": true
     },
+    "BerryTrees": {
+        "hidden": true,
+        "yaml_option": ["berry_tree_sanity"]
+    },
+    "LowPercentage": {
+        "hidden": true,
+        "yaml_option": ["!remove_low_percentage"]
+    },
+    "LowEncounter":{ "hidden": true, "yaml_option": ["remove_low_percentage"] },
     "Dens": {
         "hidden": true,
         "yaml_option": ["den_sanity"]

@@ -5,7 +5,7 @@
     "filler_item_name": "XP candy",
     "starting_items": [
         {
-            "items": ["Noweather"]
+            "items": ["Noweather", "LowEncounter"]
         }
     ]
 }
