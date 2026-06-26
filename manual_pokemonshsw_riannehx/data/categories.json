@@ -23,7 +23,6 @@
         "hidden": true,
         "yaml_option": ["!remove_low_percentage"]
     },
-    "LowEncounter":{ "hidden": true, "yaml_option": ["remove_low_percentage"] },
     "Dens": {
         "hidden": true,
         "yaml_option": ["den_sanity"]

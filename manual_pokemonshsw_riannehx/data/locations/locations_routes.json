@@ -47,7 +47,7 @@
     {
         "name": "Nickit",
         "category": ["Pokemon", "Routes", "Route 1", "Route 2", "Dark"],
-        "requires": "|Route 1 Access| AND |LowEncounter| OR |Route 2 Access|"
+        "requires": "|Route 1 Access| OR |Route 2 Access|"
     },
     {
         "name": "Rookidee",
@@ -116,8 +116,8 @@
         "requires": "|Route 2 Access|"
     },
     {
-        "name": "Zigzagoon",
-        "category": ["Pokemon", "Routes", "LowPercentage", "Route 2", "Route 3", "Dark"],
+        "name": "Galarian Zigzagoon",
+        "category": ["Pokemon", "Routes", "Route 2", "Route 3", "Dark"],
         "requires": "|Route 2 Access| OR |Route 3 Access|"
     },
     {
@@ -207,6 +207,7 @@
             "Pokemon",
             "Routes",
             "Exclamation mark",
+            "LowPercentage",
             "Route 3",
             "Fire",
             "Bug"
@@ -225,7 +226,7 @@
     },
     {
         "name": "Tyrogue",
-        "category": ["Pokemon", "Routes", "Route 3", "Fighting"],
+        "category": ["Pokemon", "Routes", "LowPercentage", "Route 3", "Fighting"],
         "requires": "|Route 3 Access|"
     },
     {
@@ -235,7 +236,7 @@
     },
     {
         "name": "Trubbish",
-        "category": ["Pokemon", "Routes", "Route 3", "Poison"],
+        "category": ["Pokemon", "Routes", "LowPercentage", "Route 3", "Poison"],
         "requires": "|Route 3 Access|"
     },
     {
@@ -289,6 +290,7 @@
         "category": [
             "Pokemon",
             "Exclamation mark",
+            "LowPercentage",
             "Routes",
             "Route 4",
             "Grass",
@@ -310,7 +312,7 @@
     },
     {
         "name": "Pikachu",
-        "category": ["Pokemon", "Routes", "Route 4", "Electric"],
+        "category": ["Pokemon", "Routes", "LowPercentage", "Route 4", "Electric"],
         "requires": "|Route 4 Access|"
     },
     {
@@ -318,6 +320,7 @@
         "category": [
             "Pokemon",
             "Exclamation mark",
+            "LowPercentage",
             "Routes",
             "Route 4",
             "Grass",
@@ -331,6 +334,7 @@
             "Pokemon",
             "Exclamation mark",
             "Routes",
+            "LowPercentage",
             "Route 4",
             "Bug",
             "Fairy"
@@ -350,7 +354,7 @@
     },
     {
         "name": "Eevee",
-        "category": ["Pokemon", "Routes", "Route 4", "Normal"],
+        "category": ["Pokemon", "Routes", "LowPercentage", "Route 4", "Normal"],
         "requires": "|Route 4 Access|"
     },
     {
@@ -395,6 +399,7 @@
             "Pokemon",
             "Routes",
             "Exclamation mark",
+            "LowPercentage",
             "Route 5",
             "Bug",
             "Ground"
@@ -444,6 +449,7 @@
             "Pokemon",
             "Routes",
             "Exclamation mark",
+            "LowPercentage",
             "Route 5",
             "Bug",
             "Water"
@@ -476,7 +482,7 @@
     },
     {
         "name": "Galarian Farfetch'd",
-        "category": ["Pokemon", "Routes", "GameSword", "Route 5", "Fighting"],
+        "category": ["Pokemon", "Routes", "LowPercentage", "GameSword", "Route 5", "Fighting"],
         "requires": "|Route 5 Access|"
     },
     {
@@ -486,7 +492,7 @@
     },
     {
         "name": "Drifloon",
-        "category": ["Pokemon", "Routes", "Route 5", "Ghost", "Flying"],
+        "category": ["Pokemon", "Routes", "LowPercentage", "Route 5", "Ghost", "Flying"],
         "requires": "|Route 5 Access|"
     },
     {
@@ -505,6 +511,7 @@
             "Pokemon",
             "Routes",
             "Exclamation mark",
+            "LowPercentage",
             "Route 6",
             "Fire",
             "Rock"
@@ -574,6 +581,7 @@
             "Pokemon",
             "Routes",
             "Exclamation mark",
+            "LowPercentage",
             "Route 6",
             "Flying",
             "Fighting"
