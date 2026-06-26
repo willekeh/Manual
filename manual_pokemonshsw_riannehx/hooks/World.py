@@ -38,15 +38,53 @@ def hook_get_filler_item_name(world: World, multiworld: MultiWorld, player: int)
 
 # Called before regions and locations are created. Not clear why you'd want this, but it's here. Victory location is included, but Victory event is not placed yet.
 def before_create_regions(world: World, multiworld: MultiWorld, player: int):
+
+    remove_low = get_option_value(multiworld, player, "remove_low_percentage")
+    game_version = get_option_value(multiworld, player, "game_version")
+
+    #Change below 5% encounters to only locations that dont have said 5%
+    if remove_low:
+        for loc in world.location_table:
+            categories = loc.get("category", [])
+
+            # Nickit Force Route 2 Access
+            if "LowPerc:Nickit" in categories:
+                loc["requires"] = "|Route 2 Access|"
+
+            # Yamper Force Route 4 Access
+            elif "LowPerc:Yamper" in categories:
+                loc["requires"] = "|Route 4 Access|"
+                
+            # Zigzagoon Only Route 3 or Route 2 with bike
+            elif "LowPerc:Zigzagoon" in categories:
+                loc["requires"] = "|Route 3 Access| OR (|Route 2 Access| AND |Progressive bike:2|)"
+                
+            # Chewtle Force Route 2 Access
+            elif "LowPerc:Chewtle" in categories:
+                loc["requires"] = "|Route 2 Access|"
+                
+            # Hoothoot Force Slumbering Weald Access
+            elif "LowPerc:Hoothoot" in categories:
+                loc["requires"] = "|Slumbering Weald Access|"
+                
+            # Stunfisk Force Galar Mine 2 Access
+            elif "LowPerc:Stunfisk" in categories:
+                loc["requires"] = "|Galar Mine 2 Access|"
+                
+            # Impidimp Force Glimwood Tangle Access
+            elif "LowPerc:Impidimp" in categories:
+                loc["requires"] = "|Glimwood Tangle Access|"
+            elif "LowPerc:Roggenrola" in categories:
+                if game_version == 3 or game_version == 1:
+                    loc["requires"] = "|Motostoke Outskirts Access|"
+
+    ##Researcher Goal, Add Type Unlock requires to location and victory
     current_goal_name = ""
     if hasattr(world, "options") and hasattr(world.options, "goal"):
         current_goal_name = world.options.goal.current_key
 
     if str(current_goal_name).lower() != "type researcher":
         return
-
-    logging.info(f"[Player {player}] Type Researcher goal active. Dynamically locking pokemon and compiling rules.")
-
 
     active_types = set()
     pokemon_types = ["Normal", "Fire", "Water", "Grass", "Electric", "Ice", "Fighting", 
@@ -102,7 +140,6 @@ def before_create_regions(world: World, multiworld: MultiWorld, player: int):
     for loc in world.location_table:
         if "Type Researcher" == loc["name"]:
             loc["requires"] = victory_string
-            logging.info(f"Type Researcher dynamic logic matrix built and locked successfully.")
             break
 
 
@@ -112,15 +149,22 @@ def after_create_regions(world: World, multiworld: MultiWorld, player: int):
     # Use this hook to remove locations from the world
     locationNamesToRemove: list[str] = [] # List of location names
 
-    #game version filters
+    #game version filters And Remove locations that are below 5%
     game_version = get_option_value(multiworld, player, "game_version")
+    remove_low = get_option_value(multiworld, player, "remove_low_percentage")
     if game_version == 1:
         locationNamesToRemove += world.location_name_groups["GameShield"]
         locationNamesToRemove += world.location_name_groups["GameSword"]
+        if remove_low:
+            locationNamesToRemove += ["Heatmor", "Durant", "Karrablast", "Shelmet", "Jellicent", "Toxapex","Timburr"]
     if game_version == 2: #Shield
         locationNamesToRemove += world.location_name_groups["GameSword"]
+        if remove_low:
+            locationNamesToRemove += ["Durant", "Karrablast", "Toxapex", "Timburr"]
     if game_version == 3: #Sword
         locationNamesToRemove += world.location_name_groups["GameShield"]
+        if remove_low:
+            locationNamesToRemove += ["Heatmor", "Shelmet", "Jellicent"]
 
     current_goal_name = ""
     if hasattr(world, "options") and hasattr(world.options, "goal"):
@@ -297,6 +341,8 @@ def before_set_rules(world: World, multiworld: MultiWorld, player: int):
 # Called after rules for accessing regions and locations are created, in case you want to see or modify that information.
 def after_set_rules(world: World, multiworld: MultiWorld, player: int):
     # Use this hook to modify the access rules for a given location
+
+    #Set BrokenShards to the victory location 
     total = world.options.broken_shards_total.value
     required = world.options.broken_shards_required.value
     
