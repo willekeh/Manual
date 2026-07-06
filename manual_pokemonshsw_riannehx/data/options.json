@@ -3,11 +3,8 @@
     "_comment": "Add a _ before an option name to comment it out and it wont be added to the apworld",
     "core": {
         "goal": {
-            "_comment": [
-                "Using 'goal' as the name of an option let you override some of the generated goal parameters"
-            ],
             "display_name": "The End Objective",
-            "description": "How to End your Randomized playthrough.",
+            "description": "Mend The Broken Shield/Sword: is a mcguffin goal where you have to find broken shards to mend the broken shield/sword. \n This goal is meant to be played after beating the champion. This goal auto includes Wandersanity. \n Type Researcher Goal: Is to research all types onces, this goal includes Routesanity",
             "aliases": { "easiest": 0 },
             "hidden": false
         },

@@ -74,16 +74,15 @@ def before_create_regions(world: World, multiworld: MultiWorld, player: int):
             # Impidimp Force Glimwood Tangle Access
             elif "LowPerc:Impidimp" in categories:
                 loc["requires"] = "|Glimwood Tangle Access|"
+
             elif "LowPerc:Roggenrola" in categories:
                 if game_version == 3 or game_version == 1:
                     loc["requires"] = "|Motostoke Outskirts Access|"
 
     ##Researcher Goal, Add Type Unlock requires to location and victory
-    current_goal_name = ""
-    if hasattr(world, "options") and hasattr(world.options, "goal"):
-        current_goal_name = world.options.goal.current_key
+    current_goal = world.options.goal.current_key
 
-    if str(current_goal_name).lower() != "type researcher":
+    if str(current_goal).lower() != "type researcher":
         return
 
     active_types = set()
@@ -149,9 +148,16 @@ def after_create_regions(world: World, multiworld: MultiWorld, player: int):
     # Use this hook to remove locations from the world
     locationNamesToRemove: list[str] = [] # List of location names
 
-    #game version filters And Remove locations that are below 5%
+    pokemon_types = ["Normal", "Fire", "Water", "Grass", "Electric", "Ice", "Fighting", 
+                     "Poison", "Ground", "Flying", "Psychic", "Bug", "Rock", "Ghost", 
+                     "Dragon", "Dark", "Steel", "Fairy"]
+
     game_version = get_option_value(multiworld, player, "game_version")
     remove_low = get_option_value(multiworld, player, "remove_low_percentage")
+    route_sanity = get_option_value(multiworld, player, "route_sanity")
+    current_goal = world.options.goal.current_key   
+
+    #game version filters And Remove locations that are below 5%
     if game_version == 1:
         locationNamesToRemove += world.location_name_groups["GameShield"]
         locationNamesToRemove += world.location_name_groups["GameSword"]
@@ -165,19 +171,15 @@ def after_create_regions(world: World, multiworld: MultiWorld, player: int):
         locationNamesToRemove += world.location_name_groups["GameShield"]
         if remove_low:
             locationNamesToRemove += ["Heatmor", "Shelmet", "Jellicent"]
-
-    current_goal_name = ""
-    if hasattr(world, "options") and hasattr(world.options, "goal"):
-        current_goal_name = world.options.goal.current_key
-
-    pokemon_types = ["Normal", "Fire", "Water", "Grass", "Electric", "Ice", "Fighting", 
-                     "Poison", "Ground", "Flying", "Psychic", "Bug", "Rock", "Ghost", 
-                     "Dragon", "Dark", "Steel", "Fairy"]
+    #4 Keep Both games
 
     # If Type Researcher is NOT the goal, wipe everything related to it
-    if str(current_goal_name).lower() != "type researcher":
+    if str(current_goal).lower() != "type researcher":
         for p_type in pokemon_types:
             locationNamesToRemove.append(f"Type Researched - {p_type} Type")
+        if not route_sanity:
+            locationNamesToRemove += world.location_name_groups["Routes"]
+            locationNamesToRemove += world.location_name_groups["Location Unlocks"]
 
     # If Type Researcher is active, find the missing types and remove their tracker locations
     else:
@@ -188,7 +190,7 @@ def after_create_regions(world: World, multiworld: MultiWorld, player: int):
                     if p_type in loc.get("category", []):
                         active_types.add(p_type)
 
-        # Gather any inactive checking locations for complete deletion
+        # Gather any inactive Types
         for p_type in pokemon_types:
             if p_type not in active_types:
                 locationNamesToRemove.append(f"Type Researched - {p_type} Type")
@@ -210,13 +212,11 @@ def after_create_regions(world: World, multiworld: MultiWorld, player: int):
 # {"Item Name": {ItemClassification.useful: 5}} <- You can also use the classification directly
 def before_create_items_all(item_config: dict[str, int|dict], world: World, multiworld: MultiWorld, player: int) -> dict[str, int|dict]:
     location_count = len(world.get_locations())
-    current_goal_name = ""
     other_items_count = 0
 
     # Check if Mend The Broken Shield/Sword goal is active
     current_goal_name = world.options.goal.current_key
-    
-    if current_goal_name != "mend the broken shield/sword":
+    if str(current_goal_name).lower() != "mend the broken shield/sword":
         # Set shards to 0 when not the correct goal
         shards_total = 0
         world.options.broken_shards_total.value = 0
@@ -260,48 +260,50 @@ def before_create_items_starting(item_pool: list, world: World, multiworld: Mult
         "Snowing", "Snowstorm", "Intense Sun", "Sandstorm", "Fog"
     ]
 
-    if start_logic == 1: # Fixed
-        start_inventory_names = ["Rolling Fields", "Normal weather", "Type Unlock - Bug Type", "Route 1 Access"]
+    current_goal_name = world.options.goal.current_key
+    
+    if str(current_goal_name).lower() != "mend the broken shield/sword":
+        if start_logic == 1: # Fixed
+            start_inventory_names = ["Rolling Fields", "Normal weather", "Type Unlock - Bug Type", "Route 1 Access"]
 
-    elif start_logic == 2: # Region (Random region, Fixed weather)
-        multiworld.random.shuffle(locations)
-        start_inventory_names = [locations[0], "Normal weather"]
+        elif start_logic == 2: # Region (Random region, Fixed weather)
+            multiworld.random.shuffle(locations)
+            start_inventory_names = [locations[0], "Normal weather"]
 
-    elif start_logic == 3: # Weather (Fixed region, Random weather)
-        multiworld.random.shuffle(weather)
-        start_inventory_names = ["Rolling Fields", weather[0]]
+        elif start_logic == 3: # Weather (Fixed region, Random weather)
+            multiworld.random.shuffle(weather)
+            start_inventory_names = ["Rolling Fields", weather[0]]
 
-    elif start_logic == 4: # Both (Both random)
-        multiworld.random.shuffle(locations)
-        multiworld.random.shuffle(weather)
-        start_inventory_names = [locations[0], weather[0]]
+        elif start_logic == 4: # Both (Both random)
+            multiworld.random.shuffle(locations)
+            multiworld.random.shuffle(weather)
+            start_inventory_names = [locations[0], weather[0]]
 
-    for item_name in start_inventory_names:
-        found_item = next((item for item in item_pool if item.name == item_name), None)
+        for item_name in start_inventory_names:
+            found_item = next((item for item in item_pool if item.name == item_name), None)
         
-        if found_item:
-            multiworld.push_precollected(found_item)
-            item_pool.remove(found_item)
-
+            if found_item:
+                multiworld.push_precollected(found_item)
+                item_pool.remove(found_item)
+    else:
+        start_inventory_names = ["Type Unlock - Bug Type", "Route 1 Access"]
     return item_pool
 
 # The item pool after starting items are processed but before filler is added, in case you want to see the raw item pool at that stage
 def before_create_items_filler(item_pool: list, world: World, multiworld: MultiWorld, player: int) -> list:
     # Use this hook to remove items from the item pool
     itemNamesToRemove: list[str] = [] # List of item names
-
-    current_goal_name = ""
-    if hasattr(world, "options") and hasattr(world.options, "goal"):
-        current_goal_name = world.options.goal.current_key
+    current_goal = world.options.goal.current_key
 
     pokemon_types = ["Normal", "Fire", "Water", "Grass", "Electric", "Ice", "Fighting", 
                      "Poison", "Ground", "Flying", "Psychic", "Bug", "Rock", "Ghost", 
                      "Dragon", "Dark", "Steel", "Fairy"]
 
     # Remove if goal is not Type Researcher
-    if str(current_goal_name).lower() != "type researcher":
+    if str(current_goal).lower() != "type researcher":
         for p_type in pokemon_types:
             itemNamesToRemove.append(f"Type Unlock - {p_type} Type")
+
     # Remove unlocks that dont have a matching location type
     else:
         active_types = set()

@@ -23,7 +23,7 @@ from typing import Type, Any
 
 class GameVersion(Choice):
     """Choose which game you are playing. 
-    This matters for the different version exclusives. Default removes all exclusives"""
+    This matters for the different version exclusives. Such as spritzee and galarian ponyta. Both includes all version exclusives. Default removes all exclusives"""
     display_name = "Game Version"
     option_RemoveAll = 1
     option_Shield = 2
@@ -32,7 +32,7 @@ class GameVersion(Choice):
     default = 1
 
 class RegionStart(Choice):
-    """Choose how much you want to randomize your starting area, Fixed: Rolling fields + Normal weather, Region: Random + Normal weather,
+    """Choose for the Mend The Broken Shield/Sword goal, how much you want to randomize your starting area. Fixed: Rolling fields + Normal weather, Region: Random + Normal weather,
     Weather: Rolling fields + Random, Both: both random"""
     display_name = "Starting Logic"
     option_Fixed = 1
@@ -42,7 +42,7 @@ class RegionStart(Choice):
     default = 1
 
 class BrokenShardsTotal(Range):
-    """Choose the number of Goal items (macguffin hunt goal item) in the pool.
+    """Choose the number of Broken Shards (mcguffin hunt goal item) in the pool.
     This gets reduced automatically if there are too few locations. This is only for the special encounter goal"""
     display_name = "Number of broken shards in the pool"
     range_start = 1
@@ -68,22 +68,26 @@ class BerryTreeSanity(Toggle):
     default = 0
 
 class AddTimeTravel(Toggle):
-    """Adds Time Travel checks, Currently this adds extra pokemon that can only appear in some weathers"""
+    """Adds Time Travel checks. Currently this adds about 200 extra pokemon location checks in the wild area that are weather depended.
+    This expects you to time travel with for example Den time travel."""
     display_name = "Add Time Travel"
     default = 0
 
 class WanderSanity(Toggle):
-    """Adds Wild Area 1 time a day spawns, This is will automatically turn on with the Mend The Broken Shield/Sword goal and have Wild Area location sanity """
+    """Adds Wild Area 1 time a day spawns. This is will automatically turn on with the Mend The Broken Shield/Sword goal and has Wild Area location sanity, 
+    This can be turned on separately for the other goals and this currently expects you to have beaten the champion. """
     display_name = "add wander sanity"
     default = 0  
 
 class RouteSanity(Toggle):
-    """Adds all pokemon locations in a route, with that you have to find the route unlocks to continue"""
+    """Adds all pokemon locations in a route. This is will automatically turn on with the Type Researcher Goal and has route/locations sanity. 
+    This can be turned on separately for the other goals."""
     display_name = "route sanity"
     default = 0    
 
 class RemoveLowPercentage(Toggle):
-    """Removes all route pokemon below 5% encounter rate"""
+    """Removes all route pokemon below and at 5% encounter rate.
+    Note: There are changes to Route-Sanity depending on which Game version you selected."""
     display_name = "Remove Low percentage"
     default = 0    
 
@@ -94,7 +98,7 @@ def before_options_defined(options: dict[str, Type[Option[Any]]]) -> dict[str, T
     options["broken_shards_required"] = BrokenShardsRequired
     options["region_start"] = RegionStart
     options["berry_tree_sanity"] = BerryTreeSanity
-    options["WanderSanity"] = WanderSanity
+    options["wander_sanity"] = WanderSanity
     options["den_sanity"] = DenSanity
     options["add_time_travel"] = AddTimeTravel
     options["route_sanity"] = RouteSanity
@@ -116,7 +120,7 @@ def after_options_defined(options: Type[PerGameCommonOptions]):
 # Use this Hook if you want to add your Option to an Option group (existing or not)
 def before_option_groups_created(groups: dict[str, list[Type[Option[Any]]]]) -> dict[str, list[Type[Option[Any]]]]:
     # Uses the format groups['GroupName'] = [TotalCharactersToWinWith]
-    groups['Mend The Broken Shield/Sword goal options'] = [BrokenShardsTotal, BrokenShardsRequired]
+    groups['Mend The Broken Shield/Sword goal options'] = [RegionStart, BrokenShardsTotal, BrokenShardsRequired]
     groups['Wild Area Options'] = [WanderSanity, DenSanity, AddTimeTravel]
     groups['Route Options'] = [RouteSanity, RemoveLowPercentage]
     return groups
