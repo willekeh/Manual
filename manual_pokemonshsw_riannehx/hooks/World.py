@@ -155,6 +155,7 @@ def after_create_regions(world: World, multiworld: MultiWorld, player: int):
     game_version = get_option_value(multiworld, player, "game_version")
     remove_low = get_option_value(multiworld, player, "remove_low_percentage")
     route_sanity = get_option_value(multiworld, player, "route_sanity")
+    wander_sanity = get_option_value(multiworld, player, "wander_sanity")
     current_goal = world.options.goal.current_key   
 
     #game version filters And Remove locations that are below 5%
@@ -179,7 +180,6 @@ def after_create_regions(world: World, multiworld: MultiWorld, player: int):
             locationNamesToRemove.append(f"Type Researched - {p_type} Type")
         if not route_sanity:
             locationNamesToRemove += world.location_name_groups["Routes"]
-            locationNamesToRemove += world.location_name_groups["Location Unlocks"]
 
     # If Type Researcher is active, find the missing types and remove their tracker locations
     else:
@@ -194,6 +194,10 @@ def after_create_regions(world: World, multiworld: MultiWorld, player: int):
         for p_type in pokemon_types:
             if p_type not in active_types:
                 locationNamesToRemove.append(f"Type Researched - {p_type} Type")
+
+        #remove wandersanity locations if not enabled
+        if not wander_sanity:
+            locationNamesToRemove += world.location_name_groups["Special overworld spawn"]
         
     for region in multiworld.regions:
         if region.player == player:
@@ -211,9 +215,6 @@ def after_create_regions(world: World, multiworld: MultiWorld, player: int):
 #       will create 5 items that are the "useful trap" class
 # {"Item Name": {ItemClassification.useful: 5}} <- You can also use the classification directly
 def before_create_items_all(item_config: dict[str, int|dict], world: World, multiworld: MultiWorld, player: int) -> dict[str, int|dict]:
-    location_count = len(world.get_locations())
-    other_items_count = 0
-
     # Check if Mend The Broken Shield/Sword goal is active
     current_goal_name = world.options.goal.current_key
     if str(current_goal_name).lower() != "mend the broken shield/sword":
@@ -222,22 +223,6 @@ def before_create_items_all(item_config: dict[str, int|dict], world: World, mult
         world.options.broken_shards_total.value = 0
     else:
         shards_total = world.options.broken_shards_total.value
-
-        for name, data in item_config.items():
-            if name != "Broken shards":
-                if isinstance(data, dict):
-                    other_items_count += sum(data.values())
-                else:
-                    other_items_count += data
-                                        
-        # To crash less with minimal settings 
-        buffer = 3 
-        free_space = location_count - other_items_count - buffer
-
-        if shards_total > free_space:
-            # Check if shards total is higher than free space if yes turn down shards
-            shards_total = max(0, free_space) 
-            world.options.broken_shards_total.value = shards_total
     
     item_config["Broken shards"] = shards_total
     
@@ -262,9 +247,9 @@ def before_create_items_starting(item_pool: list, world: World, multiworld: Mult
 
     current_goal_name = world.options.goal.current_key
     
-    if str(current_goal_name).lower() != "mend the broken shield/sword":
+    if str(current_goal_name).lower() == "mend the broken shield/sword":
         if start_logic == 1: # Fixed
-            start_inventory_names = ["Rolling Fields", "Normal weather", "Type Unlock - Bug Type", "Route 1 Access"]
+            start_inventory_names = ["Rolling Fields", "Normal weather"]
 
         elif start_logic == 2: # Region (Random region, Fixed weather)
             multiworld.random.shuffle(locations)
@@ -279,14 +264,16 @@ def before_create_items_starting(item_pool: list, world: World, multiworld: Mult
             multiworld.random.shuffle(weather)
             start_inventory_names = [locations[0], weather[0]]
 
-        for item_name in start_inventory_names:
+    else:
+        start_inventory_names = ["Type Unlock - Bug Type", "Route 1 Access"]
+    
+    for item_name in start_inventory_names:
             found_item = next((item for item in item_pool if item.name == item_name), None)
         
             if found_item:
                 multiworld.push_precollected(found_item)
                 item_pool.remove(found_item)
-    else:
-        start_inventory_names = ["Type Unlock - Bug Type", "Route 1 Access"]
+
     return item_pool
 
 # The item pool after starting items are processed but before filler is added, in case you want to see the raw item pool at that stage
@@ -294,6 +281,8 @@ def before_create_items_filler(item_pool: list, world: World, multiworld: MultiW
     # Use this hook to remove items from the item pool
     itemNamesToRemove: list[str] = [] # List of item names
     current_goal = world.options.goal.current_key
+    route_sanity = get_option_value(multiworld, player, "route_sanity")
+    wander_sanity = get_option_value(multiworld, player, "wander_sanity")
 
     pokemon_types = ["Normal", "Fire", "Water", "Grass", "Electric", "Ice", "Fighting", 
                      "Poison", "Ground", "Flying", "Psychic", "Bug", "Rock", "Ghost", 
@@ -303,6 +292,9 @@ def before_create_items_filler(item_pool: list, world: World, multiworld: MultiW
     if str(current_goal).lower() != "type researcher":
         for p_type in pokemon_types:
             itemNamesToRemove.append(f"Type Unlock - {p_type} Type")
+        #Remove route sanity if not enabled for mending the sword/shield
+        if not route_sanity:
+            itemNamesToRemove += world.item_name_groups["Location Unlocks"]
 
     # Remove unlocks that dont have a matching location type
     else:
@@ -316,6 +308,8 @@ def before_create_items_filler(item_pool: list, world: World, multiworld: MultiW
         for p_type in pokemon_types:
             if p_type not in active_types:
                 itemNamesToRemove.append(f"Type Unlock - {p_type} Type")
+        if not wander_sanity:
+            itemNamesToRemove += world.item_name_groups["Wild Area Unlocks"]
 
     for itemName in itemNamesToRemove:
         item = next((i for i in item_pool if i.name == itemName), None)
@@ -334,6 +328,28 @@ def before_create_items_filler(item_pool: list, world: World, multiworld: MultiW
 
 # The complete item pool prior to being set for generation is provided here, in case you want to make changes to it
 def after_create_items(item_pool: list, world: World, multiworld: MultiWorld, player: int) -> list:
+    #Different Goal, Return item Pool
+    if world.options.broken_shards_total.value == 0:
+        return item_pool
+
+    location_count = len(world.get_locations())
+    total_items_count = len(item_pool)
+    buffer = 1
+    
+    overshot = total_items_count - location_count + buffer
+
+    if overshot > 0:
+        shards_in_pool = [item for item in item_pool if item.name.lower() == "broken shards"]
+        other_items = [item for item in item_pool if item.name.lower() != "broken shards"]
+
+        shards_to_remove = min(overshot, len(shards_in_pool))
+        
+        if shards_to_remove > 0:
+            shards_in_pool = shards_in_pool[:-shards_to_remove]
+        world.options.broken_shards_total.value = len(shards_in_pool)
+        
+        item_pool = other_items + shards_in_pool
+
     return item_pool
 
 # Called before rules for accessing regions and locations are created. Not clear why you'd want this, but it's here.

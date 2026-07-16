@@ -46,7 +46,14 @@
     },
     {
         "name": "Nickit",
-        "category": ["Pokemon", "Routes", "Route 1", "Route 2", "LowPerc:Nickit", "Dark"],
+        "category": [
+            "Pokemon",
+            "Routes",
+            "Route 1",
+            "Route 2",
+            "LowPerc:Nickit",
+            "Dark"
+        ],
         "requires": "|Route 1 Access| OR |Route 2 Access|"
     },
     {
@@ -117,7 +124,14 @@
     },
     {
         "name": "Galarian Zigzagoon",
-        "category": ["Pokemon", "Routes", "Route 2", "LowPerc:Zigzagoon", "Route 3", "Dark"],
+        "category": [
+            "Pokemon",
+            "Routes",
+            "Route 2",
+            "LowPerc:Zigzagoon",
+            "Route 3",
+            "Dark"
+        ],
         "requires": "|Route 2 Access| OR |Route 3 Access|"
     },
     {
@@ -135,7 +149,14 @@
     },
     {
         "name": "Yamper",
-        "category": ["Pokemon", "Routes", "LowPerc:Yamper", "Route 2", "Route 4", "Electric"],
+        "category": [
+            "Pokemon",
+            "Routes",
+            "LowPerc:Yamper",
+            "Route 2",
+            "Route 4",
+            "Electric"
+        ],
         "requires": "|Route 2 Access| OR |Route 4 Access|"
     },
     {
@@ -227,7 +248,13 @@
     },
     {
         "name": "Tyrogue",
-        "category": ["Pokemon", "Routes", "LowPercentage", "Route 3", "Fighting"],
+        "category": [
+            "Pokemon",
+            "Routes",
+            "LowPercentage",
+            "Route 3",
+            "Fighting"
+        ],
         "requires": "|Route 3 Access|"
     },
     {
@@ -314,7 +341,13 @@
     },
     {
         "name": "Pikachu",
-        "category": ["Pokemon", "Routes", "LowPercentage", "Route 4", "Electric"],
+        "category": [
+            "Pokemon",
+            "Routes",
+            "LowPercentage",
+            "Route 4",
+            "Electric"
+        ],
         "requires": "|Route 4 Access|"
     },
     {
@@ -484,7 +517,14 @@
     },
     {
         "name": "Galarian Farfetch'd",
-        "category": ["Pokemon", "Routes", "LowPercentage", "GameSword", "Route 5", "Fighting"],
+        "category": [
+            "Pokemon",
+            "Routes",
+            "LowPercentage",
+            "GameSword",
+            "Route 5",
+            "Fighting"
+        ],
         "requires": "|Route 5 Access|"
     },
     {
@@ -494,7 +534,14 @@
     },
     {
         "name": "Drifloon",
-        "category": ["Pokemon", "Routes", "LowPercentage", "Route 5", "Ghost", "Flying"],
+        "category": [
+            "Pokemon",
+            "Routes",
+            "LowPercentage",
+            "Route 5",
+            "Ghost",
+            "Flying"
+        ],
         "requires": "|Route 5 Access|"
     },
     {
@@ -906,7 +953,14 @@
     },
     {
         "name": "Togedemaru",
-        "category": ["Pokemon", "Routes", "Route 8", "LowPercentage", "Steel", "Electric"],
+        "category": [
+            "Pokemon",
+            "Routes",
+            "Route 8",
+            "LowPercentage",
+            "Steel",
+            "Electric"
+        ],
         "requires": "|Route 8 Access|"
     },
     {
@@ -964,12 +1018,28 @@
     },
     {
         "name": "Throh",
-        "category": ["Pokemon", "Routes", "Route 8", "Motostoke Outskirts", "LowPercentage", "GameShield", "Fighting"],
+        "category": [
+            "Pokemon",
+            "Routes",
+            "Route 8",
+            "Motostoke Outskirts",
+            "LowPercentage",
+            "GameShield",
+            "Fighting"
+        ],
         "requires": "|Route 8 Access| AND |Motostoke Outskirts Access|"
     },
     {
         "name": "Sawk",
-        "category": ["Pokemon", "Routes", "Route 8", "Motostoke Outskirts", "LowPercentage", "GameSword", "Fighting"],
+        "category": [
+            "Pokemon",
+            "Routes",
+            "Route 8",
+            "Motostoke Outskirts",
+            "LowPercentage",
+            "GameSword",
+            "Fighting"
+        ],
         "requires": "|Route 8 Access| AND |Motostoke Outskirts Access|"
     },
     {
@@ -1065,7 +1135,14 @@
     },
     {
         "name": "Dhelmise",
-        "category": ["Pokemon", "Routes", "LowPercentage", "Route 9", "Ghost", "Grass"],
+        "category": [
+            "Pokemon",
+            "Routes",
+            "LowPercentage",
+            "Route 9",
+            "Ghost",
+            "Grass"
+        ],
         "requires": "|Route 9 Access|"
     },
     {
@@ -1080,13 +1157,7 @@
     },
     {
         "name": "Grapploct",
-        "category": [
-            "Pokemon",
-            "Special overworld spawn",
-            "Routes",
-            "Route 9",
-            "Fighting"
-        ],
+        "category": ["Pokemon", "Routes", "Route 9", "Fighting"],
         "requires": "|Route 9 Access| AND |Progressive bike:2|"
     },
     {
@@ -1183,13 +1254,21 @@
     },
     {
         "name": "Duraludon",
-        "category": ["Pokemon", "Routes", "LowPercentage", "Route 10", "Steel", "Dragon"],
+        "category": [
+            "Pokemon",
+            "Routes",
+            "LowPercentage",
+            "Route 10",
+            "Steel",
+            "Dragon"
+        ],
         "requires": "|Route 10 Access|"
     },
     {
         "name": "Shuckle",
         "category": [
             "Pokemon",
+            "Routes",
             "Galar Mine 2",
             "LowPercentage",
             "Bug",
@@ -1199,17 +1278,14 @@
     },
     {
         "name": "Shellos",
-        "category": [
-            "Pokemon",
-            "Galar Mine 2",
-            "Water"
-        ],
+        "category": ["Pokemon", "Routes", "Galar Mine 2", "Water"],
         "requires": "|Galar Mine 2 Access|"
     },
     {
         "name": "Croagunk",
         "category": [
             "Pokemon",
+            "Routes",
             "Galar Mine 2",
             "Motostoke Outskirts",
             "GameShield",
@@ -1222,6 +1298,7 @@
         "name": "Scraggy",
         "category": [
             "Pokemon",
+            "Routes",
             "Galar Mine 2",
             "Motostoke Outskirts",
             "GameSword",
@@ -1232,38 +1309,24 @@
     },
     {
         "name": "Binacle",
-        "category": [
-            "Pokemon",
-            "Galar Mine 2",
-            "Rock",
-            "Water"
-        ],
+        "category": ["Pokemon", "Routes", "Galar Mine 2", "Rock", "Water"],
         "requires": "|Galar Mine 2 Access|"
     },
     {
         "name": "Noibat",
-        "category": [
-            "Pokemon",
-            "Galar Mine 2",
-            "Flying",
-            "Dragon"
-        ],
+        "category": ["Pokemon", "Routes", "Galar Mine 2", "Flying", "Dragon"],
         "requires": "|Galar Mine 2 Access|"
     },
     {
         "name": "Wimpod",
-        "category": [
-            "Pokemon",
-            "Galar Mine 2",
-            "Bug",
-            "Water"
-        ],
+        "category": ["Pokemon", "Routes", "Galar Mine 2", "Bug", "Water"],
         "requires": "|Galar Mine 2 Access|"
     },
     {
         "name": "Butterfree",
         "category": [
             "Pokemon",
+            "Routes",
             "Slumbering Weald",
             "LowPercentage",
             "Bug",
@@ -1275,6 +1338,7 @@
         "name": "Galarian Weezing",
         "category": [
             "Pokemon",
+            "Routes",
             "Slumbering Weald",
             "Poison",
             "Fairy"
@@ -1283,27 +1347,19 @@
     },
     {
         "name": "Munna",
-        "category": [
-            "Pokemon",
-            "Slumbering Weald",
-            "Psychic"
-        ],
+        "category": ["Pokemon", "Routes", "Slumbering Weald", "Psychic"],
         "requires": "|Slumbering Weald Access|"
     },
     {
         "name": "Orbeetle",
-        "category": [
-            "Pokemon",
-            "Slumbering Weald",
-            "Bug",
-            "Psychic"
-        ],
+        "category": ["Pokemon", "Routes", "Slumbering Weald", "Bug", "Psychic"],
         "requires": "|Slumbering Weald Access|"
     },
     {
         "name": "Galarian Stunfisk",
         "category": [
             "Pokemon",
+            "Routes",
             "LowPerc:Stunfisk",
             "Slumbering Weald",
             "Galar Mine 2",
@@ -1316,6 +1372,7 @@
         "name": "Impidimp",
         "category": [
             "Pokemon",
+            "Routes",
             "LowPerc:Impidimp",
             "Motostoke Outskirts",
             "Glimwood Tangle",
@@ -1326,17 +1383,14 @@
     },
     {
         "name": "Koffing",
-        "category": [
-            "Pokemon",
-            "Motostoke Outskirts",
-            "Poison"
-        ],
+        "category": ["Pokemon", "Routes", "Motostoke Outskirts", "Poison"],
         "requires": "|Motostoke Outskirts Access|"
     },
     {
         "name": "Noctowl",
         "category": [
             "Pokemon",
+            "Routes",
             "Motostoke Outskirts",
             "Flying",
             "Normal"
@@ -1345,17 +1399,14 @@
     },
     {
         "name": "Sudowoodo",
-        "category": [
-            "Pokemon",
-            "Motostoke Outskirts",
-            "Rock"
-        ],
+        "category": ["Pokemon", "Routes", "Motostoke Outskirts", "Rock"],
         "requires": "|Motostoke Outskirts Access|"
     },
     {
         "name": "Salandit",
         "category": [
             "Pokemon",
+            "Routes",
             "Motostoke Outskirts",
             "GameShield",
             "LowPercentage",
@@ -1363,19 +1414,17 @@
             "Poison"
         ],
         "requires": "|Motostoke Outskirts Access|"
-    },{
+    },
+    {
         "name": "Hatenna",
-        "category": [
-            "Pokemon",
-            "Motostoke Outskirts",
-            "Psychic"
-        ],
+        "category": ["Pokemon", "Routes", "Motostoke Outskirts", "Psychic"],
         "requires": "|Motostoke Outskirts Access|"
     },
     {
         "name": "Galarian Ponyta",
         "category": [
             "Pokemon",
+            "Routes",
             "Glimwood Tangle",
             "Psychic",
             "GameShield"
@@ -1384,28 +1433,19 @@
     },
     {
         "name": "Phantump",
-        "category": [
-            "Pokemon",
-            "Glimwood Tangle",
-            "Ghost",
-            "Grass"
-        ],
+        "category": ["Pokemon", "Routes", "Glimwood Tangle", "Ghost", "Grass"],
         "requires": "|Glimwood Tangle Access|"
     },
     {
         "name": "Shiinotic",
-        "category": [
-            "Pokemon",
-            "Glimwood Tangle",
-            "Fairy",
-            "Grass"
-        ],
+        "category": ["Pokemon", "Routes", "Glimwood Tangle", "Fairy", "Grass"],
         "requires": "|Glimwood Tangle Access|"
     },
     {
         "name": "Oranguru",
         "category": [
             "Pokemon",
+            "Routes",
             "Glimwood Tangle",
             "Normal",
             "GameShield",
@@ -1417,6 +1457,7 @@
         "name": "Passimian",
         "category": [
             "Pokemon",
+            "Routes",
             "Glimwood Tangle",
             "Fighting",
             "GameSword"
@@ -1425,36 +1466,24 @@
     },
     {
         "name": "Sinistea",
-        "category": [
-            "Pokemon",
-            "Glimwood Tangle",
-            "Ghost"
-        ],
+        "category": ["Pokemon", "Routes", "Glimwood Tangle", "Ghost"],
         "requires": "|Glimwood Tangle Access|"
     },
     {
         "name": "Hattrem",
-        "category": [
-            "Pokemon",
-            "Glimwood Tangle",
-            "Psychic"
-        ],
+        "category": ["Pokemon", "Routes", "Glimwood Tangle", "Psychic"],
         "requires": "|Glimwood Tangle Access|"
     },
     {
         "name": "Morgrem",
-        "category": [
-            "Pokemon",
-            "Glimwood Tangle",
-            "Dark",
-            "Fairy"
-        ],
+        "category": ["Pokemon", "Routes", "Glimwood Tangle", "Dark", "Fairy"],
         "requires": "|Glimwood Tangle Access|"
     },
     {
         "name": "Indeedee",
         "category": [
             "Pokemon",
+            "Routes",
             "Glimwood Tangle",
             "LowPercentage",
             "Psychic",

@@ -43,7 +43,7 @@ class RegionStart(Choice):
 
 class BrokenShardsTotal(Range):
     """Choose the number of Broken Shards (mcguffin hunt goal item) in the pool.
-    This gets reduced automatically if there are too few locations. This is only for the special encounter goal"""
+    This gets reduced automatically if there are too few locations. This is only for the mend the broken shield/sword goal"""
     display_name = "Number of broken shards in the pool"
     range_start = 1
     range_end = 40
@@ -69,7 +69,7 @@ class BerryTreeSanity(Toggle):
 
 class AddTimeTravel(Toggle):
     """Adds Time Travel checks. Currently this adds about 200 extra pokemon location checks in the wild area that are weather depended.
-    This expects you to time travel with for example Den time travel."""
+    This expects you to time travel with for example Den time travel and this currently expects you to have beaten the champion."""
     display_name = "Add Time Travel"
     default = 0
 
