@@ -1,0 +1,147 @@
+[
+    {
+        "name": "Berry Tree - Route 3",
+        "category": ["Routes", "BerryTrees", "Route 3"],
+        "requires": "|Route 3 Access|"
+    },
+    {
+        "name": "Berry Tree - Route 4",
+        "category": ["Routes", "BerryTrees", "Route 4"],
+        "requires": "|Route 4 Access|"
+    },
+    {
+        "name": "Berry Tree - Route 5",
+        "category": ["Routes", "BerryTrees", "Route 5"],
+        "requires": "|Route 5 Access|"
+    },
+    {
+        "name": "Berry Tree - Route 6",
+        "category": ["Routes", "BerryTrees", "Route 6"],
+        "requires": "|Route 6 Access|"
+    },
+    {
+        "name": "Berry Tree 1 - Route 7",
+        "category": ["Routes", "BerryTrees", "Route 7"],
+        "requires": "|Route 7 Access|"
+    },
+    {
+        "name": "Berry Tree 2 - Route 7",
+        "category": ["Routes", "BerryTrees", "Route 7"],
+        "requires": "|Route 7 Access|"
+    },
+    {
+        "name": "Berry Tree 1 - Route 9",
+        "category": ["Routes", "BerryTrees", "Route 9"],
+        "requires": "|Route 9 Access|"
+    },
+    {
+        "name": "Berry Tree 2 - Route 9",
+        "category": ["Routes", "BerryTrees", "Route 9"],
+        "requires": "|Route 9 Access| and |Progressive bike:2|"
+    },
+    {
+        "name": "Berry Tree - Axew's Eye",
+        "category": ["Wild Area", "BerryTrees", "Axew's Eye"],
+        "requires": "|Axew's Eye| AND |Progressive bike:2|"
+    },
+    {
+        "name": "Berry Tree 1 - Bridge Field",
+        "category": ["Wild Area", "BerryTrees", "Bridge Field"],
+        "requires": "|Bridge Field|"
+    },
+    {
+        "name": "Berry Tree 2 - Bridge Field",
+        "category": ["Wild Area", "BerryTrees", "Bridge Field"],
+        "requires": "|Bridge Field|"
+    },
+    {
+        "name": "Berry Tree 3 - Bridge Field",
+        "category": ["Wild Area", "BerryTrees", "Bridge Field"],
+        "requires": "|Bridge Field|"
+    },
+    {
+        "name": "Berry Tree 4 - Bridge Field",
+        "category": ["Wild Area", "BerryTrees", "Bridge Field"],
+        "requires": "|Bridge Field| and |Progressive bike:2|"
+    },
+    {
+        "name": "Berry Tree 1 - Dappled Grove",
+        "category": ["Wild Area", "BerryTrees", "Dappled Grove"],
+        "requires": "|Dappled Grove|"
+    },
+    {
+        "name": "Berry Tree 2 - Dappled Grove",
+        "category": ["Wild Area", "BerryTrees", "Dappled Grove"],
+        "requires": "|Dappled Grove|"
+    },
+    {
+        "name": "Berry Tree 3 - Dappled Grove",
+        "category": ["Wild Area", "BerryTrees", "Dappled Grove"],
+        "requires": "|Dappled Grove|"
+    },
+    {
+        "name": "Berry Tree 4 - Dappled Grove",
+        "category": ["Wild Area", "BerryTrees", "Dappled Grove"],
+        "requires": "|Dappled Grove|"
+    },
+    {
+        "name": "Berry Tree 1 - Giant's Cap",
+        "category": ["Wild Area", "BerryTrees", "Giant's Cap"],
+        "requires": "|Giant's Cap|"
+    },
+    {
+        "name": "Berry Tree - Giant's Mirror",
+        "category": ["Wild Area", "BerryTrees", "Giant's Mirror"],
+        "requires": "|Giant's Mirror|"
+    },
+    {
+        "name": "Berry Tree - Giant's Seat",
+        "category": ["Wild Area", "BerryTrees", "Giant's Seat"],
+        "requires": "|Giant's Seat|"
+    },
+    {
+        "name": "Berry Tree 1 - Hammerlocke Hills",
+        "category": ["Wild Area", "BerryTrees", "Hammerlocke Hills"],
+        "requires": "|Hammerlocke Hills|"
+    },
+    {
+        "name": "Berry Tree 2 - Hammerlocke Hills",
+        "category": ["Wild Area", "BerryTrees", "Hammerlocke Hills"],
+        "requires": "|Hammerlocke Hills|"
+    },
+    {
+        "name": "Berry Tree - Lake of Outrage",
+        "category": ["Wild Area", "BerryTrees", "Lake of Outrage"],
+        "requires": "|Lake of Outrage| and |Progressive bike:2|"
+    },
+    {
+        "name": "Berry Tree 1 - Motostoke Riverbank",
+        "category": ["Wild Area", "BerryTrees", "Motostoke Riverbank"],
+        "requires": "|Motostoke Riverbank|"
+    },
+    {
+        "name": "Berry Tree 2 - Motostoke Riverbank",
+        "category": ["Wild Area", "BerryTrees", "Motostoke Riverbank"],
+        "requires": "|Motostoke Riverbank|"
+    },
+    {
+        "name": "Berry Tree - North Lake Miloch",
+        "category": ["Wild Area", "BerryTrees", "North Lake Miloch"],
+        "requires": "|North Lake Miloch|"
+    },
+    {
+        "name": "Berry Tree 1 - Rolling Fields",
+        "category": ["Wild Area", "BerryTrees", "Rolling Fields"],
+        "requires": "|Rolling Fields|"
+    },
+    {
+        "name": "Berry Tree 2 - Rolling Fields",
+        "category": ["Wild Area", "BerryTrees", "Rolling Fields"],
+        "requires": "|Rolling Fields|"
+    },
+    {
+        "name": "Berry Tree - Watchtower Ruins",
+        "category": ["Wild Area", "BerryTrees", "Watchtower Ruins"],
+        "requires": "|Watchtower Ruins|"
+    }
+]

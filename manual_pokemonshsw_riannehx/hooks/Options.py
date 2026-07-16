@@ -68,13 +68,13 @@ class BerryTreeSanity(Toggle):
     default = 0
 
 class AddTimeTravel(Toggle):
-    """Adds Time Travel checks. Currently this adds about 200 extra pokemon location checks in the wild area that are weather depended.
+    """Adds Time Travel checks. Currently this adds about 200 extra pokemon location checks in the wild area that are weather dependent.
     This expects you to time travel with for example Den time travel and this currently expects you to have beaten the champion."""
     display_name = "Add Time Travel"
     default = 0
 
 class WanderSanity(Toggle):
-    """Adds Wild Area 1 time a day spawns. This is will automatically turn on with the Mend The Broken Shield/Sword goal and has Wild Area location sanity, 
+    """Adds Wild Area 1 time a day spawns. This will automatically turn on with the Mend The Broken Shield/Sword goal and has Wild Area location sanity, 
     This can be turned on separately for the other goals and this currently expects you to have beaten the champion. """
     display_name = "add wander sanity"
     default = 0  

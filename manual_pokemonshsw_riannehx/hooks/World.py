@@ -198,6 +198,7 @@ def after_create_regions(world: World, multiworld: MultiWorld, player: int):
         #remove wandersanity locations if not enabled
         if not wander_sanity:
             locationNamesToRemove += world.location_name_groups["Special overworld spawn"]
+            locationNamesToRemove += world.location_name_groups["Wild Area"]
         
     for region in multiworld.regions:
         if region.player == player:
