@@ -1,0 +1,374 @@
+[
+    {
+        "count": "2",
+        "name": "Progressive bike",
+        "category": ["Bikes"],
+        "progression": true
+    },
+    {
+        "count": "10",
+        "name": "Broken shards",
+        "category": ["Broken shards"],
+        "progression": true
+    },
+    {
+        "count": 1,
+        "name": "Normal weather",
+        "category": ["Weather", "needsWeather"],
+        "progression": true
+    },
+    {
+        "count": 1,
+        "name": "Overcast",
+        "category": ["Weather", "needsWeather"],
+        "progression": true
+    },
+    {
+        "count": 1,
+        "name": "Raining",
+        "category": ["Weather", "needsWeather"],
+        "progression": true
+    },
+    {
+        "count": 1,
+        "name": "Thunderstorm",
+        "category": ["Weather", "needsWeather"],
+        "progression": true
+    },
+    {
+        "count": 1,
+        "name": "Snowing",
+        "category": ["Weather", "needsWeather"],
+        "progression": true
+    },
+    {
+        "count": 1,
+        "name": "Snowstorm",
+        "category": ["Weather", "needsWeather"],
+        "progression": true
+    },
+    {
+        "count": 1,
+        "name": "Intense Sun",
+        "category": ["Weather", "needsWeather"],
+        "progression": true
+    },
+    {
+        "count": 1,
+        "name": "Sandstorm",
+        "category": ["Weather", "needsWeather"],
+        "progression": true
+    },
+    {
+        "count": 1,
+        "name": "Fog",
+        "category": ["Weather", "needsWeather"],
+        "progression": true
+    },
+    {
+        "count": 1,
+        "name": "Axew's Eye",
+        "category": ["Wild Area Unlocks"],
+        "progression": true
+    },
+    {
+        "count": 1,
+        "name": "Bridge Field",
+        "category": ["Wild Area Unlocks"],
+        "progression": true
+    },
+    {
+        "count": 1,
+        "name": "Dappled Grove",
+        "category": ["Wild Area Unlocks"],
+        "progression": true
+    },
+    {
+        "count": 1,
+        "name": "Dusty Bowl",
+        "category": ["Wild Area Unlocks"],
+        "progression": true
+    },
+    {
+        "count": 1,
+        "name": "East Lake Axewell",
+        "category": ["Wild Area Unlocks"],
+        "progression": true
+    },
+    {
+        "count": 1,
+        "name": "Giant's Cap",
+        "category": ["Wild Area Unlocks"],
+        "progression": true
+    },
+    {
+        "count": 1,
+        "name": "Giant's Mirror",
+        "category": ["Wild Area Unlocks"],
+        "progression": true
+    },
+    {
+        "count": 1,
+        "name": "Giant's Seat",
+        "category": ["Wild Area Unlocks"],
+        "progression": true
+    },
+    {
+        "count": 1,
+        "name": "Hammerlocke Hills",
+        "category": ["Wild Area Unlocks"],
+        "progression": true
+    },
+    {
+        "count": 1,
+        "name": "Lake of Outrage",
+        "category": ["Wild Area Unlocks"],
+        "progression": true
+    },
+    {
+        "count": 1,
+        "name": "Motostoke Riverbank",
+        "category": ["Wild Area Unlocks"],
+        "progression": true
+    },
+    {
+        "count": 1,
+        "name": "North Lake Miloch",
+        "category": ["Wild Area Unlocks"],
+        "progression": true
+    },
+    {
+        "count": 1,
+        "name": "South Lake Miloch",
+        "category": ["Wild Area Unlocks"],
+        "progression": true
+    },
+    {
+        "count": 1,
+        "name": "Stony Wilderness",
+        "category": ["Wild Area Unlocks"],
+        "progression": true
+    },
+    {
+        "count": 1,
+        "name": "Watchtower Ruins",
+        "category": ["Wild Area Unlocks"],
+        "progression": true
+    },
+    {
+        "count": 1,
+        "name": "West Lake Axewell",
+        "category": ["Wild Area Unlocks"],
+        "progression": true
+    },
+    {
+        "count": 1,
+        "name": "Rolling Fields",
+        "category": ["Wild Area Unlocks"],
+        "progression": true
+    },
+    {
+        "count": 1,
+        "name": "Noweather",
+        "category": ["AllWeather"],
+        "progression": true
+    },
+    {
+        "name": "Type Unlock - Normal Type",
+        "category": ["Type Collection", "Normal"],
+        "count": 1,
+        "progression": true
+    },
+    {
+        "name": "Type Unlock - Fire Type",
+        "category": ["Type Collection", "Fire"],
+        "count": 1,
+        "progression": true
+    },
+    {
+        "name": "Type Unlock - Water Type",
+        "category": ["Type Collection", "Water"],
+        "count": 1,
+        "progression": true
+    },
+    {
+        "name": "Type Unlock - Grass Type",
+        "category": ["Type Collection", "Grass"],
+        "count": 1,
+        "progression": true
+    },
+    {
+        "name": "Type Unlock - Electric Type",
+        "category": ["Type Collection", "Electric"],
+        "count": 1,
+        "progression": true
+    },
+    {
+        "name": "Type Unlock - Ice Type",
+        "category": ["Type Collection", "Ice"],
+        "count": 1,
+        "progression": true
+    },
+    {
+        "name": "Type Unlock - Fighting Type",
+        "category": ["Type Collection", "Fighting"],
+        "count": 1,
+        "progression": true
+    },
+    {
+        "name": "Type Unlock - Poison Type",
+        "category": ["Type Collection", "Poison"],
+        "count": 1,
+        "progression": true
+    },
+    {
+        "name": "Type Unlock - Ground Type",
+        "category": ["Type Collection", "Ground"],
+        "count": 1,
+        "progression": true
+    },
+    {
+        "name": "Type Unlock - Flying Type",
+        "category": ["Type Collection", "Flying"],
+        "count": 1,
+        "progression": true
+    },
+    {
+        "name": "Type Unlock - Psychic Type",
+        "category": ["Type Collection", "Psychic"],
+        "count": 1,
+        "progression": true
+    },
+    {
+        "name": "Type Unlock - Bug Type",
+        "category": ["Type Collection", "Bug"],
+        "count": 1,
+        "progression": true
+    },
+    {
+        "name": "Type Unlock - Rock Type",
+        "category": ["Type Collection", "Rock"],
+        "count": 1,
+        "progression": true
+    },
+    {
+        "name": "Type Unlock - Ghost Type",
+        "category": ["Type Collection", "Ghost"],
+        "count": 1,
+        "progression": true
+    },
+    {
+        "name": "Type Unlock - Dragon Type",
+        "category": ["Type Collection", "Dragon"],
+        "count": 1,
+        "progression": true
+    },
+    {
+        "name": "Type Unlock - Dark Type",
+        "category": ["Type Collection", "Dark"],
+        "count": 1,
+        "progression": true
+    },
+    {
+        "name": "Type Unlock - Steel Type",
+        "category": ["Type Collection", "Steel"],
+        "count": 1,
+        "progression": true
+    },
+    {
+        "name": "Type Unlock - Fairy Type",
+        "category": ["Type Collection", "Fairy"],
+        "count": 1,
+        "progression": true
+    },
+    {
+        "count": 1,
+        "name": "Route 1 Access",
+        "category": ["Location Unlocks"],
+        "progression": true
+    },
+    {
+        "count": 1,
+        "name": "Route 2 Access",
+        "category": ["Location Unlocks"],
+        "progression": true
+    },
+    {
+        "count": 1,
+        "name": "Route 3 Access",
+        "category": ["Location Unlocks"],
+        "progression": true
+    },
+    {
+        "count": 1,
+        "name": "Route 4 Access",
+        "category": ["Location Unlocks"],
+        "progression": true
+    },
+    {
+        "count": 1,
+        "name": "Route 5 Access",
+        "category": ["Location Unlocks"],
+        "progression": true
+    },
+    {
+        "count": 1,
+        "name": "Route 6 Access",
+        "category": ["Location Unlocks"],
+        "progression": true
+    },
+    {
+        "count": 1,
+        "name": "Route 7 Access",
+        "category": ["Location Unlocks"],
+        "progression": true
+    },
+    {
+        "count": 1,
+        "name": "Route 8 Access",
+        "category": ["Location Unlocks"],
+        "progression": true
+    },
+    {
+        "count": 1,
+        "name": "Route 9 Access",
+        "category": ["Location Unlocks"],
+        "progression": true
+    },
+    {
+        "count": 1,
+        "name": "Route 10 Access",
+        "category": ["Location Unlocks"],
+        "progression": true
+    },
+    {
+        "count": 1,
+        "name": "Galar Mine Access",
+        "category": ["Location Unlocks"],
+        "progression": true
+    },
+    {
+        "count": 1,
+        "name": "Galar Mine 2 Access",
+        "category": ["Location Unlocks"],
+        "progression": true
+    },
+    {
+        "count": 1,
+        "name": "Slumbering Weald Access",
+        "category": ["Location Unlocks"],
+        "progression": true
+    },
+    {
+        "count": 1,
+        "name": "Glimwood Tangle Access",
+        "category": ["Location Unlocks"],
+        "progression": true
+    },
+    {
+        "count": 1,
+        "name": "Motostoke Outskirts Access",
+        "category": ["Location Unlocks"],
+        "progression": true
+    }
+]

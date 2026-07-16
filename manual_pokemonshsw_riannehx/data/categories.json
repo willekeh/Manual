@@ -1,0 +1,59 @@
+{
+    "Special overworld spawn": {
+        "hidden": true
+    },
+    "needsWeather": {
+        "hidden": true,
+        "yaml_option": ["add_time_travel"]
+    },
+    "GameShield": {
+        "hidden": true
+    },
+    "GameSword": {
+        "hidden": true
+    },
+    "AllWeather": {
+        "hidden": true
+    },
+    "BerryTrees": {
+        "hidden": true,
+        "yaml_option": ["berry_tree_sanity"]
+    },
+    "LowPercentage": {
+        "hidden": true,
+        "yaml_option": ["!remove_low_percentage"]
+    },
+    "Dens": {
+        "hidden": true,
+        "yaml_option": ["den_sanity"]
+    },
+    "Normal": { "hidden": true },
+    "Fire": { "hidden": true },
+    "Water": { "hidden": true },
+    "Grass": { "hidden": true },
+    "Electric": { "hidden": true },
+    "Ice": { "hidden": true },
+    "Fighting": { "hidden": true },
+    "Poison": { "hidden": true },
+    "Ground": { "hidden": true },
+    "Flying": { "hidden": true },
+    "Psychic": { "hidden": true },
+    "Bug": { "hidden": true },
+    "Rock": { "hidden": true },
+    "Ghost": { "hidden": true },
+    "Dragon": { "hidden": true },
+    "Dark": { "hidden": true },
+    "Steel": { "hidden": true },
+    "Fairy": { "hidden": true },
+    "Exclamation mark": { "hidden": true },
+    "Pokemon": { "hidden": true },
+    "Routes": { "hidden": true },
+    "LowPerc:Nickit": { "hidden": true },
+    "LowPerc:Yamper": { "hidden": true },
+    "LowPerc:Zigzagoon": { "hidden": true },
+    "LowPerc:Chewtle": { "hidden": true },
+    "LowPerc:Hoothoot": { "hidden": true },
+    "LowPerc:Stunfisk": { "hidden": true },
+    "LowPerc:Impidimp": { "hidden": true },
+    "LowPerc:Roggenrola": { "hidden": true }
+}

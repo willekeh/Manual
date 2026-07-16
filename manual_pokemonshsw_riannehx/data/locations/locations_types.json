@@ -1,0 +1,74 @@
+[
+    {
+        "name": "Type Researched - Normal Type",
+        "category": ["Type Collection"]
+    },
+    {
+        "name": "Type Researched - Fire Type",
+        "category": ["Type Collection"]
+    },
+    {
+        "name": "Type Researched - Water Type",
+        "category": ["Type Collection"]
+    },
+    {
+        "name": "Type Researched - Grass Type",
+        "category": ["Type Collection"]
+    },
+    {
+        "name": "Type Researched - Electric Type",
+        "category": ["Type Collection"]
+    },
+    {
+        "name": "Type Researched - Ice Type",
+        "category": ["Type Collection"]
+    },
+    {
+        "name": "Type Researched - Fighting Type",
+        "category": ["Type Collection"]
+    },
+    {
+        "name": "Type Researched - Poison Type",
+        "category": ["Type Collection"]
+    },
+    {
+        "name": "Type Researched - Ground Type",
+        "category": ["Type Collection"]
+    },
+    {
+        "name": "Type Researched - Flying Type",
+        "category": ["Type Collection"]
+    },
+    {
+        "name": "Type Researched - Psychic Type",
+        "category": ["Type Collection"]
+    },
+    {
+        "name": "Type Researched - Bug Type",
+        "category": ["Type Collection"]
+    },
+    {
+        "name": "Type Researched - Rock Type",
+        "category": ["Type Collection"]
+    },
+    {
+        "name": "Type Researched - Ghost Type",
+        "category": ["Type Collection"]
+    },
+    {
+        "name": "Type Researched - Dragon Type",
+        "category": ["Type Collection"]
+    },
+    {
+        "name": "Type Researched - Dark Type",
+        "category": ["Type Collection"]
+    },
+    {
+        "name": "Type Researched - Steel Type",
+        "category": ["Type Collection"]
+    },
+    {
+        "name": "Type Researched - Fairy Type",
+        "category": ["Type Collection"]
+    }
+]

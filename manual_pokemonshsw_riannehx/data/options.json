@@ -1,0 +1,22 @@
+{
+    "$schema": "https://raw.githubusercontent.com/ManualForArchipelago/Manual/main/schemas/Manual.options.schema.json",
+    "_comment": "Add a _ before an option name to comment it out and it wont be added to the apworld",
+    "core": {
+        "goal": {
+            "display_name": "The End Objective",
+            "description": "Mend The Broken Shield/Sword: is a mcguffin goal where you have to find broken shards to mend the broken shield/sword. \n This goal is meant to be played after beating the champion. This goal auto includes Wandersanity. \n Type Researcher Goal: Is to research all types onces, this goal includes Routesanity and Typesanity",
+            "aliases": { "easiest": 0 },
+            "hidden": false
+        },
+        "death_link": {
+            "default": false
+        },
+        "filler_traps": {
+            "_comment": "Using values here let you set a 'recommended' filler_trap percentage or even a default percentage",
+            "values": {
+                "recommended": 20
+            }
+        }
+    },
+    "user": {}
+}

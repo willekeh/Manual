@@ -1,0 +1,13 @@
+[
+    {
+        "name": "Mend The Broken Shield/Sword",
+        "victory": true,
+        "category": ["Win Condition"],
+        "requires": "|Broken shards|"
+    },
+    {
+        "name": "Type Researcher",
+        "category": ["Win Condition"],
+        "victory": true
+    }
+]
