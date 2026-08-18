@@ -79,68 +79,6 @@ def before_create_regions(world: World, multiworld: MultiWorld, player: int):
                 if game_version == 3 or game_version == 1:
                     loc["requires"] = "|Motostoke Outskirts Access|"
 
-    ##Researcher Goal, Add Type Unlock requires to location and victory
-    current_goal = world.options.goal.current_key
-
-    if str(current_goal).lower() != "type researcher":
-        return
-
-    active_types = set()
-    pokemon_types = ["Normal", "Fire", "Water", "Grass", "Electric", "Ice", "Fighting", 
-                     "Poison", "Ground", "Flying", "Psychic", "Bug", "Rock", "Ghost", 
-                     "Dragon", "Dark", "Steel", "Fairy"]
-    
-    for loc in world.location_table:
-        if "Pokemon" in loc.get("category", []):
-            for p_type in pokemon_types:
-                if p_type in loc.get("category", []):
-                    active_types.add(p_type)
-
-
-    for loc in world.location_table:
-        if "Pokemon" in loc.get("category", []):
-            loc_types = [p_type for p_type in pokemon_types if p_type in loc.get("category", []) and p_type in active_types]
-            
-            if loc_types:
-                type_lock_requirements = [f"|Type Unlock - {p_type} Type:1|" for p_type in loc_types]
-                unlock_logic_str = f"({' AND '.join(type_lock_requirements)})"
-                
-                existing_req = loc.get("requires", "").strip()
-                if existing_req:
-                    loc["requires"] = f"({existing_req}) AND {unlock_logic_str}"
-                else:
-                    loc["requires"] = unlock_logic_str
-
-    type_or_chains = {}
-
-    for loc in world.location_table:
-        if "Type Collection" in loc.get("category", []):
-            for p_type in active_types:
-                if loc["name"] == f"Type Researched - {p_type} Type":
-                    
-                    pokemon_requires_list = []
-                    for pokemon in world.location_table:
-                        if "Pokemon" in pokemon.get("category", []) and p_type in pokemon.get("category", []):
-                            req_string = pokemon["requires"].strip()
-                            pokemon_requires_list.append(f"({req_string})")
-
-                    overworld_or_chain = f"({' OR '.join(pokemon_requires_list)})"
-                    type_or_chains[p_type] = overworld_or_chain
-
-                    loc["requires"] = f"{overworld_or_chain} AND |Type Unlock - {p_type} Type:1|"
-                    break
-
-    victory_requirements = []
-    for p_type in active_types:
-        victory_requirements.append(f"({type_or_chains[p_type]} AND |Type Unlock - {p_type} Type:1|)")
-    
-    victory_string = " AND ".join(victory_requirements)
-    
-    for loc in world.location_table:
-        if "Type Researcher" == loc["name"]:
-            loc["requires"] = victory_string
-            break
-
 
 
 # Called after regions and locations are created, in case you want to see or modify that information. Victory location is included.
@@ -148,15 +86,14 @@ def after_create_regions(world: World, multiworld: MultiWorld, player: int):
     # Use this hook to remove locations from the world
     locationNamesToRemove: list[str] = [] # List of location names
 
-    pokemon_types = ["Normal", "Fire", "Water", "Grass", "Electric", "Ice", "Fighting", 
-                     "Poison", "Ground", "Flying", "Psychic", "Bug", "Rock", "Ghost", 
-                     "Dragon", "Dark", "Steel", "Fairy"]
-
     game_version = get_option_value(multiworld, player, "game_version")
     remove_low = get_option_value(multiworld, player, "remove_low_percentage")
     route_sanity = get_option_value(multiworld, player, "route_sanity")
     wander_sanity = get_option_value(multiworld, player, "wander_sanity")
-    current_goal = world.options.goal.current_key   
+    current_goal = world.options.goal.current_key
+    pokemon_types = ["Normal", "Fire", "Water", "Grass", "Electric", "Ice", "Fighting", 
+                         "Poison", "Ground", "Flying", "Psychic", "Bug", "Rock", "Ghost", 
+                         "Dragon", "Dark", "Steel", "Fairy"]
 
     #game version filters And Remove locations that are below 5%
     if game_version == 1:
@@ -183,18 +120,6 @@ def after_create_regions(world: World, multiworld: MultiWorld, player: int):
 
     # If Type Researcher is active, find the missing types and remove their tracker locations
     else:
-        active_types = set()
-        for loc in world.location_table:
-            if "Pokemon" in loc.get("category", []):
-                for p_type in pokemon_types:
-                    if p_type in loc.get("category", []):
-                        active_types.add(p_type)
-
-        # Gather any inactive Types
-        for p_type in pokemon_types:
-            if p_type not in active_types:
-                locationNamesToRemove.append(f"Type Researched - {p_type} Type")
-
         #remove wandersanity locations if not enabled
         if not wander_sanity:
             locationNamesToRemove += world.location_name_groups["Special overworld spawn"]

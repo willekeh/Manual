@@ -10,12 +10,14 @@
             "Route 2",
             "Bug"
         ],
-        "requires": "|Route 1 Access| OR |Route 2 Access| OR |Slumbering Weald Access|"
+        "requires": "|Route 1 Access| OR |Route 2 Access| OR |Slumbering Weald Access|",
+        "region": "Bug"
     },
     {
         "name": "Caterpie",
         "category": ["Pokemon", "Routes", "Exclamation mark", "Route 1", "Bug"],
-        "requires": "|Route 1 Access|"
+        "requires": "|Route 1 Access|",
+        "region": "Bug"
     },
     {
         "name": "Grubbin",
@@ -27,7 +29,8 @@
             "Route 1",
             "Bug"
         ],
-        "requires": "|Route 1 Access| OR |Slumbering Weald Access|"
+        "requires": "|Route 1 Access| OR |Slumbering Weald Access|",
+        "region": "Bug"
     },
     {
         "name": "Hoothoot",
@@ -42,7 +45,8 @@
             "Normal",
             "Flying"
         ],
-        "requires": "|Route 1 Access| OR |Route 2 Access| OR |Slumbering Weald Access|"
+        "requires": "|Route 1 Access| OR |Route 2 Access| OR |Slumbering Weald Access|",
+        "region": "Normal Flying"
     },
     {
         "name": "Nickit",
@@ -54,7 +58,8 @@
             "LowPerc:Nickit",
             "Dark"
         ],
-        "requires": "|Route 1 Access| OR |Route 2 Access|"
+        "requires": "|Route 1 Access| OR |Route 2 Access|",
+        "region": "Dark"
     },
     {
         "name": "Rookidee",
@@ -67,7 +72,8 @@
             "Route 3",
             "Flying"
         ],
-        "requires": "|Route 1 Access| OR |Route 2 Access| OR |Route 3 Access| OR |Slumbering Weald Access|"
+        "requires": "|Route 1 Access| OR |Route 2 Access| OR |Route 3 Access| OR |Slumbering Weald Access|",
+        "region": "Flying"
     },
     {
         "name": "Skwovet",
@@ -79,12 +85,14 @@
             "Route 2",
             "Normal"
         ],
-        "requires": "|Route 1 Access| OR |Route 2 Access| OR |Slumbering Weald Access|"
+        "requires": "|Route 1 Access| OR |Route 2 Access| OR |Slumbering Weald Access|",
+        "region": "Normal"
     },
     {
         "name": "Wooloo",
         "category": ["Pokemon", "Routes", "Route 1", "Route 4", "Normal"],
-        "requires": "|Route 1 Access| OR |Route 4 Access|"
+        "requires": "|Route 1 Access| OR |Route 4 Access|",
+        "region": "Normal"
     },
     {
         "name": "Lotad",
@@ -97,7 +105,8 @@
             "Water",
             "Grass"
         ],
-        "requires": "|Route 2 Access|"
+        "requires": "|Route 2 Access|",
+        "region": "Water Grass"
     },
     {
         "name": "Seedot",
@@ -109,7 +118,8 @@
             "GameSword",
             "Grass"
         ],
-        "requires": "|Route 2 Access|"
+        "requires": "|Route 2 Access|",
+        "region": "Grass"
     },
     {
         "name": "Purrloin",
@@ -120,7 +130,8 @@
             "Route 2",
             "Dark"
         ],
-        "requires": "|Route 2 Access|"
+        "requires": "|Route 2 Access|",
+        "region": "Dark"
     },
     {
         "name": "Galarian Zigzagoon",
@@ -132,7 +143,8 @@
             "Route 3",
             "Dark"
         ],
-        "requires": "|Route 2 Access| OR |Route 3 Access|"
+        "requires": "|Route 2 Access| OR |Route 3 Access|",
+        "region": "Dark"
     },
     {
         "name": "Chewtle",
@@ -145,7 +157,8 @@
             "Motostoke Outskirts",
             "Water"
         ],
-        "requires": "|Route 2 Access| OR |Galar Mine 2 Access| OR |Motostoke Outskirts Access|"
+        "requires": "|Route 2 Access| OR |Galar Mine 2 Access| OR |Motostoke Outskirts Access|",
+        "region": "Water"
     },
     {
         "name": "Yamper",
@@ -157,27 +170,32 @@
             "Route 4",
             "Electric"
         ],
-        "requires": "|Route 2 Access| OR |Route 4 Access|"
+        "requires": "|Route 2 Access| OR |Route 4 Access|",
+        "region": "Electric"
     },
     {
         "name": "Gyarados",
         "category": ["Pokemon", "Routes", "Route 2", "Water", "Flying"],
-        "requires": "|Route 2 Access| AND |Progressive bike:2|"
+        "requires": "|Route 2 Access| AND |Progressive bike:2|",
+        "region": "Water Flying"
     },
     {
         "name": "Arrokuda",
         "category": ["Pokemon", "Routes", "Route 2", "Water"],
-        "requires": "|Route 2 Access| AND |Progressive bike:2|"
+        "requires": "|Route 2 Access| AND |Progressive bike:2|",
+        "region": "Water"
     },
     {
         "name": "Barraskewda",
         "category": ["Pokemon", "Routes", "Route 2", "Water"],
-        "requires": "|Route 2 Access| AND |Progressive bike:2|"
+        "requires": "|Route 2 Access| AND |Progressive bike:2|",
+        "region": "Water"
     },
     {
         "name": "Gossifleur",
         "category": ["Pokemon", "Routes", "Route 2", "Route 3", "Grass"],
-        "requires": "|Route 2 Access| AND |Progressive bike:2| OR |Route 3 Access|"
+        "requires": "|Route 2 Access| AND |Progressive bike:2| OR |Route 3 Access|",
+        "region": "Grass"
     },
     {
         "name": "Machop",
@@ -188,7 +206,8 @@
             "Route 3",
             "Fighting"
         ],
-        "requires": "|Route 3 Access|"
+        "requires": "|Route 3 Access|",
+        "region": "Fighting"
     },
     {
         "name": "Klink",
@@ -199,7 +218,8 @@
             "Route 3",
             "Steel"
         ],
-        "requires": "|Route 3 Access|"
+        "requires": "|Route 3 Access|",
+        "region": "Steel"
     },
     {
         "name": "Pancham",
@@ -210,7 +230,8 @@
             "Route 3",
             "Fighting"
         ],
-        "requires": "|Route 3 Access|"
+        "requires": "|Route 3 Access|",
+        "region": "Fighting"
     },
     {
         "name": "Mudbray",
@@ -221,7 +242,8 @@
             "Route 3",
             "Ground"
         ],
-        "requires": "|Route 3 Access|"
+        "requires": "|Route 3 Access|",
+        "region": "Ground"
     },
     {
         "name": "Sizzlipede",
@@ -234,17 +256,20 @@
             "Fire",
             "Bug"
         ],
-        "requires": "|Route 3 Access|"
+        "requires": "|Route 3 Access|",
+        "region": "Fire Bug"
     },
     {
         "name": "Vulpix",
         "category": ["Pokemon", "Routes", "Route 3", "GameSword", "Fire"],
-        "requires": "|Route 3 Access|"
+        "requires": "|Route 3 Access|",
+        "region": "Fire"
     },
     {
         "name": "Growlithe",
         "category": ["Pokemon", "Routes", "Route 3", "GameShield", "Fire"],
-        "requires": "|Route 3 Access|"
+        "requires": "|Route 3 Access|",
+        "region": "Fire"
     },
     {
         "name": "Tyrogue",
@@ -255,12 +280,14 @@
             "Route 3",
             "Fighting"
         ],
-        "requires": "|Route 3 Access|"
+        "requires": "|Route 3 Access|",
+        "region": "Fighting"
     },
     {
         "name": "Stunky",
         "category": ["Pokemon", "Routes", "Route 3", "Dark", "Poison"],
-        "requires": "|Route 3 Access|"
+        "requires": "|Route 3 Access|",
+        "region": "Dark Poison"
     },
     {
         "name": "Trubbish",
