@@ -22,7 +22,7 @@ def after_load_location_file(location_table: list) -> list:
     package_base_name = re.sub(r'\.hooks\.\w+$', '.Data', __name__)
 
     # Extra Locations files
-    extra_location_files = ["data/locations/locations_dens.json", "data/locations/locations_trees.json", "data/locations/locations_types.json", "data/locations/locations_wanderers.json", "data/locations/locations_routes.json"]
+    extra_location_files = ["data/locations/locations_dens.json", "data/locations/locations_trees.json", "data/locations/locations_wanderers.json", "data/locations/locations_routes.json"]
     for file_path in extra_location_files:
         try:
             raw_bytes = pkgutil.get_data(package_base_name, file_path)

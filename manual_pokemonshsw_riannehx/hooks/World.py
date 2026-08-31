@@ -38,47 +38,7 @@ def hook_get_filler_item_name(world: World, multiworld: MultiWorld, player: int)
 
 # Called before regions and locations are created. Not clear why you'd want this, but it's here. Victory location is included, but Victory event is not placed yet.
 def before_create_regions(world: World, multiworld: MultiWorld, player: int):
-
-    remove_low = get_option_value(multiworld, player, "remove_low_percentage")
-    game_version = get_option_value(multiworld, player, "game_version")
-
-    #Change below 5% encounters to only locations that dont have said 5%
-    if remove_low:
-        for loc in world.location_table:
-            categories = loc.get("category", [])
-
-            # Nickit Force Route 2 Access
-            if "LowPerc:Nickit" in categories:
-                loc["requires"] = "|Route 2 Access|"
-
-            # Yamper Force Route 4 Access
-            elif "LowPerc:Yamper" in categories:
-                loc["requires"] = "|Route 4 Access|"
-                
-            # Zigzagoon Only Route 3 or Route 2 with bike
-            elif "LowPerc:Zigzagoon" in categories:
-                loc["requires"] = "|Route 3 Access| OR (|Route 2 Access| AND |Progressive bike:2|)"
-                
-            # Chewtle Force Route 2 Access
-            elif "LowPerc:Chewtle" in categories:
-                loc["requires"] = "|Route 2 Access|"
-                
-            # Hoothoot Force Slumbering Weald Access
-            elif "LowPerc:Hoothoot" in categories:
-                loc["requires"] = "|Slumbering Weald Access|"
-                
-            # Stunfisk Force Galar Mine 2 Access
-            elif "LowPerc:Stunfisk" in categories:
-                loc["requires"] = "|Galar Mine 2 Access|"
-                
-            # Impidimp Force Glimwood Tangle Access
-            elif "LowPerc:Impidimp" in categories:
-                loc["requires"] = "|Glimwood Tangle Access|"
-
-            elif "LowPerc:Roggenrola" in categories:
-                if game_version == 3 or game_version == 1:
-                    loc["requires"] = "|Motostoke Outskirts Access|"
-
+    pass
 
 
 # Called after regions and locations are created, in case you want to see or modify that information. Victory location is included.
@@ -91,9 +51,6 @@ def after_create_regions(world: World, multiworld: MultiWorld, player: int):
     route_sanity = get_option_value(multiworld, player, "route_sanity")
     wander_sanity = get_option_value(multiworld, player, "wander_sanity")
     current_goal = world.options.goal.current_key
-    pokemon_types = ["Normal", "Fire", "Water", "Grass", "Electric", "Ice", "Fighting", 
-                         "Poison", "Ground", "Flying", "Psychic", "Bug", "Rock", "Ghost", 
-                         "Dragon", "Dark", "Steel", "Fairy"]
 
     #game version filters And Remove locations that are below 5%
     if game_version == 1:
@@ -113,8 +70,6 @@ def after_create_regions(world: World, multiworld: MultiWorld, player: int):
 
     # If Type Researcher is NOT the goal, wipe everything related to it
     if str(current_goal).lower() != "type researcher":
-        for p_type in pokemon_types:
-            locationNamesToRemove.append(f"Type Researched - {p_type} Type")
         if not route_sanity:
             locationNamesToRemove += world.location_name_groups["Routes"]
 
@@ -178,16 +133,16 @@ def before_create_items_starting(item_pool: list, world: World, multiworld: Mult
             start_inventory_names = ["Rolling Fields", "Normal weather"]
 
         elif start_logic == 2: # Region (Random region, Fixed weather)
-            multiworld.random.shuffle(locations)
+            world.random.shuffle(locations)
             start_inventory_names = [locations[0], "Normal weather"]
 
         elif start_logic == 3: # Weather (Fixed region, Random weather)
-            multiworld.random.shuffle(weather)
+            world.random.shuffle(weather)
             start_inventory_names = ["Rolling Fields", weather[0]]
 
         elif start_logic == 4: # Both (Both random)
-            multiworld.random.shuffle(locations)
-            multiworld.random.shuffle(weather)
+            world.random.shuffle(locations)
+            world.random.shuffle(weather)
             start_inventory_names = [locations[0], weather[0]]
 
     else:
@@ -236,6 +191,7 @@ def before_create_items_filler(item_pool: list, world: World, multiworld: MultiW
                 itemNamesToRemove.append(f"Type Unlock - {p_type} Type")
         if not wander_sanity:
             itemNamesToRemove += world.item_name_groups["Wild Area Unlocks"]
+        itemNamesToRemove += world.item_name_groups["types"]
 
     for itemName in itemNamesToRemove:
         item = next((i for i in item_pool if i.name == itemName), None)
@@ -289,10 +245,13 @@ def after_set_rules(world: World, multiworld: MultiWorld, player: int):
     #Set BrokenShards to the victory location 
     total = world.options.broken_shards_total.value
     required = world.options.broken_shards_required.value
+    game_version = get_option_value(multiworld, player, "game_version")
+    remove_low = get_option_value(multiworld, player, "remove_low_percentage")
     
     # Failsafe incase of wrong way around
     final_required = min(total, required)
     location_names = [loc.name for loc in multiworld.get_locations(player)]
+
     
     if "Mend The Broken Shield/Sword" in location_names:
         # Set Broken Shard required
@@ -304,6 +263,62 @@ def after_set_rules(world: World, multiworld: MultiWorld, player: int):
         # True if the player can access the location
         # CollectionState is defined in BaseClasses
         return True
+
+
+    remove_low = get_option_value(multiworld, player, "remove_low_percentage")
+    game_version = get_option_value(multiworld, player, "game_version")
+
+    #Change below 5% encounters to only locations that dont have said 5%
+    if remove_low :
+        for location in multiworld.get_locations(player):
+            
+            # Find the matching location dictionary inside the list
+            loc_data = next((item for item in world.location_table if item.get("name") == location.name), None)
+                
+            categories = loc_data.get("category", [])
+
+            if "LowPerc:Nickit" in categories:
+                def Nickit_Rule(state) -> bool:
+                    return state.has("Route 2 Access", player)
+                location.access_rule = Nickit_Rule
+
+            elif "LowPerc:Yamper" in categories:
+                def Yamper_Rule(state) -> bool:
+                    return state.has("Route 4 Access", player)
+                location.access_rule = Yamper_Rule
+                
+            elif "LowPerc:Zigzagoon" in categories:
+                def Zigzagoon_Rule(state) -> bool:
+                    return state.has("Route 3 Access", player) or \
+                        (state.has("Route 2 Access", player) and state.has("Progressive bike", player, 2))
+                location.access_rule = Zigzagoon_Rule
+                
+            elif "LowPerc:Chewtle" in categories:
+                def Chewtle_Rule(state) -> bool:
+                    return state.has("Route 2 Access", player)
+                location.access_rule = Chewtle_Rule
+                
+            elif "LowPerc:Hoothoot" in categories:
+                def Hoothoot_Rule(state) -> bool:
+                    return state.has("Slumbering Weald Access", player)
+                location.access_rule = Hoothoot_Rule
+                
+            elif "LowPerc:Stunfisk" in categories:
+                def Stunfisk_Rule(state) -> bool:
+                    return state.has("Galar Mine 2 Access", player)
+                location.access_rule = Stunfisk_Rule
+                
+            elif "LowPerc:Impidimp" in categories:
+                def Impidimp_Rule(state) -> bool:
+                    return state.has("Glimwood Tangle Access", player)
+                location.access_rule = Impidimp_Rule
+
+            elif "LowPerc:Roggenrola" in categories:
+                # 1 = Sword, 3 = Both
+                if game_version == 3 or game_version == 1:
+                    def Roggenrola_Rule(state) -> bool:
+                        return state.has("Motostoke Outskirts Access", player)
+                    location.access_rule = Roggenrola_Rule
 
     ## Common functions:
     # location = world.get_location(location_name, player)

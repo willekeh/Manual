@@ -15,6 +15,9 @@
     "AllWeather": {
         "hidden": true
     },
+    "types": {
+        "hidden": true
+    },
     "BerryTrees": {
         "hidden": true,
         "yaml_option": ["berry_tree_sanity"]
