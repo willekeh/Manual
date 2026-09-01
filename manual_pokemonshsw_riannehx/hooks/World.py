@@ -129,6 +129,8 @@ def before_create_items_starting(item_pool: list, world: World, multiworld: Mult
     current_goal_name = world.options.goal.current_key
     
     if str(current_goal_name).lower() == "mend the broken shield/sword":
+        start_inventory_names = ["notypes"]
+        
         if start_logic == 1: # Fixed
             start_inventory_names = ["Rolling Fields", "Normal weather"]
 
@@ -191,7 +193,7 @@ def before_create_items_filler(item_pool: list, world: World, multiworld: MultiW
                 itemNamesToRemove.append(f"Type Unlock - {p_type} Type")
         if not wander_sanity:
             itemNamesToRemove += world.item_name_groups["Wild Area Unlocks"]
-        itemNamesToRemove += world.item_name_groups["types"]
+        itemNamesToRemove.append("notypes")
 
     for itemName in itemNamesToRemove:
         item = next((i for i in item_pool if i.name == itemName), None)
@@ -279,46 +281,56 @@ def after_set_rules(world: World, multiworld: MultiWorld, player: int):
 
             if "LowPerc:Nickit" in categories:
                 def Nickit_Rule(state) -> bool:
-                    return state.has("Route 2 Access", player)
+                    return state.has("Route 2 Access", player) and \
+                        (state.has("Type Unlock - Dark Type", player) or state.has("notypes", player))
                 location.access_rule = Nickit_Rule
 
             elif "LowPerc:Yamper" in categories:
                 def Yamper_Rule(state) -> bool:
-                    return state.has("Route 4 Access", player)
+                    return state.has("Route 4 Access", player) and \
+                        (state.has("Type Unlock - Electric Type", player) or state.has("notypes", player))
                 location.access_rule = Yamper_Rule
                 
             elif "LowPerc:Zigzagoon" in categories:
                 def Zigzagoon_Rule(state) -> bool:
-                    return state.has("Route 3 Access", player) or \
+                    base_access = state.has("Route 3 Access", player) or \
                         (state.has("Route 2 Access", player) and state.has("Progressive bike", player, 2))
+                    return base_access and \
+                        (state.has("Type Unlock - Dark Type", player) or state.has("notypes", player))
                 location.access_rule = Zigzagoon_Rule
                 
             elif "LowPerc:Chewtle" in categories:
                 def Chewtle_Rule(state) -> bool:
-                    return state.has("Route 2 Access", player)
+                    return state.has("Route 2 Access", player) and \
+                        (state.has("Type Unlock - Water Type", player) or state.has("notypes", player))
                 location.access_rule = Chewtle_Rule
                 
             elif "LowPerc:Hoothoot" in categories:
                 def Hoothoot_Rule(state) -> bool:
-                    return state.has("Slumbering Weald Access", player)
+                    has_types = state.has("Type Unlock - Normal Type", player) and state.has("Type Unlock - Flying Type", player)
+                    return state.has("Slumbering Weald Access", player) and (has_types or state.has("notypes", player))
                 location.access_rule = Hoothoot_Rule
                 
             elif "LowPerc:Stunfisk" in categories:
                 def Stunfisk_Rule(state) -> bool:
-                    return state.has("Galar Mine 2 Access", player)
+                    has_types = state.has("Type Unlock - Ground Type", player) and state.has("Type Unlock - Steel Type", player)
+                    return state.has("Galar Mine 2 Access", player) and (has_types or state.has("notypes", player))
                 location.access_rule = Stunfisk_Rule
                 
             elif "LowPerc:Impidimp" in categories:
                 def Impidimp_Rule(state) -> bool:
-                    return state.has("Glimwood Tangle Access", player)
+                    has_types = state.has("Type Unlock - Dark Type", player) and state.has("Type Unlock - Fairy Type", player)
+                    return state.has("Glimwood Tangle Access", player) and (has_types or state.has("notypes", player))
                 location.access_rule = Impidimp_Rule
 
             elif "LowPerc:Roggenrola" in categories:
                 # 1 = Sword, 3 = Both
                 if game_version == 3 or game_version == 1:
                     def Roggenrola_Rule(state) -> bool:
-                        return state.has("Motostoke Outskirts Access", player)
+                        return state.has("Motostoke Outskirts Access", player) and \
+                            (state.has("Type Unlock - Rock Type", player) or state.has("notypes", player))
                     location.access_rule = Roggenrola_Rule
+
 
     ## Common functions:
     # location = world.get_location(location_name, player)
