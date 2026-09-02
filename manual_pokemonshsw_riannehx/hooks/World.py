@@ -100,22 +100,28 @@ def before_create_items_all(item_config: dict[str, int|dict], world: World, mult
     location_count = len(world.get_locations())
     shards_total = world.options.broken_shards_total.value
 
-    other_items_count = 0
-    for name, data in item_config.items():
-        if name != "Broken shards":
-            if isinstance(data, dict):
-                other_items_count += sum(data.values())
-            else:
-                other_items_count += data
+    current_goal_name = world.options.goal.current_key
+    if str(current_goal_name).lower() != "mend the broken shield/sword":
+        # Set shards to 0 when not the correct goal
+        shards_total = 0
+        world.options.broken_shards_total.value = 0
+    else:
+        other_items_count = 0
+        for name, data in item_config.items():
+            if name != "Broken shards":
+                if isinstance(data, dict):
+                    other_items_count += sum(data.values())
+                else:
+                    other_items_count += data
                 
-    #To crash less with minimal settings and minimal progression
-    buffer = 3 
-    free_space = location_count - other_items_count - buffer
+        #To crash less with minimal settings and minimal progression
+        buffer = 3 
+        free_space = location_count - other_items_count - buffer
 
-    if shards_total > free_space:
-        #check if shards total is higher then free space
-        shards_total = max(10, free_space) 
-        world.options.broken_shards_total.value = shards_total
+        if shards_total > free_space:
+            #check if shards total is higher then free space
+            shards_total = max(10, free_space) 
+            world.options.broken_shards_total.value = shards_total
     
     item_config["Broken shards"] = shards_total
     
