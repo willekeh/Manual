@@ -8,6 +8,7 @@
     {
         "name": "Type Researcher",
         "category": ["Win Condition"],
-        "victory": true
+        "victory": true,
+        "requires": "|Type Unlock - Normal Type| AND |Type Unlock - Fire Type| AND |Type Unlock - Water Type| AND |Type Unlock - Grass Type| AND |Type Unlock - Electric Type| AND |Type Unlock - Ice Type| AND |Type Unlock - Fighting Type| AND |Type Unlock - Poison Type| AND |Type Unlock - Ground Type| AND |Type Unlock - Flying Type| AND |Type Unlock - Psychic Type| AND |Type Unlock - Bug Type| AND |Type Unlock - Rock Type| AND |Type Unlock - Ghost Type| AND |Type Unlock - Dragon Type| AND |Type Unlock - Dark Type| AND |Type Unlock - Fairy Type| AND |Type Unlock - Steel Type|"
     }
 ]

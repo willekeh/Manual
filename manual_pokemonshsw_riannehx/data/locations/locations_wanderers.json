@@ -12,7 +12,7 @@
             "Grass",
             "Ice"
         ],
-        "requires": "(|Axew's Eye| AND |Progressive bike:2| AND (|Snowing| OR |Snowstorm|)) OR (|Giant's Mirror| AND |Snowing|) OR ((|Giant's Seat| OR |Hammerlocke Hills|) AND (|Snowing| OR |Snowstorm|))"
+        "requires": "((|Axew's Eye| AND |Progressive bike:2| AND (|Snowing| OR |Snowstorm|)) OR (|Giant's Mirror| AND |Snowing|) OR ((|Giant's Seat| OR |Hammerlocke Hills|) AND (|Snowing| OR |Snowstorm|))) AND ((|Type Unlock - Grass Type| AND |Type Unlock - Ice Type|) OR |notypes|)"
     },
     {
         "name": "Wanderer Aegislash",
@@ -24,7 +24,7 @@
             "Steel",
             "Ghost"
         ],
-        "requires": "|Giant's Cap| AND |Fog|"
+        "requires": "|Giant's Cap| AND |Fog| AND ((|Type Unlock - Steel Type| AND |Type Unlock - Ghost Type|) OR |notypes|)"
     },
     {
         "name": "Wanderer Araquanid",
@@ -36,7 +36,7 @@
             "Water",
             "Bug"
         ],
-        "requires": "|Stony Wilderness| AND (|Raining| OR |Thunderstorm|)"
+        "requires": "|Stony Wilderness| AND (|Raining| OR |Thunderstorm|) AND ((|Type Unlock - Water Type| AND |Type Unlock - Bug Type|) OR |notypes|)"
     },
     {
         "name": "Wanderer Avalugg",
@@ -47,7 +47,7 @@
             "needsWeather",
             "Ice"
         ],
-        "requires": "|Lake of Outrage| AND |Progressive bike:2| AND (|Snowing| OR |Snowstorm|)"
+        "requires": "|Lake of Outrage| AND |Progressive bike:2| AND (|Snowing| OR |Snowstorm|) AND (|Type Unlock - Ice Type| OR |notypes|)"
     },
     {
         "name": "Wanderer Barbaracle",
@@ -59,7 +59,7 @@
             "Rock",
             "Water"
         ],
-        "requires": "|Dusty Bowl| AND (|Overcast| OR |Raining| OR |Thunderstorm|)"
+        "requires": "|Dusty Bowl| AND (|Overcast| OR |Raining| OR |Thunderstorm|) AND ((|Type Unlock - Rock Type| AND |Type Unlock - Water Type|) OR |notypes|)"
     },
     {
         "name": "Wanderer Beartic",
@@ -71,7 +71,7 @@
             "needsWeather",
             "Ice"
         ],
-        "requires": "(|Bridge Field| AND |Progressive bike:2| AND |Snowing|) OR (|Giant's Cap| AND |Snowing|)"
+        "requires": "((|Bridge Field| AND |Progressive bike:2| AND |Snowing|) OR (|Giant's Cap| AND |Snowing|)) AND (|Type Unlock - Ice Type| OR |notypes|)"
     },
     {
         "name": "Wanderer Beheeyem",
@@ -82,7 +82,7 @@
             "needsWeather",
             "Psychic"
         ],
-        "requires": "|Bridge Field| AND (|Normal weather| OR |Overcast| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Fog|)"
+        "requires": "|Bridge Field| AND (|Normal weather| OR |Overcast| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Fog|) AND (|Type Unlock - Psychic Type| OR |notypes|)"
     },
     {
         "name": "Wanderer Bellossom",
@@ -93,7 +93,7 @@
             "needsWeather",
             "Grass"
         ],
-        "requires": "|Giant's Mirror| AND (|Normal weather| OR |Intense Sun| OR |Fog|)"
+        "requires": "|Giant's Mirror| AND (|Normal weather| OR |Intense Sun| OR |Fog|) AND (|Type Unlock - Grass Type| OR |notypes|)"
     },
     {
         "name": "Wanderer Bewear",
@@ -105,7 +105,7 @@
             "Normal",
             "Fighting"
         ],
-        "requires": "(|Dappled Grove| AND (|Noweather| OR |Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|)) OR (|Bridge Field| AND (|Normal weather| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|))"
+        "requires": "((|Dappled Grove| AND (|Noweather| OR |Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|)) OR (|Bridge Field| AND (|Normal weather| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|))) AND ((|Type Unlock - Normal Type| AND |Type Unlock - Fighting Type|) OR |notypes|)"
     },
     {
         "name": "Wanderer Bisharp",
@@ -116,7 +116,7 @@
             "Dark",
             "Steel"
         ],
-        "requires": "|Giant's Seat| AND (|Noweather| OR |Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|)"
+        "requires": "|Giant's Seat| AND (|Noweather| OR |Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|) AND ((|Type Unlock - Dark Type| AND |Type Unlock - Steel Type|) OR |notypes|)"
     },
     {
         "name": "Wanderer Boltund",
@@ -126,7 +126,7 @@
             "North Lake Miloch",
             "Electric"
         ],
-        "requires": "|North Lake Miloch| AND (|Noweather| OR |Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|)"
+        "requires": "|North Lake Miloch| AND (|Noweather| OR |Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|) AND (|Type Unlock - Electric Type| OR |notypes|)"
     },
     {
         "name": "Wanderer Bronzong",
@@ -142,7 +142,7 @@
             "Steel",
             "Psychic"
         ],
-        "requires": "(|Bridge Field| AND (|Raining| OR |Thunderstorm|)) OR (|Dusty Bowl| AND (|Normal weather| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm|)) OR (|East Lake Axewell| AND |Fog|) OR (|Giant's Seat| AND (|Overcast| OR |Raining| OR |Thunderstorm|)) OR (|Stony Wilderness| AND (|Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Fog|))"
+        "requires": "((|Bridge Field| AND (|Raining| OR |Thunderstorm|)) OR (|Dusty Bowl| AND (|Normal weather| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm|)) OR (|East Lake Axewell| AND |Fog|) OR (|Giant's Seat| AND (|Overcast| OR |Raining| OR |Thunderstorm|)) OR (|Stony Wilderness| AND (|Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Fog|))) AND ((|Type Unlock - Steel Type| AND |Type Unlock - Psychic Type|) OR |notypes|)"
     },
     {
         "name": "Wanderer Chandelure",
@@ -154,7 +154,7 @@
             "Ghost",
             "Fire"
         ],
-        "requires": "|Lake of Outrage| AND |Progressive bike:2| AND |Intense Sun|"
+        "requires": "|Lake of Outrage| AND |Progressive bike:2| AND |Intense Sun| AND ((|Type Unlock - Ghost Type| AND |Type Unlock - Fire Type|) OR |notypes|)"
     },
     {
         "name": "Wanderer Cinccino",
@@ -165,7 +165,7 @@
             "needsWeather",
             "Normal"
         ],
-        "requires": "|Giant's Cap| AND (|Normal weather| OR |Overcast| OR |Fog|)"
+        "requires": "|Giant's Cap| AND (|Normal weather| OR |Overcast| OR |Fog|) AND (|Type Unlock - Normal Type| OR |notypes|)"
     },
     {
         "name": "Wanderer Claydol",
@@ -180,7 +180,7 @@
             "Ground",
             "Psychic"
         ],
-        "requires": "(|Bridge Field| AND |Sandstorm|) OR (|Dappled Grove| AND (|Intense Sun| OR |Sandstorm|)) OR (|Dusty Bowl| AND (|Overcast| OR |Intense Sun| OR |Sandstorm| OR |Fog|)) OR (|Stony Wilderness| AND (|Normal weather| OR |Overcast| OR |Intense Sun| OR |Sandstorm|))"
+        "requires": "((|Bridge Field| AND |Sandstorm|) OR (|Dappled Grove| AND (|Intense Sun| OR |Sandstorm|)) OR (|Dusty Bowl| AND (|Overcast| OR |Intense Sun| OR |Sandstorm| OR |Fog|)) OR (|Stony Wilderness| AND (|Normal weather| OR |Overcast| OR |Intense Sun| OR |Sandstorm|))) AND ((|Type Unlock - Ground Type| AND |Type Unlock - Psychic Type|) OR |notypes|)"
     },
     {
         "name": "Wanderer Clefable",
@@ -191,7 +191,7 @@
             "needsWeather",
             "Fairy"
         ],
-        "requires": "|Motostoke Riverbank| AND |Fog|"
+        "requires": "|Motostoke Riverbank| AND |Fog| AND (|Type Unlock - Fairy Type| OR |notypes|)"
     },
     {
         "name": "Wanderer Coalossal",
@@ -202,7 +202,7 @@
             "Rock",
             "Fire"
         ],
-        "requires": "|Giant's Cap| AND (|Noweather| OR |Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|)"
+        "requires": "|Giant's Cap| AND (|Noweather| OR |Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|) AND ((|Type Unlock - Rock Type| AND |Type Unlock - Fire Type|) OR |notypes|)"
     },
     {
         "name": "Wanderer Conkeldurr",
@@ -213,7 +213,7 @@
             "needsWeather",
             "Fighting"
         ],
-        "requires": "|Motostoke Riverbank| AND (|Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Fog|)"
+        "requires": "|Motostoke Riverbank| AND (|Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Fog|) AND (|Type Unlock - Fighting Type| OR |notypes|)"
     },
     {
         "name": "Wanderer Copperajah",
@@ -223,7 +223,7 @@
             "Hammerlocke Hills",
             "Steel"
         ],
-        "requires": "|Hammerlocke Hills| AND (|Noweather| OR |Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|)"
+        "requires": "|Hammerlocke Hills| AND (|Noweather| OR |Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|) AND (|Type Unlock - Steel Type| OR |notypes|)"
     },
     {
         "name": "Wanderer Corviknight",
@@ -238,7 +238,7 @@
             "Flying",
             "Steel"
         ],
-        "requires": "((|Giant's Cap| OR |Hammerlocke Hills| OR |North Lake Miloch| OR |Watchtower Ruins|) AND (|Noweather| OR |Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|)) OR (|Motostoke Riverbank| AND (|Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm|))"
+        "requires": "(((|Giant's Cap| OR |Hammerlocke Hills| OR |North Lake Miloch| OR |Watchtower Ruins|) AND (|Noweather| OR |Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|)) OR (|Motostoke Riverbank| AND (|Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm|))) AND ((|Type Unlock - Flying Type| AND |Type Unlock - Steel Type|) OR |notypes|)"
     },
     {
         "name": "Wanderer Cramorant",
@@ -249,7 +249,7 @@
             "Flying",
             "Water"
         ],
-        "requires": "|Axew's Eye| AND (|Noweather| OR |Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|) AND |Progressive bike:2|"
+        "requires": "|Axew's Eye| AND (|Noweather| OR |Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|) AND |Progressive bike:2| AND ((|Type Unlock - Flying Type| AND |Type Unlock - Water Type|) OR |notypes|)"
     },
     {
         "name": "Wanderer Crawdaunt",
@@ -261,7 +261,7 @@
             "Water",
             "Dark"
         ],
-        "requires": "|South Lake Miloch| AND (|Normal weather| OR |Thunderstorm|)"
+        "requires": "|South Lake Miloch| AND (|Normal weather| OR |Thunderstorm|) AND ((|Type Unlock - Water Type| AND |Type Unlock - Dark Type|) OR |notypes|)"
     },
     {
         "name": "Wanderer Crustle",
@@ -275,7 +275,7 @@
             "Bug",
             "Rock"
         ],
-        "requires": "(|Rolling Fields| AND |Sandstorm|) OR (|South Lake Miloch| AND |Intense Sun|) OR (|Stony Wilderness| AND (|Normal weather| OR |Overcast| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|))"
+        "requires": "((|Rolling Fields| AND |Sandstorm|) OR (|South Lake Miloch| AND |Intense Sun|) OR (|Stony Wilderness| AND (|Normal weather| OR |Overcast| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|))) AND ((|Type Unlock - Bug Type| AND |Type Unlock - Rock Type|) OR |notypes|)"
     },
     {
         "name": "Wanderer Diggersby",
@@ -287,7 +287,7 @@
             "Ground",
             "Normal"
         ],
-        "requires": "(|Rolling Fields| AND (|Noweather| OR |Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|)) OR (|West Lake Axewell| AND (|Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm|))"
+        "requires": "(((|Rolling Fields| AND (|Noweather| OR |Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|)) OR (|West Lake Axewell| AND (|Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm|)))) AND ((|Type Unlock - Ground Type| AND |Type Unlock - Normal Type|) OR |notypes|)"
     },
     {
         "name": "Wanderer Doublade",
@@ -299,7 +299,7 @@
             "Steel",
             "Ghost"
         ],
-        "requires": "|Giant's Cap| AND (|Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm|)"
+        "requires": "|Giant's Cap| AND (|Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm|) AND ((|Type Unlock - Steel Type| AND |Type Unlock - Ghost Type|) OR |notypes|)"
     },
     {
         "name": "Wanderer Drapion",
@@ -312,7 +312,7 @@
             "Poison",
             "Dark"
         ],
-        "requires": "(|Bridge Field| AND (|Overcast| OR |Intense Sun|)) OR (|Motostoke Riverbank| AND (|Normal weather| OR |Raining| OR |Thunderstorm| OR |Intense Sun| OR |Sandstorm|))"
+        "requires": "((|Bridge Field| AND (|Overcast| OR |Intense Sun|)) OR (|Motostoke Riverbank| AND (|Normal weather| OR |Raining| OR |Thunderstorm| OR |Intense Sun| OR |Sandstorm|))) AND ((|Type Unlock - Poison Type| AND |Type Unlock - Dark Type|) OR |notypes|)"
     },
     {
         "name": "Wanderer Drednaw",
@@ -324,7 +324,7 @@
             "Water",
             "Rock"
         ],
-        "requires": "(|Giant's Cap| OR |West Lake Axewell|) AND (|Noweather| OR |Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|)"
+        "requires": "(|Giant's Cap| OR |West Lake Axewell|) AND (|Noweather| OR |Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|) AND ((|Type Unlock - Water Type| AND |Type Unlock - Rock Type|) OR |notypes|)"
     },
     {
         "name": "Wanderer Drifblim",
@@ -338,7 +338,7 @@
             "Ghost",
             "Flying"
         ],
-        "requires": "((|North Lake Miloch| OR |South Lake Miloch|) AND (|Fog| OR ((|Normal weather| OR |Overcast| OR |Snowstorm|) AND |Progressive bike:2|))) OR (|Watchtower Ruins| AND (|Normal weather| OR |Snowing| OR |Intense Sun|))"
+        "requires": "(((|North Lake Miloch| OR |South Lake Miloch|) AND (|Fog| OR ((|Normal weather| OR |Overcast| OR |Snowstorm|) AND |Progressive bike:2|))) OR (|Watchtower Ruins| AND (|Normal weather| OR |Snowing| OR |Intense Sun|))) AND ((|Type Unlock - Ghost Type| AND |Type Unlock - Flying Type|) OR |notypes|)"
     },
     {
         "name": "Wanderer Dubwool",
@@ -348,7 +348,7 @@
             "Rolling Fields",
             "Normal"
         ],
-        "requires": "|Rolling Fields| AND (|Noweather| OR |Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|)"
+        "requires": "|Rolling Fields| AND (|Noweather| OR |Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|) AND (|Type Unlock - Normal Type| OR |notypes|)"
     },
     {
         "name": "Wanderer Duraludon",
@@ -359,7 +359,7 @@
             "Steel",
             "Dragon"
         ],
-        "requires": "|Giant's Seat| AND (|Noweather| OR |Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|)"
+        "requires": "|Giant's Seat| AND (|Noweather| OR |Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|) AND ((|Type Unlock - Steel Type| AND |Type Unlock - Dragon Type|) OR |notypes|)"
     },
     {
         "name": "Wanderer Dusclops",
@@ -372,7 +372,7 @@
             "needsWeather",
             "Ghost"
         ],
-        "requires": "((|Giant's Seat| OR |Dusty Bowl|) AND |Fog|) OR (|Watchtower Ruins| AND (|Overcast| OR |Raining| OR |Thunderstorm|))"
+        "requires": "(((|Giant's Seat| OR |Dusty Bowl|) AND |Fog|) OR (|Watchtower Ruins| AND (|Overcast| OR |Raining| OR |Thunderstorm|))) AND (|Type Unlock - Ghost Type| OR |notypes|)"
     },
     {
         "name": "Wanderer Dusknoir",
@@ -382,7 +382,7 @@
             "Stony Wilderness",
             "Ghost"
         ],
-        "requires": "|Stony Wilderness| AND (|Noweather| OR |Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|)"
+        "requires": "|Stony Wilderness| AND (|Noweather| OR |Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|) AND (|Type Unlock - Ghost Type| OR |notypes|)"
     },
     {
         "name": "Wanderer Eldegoss",
@@ -392,7 +392,7 @@
             "Motostoke Riverbank",
             "Grass"
         ],
-        "requires": "|Motostoke Riverbank| AND (|Noweather| OR |Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|)"
+        "requires": "|Motostoke Riverbank| AND (|Noweather| OR |Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|) AND (|Type Unlock - Grass Type| OR |notypes|)"
     },
     {
         "name": "Wanderer Espeon",
@@ -403,7 +403,7 @@
             "needsWeather",
             "Psychic"
         ],
-        "requires": "|Lake of Outrage| AND |Progressive bike:2| AND |Overcast|"
+        "requires": "|Lake of Outrage| AND |Progressive bike:2| AND |Overcast| AND (|Type Unlock - Psychic Type| OR |notypes|)"
     },
     {
         "name": "Wanderer Excadrill",
@@ -415,7 +415,7 @@
             "Ground",
             "Steel"
         ],
-        "requires": "|Giant's Cap| AND (|Intense Sun| OR |Sandstorm|)"
+        "requires": "|Giant's Cap| AND (|Intense Sun| OR |Sandstorm|) AND ((|Type Unlock - Ground Type| AND |Type Unlock - Steel Type|) OR |notypes|)"
     },
     {
         "name": "Wanderer Ferrothorn",
@@ -426,7 +426,7 @@
             "Grass",
             "Steel"
         ],
-        "requires": "|Bridge Field| AND (|Noweather| OR |Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|)"
+        "requires": "|Bridge Field| AND (|Noweather| OR |Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|) AND ((|Type Unlock - Grass Type| AND |Type Unlock - Steel Type|) OR |notypes|)"
     },
     {
         "name": "Wanderer Flareon",
@@ -437,7 +437,7 @@
             "needsWeather",
             "Fire"
         ],
-        "requires": "|Lake of Outrage| AND |Progressive bike:2| AND |Intense Sun|"
+        "requires": "|Lake of Outrage| AND |Progressive bike:2| AND |Intense Sun| AND (|Type Unlock - Fire Type| OR |notypes|)"
     },
     {
         "name": "Wanderer Flygon",
@@ -449,7 +449,7 @@
             "Ground",
             "Dragon"
         ],
-        "requires": "|Dusty Bowl| AND (|Normal weather| OR |Sandstorm|)"
+        "requires": "|Dusty Bowl| AND (|Normal weather| OR |Sandstorm|) AND ((|Type Unlock - Ground Type| AND |Type Unlock - Dragon Type|) OR |notypes|)"
     },
     {
         "name": "Wanderer Galarian Weezing",
@@ -460,7 +460,7 @@
             "Poison",
             "Fairy"
         ],
-        "requires": "|East Lake Axewell| AND (|Noweather| OR |Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|)"
+        "requires": "|East Lake Axewell| AND (|Noweather| OR |Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|) AND ((|Type Unlock - Poison Type| AND |Type Unlock - Fairy Type|) OR |notypes|)"
     },
     {
         "name": "Wanderer Gallade",
@@ -472,7 +472,7 @@
             "Psychic",
             "Fighting"
         ],
-        "requires": "|Bridge Field| AND (|Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Intense Sun| OR |Sandstorm|) AND |Progressive bike:2|"
+        "requires": "|Bridge Field| AND (|Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Intense Sun| OR |Sandstorm|) AND |Progressive bike:2| AND ((|Type Unlock - Psychic Type| AND |Type Unlock - Fighting Type|) OR |notypes|)"
     },
     {
         "name": "Wanderer Galvantula",
@@ -485,7 +485,7 @@
             "Bug",
             "Electric"
         ],
-        "requires": "(|Giant's Cap| AND |Thunderstorm|) OR (|Giant's Seat| AND (|Thunderstorm| OR |Raining|)) OR (|South Lake Miloch| AND (|Noweather| OR |Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|))"
+        "requires": "((|Giant's Cap| AND |Thunderstorm|) OR (|Giant's Seat| AND (|Thunderstorm| OR |Raining|)) OR (|South Lake Miloch| AND (|Noweather| OR |Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|))) AND ((|Type Unlock - Bug Type| AND |Type Unlock - Electric Type|) OR |notypes|)"
     },
     {
         "name": "Wanderer Garbodor",
@@ -496,7 +496,7 @@
             "East Lake Axewell",
             "Poison"
         ],
-        "requires": "(|Bridge Field| AND (|Noweather| OR |Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|)) OR (|East Lake Axewell| AND (|Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm|))"
+        "requires": "((|Bridge Field| AND (|Noweather| OR |Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|)) OR (|East Lake Axewell| AND (|Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm|))) AND (|Type Unlock - Poison Type| OR |notypes|)"
     },
     {
         "name": "Wanderer Gardevoir",
@@ -509,7 +509,7 @@
             "Psychic",
             "Fairy"
         ],
-        "requires": "(|Rolling Fields| AND |Fog|) OR (|Lake of Outrage| AND |Progressive bike:2| AND (|Normal weather| OR |Fog|))"
+        "requires": "((|Rolling Fields| AND |Fog|) OR (|Lake of Outrage| AND |Progressive bike:2| AND (|Normal weather| OR |Fog|))) AND ((|Type Unlock - Psychic Type| AND |Type Unlock - Fairy Type|) OR |notypes|)"
     },
     {
         "name": "Wanderer Gengar",
@@ -521,7 +521,7 @@
             "Ghost",
             "Poison"
         ],
-        "requires": "|Giant's Cap| AND (|Normal weather| OR |Overcast| OR |Fog| OR |Thunderstorm| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm|)"
+        "requires": "|Giant's Cap| AND (|Normal weather| OR |Overcast| OR |Fog| OR |Thunderstorm| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm|) AND ((|Type Unlock - Ghost Type| AND |Type Unlock - Poison Type|) OR |notypes|)"
     },
     {
         "name": "Wanderer Gigalith",
@@ -532,7 +532,7 @@
             "needsWeather",
             "Rock"
         ],
-        "requires": "|Dusty Bowl| AND (|Normal weather| OR |Intense Sun|)"
+        "requires": "|Dusty Bowl| AND (|Normal weather| OR |Intense Sun|) AND (|Type Unlock - Rock Type| OR |notypes|)"
     },
     {
         "name": "Wanderer Glaceon",
@@ -543,7 +543,7 @@
             "needsWeather",
             "Ice"
         ],
-        "requires": "|Lake of Outrage| AND |Progressive bike:2| AND (|Snowing| OR |Snowstorm|)"
+        "requires": "|Lake of Outrage| AND |Progressive bike:2| AND (|Snowing| OR |Snowstorm|) AND (|Type Unlock - Ice Type| OR |notypes|)"
     },
     {
         "name": "Wanderer Glalie",
@@ -556,7 +556,7 @@
             "needsWeather",
             "Ice"
         ],
-        "requires": "(|Giant's Cap| OR |Giant's Seat| OR |Watchtower Ruins|) AND (|Snowing| OR |Snowstorm|)"
+        "requires": "(|Giant's Cap| OR |Giant's Seat| OR |Watchtower Ruins|) AND (|Snowing| OR |Snowstorm|) AND (|Type Unlock - Ice Type| OR |notypes|)"
     },
     {
         "name": "Wanderer Golisopod",
@@ -569,7 +569,7 @@
             "Bug",
             "Water"
         ],
-        "requires": "(|Bridge Field| AND (|Normal weather| OR |Raining| OR |Thunderstorm|)) OR (|Giant's Cap| AND |Raining|)"
+        "requires": "((|Bridge Field| AND (|Normal weather| OR |Raining| OR |Thunderstorm|)) OR (|Giant's Cap| AND |Raining|)) AND ((|Type Unlock - Bug Type| AND |Type Unlock - Water Type|) OR |notypes|)"
     },
     {
         "name": "Wanderer Golurk",
@@ -583,7 +583,7 @@
             "Ground",
             "Ghost"
         ],
-        "requires": "(|Dusty Bowl| AND (|Overcast| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Fog|)) OR (|Giant's Seat| AND |Sandstorm|) OR (|Stony Wilderness| AND (|Noweather| OR |Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|)) OR (|Watchtower Ruins| AND (|Normal weather| OR |Intense Sun| OR |Sandstorm| OR |Fog|))"
+        "requires": "((|Dusty Bowl| AND (|Overcast| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Fog|)) OR (|Giant's Seat| AND |Sandstorm|) OR (|Stony Wilderness| AND (|Noweather| OR |Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|)) OR (|Watchtower Ruins| AND (|Normal weather| OR |Intense Sun| OR |Sandstorm| OR |Fog|))) AND ((|Type Unlock - Ground Type| AND |Type Unlock - Ghost Type|) OR |notypes|)"
     },
     {
         "name": "Wanderer Gourgeist",
@@ -595,7 +595,7 @@
             "Ghost",
             "Grass"
         ],
-        "requires": "|Hammerlocke Hills| AND (|Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|)"
+        "requires": "|Hammerlocke Hills| AND (|Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|) AND ((|Type Unlock - Ghost Type| AND |Type Unlock - Grass Type|) OR |notypes|)"
     },
     {
         "name": "Wanderer Grapploct",
@@ -606,7 +606,7 @@
             "West Lake Axewell",
             "Fighting"
         ],
-        "requires": "(|Lake of Outrage| AND |Progressive bike:2| AND (|Noweather| OR |Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|)) OR (|West Lake Axewell| AND |Progressive bike:2| AND (|Normal weather| OR |Overcast| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|))"
+        "requires": "((|Lake of Outrage| AND |Progressive bike:2| AND (|Noweather| OR |Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|)) OR (|West Lake Axewell| AND |Progressive bike:2| AND (|Normal weather| OR |Overcast| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|))) AND (|Type Unlock - Fighting Type| OR |notypes|)"
     },
     {
         "name": "Wanderer Greedent",
@@ -616,7 +616,7 @@
             "Bridge Field",
             "Normal"
         ],
-        "requires": "|Bridge Field| AND (|Noweather| OR |Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|)"
+        "requires": "|Bridge Field| AND (|Noweather| OR |Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|) AND (|Type Unlock - Normal Type| OR |notypes|)"
     },
     {
         "name": "Wanderer Grimmsnarl",
@@ -627,7 +627,7 @@
             "Dark",
             "Fairy"
         ],
-        "requires": "|Stony Wilderness| AND (|Noweather| OR |Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|)"
+        "requires": "|Stony Wilderness| AND (|Noweather| OR |Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|) AND ((|Type Unlock - Dark Type| AND |Type Unlock - Fairy Type|) OR |notypes|)"
     },
     {
         "name": "Wanderer Hatterene",
@@ -638,7 +638,7 @@
             "Psychic",
             "Fairy"
         ],
-        "requires": "|Lake of Outrage| AND |Progressive bike:2| AND (|Noweather| OR |Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|)"
+        "requires": "|Lake of Outrage| AND |Progressive bike:2| AND (|Noweather| OR |Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|) AND ((|Type Unlock - Psychic Type| AND |Type Unlock - Fairy Type|) OR |notypes|)"
     },
     {
         "name": "Wanderer Haunter",
@@ -651,7 +651,7 @@
             "Ghost",
             "Poison"
         ],
-        "requires": "(|Rolling Fields| AND (|Raining| OR |Thunderstorm|)) OR (|Watchtower Ruins| AND (|Overcast| OR |Raining| OR |Thunderstorm| OR |Snowstorm| OR |Sandstorm| OR |Fog|))"
+        "requires": "((|Rolling Fields| AND (|Raining| OR |Thunderstorm|)) OR (|Watchtower Ruins| AND (|Overcast| OR |Raining| OR |Thunderstorm| OR |Snowstorm| OR |Sandstorm| OR |Fog|))) AND ((|Type Unlock - Ghost Type| AND |Type Unlock - Poison Type|) OR |notypes|)"
     },
     {
         "name": "Wanderer Hawlucha",
@@ -662,7 +662,7 @@
             "Fighting",
             "Flying"
         ],
-        "requires": "|Hammerlocke Hills| AND (|Noweather| OR |Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|)"
+        "requires": "|Hammerlocke Hills| AND (|Noweather| OR |Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|) AND ((|Type Unlock - Fighting Type| AND |Type Unlock - Flying Type|) OR |notypes|)"
     },
     {
         "name": "Wanderer Haxorus",
@@ -673,7 +673,7 @@
             "needsWeather",
             "Dragon"
         ],
-        "requires": "|Axew's Eye| AND |Progressive bike:2| AND (|Normal weather| OR |Overcast| OR |Raining| OR |Intense Sun| OR |Sandstorm| OR |Fog|)"
+        "requires": "|Axew's Eye| AND |Progressive bike:2| AND (|Normal weather| OR |Overcast| OR |Raining| OR |Intense Sun| OR |Sandstorm| OR |Fog|) AND (|Type Unlock - Dragon Type| OR |notypes|)"
     },
     {
         "name": "Wanderer Jolteon",
@@ -684,7 +684,7 @@
             "needsWeather",
             "Electric"
         ],
-        "requires": "|Lake of Outrage| AND |Progressive bike:2| AND |Thunderstorm|"
+        "requires": "|Lake of Outrage| AND |Progressive bike:2| AND |Thunderstorm| AND (|Type Unlock - Electric Type| OR |notypes|)"
     },
     {
         "name": "Wanderer Kingler",
@@ -696,7 +696,7 @@
             "needsWeather",
             "Water"
         ],
-        "requires": "(|West Lake Axewell| OR |South Lake Miloch|) AND |Normal weather|"
+        "requires": "(|West Lake Axewell| OR |South Lake Miloch|) AND |Normal weather| AND (|Type Unlock - Water Type| OR |notypes|)"
     },
     {
         "name": "Wanderer Kirlia",
@@ -708,7 +708,7 @@
             "Psychic",
             "Fairy"
         ],
-        "requires": "|Rolling Fields| AND |Fog|"
+        "requires": "|Rolling Fields| AND |Fog| AND ((|Type Unlock - Psychic Type| AND |Type Unlock - Fairy Type|) OR |notypes|)"
     },
     {
         "name": "Wanderer Klang",
@@ -719,7 +719,7 @@
             "needsWeather",
             "Steel"
         ],
-        "requires": "|Hammerlocke Hills| AND (|Normal weather| OR |Overcast| OR |Raining| OR |Snowing|)"
+        "requires": "|Hammerlocke Hills| AND (|Normal weather| OR |Overcast| OR |Raining| OR |Snowing|) AND (|Type Unlock - Steel Type| OR |notypes|)"
     },
     {
         "name": "Wanderer Klinklang",
@@ -730,7 +730,7 @@
             "needsWeather",
             "Steel"
         ],
-        "requires": "|Hammerlocke Hills| AND (|Thunderstorm| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm|)"
+        "requires": "|Hammerlocke Hills| AND (|Thunderstorm| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm|) AND (|Type Unlock - Steel Type| OR |notypes|)"
     },
     {
         "name": "Wanderer Tyranitar",
@@ -743,7 +743,7 @@
             "Rock",
             "Dark"
         ],
-        "requires": "|Dusty Bowl| AND (|Normal weather| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|)"
+        "requires": "|Dusty Bowl| AND (|Normal weather| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|) AND ((|Type Unlock - Rock Type| AND |Type Unlock - Dark Type|) OR |notypes|)"
     },
     {
         "name": "Wanderer Kommo-o",
@@ -756,7 +756,7 @@
             "Dragon",
             "Fighting"
         ],
-        "requires": "|Dusty Bowl| AND (|Normal weather| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|)"
+        "requires": "|Dusty Bowl| AND (|Normal weather| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|) AND ((|Type Unlock - Dragon Type| AND |Type Unlock - Fighting Type|) OR |notypes|)"
     },
     {
         "name": "Wanderer Leafeon",
@@ -767,7 +767,7 @@
             "needsWeather",
             "Grass"
         ],
-        "requires": "|Lake of Outrage| AND |Progressive bike:2| AND |Normal weather|"
+        "requires": "|Lake of Outrage| AND |Progressive bike:2| AND |Normal weather| AND (|Type Unlock - Grass Type| OR |notypes|)"
     },
     {
         "name": "Wanderer Liepard",
@@ -777,7 +777,7 @@
             "North Lake Miloch",
             "Dark"
         ],
-        "requires": "|North Lake Miloch| AND (|Noweather| OR |Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|)"
+        "requires": "|North Lake Miloch| AND (|Noweather| OR |Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|) AND (|Type Unlock - Dark Type| OR |notypes|)"
     },
     {
         "name": "Wanderer Linoone",
@@ -787,7 +787,7 @@
             "Bridge Field",
             "Normal"
         ],
-        "requires": "|Bridge Field| AND (|Noweather| OR |Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|)"
+        "requires": "|Bridge Field| AND (|Noweather| OR |Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|) AND (|Type Unlock - Normal Type| OR |notypes|)"
     },
     {
         "name": "Wanderer Lucario",
@@ -799,7 +799,7 @@
             "Fighting",
             "Steel"
         ],
-        "requires": "|North Lake Miloch| AND |Normal weather|"
+        "requires": "|North Lake Miloch| AND |Normal weather| AND ((|Type Unlock - Fighting Type| AND |Type Unlock - Steel Type|) OR |notypes|)"
     },
     {
         "name": "Wanderer Ludicolo",
@@ -812,7 +812,7 @@
             "Water",
             "Grass"
         ],
-        "requires": "|Dappled Grove| AND (|Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Fog|)"
+        "requires": "|Dappled Grove| AND (|Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Fog|) AND ((|Type Unlock - Water Type| AND |Type Unlock - Grass Type|) OR |notypes|)"
     },
     {
         "name": "Wanderer Machamp",
@@ -823,7 +823,7 @@
             "needsWeather",
             "Fighting"
         ],
-        "requires": "|Giant's Mirror| AND (|Normal weather| OR |Overcast| OR |Thunderstorm| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|)"
+        "requires": "|Giant's Mirror| AND (|Normal weather| OR |Overcast| OR |Thunderstorm| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|) AND (|Type Unlock - Fighting Type| OR |notypes|)"
     },
     {
         "name": "Wanderer Machoke",
@@ -833,7 +833,7 @@
             "South Lake Miloch",
             "Fighting"
         ],
-        "requires": "|South Lake Miloch| AND (|Noweather| OR |Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|)"
+        "requires": "|South Lake Miloch| AND (|Noweather| OR |Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|) AND (|Type Unlock - Fighting Type| OR |notypes|)"
     },
     {
         "name": "Wanderer Manectric",
@@ -844,7 +844,7 @@
             "needsWeather",
             "Electric"
         ],
-        "requires": "|Rolling Fields| AND |Thunderstorm|"
+        "requires": "|Rolling Fields| AND |Thunderstorm| AND (|Type Unlock - Electric Type| OR |notypes|)"
     },
     {
         "name": "Wanderer Mime Jr.",
@@ -856,7 +856,7 @@
             "Psychic",
             "Fairy"
         ],
-        "requires": "|Rolling Fields| AND |Snowstorm|"
+        "requires": "|Rolling Fields| AND |Snowstorm| AND ((|Type Unlock - Psychic Type| AND |Type Unlock - Fairy Type|) OR |notypes|)"
     },
     {
         "name": "Wanderer Mimikyu",
@@ -868,7 +868,7 @@
             "Ghost",
             "Fairy"
         ],
-        "requires": "|Bridge Field| AND |Fog|"
+        "requires": "|Bridge Field| AND |Fog| AND ((|Type Unlock - Ghost Type| AND |Type Unlock - Fairy Type|) OR |notypes|)"
     },
     {
         "name": "Wanderer Mudsdale",
@@ -882,7 +882,7 @@
             "needsWeather",
             "Ground"
         ],
-        "requires": "(|Rolling Fields| AND (|Normal weather| OR |Overcast| OR |Intense Sun| OR |Sandstorm| OR |Fog|)) OR (|Dusty Bowl| AND (|Normal weather| OR |Intense Sun| OR |Sandstorm| OR |Fog|)) OR (|East Lake Axewell| AND (|Intense Sun| OR |Sandstorm|)) OR (|Giant's Seat| AND |Intense Sun|)"
+        "requires": "((|Rolling Fields| AND (|Normal weather| OR |Overcast| OR |Intense Sun| OR |Sandstorm| OR |Fog|)) OR (|Dusty Bowl| AND (|Normal weather| OR |Intense Sun| OR |Sandstorm| OR |Fog|)) OR (|East Lake Axewell| AND (|Intense Sun| OR |Sandstorm|)) OR (|Giant's Seat| AND |Intense Sun|)) AND (|Type Unlock - Ground Type| OR |notypes|)"
     },
     {
         "name": "Wanderer Musharna",
@@ -894,7 +894,7 @@
             "needsWeather",
             "Psychic"
         ],
-        "requires": "(|Bridge Field| AND |Progressive bike:2| AND |Fog|) OR (|Giant's Seat| AND |Fog|)"
+        "requires": "((|Bridge Field| AND |Progressive bike:2| AND |Fog|) OR (|Giant's Seat| AND |Fog|)) AND (|Type Unlock - Psychic Type| OR |notypes|)"
     },
     {
         "name": "Wanderer Ninjask",
@@ -905,7 +905,7 @@
             "Bug",
             "Flying"
         ],
-        "requires": "|Rolling Fields| AND (|Noweather| OR |Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|)"
+        "requires": "|Rolling Fields| AND (|Noweather| OR |Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|) AND ((|Type Unlock - Bug Type| AND |Type Unlock - Flying Type|) OR |notypes|)"
     },
     {
         "name": "Wanderer Noctowl",
@@ -917,7 +917,7 @@
             "Normal",
             "Flying"
         ],
-        "requires": "|Bridge Field| AND |Snowing|"
+        "requires": "|Bridge Field| AND |Snowing| AND ((|Type Unlock - Normal Type| AND |Type Unlock - Flying Type|) OR |notypes|)"
     },
     {
         "name": "Wanderer Noivern",
@@ -929,7 +929,7 @@
             "Flying",
             "Dragon"
         ],
-        "requires": "|Bridge Field| AND (|Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|)"
+        "requires": "|Bridge Field| AND (|Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|) AND ((|Type Unlock - Flying Type| AND |Type Unlock - Dragon Type|) OR |notypes|)"
     },
     {
         "name": "Wanderer Obstagoon",
@@ -940,7 +940,7 @@
             "Dark",
             "Normal"
         ],
-        "requires": "|Bridge Field| AND (|Noweather| OR |Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|)"
+        "requires": "|Bridge Field| AND (|Noweather| OR |Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|) AND ((|Type Unlock - Dark Type| AND |Type Unlock - Normal Type|) OR |notypes|)"
     },
     {
         "name": "Wanderer Onix",
@@ -951,7 +951,7 @@
             "Rock",
             "Ground"
         ],
-        "requires": "|Rolling Fields| AND (|Noweather| OR |Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|)"
+        "requires": "|Rolling Fields| AND (|Noweather| OR |Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|) AND ((|Type Unlock - Rock Type| AND |Type Unlock - Ground Type|) OR |notypes|)"
     },
     {
         "name": "Wanderer Orbeetle",
@@ -963,7 +963,7 @@
             "Bug",
             "Psychic"
         ],
-        "requires": "(|Giant's Cap| OR |Dappled Grove|) AND (|Noweather| OR |Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|)"
+        "requires": "(|Giant's Cap| OR |Dappled Grove|) AND (|Noweather| OR |Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|) AND ((|Type Unlock - Bug Type| AND |Type Unlock - Psychic Type|) OR |notypes|)"
     },
     {
         "name": "Wanderer Palpitoad",
@@ -976,7 +976,7 @@
             "Water",
             "Ground"
         ],
-        "requires": "(|South Lake Miloch| AND (|Raining| OR |Thunderstorm|)) OR (|West Lake Axewell| AND (|Overcast| OR |Snowing| OR |Snowstorm| OR |Sandstorm| OR |Fog|))"
+        "requires": "((|South Lake Miloch| AND (|Raining| OR |Thunderstorm|)) OR (|West Lake Axewell| AND (|Overcast| OR |Snowing| OR |Snowstorm| OR |Sandstorm| OR |Fog|))) AND ((|Type Unlock - Water Type| AND |Type Unlock - Ground Type|) OR |notypes|)"
     },
     {
         "name": "Wanderer Pangoro",
@@ -990,7 +990,7 @@
             "Fighting",
             "Dark"
         ],
-        "requires": "(|Bridge Field| AND (|Overcast| OR |Intense Sun|)) OR (|Dappled Grove| AND (|Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm|)) OR (|Rolling Fields| AND (|Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Intense Sun|))"
+        "requires": "((|Bridge Field| AND (|Overcast| OR |Intense Sun|)) OR (|Dappled Grove| AND (|Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm|)) OR (|Rolling Fields| AND (|Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Intense Sun|))) AND ((|Type Unlock - Fighting Type| AND |Type Unlock - Dark Type|) OR |notypes|)"
     },
     {
         "name": "Wanderer Pelipper",
@@ -1008,7 +1008,7 @@
             "Water",
             "Flying"
         ],
-        "requires": "(|Rolling Fields| AND |Raining|) OR (|South Lake Miloch| AND |Progressive bike:2| AND (|Overcast| OR |Raining| OR |Thunderstorm| OR |Intense Sun|)) OR ((|West Lake Axewell| OR |East Lake Axewell|) AND ((|Raining| OR |Thunderstorm|) OR (|Progressive bike:2| AND (|Normal weather| OR |Overcast| OR |Intense Sun|)))) OR (|North Lake Miloch| AND ((|Raining| OR |Thunderstorm|) OR (|Progressive bike:2| AND |Intense Sun|))) OR ((|Bridge Field| OR |Lake of Outrage|) AND |Progressive bike:2| AND |Intense Sun|)"
+        "requires": "((|Rolling Fields| AND |Raining|) OR (|South Lake Miloch| AND |Progressive bike:2| AND (|Overcast| OR |Raining| OR |Thunderstorm| OR |Intense Sun|)) OR ((|West Lake Axewell| OR |East Lake Axewell|) AND ((|Raining| OR |Thunderstorm|) OR (|Progressive bike:2| AND (|Normal weather| OR |Overcast| OR |Intense Sun|)))) OR (|North Lake Miloch| AND ((|Raining| OR |Thunderstorm|) OR (|Progressive bike:2| AND |Intense Sun|))) OR ((|Bridge Field| OR |Lake of Outrage|) AND |Progressive bike:2| AND |Intense Sun|)) AND ((|Type Unlock - Water Type| AND |Type Unlock - Flying Type|) OR |notypes|)"
     },
     {
         "name": "Wanderer Perrserker",
@@ -1018,7 +1018,7 @@
             "Giant's Mirror",
             "Steel"
         ],
-        "requires": "|Giant's Mirror| AND (|Noweather| OR |Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|)"
+        "requires": "|Giant's Mirror| AND (|Noweather| OR |Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|) AND (|Type Unlock - Steel Type| OR |notypes|)"
     },
     {
         "name": "Wanderer Pikachu",
@@ -1029,7 +1029,7 @@
             "needsWeather",
             "Electric"
         ],
-        "requires": "|Rolling Fields| AND |Thunderstorm|"
+        "requires": "|Rolling Fields| AND |Thunderstorm| AND (|Type Unlock - Electric Type| OR |notypes|)"
     },
     {
         "name": "Wanderer Piloswine",
@@ -1043,7 +1043,7 @@
             "Ice",
             "Ground"
         ],
-        "requires": "(|Rolling Fields| OR |East Lake Axewell| OR |Dusty Bowl|) AND (|Snowing| OR |Snowstorm|)"
+        "requires": "(|Rolling Fields| OR |East Lake Axewell| OR |Dusty Bowl|) AND (|Snowing| OR |Snowstorm|) AND ((|Type Unlock - Ice Type| AND |Type Unlock - Ground Type|) OR |notypes|)"
     },
     {
         "name": "Wanderer Quagsire",
@@ -1055,7 +1055,7 @@
             "Water",
             "Ground"
         ],
-        "requires": "|West Lake Axewell| AND (|Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Fog|)"
+        "requires": "|West Lake Axewell| AND (|Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Fog|) AND ((|Type Unlock - Water Type| AND |Type Unlock - Ground Type|) OR |notypes|)"
     },
     {
         "name": "Wanderer Rhydon",
@@ -1071,7 +1071,7 @@
             "Ground",
             "Rock"
         ],
-        "requires": "((|Bridge Field| OR |Motostoke Riverbank|) AND (|Intense Sun| OR |Sandstorm|)) OR (|Dusty Bowl| AND (|Raining| OR |Thunderstorm| OR |Snowing|)) OR (|Giant's Seat| AND (|Normal weather| OR |Raining|)) OR (|Lake of Outrage| AND |Progressive bike:2| AND |Sandstorm|) OR (|Stony Wilderness| AND (|Noweather| OR |Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|))"
+        "requires": "(((|Bridge Field| OR |Motostoke Riverbank|) AND (|Intense Sun| OR |Sandstorm|)) OR (|Dusty Bowl| AND (|Raining| OR |Thunderstorm| OR |Snowing|)) OR (|Giant's Seat| AND (|Normal weather| OR |Raining|)) OR (|Lake of Outrage| AND |Progressive bike:2| AND |Sandstorm|) OR (|Stony Wilderness| AND (|Noweather| OR |Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|))) AND ((|Type Unlock - Ground Type| AND |Type Unlock - Rock Type|) OR |notypes|)"
     },
     {
         "name": "Wanderer Ribombee",
@@ -1084,7 +1084,7 @@
             "Bug",
             "Fairy"
         ],
-        "requires": "(|Bridge Field| AND (|Normal weather| OR |Overcast|)) OR (|Motostoke Riverbank| AND (|Overcast| OR |Snowing| OR |Snowstorm| OR |Fog|))"
+        "requires": "((|Bridge Field| AND (|Normal weather| OR |Overcast|)) OR (|Motostoke Riverbank| AND (|Overcast| OR |Snowing| OR |Snowstorm| OR |Fog|))) AND ((|Type Unlock - Bug Type| AND |Type Unlock - Fairy Type|) OR |notypes|)"
     },
     {
         "name": "Wanderer Roselia",
@@ -1096,7 +1096,7 @@
             "Grass",
             "Poison"
         ],
-        "requires": "|Rolling Fields| AND (|Normal weather| OR |Overcast| OR |Snowing| OR |Intense Sun| OR |Sandstorm| OR |Fog|)"
+        "requires": "|Rolling Fields| AND (|Normal weather| OR |Overcast| OR |Snowing| OR |Intense Sun| OR |Sandstorm| OR |Fog|) AND ((|Type Unlock - Grass Type| AND |Type Unlock - Poison Type|) OR |notypes|)"
     },
     {
         "name": "Wanderer Roserade",
@@ -1108,7 +1108,7 @@
             "Grass",
             "Poison"
         ],
-        "requires": "|Hammerlocke Hills| AND (|Overcast| OR |Fog|)"
+        "requires": "|Hammerlocke Hills| AND (|Overcast| OR |Fog|) AND ((|Type Unlock - Grass Type| AND |Type Unlock - Poison Type|) OR |notypes|)"
     },
     {
         "name": "Wanderer Sandaconda",
@@ -1118,7 +1118,7 @@
             "Dusty Bowl",
             "Ground"
         ],
-        "requires": "|Dusty Bowl| AND (|Noweather| OR |Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|)"
+        "requires": "|Dusty Bowl| AND (|Noweather| OR |Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|) AND (|Type Unlock - Ground Type| OR |notypes|)"
     },
     {
         "name": "Wanderer Seismitoad",
@@ -1136,7 +1136,7 @@
             "Water",
             "Ground"
         ],
-        "requires": "(|Axew's Eye| AND |Progressive bike:2| AND |Thunderstorm|) OR (|Bridge Field| AND (|Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Fog|)) OR ((|Dappled Grove| OR |Dusty Bowl|) AND (|Raining| OR |Thunderstorm|)) OR ((|Giant's Cap| OR |Giant's Mirror|) AND |Raining|) OR (|North Lake Miloch| AND (|Overcast| OR |Thunderstorm|))"
+        "requires": "((|Axew's Eye| AND |Progressive bike:2| AND |Thunderstorm|) OR (|Bridge Field| AND (|Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Fog|)) OR ((|Dappled Grove| OR |Dusty Bowl|) AND (|Raining| OR |Thunderstorm|)) OR ((|Giant's Cap| OR |Giant's Mirror|) AND |Raining|) OR (|North Lake Miloch| AND (|Overcast| OR |Thunderstorm|))) AND ((|Type Unlock - Water Type| AND |Type Unlock - Ground Type|) OR |notypes|)"
     },
     {
         "name": "Wanderer Shiftry",
@@ -1149,7 +1149,7 @@
             "Grass",
             "Dark"
         ],
-        "requires": "|Dappled Grove| AND (|Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Fog|)"
+        "requires": "|Dappled Grove| AND (|Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Fog|) AND ((|Type Unlock - Grass Type| AND |Type Unlock - Dark Type|) OR |notypes|)"
     },
     {
         "name": "Wanderer Shiinotic",
@@ -1161,7 +1161,7 @@
             "Grass",
             "Fairy"
         ],
-        "requires": "|Lake of Outrage| AND |Progressive bike:2| AND (|Overcast| OR |Raining| OR |Thunderstorm|)"
+        "requires": "|Lake of Outrage| AND |Progressive bike:2| AND (|Overcast| OR |Raining| OR |Thunderstorm|) AND ((|Type Unlock - Grass Type| AND |Type Unlock - Fairy Type|) OR |notypes|)"
     },
     {
         "name": "Wanderer Shuckle",
@@ -1172,7 +1172,7 @@
             "Bug",
             "Rock"
         ],
-        "requires": "|Dusty Bowl| AND (|Noweather| OR |Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|)"
+        "requires": "|Dusty Bowl| AND (|Noweather| OR |Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|) AND ((|Type Unlock - Bug Type| AND |Type Unlock - Rock Type|) OR |notypes|)"
     },
     {
         "name": "Wanderer Sigilyph",
@@ -1185,7 +1185,7 @@
             "Psychic",
             "Flying"
         ],
-        "requires": "(|Dusty Bowl| AND (|Overcast| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Fog|)) OR (|Motostoke Riverbank| AND (|Noweather| OR |Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|)) OR (|Stony Wilderness| AND (|Normal weather| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|))"
+        "requires": "((|Dusty Bowl| AND (|Overcast| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Fog|)) OR (|Motostoke Riverbank| AND (|Noweather| OR |Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|)) OR (|Stony Wilderness| AND (|Normal weather| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|))) AND ((|Type Unlock - Psychic Type| AND |Type Unlock - Flying Type|) OR |notypes|)"
     },
     {
         "name": "Wanderer Skuntank",
@@ -1199,7 +1199,7 @@
             "Poison",
             "Dark"
         ],
-        "requires": "(|Dusty Bowl| AND |Overcast|) OR (|North Lake Miloch| AND (|Raining| OR |Intense Sun| OR |Sandstorm|)) OR (|South Lake Miloch| AND (|Normal weather| OR |Overcast| OR |Snowing| OR |Snowstorm| OR |Sandstorm| OR |Fog|))"
+        "requires": "((|Dusty Bowl| AND |Overcast|) OR (|North Lake Miloch| AND (|Raining| OR |Intense Sun| OR |Sandstorm|)) OR (|South Lake Miloch| AND (|Normal weather| OR |Overcast| OR |Snowing| OR |Snowstorm| OR |Sandstorm| OR |Fog|))) AND ((|Type Unlock - Poison Type| AND |Type Unlock - Dark Type|) OR |notypes|)"
     },
     {
         "name": "Wanderer Snorlax",
@@ -1210,7 +1210,7 @@
             "needsWeather",
             "Normal"
         ],
-        "requires": "|Motostoke Riverbank| AND (|Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm|)"
+        "requires": "|Motostoke Riverbank| AND (|Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm|) AND (|Type Unlock - Normal Type| OR |notypes|)"
     },
     {
         "name": "Wanderer Steelix",
@@ -1222,7 +1222,7 @@
             "Steel",
             "Ground"
         ],
-        "requires": "(|Giant's Mirror| OR |Giant's Seat|) AND (|Noweather| OR |Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|)"
+        "requires": "(|Giant's Mirror| OR |Giant's Seat|) AND (|Noweather| OR |Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|) AND ((|Type Unlock - Steel Type| AND |Type Unlock - Ground Type|) OR |notypes|)"
     },
     {
         "name": "Wanderer Sudowoodo",
@@ -1233,7 +1233,7 @@
             "needsWeather",
             "Rock"
         ],
-        "requires": "|Dusty Bowl| AND (|Normal weather| OR |Overcast| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|)"
+        "requires": "|Dusty Bowl| AND (|Normal weather| OR |Overcast| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|) AND (|Type Unlock - Rock Type| OR |notypes|)"
     },
     {
         "name": "Wanderer Sylveon",
@@ -1244,7 +1244,7 @@
             "needsWeather",
             "Fairy"
         ],
-        "requires": "|Lake of Outrage| AND |Progressive bike:2| AND |Fog|"
+        "requires": "|Lake of Outrage| AND |Progressive bike:2| AND |Fog| AND (|Type Unlock - Fairy Type| OR |notypes|)"
     },
     {
         "name": "Wanderer Thievul",
@@ -1254,7 +1254,7 @@
             "South Lake Miloch",
             "Dark"
         ],
-        "requires": "|South Lake Miloch| AND (|Noweather| OR |Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|)"
+        "requires": "|South Lake Miloch| AND (|Noweather| OR |Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|) AND (|Type Unlock - Dark Type| OR |notypes|)"
     },
     {
         "name": "Wanderer Tsareena",
@@ -1265,7 +1265,7 @@
             "needsWeather",
             "Grass"
         ],
-        "requires": "|Stony Wilderness| AND (|Normal weather| OR |Overcast| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|)"
+        "requires": "|Stony Wilderness| AND (|Normal weather| OR |Overcast| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|) AND (|Type Unlock - Grass Type| OR |notypes|)"
     },
     {
         "name": "Wanderer Umbreon",
@@ -1276,7 +1276,7 @@
             "needsWeather",
             "Dark"
         ],
-        "requires": "|Lake of Outrage| AND |Progressive bike:2| AND |Sandstorm|"
+        "requires": "|Lake of Outrage| AND |Progressive bike:2| AND |Sandstorm| AND (|Type Unlock - Dark Type| OR |notypes|)"
     },
     {
         "name": "Wanderer Unfezant",
@@ -1289,7 +1289,7 @@
             "Normal",
             "Flying"
         ],
-        "requires": "(|Giant's Mirror| AND (|Normal weather| OR |Overcast| OR |Intense Sun|)) OR (|Stony Wilderness| AND |Overcast|)"
+        "requires": "((|Giant's Mirror| AND (|Normal weather| OR |Overcast| OR |Intense Sun|)) OR (|Stony Wilderness| AND |Overcast|)) AND ((|Type Unlock - Normal Type| AND |Type Unlock - Flying Type|) OR |notypes|)"
     },
     {
         "name": "Wanderer Vanillish",
@@ -1301,7 +1301,7 @@
             "needsWeather",
             "Ice"
         ],
-        "requires": "(|Dappled Grove| OR |North Lake Miloch|) AND (|Snowing| OR |Snowstorm|)"
+        "requires": "(|Dappled Grove| OR |North Lake Miloch|) AND (|Snowing| OR |Snowstorm|) AND (|Type Unlock - Ice Type| OR |notypes|)"
     },
     {
         "name": "Wanderer Vanilluxe",
@@ -1317,7 +1317,7 @@
             "needsWeather",
             "Ice"
         ],
-        "requires": "(|Bridge Field| AND (|Snowing| OR |Snowstorm|)) OR ((|East Lake Axewell| OR |Lake of Outrage| OR |North Lake Miloch| OR |South Lake Miloch| OR |West Lake Axewell|) AND |Progressive bike:2| AND (|Snowing| OR |Snowstorm|))"
+        "requires": "((|Bridge Field| AND (|Snowing| OR |Snowstorm|)) OR ((|East Lake Axewell| OR |Lake of Outrage| OR |North Lake Miloch| OR |South Lake Miloch| OR |West Lake Axewell|) AND |Progressive bike:2| AND (|Snowing| OR |Snowstorm|))) AND (|Type Unlock - Ice Type| OR |notypes|)"
     },
     {
         "name": "Wanderer Vaporeon",
@@ -1328,7 +1328,7 @@
             "needsWeather",
             "Water"
         ],
-        "requires": "|Lake of Outrage| AND |Progressive bike:2| AND |Raining|"
+        "requires": "|Lake of Outrage| AND |Progressive bike:2| AND |Raining| AND (|Type Unlock - Water Type| OR |notypes|)"
     },
     {
         "name": "Wanderer Vespiquen",
@@ -1340,7 +1340,7 @@
             "Bug",
             "Flying"
         ],
-        "requires": "|Rolling Fields| AND |Normal weather|"
+        "requires": "|Rolling Fields| AND |Normal weather| AND ((|Type Unlock - Bug Type| AND |Type Unlock - Flying Type|) OR |notypes|)"
     },
     {
         "name": "Wanderer Vikavolt",
@@ -1352,7 +1352,7 @@
             "Bug",
             "Electric"
         ],
-        "requires": "|Giant's Seat| AND (|Normal weather| OR |Overcast| OR |Intense Sun| OR |Sandstorm|)"
+        "requires": "|Giant's Seat| AND (|Normal weather| OR |Overcast| OR |Intense Sun| OR |Sandstorm|) AND ((|Type Unlock - Bug Type| AND |Type Unlock - Electric Type|) OR |notypes|)"
     },
     {
         "name": "Wanderer Vileplume",
@@ -1366,7 +1366,7 @@
             "Grass",
             "Poison"
         ],
-        "requires": "(|Dappled Grove| AND (|Normal weather| OR |Overcast| OR |Fog|)) OR (|Giant's Mirror| AND (|Overcast| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Sandstorm|)) OR (|Hammerlocke Hills| AND (|Normal weather| OR |Raining| OR |Thunderstorm| OR |Intense Sun| OR |Sandstorm|))"
+        "requires": "((|Dappled Grove| AND (|Normal weather| OR |Overcast| OR |Fog|)) OR (|Giant's Mirror| AND (|Overcast| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Sandstorm|)) OR (|Hammerlocke Hills| AND (|Normal weather| OR |Raining| OR |Thunderstorm| OR |Intense Sun| OR |Sandstorm|))) AND ((|Type Unlock - Grass Type| AND |Type Unlock - Poison Type|) OR |notypes|)"
     },
     {
         "name": "Wanderer Weavile",
@@ -1378,7 +1378,7 @@
             "Dark",
             "Ice"
         ],
-        "requires": "|Bridge Field| AND |Progressive bike:2| AND |Snowstorm|"
+        "requires": "|Bridge Field| AND |Progressive bike:2| AND |Snowstorm| AND ((|Type Unlock - Dark Type| AND |Type Unlock - Ice Type|) OR |notypes|)"
     },
     {
         "name": "Wanderer Xatu",
@@ -1392,7 +1392,7 @@
             "Psychic",
             "Flying"
         ],
-        "requires": "((|East Lake Axewell| OR |North Lake Miloch|) AND (|Normal weather| OR |Overcast| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|)) OR (|Giant's Mirror| AND (|Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Sandstorm| OR |Fog|))"
+        "requires": "(((|East Lake Axewell| OR |North Lake Miloch|) AND (|Normal weather| OR |Overcast| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|)) OR (|Giant's Mirror| AND (|Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Sandstorm| OR |Fog|))) AND ((|Type Unlock - Psychic Type| AND |Type Unlock - Flying Type|) OR |notypes|)"
     },
     {
         "name": "Wanderer Seaking",
@@ -1408,7 +1408,7 @@
             "needsWeather",
             "Water"
         ],
-        "requires": "((|Bridge Field| OR |West Lake Axewell|) AND |Progressive bike:2| AND (|Normal weather| OR |Overcast| OR |Sandstorm|)) OR (|East Lake Axewell| AND |Progressive bike:2| AND (|Normal weather| OR |Overcast| OR |Sandstorm| OR |Intense Sun|)) OR (|Lake of Outrage| AND |Progressive bike:2| AND (|Overcast| OR |Sandstorm| OR |Intense Sun|)) OR (|North Lake Miloch| AND |Progressive bike:2| AND (|Raining| OR |Thunderstorm| OR |Fog|)) OR (|South Lake Miloch| AND |Progressive bike:2| AND (|Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Sandstorm|))"
+        "requires": "(((|Bridge Field| OR |West Lake Axewell|) AND |Progressive bike:2| AND (|Normal weather| OR |Overcast| OR |Sandstorm|)) OR (|East Lake Axewell| AND |Progressive bike:2| AND (|Normal weather| OR |Overcast| OR |Sandstorm| OR |Intense Sun|)) OR (|Lake of Outrage| AND |Progressive bike:2| AND (|Overcast| OR |Sandstorm| OR |Intense Sun|)) OR (|North Lake Miloch| AND |Progressive bike:2| AND (|Raining| OR |Thunderstorm| OR |Fog|)) OR (|South Lake Miloch| AND |Progressive bike:2| AND (|Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Sandstorm|))) AND (|Type Unlock - Water Type| OR |notypes|)"
     },
     {
         "name": "Wanderer Lanturn",
@@ -1424,7 +1424,7 @@
             "Water",
             "Electric"
         ],
-        "requires": "((|East Lake Axewell| OR |Lake of Outrage|) AND |Progressive bike:2| AND (|Normal weather| OR |Thunderstorm| OR |Fog|)) OR ((|Bridge Field| OR |South Lake Miloch| OR |West Lake Axewell|) AND |Progressive bike:2| AND |Thunderstorm|)"
+        "requires": "((|East Lake Axewell| OR |Lake of Outrage|) AND |Progressive bike:2| AND (|Normal weather| OR |Thunderstorm| OR |Fog|)) OR ((|Bridge Field| OR |South Lake Miloch| OR |West Lake Axewell|) AND |Progressive bike:2| AND |Thunderstorm|) AND ((|Type Unlock - Water Type| AND |Type Unlock - Electric Type|) OR |notypes|)"
     },
     {
         "name": "Wanderer Gyarados",
@@ -1441,7 +1441,7 @@
             "Water",
             "Flying"
         ],
-        "requires": "((|Bridge Field| OR |Dusty Bowl| OR |East Lake Axewell| OR |West Lake Axewell|) AND |Progressive bike:2| AND (|Noweather| OR |Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|)) OR ((|Lake of Outrage| OR |South Lake Miloch|) AND |Progressive bike:2| AND (|Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm|)) OR (|North Lake Miloch| AND |Progressive bike:2| AND (|Overcast| OR |Thunderstorm| OR |Intense Sun| OR |Sandstorm|))"
+        "requires": "(((|Bridge Field| OR |Dusty Bowl| OR |East Lake Axewell| OR |West Lake Axewell|) AND |Progressive bike:2| AND (|Noweather| OR |Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|)) OR ((|Lake of Outrage| OR |South Lake Miloch|) AND |Progressive bike:2| AND (|Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm|)) OR (|North Lake Miloch| AND |Progressive bike:2| AND (|Overcast| OR |Thunderstorm| OR |Intense Sun| OR |Sandstorm|))) AND ((|Type Unlock - Water Type| AND |Type Unlock - Flying Type|) OR |notypes|)"
     },
     {
         "name": "Wanderer Gastrodon",
@@ -1453,7 +1453,7 @@
             "Water",
             "Ground"
         ],
-        "requires": "(|Giant's Mirror| OR |Dusty Bowl|) AND |Progressive bike:2| AND (|Noweather| OR |Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|)"
+        "requires": "(|Giant's Mirror| OR |Dusty Bowl|) AND |Progressive bike:2| AND (|Noweather| OR |Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|) AND ((|Type Unlock - Water Type| AND |Type Unlock - Ground Type|) OR |notypes|)"
     },
     {
         "name": "Wanderer Jellicent",
@@ -1469,7 +1469,7 @@
             "Water",
             "Ghost"
         ],
-        "requires": "(|East Lake Axewell| AND |Progressive bike:2| AND (|Normal weather| OR |Overcast| OR |Raining| OR |Fog|)) OR (|Giant's Mirror| AND |Progressive bike:2| AND |Noweather|) OR ((|Lake of Outrage| OR |North Lake Miloch| OR |West Lake Axewell|) AND |Progressive bike:2| AND (|Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Fog|)) OR (|South Lake Miloch| AND |Progressive bike:2| AND (|Raining| OR |Fog|))"
+        "requires": "((|East Lake Axewell| AND |Progressive bike:2| AND (|Normal weather| OR |Overcast| OR |Raining| OR |Fog|)) OR (|Giant's Mirror| AND |Progressive bike:2| AND |Noweather|) OR ((|Lake of Outrage| OR |North Lake Miloch| OR |West Lake Axewell|) AND |Progressive bike:2| AND (|Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Fog|)) OR (|South Lake Miloch| AND |Progressive bike:2| AND (|Raining| OR |Fog|))) AND ((|Type Unlock - Water Type| AND |Type Unlock - Ghost Type|) OR |notypes|)"
     },
     {
         "name": "Wanderer Cloyster",
@@ -1482,7 +1482,7 @@
             "Water",
             "Ice"
         ],
-        "requires": "(|East Lake Axewell| OR |West Lake Axewell|) AND |Progressive bike:2| AND (|Normal weather| OR |Fog|)"
+        "requires": "(|East Lake Axewell| OR |West Lake Axewell|) AND |Progressive bike:2| AND (|Normal weather| OR |Fog|) AND ((|Type Unlock - Water Type| AND |Type Unlock - Ice Type|) OR |notypes|)"
     },
     {
         "name": "Wanderer Milotic",
@@ -1494,7 +1494,7 @@
             "needsWeather",
             "Water"
         ],
-        "requires": "(|South Lake Miloch| OR |Lake of Outrage|) AND |Progressive bike:2| AND |Fog|"
+        "requires": "(|South Lake Miloch| OR |Lake of Outrage|) AND |Progressive bike:2| AND |Fog| AND (|Type Unlock - Water Type| OR |notypes|)"
     },
     {
         "name": "Wanderer Lapras",
@@ -1508,7 +1508,7 @@
             "Water",
             "Ice"
         ],
-        "requires": "(|Lake of Outrage| OR |North Lake Miloch| OR |West Lake Axewell|) AND |Progressive bike:2| AND (|Normal weather| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Fog|)"
+        "requires": "(|Lake of Outrage| OR |North Lake Miloch| OR |West Lake Axewell|) AND |Progressive bike:2| AND (|Normal weather| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Fog|) AND ((|Type Unlock - Water Type| AND |Type Unlock - Ice Type|) OR |notypes|)"
     },
     {
         "name": "Wanderer Wailmer",
@@ -1518,7 +1518,7 @@
             "Motostoke Riverbank",
             "Water"
         ],
-        "requires": "|Motostoke Riverbank| AND |Progressive bike:2| AND (|Noweather| OR |Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|)"
+        "requires": "|Motostoke Riverbank| AND |Progressive bike:2| AND (|Noweather| OR |Normal weather| OR |Overcast| OR |Raining| OR |Thunderstorm| OR |Snowing| OR |Snowstorm| OR |Intense Sun| OR |Sandstorm| OR |Fog|) AND (|Type Unlock - Water Type| OR |notypes|)"
     },
     {
         "name": "Wanderer Whiscash",
@@ -1531,7 +1531,7 @@
             "Water",
             "Ground"
         ],
-        "requires": "((|North Lake Miloch| OR |South Lake Miloch|) AND |Progressive bike:2| AND (|Intense Sun| OR |Sandstorm|)) OR (|South Lake Miloch| AND |Progressive bike:2| AND (|Normal weather| OR |Thunderstorm|))"
+        "requires": "(((|North Lake Miloch| OR |South Lake Miloch|) AND |Progressive bike:2| AND (|Intense Sun| OR |Sandstorm|)) OR (|South Lake Miloch| AND |Progressive bike:2| AND (|Normal weather| OR |Thunderstorm|))) AND ((|Type Unlock - Water Type| AND |Type Unlock - Ground Type|) OR |notypes|)"
     },
     {
         "name": "Wanderer Octillery",
@@ -1542,6 +1542,6 @@
             "needsWeather",
             "Water"
         ],
-        "requires": "|South Lake Miloch| AND |Progressive bike:2| AND (|Normal weather| OR |Intense Sun| OR |Sandstorm| OR |Fog|)"
+        "requires": "|South Lake Miloch| AND |Progressive bike:2| AND (|Normal weather| OR |Intense Sun| OR |Sandstorm| OR |Fog|) AND (|Type Unlock - Water Type| OR |notypes|)"
     }
 ]

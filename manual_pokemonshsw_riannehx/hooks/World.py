@@ -38,109 +38,7 @@ def hook_get_filler_item_name(world: World, multiworld: MultiWorld, player: int)
 
 # Called before regions and locations are created. Not clear why you'd want this, but it's here. Victory location is included, but Victory event is not placed yet.
 def before_create_regions(world: World, multiworld: MultiWorld, player: int):
-
-    remove_low = get_option_value(multiworld, player, "remove_low_percentage")
-    game_version = get_option_value(multiworld, player, "game_version")
-
-    #Change below 5% encounters to only locations that dont have said 5%
-    if remove_low:
-        for loc in world.location_table:
-            categories = loc.get("category", [])
-
-            # Nickit Force Route 2 Access
-            if "LowPerc:Nickit" in categories:
-                loc["requires"] = "|Route 2 Access|"
-
-            # Yamper Force Route 4 Access
-            elif "LowPerc:Yamper" in categories:
-                loc["requires"] = "|Route 4 Access|"
-                
-            # Zigzagoon Only Route 3 or Route 2 with bike
-            elif "LowPerc:Zigzagoon" in categories:
-                loc["requires"] = "|Route 3 Access| OR (|Route 2 Access| AND |Progressive bike:2|)"
-                
-            # Chewtle Force Route 2 Access
-            elif "LowPerc:Chewtle" in categories:
-                loc["requires"] = "|Route 2 Access|"
-                
-            # Hoothoot Force Slumbering Weald Access
-            elif "LowPerc:Hoothoot" in categories:
-                loc["requires"] = "|Slumbering Weald Access|"
-                
-            # Stunfisk Force Galar Mine 2 Access
-            elif "LowPerc:Stunfisk" in categories:
-                loc["requires"] = "|Galar Mine 2 Access|"
-                
-            # Impidimp Force Glimwood Tangle Access
-            elif "LowPerc:Impidimp" in categories:
-                loc["requires"] = "|Glimwood Tangle Access|"
-
-            elif "LowPerc:Roggenrola" in categories:
-                if game_version == 3 or game_version == 1:
-                    loc["requires"] = "|Motostoke Outskirts Access|"
-
-    ##Researcher Goal, Add Type Unlock requires to location and victory
-    current_goal = world.options.goal.current_key
-
-    if str(current_goal).lower() != "type researcher":
-        return
-
-    active_types = set()
-    pokemon_types = ["Normal", "Fire", "Water", "Grass", "Electric", "Ice", "Fighting", 
-                     "Poison", "Ground", "Flying", "Psychic", "Bug", "Rock", "Ghost", 
-                     "Dragon", "Dark", "Steel", "Fairy"]
-    
-    for loc in world.location_table:
-        if "Pokemon" in loc.get("category", []):
-            for p_type in pokemon_types:
-                if p_type in loc.get("category", []):
-                    active_types.add(p_type)
-
-
-    for loc in world.location_table:
-        if "Pokemon" in loc.get("category", []):
-            loc_types = [p_type for p_type in pokemon_types if p_type in loc.get("category", []) and p_type in active_types]
-            
-            if loc_types:
-                type_lock_requirements = [f"|Type Unlock - {p_type} Type:1|" for p_type in loc_types]
-                unlock_logic_str = f"({' AND '.join(type_lock_requirements)})"
-                
-                existing_req = loc.get("requires", "").strip()
-                if existing_req:
-                    loc["requires"] = f"({existing_req}) AND {unlock_logic_str}"
-                else:
-                    loc["requires"] = unlock_logic_str
-
-    type_or_chains = {}
-
-    for loc in world.location_table:
-        if "Type Collection" in loc.get("category", []):
-            for p_type in active_types:
-                if loc["name"] == f"Type Researched - {p_type} Type":
-                    
-                    pokemon_requires_list = []
-                    for pokemon in world.location_table:
-                        if "Pokemon" in pokemon.get("category", []) and p_type in pokemon.get("category", []):
-                            req_string = pokemon["requires"].strip()
-                            pokemon_requires_list.append(f"({req_string})")
-
-                    overworld_or_chain = f"({' OR '.join(pokemon_requires_list)})"
-                    type_or_chains[p_type] = overworld_or_chain
-
-                    loc["requires"] = f"{overworld_or_chain} AND |Type Unlock - {p_type} Type:1|"
-                    break
-
-    victory_requirements = []
-    for p_type in active_types:
-        victory_requirements.append(f"({type_or_chains[p_type]} AND |Type Unlock - {p_type} Type:1|)")
-    
-    victory_string = " AND ".join(victory_requirements)
-    
-    for loc in world.location_table:
-        if "Type Researcher" == loc["name"]:
-            loc["requires"] = victory_string
-            break
-
+    pass
 
 
 # Called after regions and locations are created, in case you want to see or modify that information. Victory location is included.
@@ -148,15 +46,11 @@ def after_create_regions(world: World, multiworld: MultiWorld, player: int):
     # Use this hook to remove locations from the world
     locationNamesToRemove: list[str] = [] # List of location names
 
-    pokemon_types = ["Normal", "Fire", "Water", "Grass", "Electric", "Ice", "Fighting", 
-                     "Poison", "Ground", "Flying", "Psychic", "Bug", "Rock", "Ghost", 
-                     "Dragon", "Dark", "Steel", "Fairy"]
-
     game_version = get_option_value(multiworld, player, "game_version")
     remove_low = get_option_value(multiworld, player, "remove_low_percentage")
     route_sanity = get_option_value(multiworld, player, "route_sanity")
     wander_sanity = get_option_value(multiworld, player, "wander_sanity")
-    current_goal = world.options.goal.current_key   
+    current_goal = world.options.goal.current_key
 
     #game version filters And Remove locations that are below 5%
     if game_version == 1:
@@ -174,31 +68,18 @@ def after_create_regions(world: World, multiworld: MultiWorld, player: int):
             locationNamesToRemove += ["Heatmor", "Shelmet", "Jellicent"]
     #4 Keep Both games
 
-    # If Type Researcher is NOT the goal, wipe everything related to it
+    # If Type Researcher is NOT the goal
     if str(current_goal).lower() != "type researcher":
-        for p_type in pokemon_types:
-            locationNamesToRemove.append(f"Type Researched - {p_type} Type")
         if not route_sanity:
             locationNamesToRemove += world.location_name_groups["Routes"]
 
-    # If Type Researcher is active, find the missing types and remove their tracker locations
+    # If Type Researcher is active
     else:
-        active_types = set()
-        for loc in world.location_table:
-            if "Pokemon" in loc.get("category", []):
-                for p_type in pokemon_types:
-                    if p_type in loc.get("category", []):
-                        active_types.add(p_type)
-
-        # Gather any inactive Types
-        for p_type in pokemon_types:
-            if p_type not in active_types:
-                locationNamesToRemove.append(f"Type Researched - {p_type} Type")
-
         #remove wandersanity locations if not enabled
         if not wander_sanity:
             locationNamesToRemove += world.location_name_groups["Special overworld spawn"]
             locationNamesToRemove += world.location_name_groups["Wild Area"]
+            locationNamesToRemove += world.location_name_groups["Dens"]
         
     for region in multiworld.regions:
         if region.player == player:
@@ -216,14 +97,25 @@ def after_create_regions(world: World, multiworld: MultiWorld, player: int):
 #       will create 5 items that are the "useful trap" class
 # {"Item Name": {ItemClassification.useful: 5}} <- You can also use the classification directly
 def before_create_items_all(item_config: dict[str, int|dict], world: World, multiworld: MultiWorld, player: int) -> dict[str, int|dict]:
-    # Check if Mend The Broken Shield/Sword goal is active
-    current_goal_name = world.options.goal.current_key
-    if str(current_goal_name).lower() != "mend the broken shield/sword":
-        # Set shards to 0 when not the correct goal
-        shards_total = 0
-        world.options.broken_shards_total.value = 0
-    else:
-        shards_total = world.options.broken_shards_total.value
+    location_count = len(world.get_locations())
+    shards_total = world.options.broken_shards_total.value
+
+    other_items_count = 0
+    for name, data in item_config.items():
+        if name != "Broken shards":
+            if isinstance(data, dict):
+                other_items_count += sum(data.values())
+            else:
+                other_items_count += data
+                
+    #To crash less with minimal settings and minimal progression
+    buffer = 3 
+    free_space = location_count - other_items_count - buffer
+
+    if shards_total > free_space:
+        #check if shards total is higher then free space
+        shards_total = max(10, free_space) 
+        world.options.broken_shards_total.value = shards_total
     
     item_config["Broken shards"] = shards_total
     
@@ -249,21 +141,22 @@ def before_create_items_starting(item_pool: list, world: World, multiworld: Mult
     current_goal_name = world.options.goal.current_key
     
     if str(current_goal_name).lower() == "mend the broken shield/sword":
+        
         if start_logic == 1: # Fixed
-            start_inventory_names = ["Rolling Fields", "Normal weather"]
+            start_inventory_names = ["Rolling Fields", "Normal weather", "notypes"]
 
         elif start_logic == 2: # Region (Random region, Fixed weather)
-            multiworld.random.shuffle(locations)
-            start_inventory_names = [locations[0], "Normal weather"]
+            world.random.shuffle(locations)
+            start_inventory_names = [locations[0], "Normal weather", "notypes"]
 
         elif start_logic == 3: # Weather (Fixed region, Random weather)
-            multiworld.random.shuffle(weather)
-            start_inventory_names = ["Rolling Fields", weather[0]]
+            world.random.shuffle(weather)
+            start_inventory_names = ["Rolling Fields", weather[0], "notypes"]
 
         elif start_logic == 4: # Both (Both random)
-            multiworld.random.shuffle(locations)
-            multiworld.random.shuffle(weather)
-            start_inventory_names = [locations[0], weather[0]]
+            world.random.shuffle(locations)
+            world.random.shuffle(weather)
+            start_inventory_names = [locations[0], weather[0], "notypes"]
 
     else:
         start_inventory_names = ["Type Unlock - Bug Type", "Route 1 Access"]
@@ -311,6 +204,8 @@ def before_create_items_filler(item_pool: list, world: World, multiworld: MultiW
                 itemNamesToRemove.append(f"Type Unlock - {p_type} Type")
         if not wander_sanity:
             itemNamesToRemove += world.item_name_groups["Wild Area Unlocks"]
+            itemNamesToRemove += world.item_name_groups["Weather"]
+        itemNamesToRemove.append("notypes")
 
     for itemName in itemNamesToRemove:
         item = next((i for i in item_pool if i.name == itemName), None)
@@ -329,27 +224,6 @@ def before_create_items_filler(item_pool: list, world: World, multiworld: MultiW
 
 # The complete item pool prior to being set for generation is provided here, in case you want to make changes to it
 def after_create_items(item_pool: list, world: World, multiworld: MultiWorld, player: int) -> list:
-    #Different Goal, Return item Pool
-    if world.options.broken_shards_total.value == 0:
-        return item_pool
-
-    location_count = len(world.get_locations())
-    total_items_count = len(item_pool)
-    buffer = 1
-    
-    overshot = total_items_count - location_count + buffer
-
-    if overshot > 0:
-        shards_in_pool = [item for item in item_pool if item.name.lower() == "broken shards"]
-        other_items = [item for item in item_pool if item.name.lower() != "broken shards"]
-
-        shards_to_remove = min(overshot, len(shards_in_pool))
-        
-        if shards_to_remove > 0:
-            shards_in_pool = shards_in_pool[:-shards_to_remove]
-        world.options.broken_shards_total.value = len(shards_in_pool)
-        
-        item_pool = other_items + shards_in_pool
 
     return item_pool
 
@@ -364,10 +238,13 @@ def after_set_rules(world: World, multiworld: MultiWorld, player: int):
     #Set BrokenShards to the victory location 
     total = world.options.broken_shards_total.value
     required = world.options.broken_shards_required.value
+    game_version = get_option_value(multiworld, player, "game_version")
+    remove_low = get_option_value(multiworld, player, "remove_low_percentage")
     
     # Failsafe incase of wrong way around
     final_required = min(total, required)
     location_names = [loc.name for loc in multiworld.get_locations(player)]
+
     
     if "Mend The Broken Shield/Sword" in location_names:
         # Set Broken Shard required
@@ -379,6 +256,72 @@ def after_set_rules(world: World, multiworld: MultiWorld, player: int):
         # True if the player can access the location
         # CollectionState is defined in BaseClasses
         return True
+
+
+    remove_low = get_option_value(multiworld, player, "remove_low_percentage")
+    game_version = get_option_value(multiworld, player, "game_version")
+
+    #Change below 5% encounters to only locations that dont have said 5%
+    if remove_low :
+        for location in multiworld.get_locations(player):
+            
+            # Find the matching location dictionary inside the list
+            loc_data = next((item for item in world.location_table if item.get("name") == location.name), None)
+                
+            categories = loc_data.get("category", [])
+
+            if "LowPerc:Nickit" in categories:
+                def Nickit_Rule(state) -> bool:
+                    return state.has("Route 2 Access", player) and \
+                        (state.has("Type Unlock - Dark Type", player) or state.has("notypes", player))
+                location.access_rule = Nickit_Rule
+
+            elif "LowPerc:Yamper" in categories:
+                def Yamper_Rule(state) -> bool:
+                    return state.has("Route 4 Access", player) and \
+                        (state.has("Type Unlock - Electric Type", player) or state.has("notypes", player))
+                location.access_rule = Yamper_Rule
+                
+            elif "LowPerc:Zigzagoon" in categories:
+                def Zigzagoon_Rule(state) -> bool:
+                    base_access = state.has("Route 3 Access", player) or \
+                        (state.has("Route 2 Access", player) and state.has("Progressive bike", player, 2))
+                    return base_access and \
+                        (state.has("Type Unlock - Dark Type", player) or state.has("notypes", player))
+                location.access_rule = Zigzagoon_Rule
+                
+            elif "LowPerc:Chewtle" in categories:
+                def Chewtle_Rule(state) -> bool:
+                    return state.has("Route 2 Access", player) and \
+                        (state.has("Type Unlock - Water Type", player) or state.has("notypes", player))
+                location.access_rule = Chewtle_Rule
+                
+            elif "LowPerc:Hoothoot" in categories:
+                def Hoothoot_Rule(state) -> bool:
+                    has_types = state.has("Type Unlock - Normal Type", player) and state.has("Type Unlock - Flying Type", player)
+                    return state.has("Slumbering Weald Access", player) and (has_types or state.has("notypes", player))
+                location.access_rule = Hoothoot_Rule
+                
+            elif "LowPerc:Stunfisk" in categories:
+                def Stunfisk_Rule(state) -> bool:
+                    has_types = state.has("Type Unlock - Ground Type", player) and state.has("Type Unlock - Steel Type", player)
+                    return state.has("Galar Mine 2 Access", player) and (has_types or state.has("notypes", player))
+                location.access_rule = Stunfisk_Rule
+                
+            elif "LowPerc:Impidimp" in categories:
+                def Impidimp_Rule(state) -> bool:
+                    has_types = state.has("Type Unlock - Dark Type", player) and state.has("Type Unlock - Fairy Type", player)
+                    return state.has("Glimwood Tangle Access", player) and (has_types or state.has("notypes", player))
+                location.access_rule = Impidimp_Rule
+
+            elif "LowPerc:Roggenrola" in categories:
+                # 1 = Sword, 3 = Both
+                if game_version == 3 or game_version == 1:
+                    def Roggenrola_Rule(state) -> bool:
+                        return state.has("Motostoke Outskirts Access", player) and \
+                            (state.has("Type Unlock - Rock Type", player) or state.has("notypes", player))
+                    location.access_rule = Roggenrola_Rule
+
 
     ## Common functions:
     # location = world.get_location(location_name, player)

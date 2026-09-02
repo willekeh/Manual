@@ -10,12 +10,12 @@
             "Route 2",
             "Bug"
         ],
-        "requires": "|Route 1 Access| OR |Route 2 Access| OR |Slumbering Weald Access|"
+        "requires": "(|Route 1 Access| OR |Route 2 Access| OR |Slumbering Weald Access|) AND (|Type Unlock - Bug Type| OR |notypes|)"
     },
     {
         "name": "Caterpie",
         "category": ["Pokemon", "Routes", "Exclamation mark", "Route 1", "Bug"],
-        "requires": "|Route 1 Access|"
+        "requires": "|Route 1 Access| AND (|Type Unlock - Bug Type| OR |notypes|)"
     },
     {
         "name": "Grubbin",
@@ -27,7 +27,7 @@
             "Route 1",
             "Bug"
         ],
-        "requires": "|Route 1 Access| OR |Slumbering Weald Access|"
+        "requires": "(|Route 1 Access| OR |Slumbering Weald Access|) AND (|Type Unlock - Bug Type| OR |notypes|)"
     },
     {
         "name": "Hoothoot",
@@ -42,7 +42,7 @@
             "Normal",
             "Flying"
         ],
-        "requires": "|Route 1 Access| OR |Route 2 Access| OR |Slumbering Weald Access|"
+        "requires": "(|Route 1 Access| OR |Route 2 Access| OR |Slumbering Weald Access|) AND ((|Type Unlock - Normal Type| AND |Type Unlock - Flying Type|) OR |notypes|)"
     },
     {
         "name": "Nickit",
@@ -54,7 +54,7 @@
             "LowPerc:Nickit",
             "Dark"
         ],
-        "requires": "|Route 1 Access| OR |Route 2 Access|"
+        "requires": "(|Route 1 Access| OR |Route 2 Access|) AND (|Type Unlock - Dark Type| OR |notypes|)"
     },
     {
         "name": "Rookidee",
@@ -67,7 +67,7 @@
             "Route 3",
             "Flying"
         ],
-        "requires": "|Route 1 Access| OR |Route 2 Access| OR |Route 3 Access| OR |Slumbering Weald Access|"
+        "requires": "(|Route 1 Access| OR |Route 2 Access| OR |Route 3 Access| OR |Slumbering Weald Access|) AND (|Type Unlock - Flying Type| OR |notypes|)"
     },
     {
         "name": "Skwovet",
@@ -79,12 +79,12 @@
             "Route 2",
             "Normal"
         ],
-        "requires": "|Route 1 Access| OR |Route 2 Access| OR |Slumbering Weald Access|"
+        "requires": "(|Route 1 Access| OR |Route 2 Access| OR |Slumbering Weald Access|) AND (|Type Unlock - Normal Type| OR |notypes|)"
     },
     {
         "name": "Wooloo",
         "category": ["Pokemon", "Routes", "Route 1", "Route 4", "Normal"],
-        "requires": "|Route 1 Access| OR |Route 4 Access|"
+        "requires": "(|Route 1 Access| OR |Route 4 Access|) AND (|Type Unlock - Normal Type| OR |notypes|)"
     },
     {
         "name": "Lotad",
@@ -97,7 +97,7 @@
             "Water",
             "Grass"
         ],
-        "requires": "|Route 2 Access|"
+        "requires": "|Route 2 Access| AND ((|Type Unlock - Water Type| AND |Type Unlock - Grass Type|) OR |notypes|)"
     },
     {
         "name": "Seedot",
@@ -109,7 +109,7 @@
             "GameSword",
             "Grass"
         ],
-        "requires": "|Route 2 Access|"
+        "requires": "|Route 2 Access| AND (|Type Unlock - Grass Type| OR |notypes|)"
     },
     {
         "name": "Purrloin",
@@ -120,7 +120,7 @@
             "Route 2",
             "Dark"
         ],
-        "requires": "|Route 2 Access|"
+        "requires": "|Route 2 Access| AND (|Type Unlock - Dark Type| OR |notypes|)"
     },
     {
         "name": "Galarian Zigzagoon",
@@ -132,7 +132,7 @@
             "Route 3",
             "Dark"
         ],
-        "requires": "|Route 2 Access| OR |Route 3 Access|"
+        "requires": "(|Route 2 Access| OR |Route 3 Access|) AND (|Type Unlock - Dark Type| OR |notypes|)"
     },
     {
         "name": "Chewtle",
@@ -145,7 +145,7 @@
             "Motostoke Outskirts",
             "Water"
         ],
-        "requires": "|Route 2 Access| OR |Galar Mine 2 Access| OR |Motostoke Outskirts Access|"
+        "requires": "(|Route 2 Access| OR |Galar Mine 2 Access| OR |Motostoke Outskirts Access|) AND (|Type Unlock - Water Type| OR |notypes|)"
     },
     {
         "name": "Yamper",
@@ -157,27 +157,27 @@
             "Route 4",
             "Electric"
         ],
-        "requires": "|Route 2 Access| OR |Route 4 Access|"
+        "requires": "(|Route 2 Access| OR |Route 4 Access|) AND (|Type Unlock - Electric Type| OR |notypes|)"
     },
     {
         "name": "Gyarados",
         "category": ["Pokemon", "Routes", "Route 2", "Water", "Flying"],
-        "requires": "|Route 2 Access| AND |Progressive bike:2|"
+        "requires": "|Route 2 Access| AND |Progressive bike:2| AND ((|Type Unlock - Water Type| AND |Type Unlock - Flying Type|) OR |notypes|)"
     },
     {
         "name": "Arrokuda",
         "category": ["Pokemon", "Routes", "Route 2", "Water"],
-        "requires": "|Route 2 Access| AND |Progressive bike:2|"
+        "requires": "|Route 2 Access| AND |Progressive bike:2| AND (|Type Unlock - Water Type| OR |notypes|)"
     },
     {
         "name": "Barraskewda",
         "category": ["Pokemon", "Routes", "Route 2", "Water"],
-        "requires": "|Route 2 Access| AND |Progressive bike:2|"
+        "requires": "|Route 2 Access| AND |Progressive bike:2| AND (|Type Unlock - Water Type| OR |notypes|)"
     },
     {
         "name": "Gossifleur",
         "category": ["Pokemon", "Routes", "Route 2", "Route 3", "Grass"],
-        "requires": "|Route 2 Access| AND |Progressive bike:2| OR |Route 3 Access|"
+        "requires": "((|Route 2 Access| AND |Progressive bike:2|) OR |Route 3 Access|) AND (|Type Unlock - Grass Type| OR |notypes|)"
     },
     {
         "name": "Machop",
@@ -188,7 +188,7 @@
             "Route 3",
             "Fighting"
         ],
-        "requires": "|Route 3 Access|"
+        "requires": "|Route 3 Access| AND (|Type Unlock - Fighting Type| OR |notypes|)"
     },
     {
         "name": "Klink",
@@ -199,7 +199,7 @@
             "Route 3",
             "Steel"
         ],
-        "requires": "|Route 3 Access|"
+        "requires": "|Route 3 Access| AND (|Type Unlock - Steel Type| OR |notypes|)"
     },
     {
         "name": "Pancham",
@@ -210,7 +210,7 @@
             "Route 3",
             "Fighting"
         ],
-        "requires": "|Route 3 Access|"
+        "requires": "|Route 3 Access| AND (|Type Unlock - Fighting Type| OR |notypes|)"
     },
     {
         "name": "Mudbray",
@@ -221,7 +221,7 @@
             "Route 3",
             "Ground"
         ],
-        "requires": "|Route 3 Access|"
+        "requires": "|Route 3 Access| AND (|Type Unlock - Ground Type| OR |notypes|)"
     },
     {
         "name": "Sizzlipede",
@@ -234,17 +234,17 @@
             "Fire",
             "Bug"
         ],
-        "requires": "|Route 3 Access|"
+        "requires": "|Route 3 Access| AND ((|Type Unlock - Fire Type| AND |Type Unlock - Bug Type|) OR |notypes|)"
     },
     {
         "name": "Vulpix",
         "category": ["Pokemon", "Routes", "Route 3", "GameSword", "Fire"],
-        "requires": "|Route 3 Access|"
+        "requires": "|Route 3 Access| AND (|Type Unlock - Fire Type| OR |notypes|)"
     },
     {
         "name": "Growlithe",
         "category": ["Pokemon", "Routes", "Route 3", "GameShield", "Fire"],
-        "requires": "|Route 3 Access|"
+        "requires": "|Route 3 Access| AND (|Type Unlock - Fire Type| OR |notypes|)"
     },
     {
         "name": "Tyrogue",
@@ -255,32 +255,32 @@
             "Route 3",
             "Fighting"
         ],
-        "requires": "|Route 3 Access|"
+        "requires": "|Route 3 Access| AND (|Type Unlock - Fighting Type| OR |notypes|)"
     },
     {
         "name": "Stunky",
         "category": ["Pokemon", "Routes", "Route 3", "Dark", "Poison"],
-        "requires": "|Route 3 Access|"
+        "requires": "|Route 3 Access| AND ((|Type Unlock - Dark Type| AND |Type Unlock - Poison Type|) OR |notypes|)"
     },
     {
         "name": "Trubbish",
         "category": ["Pokemon", "Routes", "LowPercentage", "Route 3", "Poison"],
-        "requires": "|Route 3 Access|"
+        "requires": "|Route 3 Access| AND (|Type Unlock - Poison Type| OR |notypes|)"
     },
     {
         "name": "Carkol",
         "category": ["Pokemon", "Routes", "Galar Mine", "Rock", "Fire"],
-        "requires": "|Galar Mine Access|"
+        "requires": "|Galar Mine Access| AND ((|Type Unlock - Rock Type| AND |Type Unlock - Fire Type|) OR |notypes|)"
     },
     {
         "name": "Rolycoly",
         "category": ["Pokemon", "Routes", "Route 3", "Galar Mine", "Rock"],
-        "requires": "|Route 3 Access| AND |Galar Mine Access|"
+        "requires": "|Route 3 Access| AND |Galar Mine Access| AND (|Type Unlock - Rock Type| OR |notypes|)"
     },
     {
         "name": "Diglett",
         "category": ["Pokemon", "Routes", "Galar Mine", "Ground"],
-        "requires": "|Galar Mine Access|"
+        "requires": "|Galar Mine Access| AND (|Type Unlock - Ground Type| OR |notypes|)"
     },
     {
         "name": "Roggenrola",
@@ -292,27 +292,27 @@
             "Motostoke Outskirts",
             "Rock"
         ],
-        "requires": "|Galar Mine Access| OR |Motostoke Outskirts Access|"
+        "requires": "(|Galar Mine Access| OR |Motostoke Outskirts Access|) AND (|Type Unlock - Rock Type| OR |notypes|)"
     },
     {
         "name": "Woobat",
         "category": ["Pokemon", "Routes", "Galar Mine", "Psychic", "Flying"],
-        "requires": "|Galar Mine Access|"
+        "requires": "|Galar Mine Access| AND ((|Type Unlock - Psychic Type| AND |Type Unlock - Flying Type|) OR |notypes|)"
     },
     {
         "name": "Drilbur",
         "category": ["Pokemon", "Routes", "Galar Mine", "Ground"],
-        "requires": "|Galar Mine Access|"
+        "requires": "|Galar Mine Access| AND (|Type Unlock - Ground Type| OR |notypes|)"
     },
     {
         "name": "Timburr",
         "category": ["Pokemon", "Routes", "Galar Mine", "Fighting"],
-        "requires": "|Galar Mine Access|"
+        "requires": "|Galar Mine Access| AND (|Type Unlock - Fighting Type| OR |notypes|)"
     },
     {
         "name": "Galarian Meowth",
         "category": ["Pokemon", "Routes", "Route 4", "Steel"],
-        "requires": "|Route 4 Access|"
+        "requires": "|Route 4 Access| AND (|Type Unlock - Steel Type| OR |notypes|)"
     },
     {
         "name": "Budew",
@@ -325,7 +325,7 @@
             "Grass",
             "Poison"
         ],
-        "requires": "|Route 4 Access|"
+        "requires": "|Route 4 Access| AND ((|Type Unlock - Grass Type| AND |Type Unlock - Poison Type|) OR |notypes|)"
     },
     {
         "name": "Joltik",
@@ -337,7 +337,7 @@
             "Bug",
             "Electric"
         ],
-        "requires": "|Route 4 Access|"
+        "requires": "|Route 4 Access| AND ((|Type Unlock - Bug Type| AND |Type Unlock - Electric Type|) OR |notypes|)"
     },
     {
         "name": "Pikachu",
@@ -348,7 +348,7 @@
             "Route 4",
             "Electric"
         ],
-        "requires": "|Route 4 Access|"
+        "requires": "|Route 4 Access| AND (|Type Unlock - Electric Type| OR |notypes|)"
     },
     {
         "name": "Ferroseed",
@@ -361,7 +361,7 @@
             "Grass",
             "Steel"
         ],
-        "requires": "|Route 4 Access|"
+        "requires": "|Route 4 Access| AND ((|Type Unlock - Grass Type| AND |Type Unlock - Steel Type|) OR |notypes|)"
     },
     {
         "name": "Cutiefly",
@@ -374,7 +374,7 @@
             "Bug",
             "Fairy"
         ],
-        "requires": "|Route 4 Access|"
+        "requires": "|Route 4 Access| AND ((|Type Unlock - Bug Type| AND |Type Unlock - Fairy Type|) OR |notypes|)"
     },
     {
         "name": "Milcery",
@@ -385,22 +385,22 @@
             "Route 4",
             "Fairy"
         ],
-        "requires": "|Route 4 Access|"
+        "requires": "|Route 4 Access| AND (|Type Unlock - Fairy Type| OR |notypes|)"
     },
     {
         "name": "Eevee",
         "category": ["Pokemon", "Routes", "LowPercentage", "Route 4", "Normal"],
-        "requires": "|Route 4 Access|"
+        "requires": "|Route 4 Access| AND (|Type Unlock - Normal Type| OR |notypes|)"
     },
     {
         "name": "Electrike",
         "category": ["Pokemon", "Routes", "Route 4", "Electric"],
-        "requires": "|Route 4 Access|"
+        "requires": "|Route 4 Access| AND (|Type Unlock - Electric Type| OR |notypes|)"
     },
     {
         "name": "Pumpkaboo",
         "category": ["Pokemon", "Routes", "Route 4", "Ghost", "Grass"],
-        "requires": "|Route 4 Access|"
+        "requires": "|Route 4 Access| AND ((|Type Unlock - Ghost Type| AND |Type Unlock - Grass Type|) OR |notypes|)"
     },
     {
         "name": "Lombre",
@@ -413,7 +413,7 @@
             "Water",
             "Grass"
         ],
-        "requires": "|Route 5 Access|"
+        "requires": "|Route 5 Access| AND ((|Type Unlock - Water Type| AND |Type Unlock - Grass Type|) OR |notypes|)"
     },
     {
         "name": "Nuzleaf",
@@ -426,7 +426,7 @@
             "Grass",
             "Dark"
         ],
-        "requires": "|Route 5 Access|"
+        "requires": "|Route 5 Access| AND ((|Type Unlock - Grass Type| AND |Type Unlock - Dark Type|) OR |notypes|)"
     },
     {
         "name": "Nincada",
@@ -439,7 +439,7 @@
             "Bug",
             "Ground"
         ],
-        "requires": "|Route 5 Access|"
+        "requires": "|Route 5 Access| AND ((|Type Unlock - Bug Type| AND |Type Unlock - Ground Type|) OR |notypes|)"
     },
     {
         "name": "Espurr",
@@ -450,7 +450,7 @@
             "Route 5",
             "Psychic"
         ],
-        "requires": "|Route 5 Access|"
+        "requires": "|Route 5 Access| AND (|Type Unlock - Psychic Type| OR |notypes|)"
     },
     {
         "name": "Spritzee",
@@ -463,7 +463,7 @@
             "GameShield",
             "Fairy"
         ],
-        "requires": "|Route 5 Access| OR |Glimwood Tangle Access|"
+        "requires": "(|Route 5 Access| OR |Glimwood Tangle Access|) AND (|Type Unlock - Fairy Type| OR |notypes|)"
     },
     {
         "name": "Swirlix",
@@ -476,7 +476,7 @@
             "GameSword",
             "Fairy"
         ],
-        "requires": "|Route 5 Access| OR |Glimwood Tangle Access|"
+        "requires": "(|Route 5 Access| OR |Glimwood Tangle Access|) AND (|Type Unlock - Fairy Type| OR |notypes|)"
     },
     {
         "name": "Dewpider",
@@ -489,7 +489,7 @@
             "Bug",
             "Water"
         ],
-        "requires": "|Route 5 Access|"
+        "requires": "|Route 5 Access| AND ((|Type Unlock - Bug Type| AND |Type Unlock - Water Type|) OR |notypes|)"
     },
     {
         "name": "Dottler",
@@ -501,7 +501,7 @@
             "Bug",
             "Psychic"
         ],
-        "requires": "|Route 5 Access|"
+        "requires": "|Route 5 Access| AND ((|Type Unlock - Bug Type| AND |Type Unlock - Psychic Type|) OR |notypes|)"
     },
     {
         "name": "Applin",
@@ -513,7 +513,7 @@
             "Grass",
             "Dragon"
         ],
-        "requires": "|Route 5 Access|"
+        "requires": "|Route 5 Access| AND ((|Type Unlock - Grass Type| AND |Type Unlock - Dragon Type|) OR |notypes|)"
     },
     {
         "name": "Galarian Farfetch'd",
@@ -525,12 +525,12 @@
             "Route 5",
             "Fighting"
         ],
-        "requires": "|Route 5 Access|"
+        "requires": "|Route 5 Access| AND (|Type Unlock - Fighting Type| OR |notypes|)"
     },
     {
         "name": "Wobbuffet",
         "category": ["Pokemon", "Routes", "Route 5", "Psychic"],
-        "requires": "|Route 5 Access|"
+        "requires": "|Route 5 Access| AND (|Type Unlock - Psychic Type| OR |notypes|)"
     },
     {
         "name": "Drifloon",
@@ -542,17 +542,17 @@
             "Ghost",
             "Flying"
         ],
-        "requires": "|Route 5 Access|"
+        "requires": "|Route 5 Access| AND ((|Type Unlock - Ghost Type| AND |Type Unlock - Flying Type|) OR |notypes|)"
     },
     {
         "name": "Minccino",
         "category": ["Pokemon", "Routes", "Route 5", "Normal"],
-        "requires": "|Route 5 Access|"
+        "requires": "|Route 5 Access| AND (|Type Unlock - Normal Type| OR |notypes|)"
     },
     {
         "name": "Stufful",
         "category": ["Pokemon", "Routes", "Route 5", "Normal", "Fighting"],
-        "requires": "|Route 5 Access|"
+        "requires": "|Route 5 Access| AND ((|Type Unlock - Normal Type| AND |Type Unlock - Fighting Type|) OR |notypes|)"
     },
     {
         "name": "Torkoal",
@@ -565,7 +565,7 @@
             "Fire",
             "Rock"
         ],
-        "requires": "|Route 6 Access|"
+        "requires": "|Route 6 Access| AND ((|Type Unlock - Fire Type| AND |Type Unlock - Rock Type|) OR |notypes|)"
     },
     {
         "name": "Duskull",
@@ -576,7 +576,7 @@
             "Route 6",
             "Ghost"
         ],
-        "requires": "|Route 6 Access|"
+        "requires": "|Route 6 Access| AND (|Type Unlock - Ghost Type| OR |notypes|)"
     },
     {
         "name": "Hippopotas",
@@ -587,7 +587,7 @@
             "Route 6",
             "Ground"
         ],
-        "requires": "|Route 6 Access|"
+        "requires": "|Route 6 Access| AND (|Type Unlock - Ground Type| OR |notypes|)"
     },
     {
         "name": "Skorupi",
@@ -599,7 +599,7 @@
             "Poison",
             "Dark"
         ],
-        "requires": "|Route 6 Access|"
+        "requires": "|Route 6 Access| AND ((|Type Unlock - Poison Type| AND |Type Unlock - Dark Type|) OR |notypes|)"
     },
     {
         "name": "Heatmor",
@@ -610,7 +610,7 @@
             "Route 6",
             "Fire"
         ],
-        "requires": "|Route 6 Access|"
+        "requires": "|Route 6 Access| AND (|Type Unlock - Fire Type| OR |notypes|)"
     },
     {
         "name": "Durant",
@@ -622,7 +622,7 @@
             "Steel",
             "Bug"
         ],
-        "requires": "|Route 6 Access|"
+        "requires": "|Route 6 Access| AND ((|Type Unlock - Steel Type| AND |Type Unlock - Bug Type|) OR |notypes|)"
     },
     {
         "name": "Hawlucha",
@@ -635,7 +635,7 @@
             "Flying",
             "Fighting"
         ],
-        "requires": "|Route 6 Access|"
+        "requires": "|Route 6 Access| AND ((|Type Unlock - Flying Type| AND |Type Unlock - Fighting Type|) OR |notypes|)"
     },
     {
         "name": "Silicobra",
@@ -646,37 +646,37 @@
             "Route 6",
             "Ground"
         ],
-        "requires": "|Route 6 Access|"
+        "requires": "|Route 6 Access| AND (|Type Unlock - Ground Type| OR |notypes|)"
     },
     {
         "name": "Dugtrio",
         "category": ["Pokemon", "Routes", "Route 6", "Ground"],
-        "requires": "|Route 6 Access|"
+        "requires": "|Route 6 Access| AND (|Type Unlock - Ground Type| OR |notypes|)"
     },
     {
         "name": "Trapinch",
         "category": ["Pokemon", "Routes", "LowPercentage", "Route 6", "Ground"],
-        "requires": "|Route 6 Access|"
+        "requires": "|Route 6 Access| AND (|Type Unlock - Ground Type| OR |notypes|)"
     },
     {
         "name": "Maractus",
         "category": ["Pokemon", "Routes", "Route 6", "Grass"],
-        "requires": "|Route 6 Access|"
+        "requires": "|Route 6 Access| AND (|Type Unlock - Grass Type| OR |notypes|)"
     },
     {
         "name": "Galarian Yamask",
         "category": ["Pokemon", "Routes", "Route 6", "Ghost", "Ground"],
-        "requires": "|Route 6 Access|"
+        "requires": "|Route 6 Access| AND ((|Type Unlock - Ghost Type| AND |Type Unlock - Ground Type|) OR |notypes|)"
     },
     {
         "name": "Axew",
         "category": ["Pokemon", "Routes", "LowPercentage", "Route 6", "Dragon"],
-        "requires": "|Route 6 Access|"
+        "requires": "|Route 6 Access| AND (|Type Unlock - Dragon Type| OR |notypes|)"
     },
     {
         "name": "Helioptile",
         "category": ["Pokemon", "Routes", "Route 6", "Electric", "Normal"],
-        "requires": "|Route 6 Access|"
+        "requires": "|Route 6 Access| AND ((|Type Unlock - Electric Type| AND |Type Unlock - Normal Type|) OR |notypes|)"
     },
     {
         "name": "Seismitoad",
@@ -688,17 +688,17 @@
             "Ground",
             "Water"
         ],
-        "requires": "|Route 7 Access|"
+        "requires": "|Route 7 Access| AND ((|Type Unlock - Ground Type| AND |Type Unlock - Water Type|) OR |notypes|)"
     },
     {
         "name": "Karrablast",
         "category": ["Pokemon", "Routes", "Exclamation mark", "Route 7", "Bug"],
-        "requires": "|Route 7 Access|"
+        "requires": "|Route 7 Access| AND (|Type Unlock - Bug Type| OR |notypes|)"
     },
     {
         "name": "Shelmet",
         "category": ["Pokemon", "Routes", "Exclamation mark", "Route 7", "Bug"],
-        "requires": "|Route 7 Access|"
+        "requires": "|Route 7 Access| AND (|Type Unlock - Bug Type| OR |notypes|)"
     },
     {
         "name": "Meowstic",
@@ -709,7 +709,7 @@
             "Route 7",
             "Psychic"
         ],
-        "requires": "|Route 7 Access|"
+        "requires": "|Route 7 Access| AND (|Type Unlock - Psychic Type| OR |notypes|)"
     },
     {
         "name": "Corviknight",
@@ -722,7 +722,7 @@
             "Steel",
             "Flying"
         ],
-        "requires": "|Route 7 Access| OR |Slumbering Weald Access|"
+        "requires": "(|Route 7 Access| OR |Slumbering Weald Access|) AND ((|Type Unlock - Steel Type| AND |Type Unlock - Flying Type|) OR |notypes|)"
     },
     {
         "name": "Toxel",
@@ -734,17 +734,17 @@
             "Electric",
             "Poison"
         ],
-        "requires": "|Route 7 Access|"
+        "requires": "|Route 7 Access| AND ((|Type Unlock - Electric Type| AND |Type Unlock - Poison Type|) OR |notypes|)"
     },
     {
         "name": "Liepard",
         "category": ["Pokemon", "Routes", "Route 7", "Route 9", "Dark"],
-        "requires": "|Route 7 Access| OR |Route 9 Access|"
+        "requires": "(|Route 7 Access| OR |Route 9 Access|) AND (|Type Unlock - Dark Type| OR |notypes|)"
     },
     {
         "name": "Galvantula",
         "category": ["Pokemon", "Routes", "Route 7", "Bug", "Electric"],
-        "requires": "|Route 7 Access|"
+        "requires": "|Route 7 Access| AND ((|Type Unlock - Bug Type| AND |Type Unlock - Electric Type|) OR |notypes|)"
     },
     {
         "name": "Inkay",
@@ -756,17 +756,17 @@
             "Dark",
             "Psychic"
         ],
-        "requires": "|Route 7 Access| OR (|Route 9 Access| AND |Progressive bike:2|)"
+        "requires": "(|Route 7 Access| OR (|Route 9 Access| AND |Progressive bike:2|)) AND ((|Type Unlock - Dark Type| AND |Type Unlock - Psychic Type|) OR |notypes|)"
     },
     {
         "name": "Thievul",
         "category": ["Pokemon", "Routes", "Route 7", "Route 9", "Dark"],
-        "requires": "|Route 7 Access| OR |Route 9 Access|"
+        "requires": "(|Route 7 Access| OR |Route 9 Access|) AND (|Type Unlock - Dark Type| OR |notypes|)"
     },
     {
         "name": "Perrserker",
         "category": ["Pokemon", "Routes", "Route 7", "Route 9", "Steel"],
-        "requires": "|Route 7 Access| OR |Route 9 Access|"
+        "requires": "(|Route 7 Access| OR |Route 9 Access|) AND (|Type Unlock - Steel Type| OR |notypes|)"
     },
     {
         "name": "Morpeko",
@@ -779,7 +779,7 @@
             "Electric",
             "Dark"
         ],
-        "requires": "|Route 7 Access| OR |Route 9 Access|"
+        "requires": "(|Route 7 Access| OR |Route 9 Access|) AND ((|Type Unlock - Electric Type| AND |Type Unlock - Dark Type|) OR |notypes|)"
     },
     {
         "name": "Haunter",
@@ -791,7 +791,7 @@
             "Ghost",
             "Poison"
         ],
-        "requires": "|Route 8 Access|"
+        "requires": "|Route 8 Access| AND ((|Type Unlock - Ghost Type| AND |Type Unlock - Poison Type|) OR |notypes|)"
     },
     {
         "name": "Rhyhorn",
@@ -803,7 +803,7 @@
             "Ground",
             "Rock"
         ],
-        "requires": "|Route 8 Access|"
+        "requires": "|Route 8 Access| AND ((|Type Unlock - Ground Type| AND |Type Unlock - Rock Type|) OR |notypes|)"
     },
     {
         "name": "Dusclops",
@@ -814,7 +814,7 @@
             "Route 8",
             "Ghost"
         ],
-        "requires": "|Route 8 Access|"
+        "requires": "|Route 8 Access| AND (|Type Unlock - Ghost Type| OR |notypes|)"
     },
     {
         "name": "Bronzong",
@@ -826,7 +826,7 @@
             "Steel",
             "Psychic"
         ],
-        "requires": "|Route 8 Access|"
+        "requires": "|Route 8 Access| AND ((|Type Unlock - Steel Type| AND |Type Unlock - Psychic Type|) OR |notypes|)"
     },
     {
         "name": "Hippowdon",
@@ -837,7 +837,7 @@
             "Route 8",
             "Ground"
         ],
-        "requires": "|Route 8 Access|"
+        "requires": "|Route 8 Access| AND (|Type Unlock - Ground Type| OR |notypes|)"
     },
     {
         "name": "Drapion",
@@ -850,7 +850,7 @@
             "Dark",
             "Poison"
         ],
-        "requires": "|Route 8 Access|"
+        "requires": "|Route 8 Access| AND ((|Type Unlock - Dark Type| AND |Type Unlock - Poison Type|) OR |notypes|)"
     },
     {
         "name": "Sandaconda",
@@ -861,7 +861,7 @@
             "Route 8",
             "Ground"
         ],
-        "requires": "|Route 8 Access|"
+        "requires": "|Route 8 Access| AND (|Type Unlock - Ground Type| OR |notypes|)"
     },
     {
         "name": "Falinks",
@@ -872,7 +872,7 @@
             "Route 8",
             "Fighting"
         ],
-        "requires": "|Route 8 Access|"
+        "requires": "|Route 8 Access| AND (|Type Unlock - Fighting Type| OR |notypes|)"
     },
     {
         "name": "Lunatone",
@@ -885,7 +885,7 @@
             "Rock",
             "Psychic"
         ],
-        "requires": "|Route 8 Access|"
+        "requires": "|Route 8 Access| AND ((|Type Unlock - Rock Type| AND |Type Unlock - Psychic Type|) OR |notypes|)"
     },
     {
         "name": "Solrock",
@@ -898,22 +898,22 @@
             "Rock",
             "Psychic"
         ],
-        "requires": "|Route 8 Access|"
+        "requires": "|Route 8 Access| AND ((|Type Unlock - Rock Type| AND |Type Unlock - Psychic Type|) OR |notypes|)"
     },
     {
         "name": "Boldore",
         "category": ["Pokemon", "Routes", "Route 8", "Rock"],
-        "requires": "|Route 8 Access|"
+        "requires": "|Route 8 Access| AND (|Type Unlock - Rock Type| OR |notypes|)"
     },
     {
         "name": "Gurdurr",
         "category": ["Pokemon", "Routes", "Route 8", "Fighting"],
-        "requires": "|Route 8 Access|"
+        "requires": "|Route 8 Access| AND (|Type Unlock - Fighting Type| OR |notypes|)"
     },
     {
         "name": "Golett",
         "category": ["Pokemon", "Routes", "Route 8", "Ghost", "Ground"],
-        "requires": "|Route 8 Access|"
+        "requires": "|Route 8 Access| AND ((|Type Unlock - Ghost Type| AND |Type Unlock - Ground Type|) OR |notypes|)"
     },
     {
         "name": "Pawniard",
@@ -925,7 +925,7 @@
             "Dark",
             "Steel"
         ],
-        "requires": "|Route 8 Access| OR |Motostoke Outskirts Access|"
+        "requires": "(|Route 8 Access| OR |Motostoke Outskirts Access|) AND ((|Type Unlock - Dark Type| AND |Type Unlock - Steel Type|) OR |notypes|)"
     },
     {
         "name": "Vullaby",
@@ -937,7 +937,7 @@
             "Flying",
             "Dark"
         ],
-        "requires": "|Route 8 Access|"
+        "requires": "|Route 8 Access| AND ((|Type Unlock - Flying Type| AND |Type Unlock - Dark Type|) OR |notypes|)"
     },
     {
         "name": "Rufflet",
@@ -949,7 +949,7 @@
             "Flying",
             "Normal"
         ],
-        "requires": "|Route 8 Access|"
+        "requires": "|Route 8 Access| AND ((|Type Unlock - Flying Type| AND |Type Unlock - Normal Type|) OR |notypes|)"
     },
     {
         "name": "Togedemaru",
@@ -961,12 +961,12 @@
             "Steel",
             "Electric"
         ],
-        "requires": "|Route 8 Access|"
+        "requires": "|Route 8 Access| AND ((|Type Unlock - Steel Type| AND |Type Unlock - Electric Type|) OR |notypes|)"
     },
     {
         "name": "Sneasel",
         "category": ["Pokemon", "Routes", "Route 8", "Dark", "Ice"],
-        "requires": "|Route 8 Access|"
+        "requires": "|Route 8 Access| AND ((|Type Unlock - Dark Type| AND |Type Unlock - Ice Type|) OR |notypes|)"
     },
     {
         "name": "Delibird",
@@ -978,7 +978,7 @@
             "Ice",
             "Flying"
         ],
-        "requires": "|Route 8 Access|"
+        "requires": "|Route 8 Access| AND ((|Type Unlock - Ice Type| AND |Type Unlock - Flying Type|) OR |notypes|)"
     },
     {
         "name": "Snover",
@@ -990,7 +990,7 @@
             "Grass",
             "Ice"
         ],
-        "requires": "|Route 8 Access| OR |Route 10 Access|"
+        "requires": "(|Route 8 Access| OR |Route 10 Access|) AND ((|Type Unlock - Grass Type| AND |Type Unlock - Ice Type|) OR |notypes|)"
     },
     {
         "name": "Galarian Darumaka",
@@ -1004,17 +1004,17 @@
             "Route 10",
             "Ice"
         ],
-        "requires": "|Route 8 Access| OR |Route 10 Access|"
+        "requires": "(|Route 8 Access| OR |Route 10 Access|) AND (|Type Unlock - Ice Type| OR |notypes|)"
     },
     {
         "name": "Snom",
         "category": ["Pokemon", "Routes", "Route 8", "Route 10", "Bug", "Ice"],
-        "requires": "|Route 8 Access| OR |Route 10 Access|"
+        "requires": "(|Route 8 Access| OR |Route 10 Access|) AND ((|Type Unlock - Bug Type| AND |Type Unlock - Ice Type|) OR |notypes|)"
     },
     {
         "name": "Snorunt",
         "category": ["Pokemon", "Routes", "Route 8", "Bug", "Ice"],
-        "requires": "|Route 8 Access|"
+        "requires": "|Route 8 Access| AND ((|Type Unlock - Bug Type| AND |Type Unlock - Ice Type|) OR |notypes|)"
     },
     {
         "name": "Throh",
@@ -1027,7 +1027,7 @@
             "GameShield",
             "Fighting"
         ],
-        "requires": "|Route 8 Access| AND |Motostoke Outskirts Access|"
+        "requires": "|Route 8 Access| AND |Motostoke Outskirts Access| AND (|Type Unlock - Fighting Type| OR |notypes|)"
     },
     {
         "name": "Sawk",
@@ -1040,12 +1040,12 @@
             "GameSword",
             "Fighting"
         ],
-        "requires": "|Route 8 Access| AND |Motostoke Outskirts Access|"
+        "requires": "|Route 8 Access| AND |Motostoke Outskirts Access| AND (|Type Unlock - Fighting Type| OR |notypes|)"
     },
     {
         "name": "Vanillish",
         "category": ["Pokemon", "Routes", "Route 8", "Route 10", "Ice"],
-        "requires": "|Route 8 Access| OR |Route 10 Access|"
+        "requires": "(|Route 8 Access| OR |Route 10 Access|) AND (|Type Unlock - Ice Type| OR |notypes|)"
     },
     {
         "name": "Kingler",
@@ -1056,7 +1056,7 @@
             "Route 9",
             "Water"
         ],
-        "requires": "|Route 9 Access|"
+        "requires": "|Route 9 Access| AND (|Type Unlock - Water Type| OR |notypes|)"
     },
     {
         "name": "Octillery",
@@ -1067,7 +1067,7 @@
             "Route 9",
             "Water"
         ],
-        "requires": "|Route 9 Access|"
+        "requires": "|Route 9 Access| AND (|Type Unlock - Water Type| OR |notypes|)"
     },
     {
         "name": "Cramorant",
@@ -1079,7 +1079,7 @@
             "Water",
             "Flying"
         ],
-        "requires": "|Route 9 Access|"
+        "requires": "|Route 9 Access| AND ((|Type Unlock - Water Type| AND |Type Unlock - Flying Type|) OR |notypes|)"
     },
     {
         "name": "Pincurchin",
@@ -1091,47 +1091,47 @@
             "Route 9",
             "Electric"
         ],
-        "requires": "|Route 9 Access|"
+        "requires": "|Route 9 Access| AND (|Type Unlock - Electric Type| OR |notypes|)"
     },
     {
         "name": "Pelipper",
         "category": ["Pokemon", "Routes", "Route 9", "Water", "Flying"],
-        "requires": "|Route 9 Access|"
+        "requires": "|Route 9 Access| AND ((|Type Unlock - Water Type| AND |Type Unlock - Flying Type|) OR |notypes|)"
     },
     {
         "name": "Gastrodon",
         "category": ["Pokemon", "Routes", "Route 9", "Water", "Ground"],
-        "requires": "|Route 9 Access|"
+        "requires": "|Route 9 Access| AND ((|Type Unlock - Water Type| AND |Type Unlock - Ground Type|) OR |notypes|)"
     },
     {
         "name": "Jellicent",
         "category": ["Pokemon", "Routes", "Route 9", "Water", "Ghost"],
-        "requires": "|Route 9 Access|"
+        "requires": "|Route 9 Access| AND ((|Type Unlock - Water Type| AND |Type Unlock - Ghost Type|) OR |notypes|)"
     },
     {
         "name": "Mareanie",
         "category": ["Pokemon", "Routes", "Route 9", "Poison", "Water"],
-        "requires": "|Route 9 Access|"
+        "requires": "|Route 9 Access| AND ((|Type Unlock - Poison Type| AND |Type Unlock - Water Type|) OR |notypes|)"
     },
     {
         "name": "Pyukumuku",
         "category": ["Pokemon", "Routes", "LowPercentage", "Route 9", "Water"],
-        "requires": "|Route 9 Access|"
+        "requires": "|Route 9 Access| AND (|Type Unlock - Water Type| OR |notypes|)"
     },
     {
         "name": "Qwilfish",
         "category": ["Pokemon", "Routes", "Route 9", "Water", "Poison"],
-        "requires": "|Route 9 Access| AND |Progressive bike:2|"
+        "requires": "|Route 9 Access| AND |Progressive bike:2| AND ((|Type Unlock - Water Type| AND |Type Unlock - Poison Type|) OR |notypes|)"
     },
     {
         "name": "Mantyke",
         "category": ["Pokemon", "Routes", "Route 9", "Water", "Flying"],
-        "requires": "|Route 9 Access| AND |Progressive bike:2|"
+        "requires": "|Route 9 Access| AND |Progressive bike:2| AND ((|Type Unlock - Water Type| AND |Type Unlock - Flying Type|) OR |notypes|)"
     },
     {
         "name": "Bergmite",
         "category": ["Pokemon", "Routes", "Route 9", "Ice"],
-        "requires": "|Route 9 Access|"
+        "requires": "|Route 9 Access| AND (|Type Unlock - Ice Type| OR |notypes|)"
     },
     {
         "name": "Dhelmise",
@@ -1143,22 +1143,22 @@
             "Ghost",
             "Grass"
         ],
-        "requires": "|Route 9 Access|"
+        "requires": "|Route 9 Access| AND ((|Type Unlock - Ghost Type| AND |Type Unlock - Grass Type|) OR |notypes|)"
     },
     {
         "name": "Clobbopus",
         "category": ["Pokemon", "Routes", "Route 9", "Fighting"],
-        "requires": "|Route 9 Access|"
+        "requires": "|Route 9 Access| AND (|Type Unlock - Fighting Type| OR |notypes|)"
     },
     {
         "name": "Toxapex",
         "category": ["Pokemon", "Routes", "Route 9", "Poison", "Water"],
-        "requires": "(|Route 9 Access| AND |Normal weather|) OR (|Route 9 Access| AND |Progressive bike:2|)"
+        "requires": "((|Route 9 Access| AND |Normal weather|) OR (|Route 9 Access| AND |Progressive bike:2|)) AND ((|Type Unlock - Poison Type| AND |Type Unlock - Water Type|) OR |notypes|)"
     },
     {
         "name": "Grapploct",
         "category": ["Pokemon", "Routes", "Route 9", "Fighting"],
-        "requires": "|Route 9 Access| AND |Progressive bike:2|"
+        "requires": "|Route 9 Access| AND |Progressive bike:2| AND (|Type Unlock - Fighting Type| OR |notypes|)"
     },
     {
         "name": "Rhydon",
@@ -1170,7 +1170,7 @@
             "Ground",
             "Rock"
         ],
-        "requires": "|Route 10 Access|"
+        "requires": "|Route 10 Access| AND ((|Type Unlock - Ground Type| AND |Type Unlock - Rock Type|) OR |notypes|)"
     },
     {
         "name": "Klang",
@@ -1181,27 +1181,27 @@
             "Route 10",
             "Steel"
         ],
-        "requires": "|Route 10 Access|"
+        "requires": "|Route 10 Access| AND (|Type Unlock - Steel Type| OR |notypes|)"
     },
     {
         "name": "Galarian Mr. Mime",
         "category": ["Pokemon", "Routes", "Route 10", "Ice", "Psychic"],
-        "requires": "|Route 10 Access|"
+        "requires": "|Route 10 Access| AND ((|Type Unlock - Ice Type| AND |Type Unlock - Psychic Type|) OR |notypes|)"
     },
     {
         "name": "Glalie",
         "category": ["Pokemon", "Routes", "Route 10", "Ice"],
-        "requires": "|Route 10 Access|"
+        "requires": "|Route 10 Access| AND (|Type Unlock - Ice Type| OR |notypes|)"
     },
     {
         "name": "Vanilluxe",
         "category": ["Pokemon", "Routes", "Route 10", "Ice"],
-        "requires": "|Route 10 Access|"
+        "requires": "|Route 10 Access| AND (|Type Unlock - Ice Type| OR |notypes|)"
     },
     {
         "name": "Cubchoo",
         "category": ["Pokemon", "Routes", "Route 10", "Ice"],
-        "requires": "|Route 10 Access|"
+        "requires": "|Route 10 Access| AND (|Type Unlock - Ice Type| OR |notypes|)"
     },
     {
         "name": "Abomasnow",
@@ -1213,7 +1213,7 @@
             "Grass",
             "Ice"
         ],
-        "requires": "|Route 10 Access|"
+        "requires": "|Route 10 Access| AND ((|Type Unlock - Grass Type| AND |Type Unlock - Ice Type|) OR |notypes|)"
     },
     {
         "name": "Beartic",
@@ -1224,7 +1224,7 @@
             "Route 10",
             "Ice"
         ],
-        "requires": "|Route 10 Access|"
+        "requires": "|Route 10 Access| AND (|Type Unlock - Ice Type| OR |notypes|)"
     },
     {
         "name": "Stonjourner",
@@ -1237,7 +1237,7 @@
             "GameSword",
             "Rock"
         ],
-        "requires": "|Route 10 Access|"
+        "requires": "|Route 10 Access| AND (|Type Unlock - Rock Type| OR |notypes|)"
     },
     {
         "name": "Eiscue",
@@ -1250,7 +1250,7 @@
             "GameShield",
             "Ice"
         ],
-        "requires": "|Route 10 Access|"
+        "requires": "|Route 10 Access| AND (|Type Unlock - Ice Type| OR |notypes|)"
     },
     {
         "name": "Duraludon",
@@ -1262,7 +1262,7 @@
             "Steel",
             "Dragon"
         ],
-        "requires": "|Route 10 Access|"
+        "requires": "|Route 10 Access| AND ((|Type Unlock - Steel Type| AND |Type Unlock - Dragon Type|) OR |notypes|)"
     },
     {
         "name": "Shuckle",
@@ -1274,12 +1274,12 @@
             "Bug",
             "Rock"
         ],
-        "requires": "|Galar Mine 2 Access|"
+        "requires": "|Galar Mine 2 Access| AND ((|Type Unlock - Bug Type| AND |Type Unlock - Rock Type|) OR |notypes|)"
     },
     {
         "name": "Shellos",
         "category": ["Pokemon", "Routes", "Galar Mine 2", "Water"],
-        "requires": "|Galar Mine 2 Access|"
+        "requires": "|Galar Mine 2 Access| AND (|Type Unlock - Water Type| OR |notypes|)"
     },
     {
         "name": "Croagunk",
@@ -1292,7 +1292,7 @@
             "Poison",
             "Fighting"
         ],
-        "requires": "|Galar Mine 2 Access| OR |Motostoke Outskirts Access|"
+        "requires": "(|Galar Mine 2 Access| OR |Motostoke Outskirts Access|) AND ((|Type Unlock - Poison Type| AND |Type Unlock - Fighting Type|) OR |notypes|)"
     },
     {
         "name": "Scraggy",
@@ -1305,22 +1305,22 @@
             "Dark",
             "Fighting"
         ],
-        "requires": "|Galar Mine 2 Access| OR |Motostoke Outskirts Access|"
+        "requires": "(|Galar Mine 2 Access| OR |Motostoke Outskirts Access|) AND ((|Type Unlock - Dark Type| AND |Type Unlock - Fighting Type|) OR |notypes|)"
     },
     {
         "name": "Binacle",
         "category": ["Pokemon", "Routes", "Galar Mine 2", "Rock", "Water"],
-        "requires": "|Galar Mine 2 Access|"
+        "requires": "|Galar Mine 2 Access| AND ((|Type Unlock - Rock Type| AND |Type Unlock - Water Type|) OR |notypes|)"
     },
     {
         "name": "Noibat",
         "category": ["Pokemon", "Routes", "Galar Mine 2", "Flying", "Dragon"],
-        "requires": "|Galar Mine 2 Access|"
+        "requires": "|Galar Mine 2 Access| AND ((|Type Unlock - Flying Type| AND |Type Unlock - Dragon Type|) OR |notypes|)"
     },
     {
         "name": "Wimpod",
         "category": ["Pokemon", "Routes", "Galar Mine 2", "Bug", "Water"],
-        "requires": "|Galar Mine 2 Access|"
+        "requires": "|Galar Mine 2 Access| AND ((|Type Unlock - Bug Type| AND |Type Unlock - Water Type|) OR |notypes|)"
     },
     {
         "name": "Butterfree",
@@ -1332,7 +1332,7 @@
             "Bug",
             "Flying"
         ],
-        "requires": "|Slumbering Weald Access|"
+        "requires": "|Slumbering Weald Access| AND ((|Type Unlock - Bug Type| AND |Type Unlock - Flying Type|) OR |notypes|)"
     },
     {
         "name": "Galarian Weezing",
@@ -1343,17 +1343,17 @@
             "Poison",
             "Fairy"
         ],
-        "requires": "|Slumbering Weald Access|"
+        "requires": "|Slumbering Weald Access| AND ((|Type Unlock - Poison Type| AND |Type Unlock - Fairy Type|) OR |notypes|)"
     },
     {
         "name": "Munna",
         "category": ["Pokemon", "Routes", "Slumbering Weald", "Psychic"],
-        "requires": "|Slumbering Weald Access|"
+        "requires": "|Slumbering Weald Access| AND (|Type Unlock - Psychic Type| OR |notypes|)"
     },
     {
         "name": "Orbeetle",
         "category": ["Pokemon", "Routes", "Slumbering Weald", "Bug", "Psychic"],
-        "requires": "|Slumbering Weald Access|"
+        "requires": "|Slumbering Weald Access| AND ((|Type Unlock - Bug Type| AND |Type Unlock - Psychic Type|) OR |notypes|)"
     },
     {
         "name": "Galarian Stunfisk",
@@ -1366,7 +1366,7 @@
             "Ground",
             "Steel"
         ],
-        "requires": "|Slumbering Weald Access| OR |Galar Mine 2 Access|"
+        "requires": "(|Slumbering Weald Access| OR |Galar Mine 2 Access|) AND ((|Type Unlock - Ground Type| AND |Type Unlock - Steel Type|) OR |notypes|)"
     },
     {
         "name": "Impidimp",
@@ -1379,12 +1379,12 @@
             "Dark",
             "Fairy"
         ],
-        "requires": "|Motostoke Outskirts Access| OR |Glimwood Tangle Access|"
+        "requires": "(|Motostoke Outskirts Access| OR |Glimwood Tangle Access|) AND ((|Type Unlock - Dark Type| AND |Type Unlock - Fairy Type|) OR |notypes|)"
     },
     {
         "name": "Koffing",
         "category": ["Pokemon", "Routes", "Motostoke Outskirts", "Poison"],
-        "requires": "|Motostoke Outskirts Access|"
+        "requires": "|Motostoke Outskirts Access| AND (|Type Unlock - Poison Type| OR |notypes|)"
     },
     {
         "name": "Noctowl",
@@ -1395,12 +1395,12 @@
             "Flying",
             "Normal"
         ],
-        "requires": "|Motostoke Outskirts Access|"
+        "requires": "|Motostoke Outskirts Access| AND ((|Type Unlock - Flying Type| AND |Type Unlock - Normal Type|) OR |notypes|)"
     },
     {
         "name": "Sudowoodo",
         "category": ["Pokemon", "Routes", "Motostoke Outskirts", "Rock"],
-        "requires": "|Motostoke Outskirts Access|"
+        "requires": "|Motostoke Outskirts Access| AND (|Type Unlock - Rock Type| OR |notypes|)"
     },
     {
         "name": "Salandit",
@@ -1413,12 +1413,12 @@
             "Fire",
             "Poison"
         ],
-        "requires": "|Motostoke Outskirts Access|"
+        "requires": "|Motostoke Outskirts Access| AND ((|Type Unlock - Fire Type| AND |Type Unlock - Poison Type|) OR |notypes|)"
     },
     {
         "name": "Hatenna",
         "category": ["Pokemon", "Routes", "Motostoke Outskirts", "Psychic"],
-        "requires": "|Motostoke Outskirts Access|"
+        "requires": "|Motostoke Outskirts Access| AND (|Type Unlock - Psychic Type| OR |notypes|)"
     },
     {
         "name": "Galarian Ponyta",
@@ -1429,17 +1429,17 @@
             "Psychic",
             "GameShield"
         ],
-        "requires": "|Glimwood Tangle Access|"
+        "requires": "|Glimwood Tangle Access| AND (|Type Unlock - Psychic Type| OR |notypes|)"
     },
     {
         "name": "Phantump",
         "category": ["Pokemon", "Routes", "Glimwood Tangle", "Ghost", "Grass"],
-        "requires": "|Glimwood Tangle Access|"
+        "requires": "|Glimwood Tangle Access| AND ((|Type Unlock - Ghost Type| AND |Type Unlock - Grass Type|) OR |notypes|)"
     },
     {
         "name": "Shiinotic",
         "category": ["Pokemon", "Routes", "Glimwood Tangle", "Fairy", "Grass"],
-        "requires": "|Glimwood Tangle Access|"
+        "requires": "|Glimwood Tangle Access| AND ((|Type Unlock - Fairy Type| AND |Type Unlock - Grass Type|) OR |notypes|)"
     },
     {
         "name": "Oranguru",
@@ -1451,7 +1451,7 @@
             "GameShield",
             "Psychic"
         ],
-        "requires": "|Glimwood Tangle Access|"
+        "requires": "|Glimwood Tangle Access| AND ((|Type Unlock - Normal Type| AND |Type Unlock - Psychic Type|) OR |notypes|)"
     },
     {
         "name": "Passimian",
@@ -1462,22 +1462,22 @@
             "Fighting",
             "GameSword"
         ],
-        "requires": "|Glimwood Tangle Access|"
+        "requires": "|Glimwood Tangle Access| AND (|Type Unlock - Fighting Type| OR |notypes|)"
     },
     {
         "name": "Sinistea",
         "category": ["Pokemon", "Routes", "Glimwood Tangle", "Ghost"],
-        "requires": "|Glimwood Tangle Access|"
+        "requires": "|Glimwood Tangle Access| AND (|Type Unlock - Ghost Type| OR |notypes|)"
     },
     {
         "name": "Hattrem",
         "category": ["Pokemon", "Routes", "Glimwood Tangle", "Psychic"],
-        "requires": "|Glimwood Tangle Access|"
+        "requires": "|Glimwood Tangle Access| AND (|Type Unlock - Psychic Type| OR |notypes|)"
     },
     {
         "name": "Morgrem",
         "category": ["Pokemon", "Routes", "Glimwood Tangle", "Dark", "Fairy"],
-        "requires": "|Glimwood Tangle Access|"
+        "requires": "|Glimwood Tangle Access| AND ((|Type Unlock - Dark Type| AND |Type Unlock - Fairy Type|) OR |notypes|)"
     },
     {
         "name": "Indeedee",
@@ -1489,6 +1489,6 @@
             "Psychic",
             "Normal"
         ],
-        "requires": "|Glimwood Tangle Access|"
+        "requires": "|Glimwood Tangle Access| AND ((|Type Unlock - Psychic Type| AND |Type Unlock - Normal Type|) OR |notypes|)"
     }
 ]
