@@ -1,7 +1,7 @@
 {
     "game": "manual_pokemonshsw_riannehx",
     "authors": ["Riannehx"],
-    "world_version": "0.0.6",
+    "world_version": "0.0.7",
     "minimum_ap_version": "0.6.7",
     "version": 7,
     "compatible_version": 7
