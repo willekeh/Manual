@@ -68,17 +68,18 @@ def after_create_regions(world: World, multiworld: MultiWorld, player: int):
             locationNamesToRemove += ["Heatmor", "Shelmet", "Jellicent"]
     #4 Keep Both games
 
-    # If Type Researcher is NOT the goal, wipe everything related to it
+    # If Type Researcher is NOT the goal
     if str(current_goal).lower() != "type researcher":
         if not route_sanity:
             locationNamesToRemove += world.location_name_groups["Routes"]
 
-    # If Type Researcher is active, find the missing types and remove their tracker locations
+    # If Type Researcher is active
     else:
         #remove wandersanity locations if not enabled
         if not wander_sanity:
             locationNamesToRemove += world.location_name_groups["Special overworld spawn"]
             locationNamesToRemove += world.location_name_groups["Wild Area"]
+            locationNamesToRemove += world.location_name_groups["Dens"]
         
     for region in multiworld.regions:
         if region.player == player:
@@ -96,14 +97,25 @@ def after_create_regions(world: World, multiworld: MultiWorld, player: int):
 #       will create 5 items that are the "useful trap" class
 # {"Item Name": {ItemClassification.useful: 5}} <- You can also use the classification directly
 def before_create_items_all(item_config: dict[str, int|dict], world: World, multiworld: MultiWorld, player: int) -> dict[str, int|dict]:
-    # Check if Mend The Broken Shield/Sword goal is active
-    current_goal_name = world.options.goal.current_key
-    if str(current_goal_name).lower() != "mend the broken shield/sword":
-        # Set shards to 0 when not the correct goal
-        shards_total = 0
-        world.options.broken_shards_total.value = 0
-    else:
-        shards_total = world.options.broken_shards_total.value
+    location_count = len(world.get_locations())
+    shards_total = world.options.broken_shards_total.value
+
+    other_items_count = 0
+    for name, data in item_config.items():
+        if name != "Broken shards":
+            if isinstance(data, dict):
+                other_items_count += sum(data.values())
+            else:
+                other_items_count += data
+                
+    #To crash less with minimal settings and minimal progression
+    buffer = 3 
+    free_space = location_count - other_items_count - buffer
+
+    if shards_total > free_space:
+        #check if shards total is higher then free space
+        shards_total = max(10, free_space) 
+        world.options.broken_shards_total.value = shards_total
     
     item_config["Broken shards"] = shards_total
     
@@ -129,23 +141,22 @@ def before_create_items_starting(item_pool: list, world: World, multiworld: Mult
     current_goal_name = world.options.goal.current_key
     
     if str(current_goal_name).lower() == "mend the broken shield/sword":
-        start_inventory_names = ["notypes"]
         
         if start_logic == 1: # Fixed
-            start_inventory_names = ["Rolling Fields", "Normal weather"]
+            start_inventory_names = ["Rolling Fields", "Normal weather", "notypes"]
 
         elif start_logic == 2: # Region (Random region, Fixed weather)
             world.random.shuffle(locations)
-            start_inventory_names = [locations[0], "Normal weather"]
+            start_inventory_names = [locations[0], "Normal weather", "notypes"]
 
         elif start_logic == 3: # Weather (Fixed region, Random weather)
             world.random.shuffle(weather)
-            start_inventory_names = ["Rolling Fields", weather[0]]
+            start_inventory_names = ["Rolling Fields", weather[0], "notypes"]
 
         elif start_logic == 4: # Both (Both random)
             world.random.shuffle(locations)
             world.random.shuffle(weather)
-            start_inventory_names = [locations[0], weather[0]]
+            start_inventory_names = [locations[0], weather[0], "notypes"]
 
     else:
         start_inventory_names = ["Type Unlock - Bug Type", "Route 1 Access"]
@@ -193,6 +204,7 @@ def before_create_items_filler(item_pool: list, world: World, multiworld: MultiW
                 itemNamesToRemove.append(f"Type Unlock - {p_type} Type")
         if not wander_sanity:
             itemNamesToRemove += world.item_name_groups["Wild Area Unlocks"]
+            itemNamesToRemove += world.item_name_groups["Weather"]
         itemNamesToRemove.append("notypes")
 
     for itemName in itemNamesToRemove:
@@ -212,27 +224,6 @@ def before_create_items_filler(item_pool: list, world: World, multiworld: MultiW
 
 # The complete item pool prior to being set for generation is provided here, in case you want to make changes to it
 def after_create_items(item_pool: list, world: World, multiworld: MultiWorld, player: int) -> list:
-    #Different Goal, Return item Pool
-    if world.options.broken_shards_total.value == 0:
-        return item_pool
-
-    location_count = len(world.get_locations())
-    total_items_count = len(item_pool)
-    buffer = 1
-    
-    overshot = total_items_count - location_count + buffer
-
-    if overshot > 0:
-        shards_in_pool = [item for item in item_pool if item.name.lower() == "broken shards"]
-        other_items = [item for item in item_pool if item.name.lower() != "broken shards"]
-
-        shards_to_remove = min(overshot, len(shards_in_pool))
-        
-        if shards_to_remove > 0:
-            shards_in_pool = shards_in_pool[:-shards_to_remove]
-        world.options.broken_shards_total.value = len(shards_in_pool)
-        
-        item_pool = other_items + shards_in_pool
 
     return item_pool
 
