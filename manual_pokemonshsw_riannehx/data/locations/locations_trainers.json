@@ -1,0 +1,17 @@
+[
+    {
+        "name": "Route 2 - Youngster Jake",
+        "category": ["Trainers", "route 2"],
+        "requires": "|Pokedex|"
+    },
+    {
+        "name": "Route 2 - Lass Lauren",
+        "category": ["Trainers", "route 2"],
+        "requires": "|Pokedex|"
+    },
+    {
+        "name": "Route 2 - Youngster Benjamin",
+        "category": ["Trainers", "route 2"],
+        "requires": "|Pokedex|"
+    }
+]
