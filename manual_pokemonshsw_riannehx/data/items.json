@@ -376,5 +376,47 @@
         "name": "Motostoke Outskirts Access",
         "category": ["Location Unlocks"],
         "progression": true
+    },
+    {
+        "count": 1,
+        "name": "Pokedex",
+        "category": ["Story"],
+        "progression": true
+    },
+    {
+        "count": 1,
+        "name": "Letter of Endorsement",
+        "category": ["Story"],
+        "progression": true
+    },
+    {
+        "count": 1,
+        "name": "Train pass",
+        "category": ["Story"],
+        "progression": true
+    },
+    {
+        "count": 1,
+        "name": "Uniform",
+        "category": ["Story"],
+        "progression": true
+    },
+    {
+        "count": 1,
+        "name": "Dynamax Band",
+        "category": ["Story"],
+        "useful": true
+    },
+    {
+        "count": 1,
+        "name": "Camping Gear",
+        "category": ["Story"],
+        "useful": true
+    },
+    {
+        "count": 1,
+        "name": "Hi-tech Earbuds",
+        "category": ["Story"],
+        "useful": true
     }
 ]

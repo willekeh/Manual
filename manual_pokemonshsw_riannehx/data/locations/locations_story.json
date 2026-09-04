@@ -1,0 +1,137 @@
+[
+    {
+        "name": "Start your adventure",
+        "category": ["!Start"],
+        "requires": ""
+    },
+    {
+        "name": "Grab bag and hat",
+        "category": ["Story"],
+        "requires": ""
+    },
+    {
+        "name": "Meet champion Leon",
+        "category": ["Story"],
+        "requires": ""
+    },
+    {
+        "name": "Choose your starter",
+        "category": ["Story"],
+        "requires": ""
+    },
+    {
+        "name": "First Fight`",
+        "category": ["Hop"],
+        "requires": ""
+    },
+    {
+        "name": "Look for Wooloo",
+        "category": ["Story"],
+        "requires": ""
+    },
+    {
+        "name": "Fight ???",
+        "category": ["Story"],
+        "requires": ""
+    },
+    {
+        "name": "Pokedex acquired",
+        "category": ["Story"],
+        "requires": "|Pokedex|"
+    },
+    {
+        "name": "Free Potion",
+        "category": ["Story"],
+        "requires": "|Pokedex|"
+    },
+    {
+        "name": "Pokemon Center tutorial",
+        "category": ["Story"],
+        "requires": "|Pokedex|"
+    },
+    {
+        "name": "Catching tutorial",
+        "category": ["Story"],
+        "requires": "|Pokedex|"
+    },
+    {
+        "name": "Meet professor Magnolia",
+        "category": ["Story"],
+        "requires": "|Pokedex|"
+    },
+    {
+        "name": "Second Fight`",
+        "category": ["Hop"],
+        "requires": "|Pokedex|"
+    },
+    {
+        "name": "Letter of Endorsement acquired",
+        "category": ["Story"],
+        "requires": "|Pokedex|"
+    },
+    {
+        "name": "Found the Wishing Star",
+        "category": ["Story"],
+        "requires": "|Pokedex|"
+    },
+    {
+        "name": "Meet Hop at the train station",
+        "category": ["Story"],
+        "requires": "|Pokedex|"
+    },
+    {
+        "name": "Go with the train",
+        "category": ["Story"],
+        "requires": "|Pokedex| AND |Train pass|"
+    },
+    {
+        "name": "Pokemon Box link acquired",
+        "category": ["Story"],
+        "requires": "|Pokedex| AND |Train pass|"
+    },
+    {
+        "name": "League Cards tutorial",
+        "category": ["Story"],
+        "requires": "|Pokedex| AND |Train pass|"
+    },
+    {
+        "name": "Starter Item acquired",
+        "category": ["Story"],
+        "requires": "|Pokedex| AND |Train pass|"
+    },
+    {
+        "name": "Ball Guy - Poke ball",
+        "category": ["Story"],
+        "requires": "|Pokedex| AND |Train pass|"
+    },
+    {
+        "name": "Uniform Number",
+        "category": ["Story"],
+        "requires": "|Pokedex| AND |Train pass| AND |Uniform|"
+    },
+    {
+        "name": "Statue of the Hero",
+        "category": ["Story"],
+        "requires": "|Pokedex| AND |Train pass| AND |Uniform|"
+    },
+    {
+        "name": "Defeat Team Yell Grunt 1",
+        "category": ["Story"],
+        "requires": "|Pokedex| AND |Train pass| AND |Uniform|"
+    },
+    {
+        "name": "Defeat Team Yell Grunt 2",
+        "category": ["Story"],
+        "requires": "|Pokedex| AND |Train pass| AND |Uniform|"
+    },
+    {
+        "name": "Defeat Team Yell Grunt 3",
+        "category": ["Story"],
+        "requires": "|Pokedex| AND |Train pass| AND |Uniform|"
+    },
+    {
+        "name": "Opening Ceremony",
+        "category": ["Story"],
+        "requires": "|Pokedex| AND |Train pass| AND |Uniform|"
+    }
+]

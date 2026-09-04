@@ -1,0 +1,117 @@
+[
+    {
+        "name": "Route 1 - item Potion",
+        "category": ["Item"],
+        "requires": ""
+    },
+    {
+        "name": "Route 1 - item 2 Paralyze Heals",
+        "category": ["Item"],
+        "requires": ""
+    },
+    {
+        "name": "Wedgehurst - Pokedoll",
+        "category": ["Item"],
+        "requires": "|Pokedex|"
+    },
+    {
+        "name": "Wedgehurst - Rare Candy",
+        "category": ["Item"],
+        "requires": "|Pokedex|"
+    },
+    {
+        "name": "Wedgehurst - Revive",
+        "category": ["Item", "Hidden item"],
+        "requires": "|Pokedex|"
+    },
+    {
+        "name": "Route 2 - item 2 Potions",
+        "category": ["Item"],
+        "requires": "|Pokedex|"
+    },
+    {
+        "name": "Route 2 - item 3 Poke Balls",
+        "category": ["Item"],
+        "requires": "|Pokedex|"
+    },
+    {
+        "name": "Route 2 - item Repel",
+        "category": ["Hidden item"],
+        "requires": "|Pokedex|"
+    },
+    {
+        "name": "Route 2 - Great Ball",
+        "category": ["Item"],
+        "requires": "|Pokedex|"
+    },
+    {
+        "name": "Route 2 - Fresh Water",
+        "category": ["Hidden item"],
+        "requires": "|Pokedex|"
+    },
+    {
+        "name": "Route 2 - TM57 Payback",
+        "category": ["Item"],
+        "requires": "|Pokedex|"
+    },
+    {
+        "name": "Route 2 - TM57 Payback",
+        "category": ["Item"],
+        "requires": "|Pokedex|"
+    },
+    {
+        "name": "Rolling Fields - TM84 Tail Slap",
+        "category": ["Item"],
+        "requires": "|Pokedex| AND |Train pass|"
+    },
+    {
+        "name": "Watchtower Ruins - White Herb",
+        "category": ["Item"],
+        "requires": "|Pokedex| AND |Train pass|"
+    },
+    {
+        "name": "Watchtower Ruins - Max Revive",
+        "category": ["Item"],
+        "requires": "|Pokedex| AND |Train pass|"
+    },
+    {
+        "name": "Motostoke - Nugget",
+        "category": ["Hidden item"],
+        "requires": "|Pokedex| AND |Train pass|"
+    },
+    {
+        "name": "Motostoke - TR13 Focus Energy",
+        "category": ["Item"],
+        "requires": "|Pokedex| AND |Train pass|"
+    },
+    {
+        "name": "Motostoke - Super Potion",
+        "category": ["Hidden item"],
+        "requires": "|Pokedex| AND |Train pass|"
+    },
+    {
+        "name": "Motostoke - Hi-tech Earbuds",
+        "category": ["Item"],
+        "requires": "|Pokedex| AND |Train pass|"
+    },
+    {
+        "name": "Motostoke - 2 Paralyze Heals",
+        "category": ["Hidden item"],
+        "requires": "|Pokedex| AND |Train pass|"
+    },
+    {
+        "name": "Motostoke - 3 Burn Heals",
+        "category": ["Hidden item"],
+        "requires": "|Pokedex| AND |Train pass| AND |Uniform|"
+    },
+    {
+        "name": "Motostoke - Repel",
+        "category": ["Hidden item"],
+        "requires": "|Pokedex| AND |Train pass| AND |Uniform|"
+    },
+    {
+        "name": "Motostoke - Silk Scarf",
+        "category": ["Item"],
+        "requires": "|Pokedex| AND |Train pass| AND |Uniform|"
+    }
+]
