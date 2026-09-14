@@ -133,5 +133,55 @@
         "name": "Opening Ceremony",
         "category": ["Story"],
         "requires": "|Pokedex| AND |Train pass| AND |Uniform|"
+    },
+    {
+        "name": "Third Fight`",
+        "category": ["Hop"],
+        "requires": "|Pokedex| AND |Train pass| AND |Uniform|"
+    },
+    {
+        "name": "Route 3 Sonia",
+        "category": ["Story"],
+        "requires": "|Pokedex| AND |Train pass| AND |Uniform|"
+    },
+    {
+        "name": "Second Fight Bede",
+        "category": ["Story"],
+        "requires": "|Pokedex| AND |Train pass| AND |Uniform|"
+    },
+    {
+        "name": "Route 4 Meet Milo",
+        "category": ["Story"],
+        "requires": "|Pokedex| AND |Train pass| AND |Uniform|"
+    },
+    {
+        "name": "Turffield Hop",
+        "category": ["Story"],
+        "requires": "|Pokedex| AND |Train pass| AND |Uniform|"
+    },
+    {
+        "name": "Sonia Geoglyph",
+        "category": ["Story"],
+        "requires": "|Pokedex| AND |Train pass| AND |Uniform|"
+    },
+    {
+        "name": "Ball Guy - Friend ball",
+        "category": ["Story"],
+        "requires": "|Pokedex| AND |Train pass| AND |Uniform|"
+    },
+    {
+        "name": "Grass Gym - Gym Mission",
+        "category": ["Story"],
+        "requires": "|Pokedex| AND |Train pass| AND |Uniform| AND |Progressive Badge|"
+    },
+    {
+        "name": "Grass Gym - Gym Mission Cleared",
+        "category": ["Story"],
+        "requires": "|Pokedex| AND |Train pass| AND |Uniform| AND |Progressive Badge|"
+    },
+    {
+        "name": "Grass Gym - Defeat Milo",
+        "category": ["Story"],
+        "requires": "|Pokedex| AND |Train pass| AND |Uniform| AND |Progressive Badge|"
     }
 ]

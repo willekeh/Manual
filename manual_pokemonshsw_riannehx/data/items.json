@@ -403,6 +403,12 @@
     },
     {
         "count": 1,
+        "name": "Progressive Badge",
+        "category": ["Story"],
+        "progression": true
+    },
+    {
+        "count": 1,
         "name": "Dynamax Band",
         "category": ["Story"],
         "useful": true
