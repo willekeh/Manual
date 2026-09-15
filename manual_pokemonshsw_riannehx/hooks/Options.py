@@ -31,6 +31,28 @@ class GameVersion(Choice):
     option_Both = 4
     default = 1
 
+# Story options
+class StoryGoal(Choice):
+    """Choose which Story ending you want to finish the story goal on. 
+    """
+    display_name = "StoryGoal"
+    option_openingceremony = 1
+    option_firstgym = 2
+    option_chairman = 3
+    option_champion = 4
+    default = 1
+
+class TrainerSanity(Toggle):
+    """Adds Trainers as locations, only works with story goal"""
+    display_name = "Trainer sanity"
+    default = 0
+
+class HiddenItemSanity(Toggle):
+    """Adds Hidden Items as locations, only works with story goal"""
+    display_name = "Hidden Item sanity"
+    default = 0
+
+# Mend The Broken Shield/Sword goal options #
 class RegionStart(Choice):
     """Choose for the Mend The Broken Shield/Sword goal, how much you want to randomize your starting area. Fixed: Rolling fields + Normal weather, Region: Random + Normal weather,
     Weather: Rolling fields + Random, Both: both random"""
@@ -57,27 +79,46 @@ class BrokenShardsRequired(Range):
     range_end = 40
     default = 10
 
+class Hasnotbeatenleo(Toggle):
+    """Removes all wanderers that are in fog and dont appear before the champion. This option is for an almost completed save that has not beaten the champion yet"""
+    display_name = "Not beaten champion"
+    default = 0
+
+# Wild Area Options #
+class WildArea(Toggle):
+    """Adds wild area locations"""
+    display_name = "Wild Area"
+    default = 0
+
+class WildArealocations(Toggle):
+    """Adds region unlocks to the pool, Wild Area needs to be on for this to work"""
+    display_name = "Wild Area Locations"
+    default = 0
+
+class WanderSanity(Toggle):
+    """Adds Wild Area 1 time a day spawns. This will automatically turn on with the Mend The Broken Shield/Sword goal and Wild Area locations, 
+    This can be turned on separately for the other goals. 
+    Wild Area needs to be on for this to work"""
+    display_name = "add wander sanity"
+    default = 0  
+
+class AddTimeTravel(Toggle):
+    """!Adds Time Travel checks.! This adds weather items to the pool.
+    Currently this adds about 200 extra pokemon location checks in the wild area that are weather dependent.
+    This expects you to time travel with for example Den time travel and this currently expects you to have beaten the champion."""
+    display_name = "Add Weather sanity"
+    default = 0
+
 class DenSanity(Toggle):
     """Adds Den Sanity, you only need to see or interact with the den."""
     display_name = "Den sanity"
     default = 0
 
-class BerryTreeSanity(Toggle):
-    """Adds Berry Tree Sanity, you only need to see or interact with the berry tree."""
-    display_name = "Berry Tree Sanity"
+# Route Options #
+class RouteArea(Toggle):
+    """Adds route locations"""
+    display_name = "Routes"
     default = 0
-
-class AddTimeTravel(Toggle):
-    """Adds Time Travel checks. Currently this adds about 200 extra pokemon location checks in the wild area that are weather dependent.
-    This expects you to time travel with for example Den time travel and this currently expects you to have beaten the champion."""
-    display_name = "Add Time Travel"
-    default = 0
-
-class WanderSanity(Toggle):
-    """Adds Wild Area 1 time a day spawns. This will automatically turn on with the Mend The Broken Shield/Sword goal and has Wild Area location sanity, 
-    This can be turned on separately for the other goals and this currently expects you to have beaten the champion. """
-    display_name = "add wander sanity"
-    default = 0  
 
 class RouteSanity(Toggle):
     """Adds all pokemon locations in a route. This is will automatically turn on with the Type Researcher Goal and has route/locations sanity. 
@@ -89,7 +130,20 @@ class RemoveLowPercentage(Toggle):
     """Removes all route pokemon below and at 5% encounter rate.
     Note: There are changes to Route-Sanity depending on which Game version you selected."""
     display_name = "Remove Low percentage"
-    default = 0    
+    default = 0   
+
+# General # 
+class BerryTreeSanity(Toggle):
+    """Adds Berry Tree Sanity, you only need to see or interact with the berry tree."""
+    display_name = "Berry Tree Sanity"
+    default = 0
+
+class AddTypelocks(Toggle):
+    """This adds a type unlock items to the pool. """
+    display_name = "Add Type Locks"
+    default = 0
+
+
 
 # This is called before any manual options are defined, in case you want to define your own with a clean slate or let Manual define over them
 def before_options_defined(options: dict[str, Type[Option[Any]]]) -> dict[str, Type[Option[Any]]]:
@@ -101,8 +155,16 @@ def before_options_defined(options: dict[str, Type[Option[Any]]]) -> dict[str, T
     options["wander_sanity"] = WanderSanity
     options["den_sanity"] = DenSanity
     options["add_time_travel"] = AddTimeTravel
+    options["route_area"] = RouteArea
     options["route_sanity"] = RouteSanity
     options["remove_low_percentage"] = RemoveLowPercentage
+    options["story_goal"] = StoryGoal
+    options["trainer_sanity"] = TrainerSanity
+    options["hidden_item_sanity"] = HiddenItemSanity
+    options["no_beaten_leo"] = Hasnotbeatenleo
+    options["wild_area"] = WildArea
+    options["wild_area_locations"] = WildArealocations
+    options["add_type_locks"] = AddTypelocks
     return options
 
 # This is called after any manual options are defined, in case you want to see what options are defined or want to modify the defined options
@@ -120,9 +182,11 @@ def after_options_defined(options: Type[PerGameCommonOptions]):
 # Use this Hook if you want to add your Option to an Option group (existing or not)
 def before_option_groups_created(groups: dict[str, list[Type[Option[Any]]]]) -> dict[str, list[Type[Option[Any]]]]:
     # Uses the format groups['GroupName'] = [TotalCharactersToWinWith]
-    groups['Mend The Broken Shield/Sword goal options'] = [RegionStart, BrokenShardsTotal, BrokenShardsRequired]
-    groups['Wild Area Options'] = [WanderSanity, DenSanity, AddTimeTravel]
-    groups['Route Options'] = [RouteSanity, RemoveLowPercentage]
+    groups['Story goal options'] = [StoryGoal, TrainerSanity, HiddenItemSanity]
+    groups['Mend The Broken Shield/Sword goal options'] = [RegionStart, BrokenShardsTotal, BrokenShardsRequired, Hasnotbeatenleo]
+    groups['Wild Area Options'] = [WildArea, WildArealocations, WanderSanity, AddTimeTravel, DenSanity]
+    groups['Route Options'] = [RouteArea, RouteSanity, RemoveLowPercentage]
+    groups['General'] = [BerryTreeSanity, AddTypelocks]
     return groups
 
 def after_option_groups_created(groups: list[OptionGroup]) -> list[OptionGroup]:

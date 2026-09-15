@@ -1,0 +1,362 @@
+[
+    {
+        "name": "Route 1 - Potion",
+        "category": ["Item"],
+        "requires": ""
+    },
+    {
+        "name": "Route 1 - 2x Paralyze Heals",
+        "category": ["Item"],
+        "requires": ""
+    },
+    {
+        "name": "Wedgehurst - Pokedoll",
+        "category": ["Item"],
+        "requires": "|Pokedex|"
+    },
+    {
+        "name": "Wedgehurst - Rare Candy",
+        "category": ["Item"],
+        "requires": "|Pokedex|"
+    },
+    {
+        "name": "Wedgehurst - Revive",
+        "category": ["Item", "Hidden item"],
+        "requires": "|Pokedex|"
+    },
+    {
+        "name": "Route 2 - 2x Potions",
+        "category": ["Item"],
+        "requires": "|Pokedex|"
+    },
+    {
+        "name": "Route 2 - 3x Poke Balls",
+        "category": ["Item"],
+        "requires": "|Pokedex|"
+    },
+    {
+        "name": "Route 2 - Repel",
+        "category": ["Hidden item"],
+        "requires": "|Pokedex|"
+    },
+    {
+        "name": "Route 2 - Great Ball",
+        "category": ["Item"],
+        "requires": "|Pokedex|"
+    },
+    {
+        "name": "Route 2 - Fresh Water",
+        "category": ["Hidden item"],
+        "requires": "|Pokedex|"
+    },
+    {
+        "name": "Route 2 - TM57 Payback",
+        "category": ["Item"],
+        "requires": "|Pokedex|"
+    },
+    {
+        "name": "Rolling Fields - TM84 Tail Slap",
+        "category": ["Item"],
+        "requires": "|Pokedex| AND |Train pass|"
+    },
+    {
+        "name": "Watchtower Ruins - White Herb",
+        "category": ["Item"],
+        "requires": "|Pokedex| AND |Train pass|"
+    },
+    {
+        "name": "Watchtower Ruins - Max Revive",
+        "category": ["Item"],
+        "requires": "|Pokedex| AND |Train pass|"
+    },
+    {
+        "name": "Motostoke - Nugget",
+        "category": ["Hidden item"],
+        "requires": "|Pokedex| AND |Train pass|"
+    },
+    {
+        "name": "Motostoke - TR13 Focus Energy",
+        "category": ["Item"],
+        "requires": "|Pokedex| AND |Train pass|"
+    },
+    {
+        "name": "Motostoke - Super Potion",
+        "category": ["Hidden item"],
+        "requires": "|Pokedex| AND |Train pass|"
+    },
+    {
+        "name": "Motostoke - Hi-tech Earbuds",
+        "category": ["Item"],
+        "requires": "|Pokedex| AND |Train pass|"
+    },
+    {
+        "name": "Motostoke - 2x Paralyze Heals",
+        "category": ["Hidden item"],
+        "requires": "|Pokedex| AND |Train pass|"
+    },
+    {
+        "name": "Motostoke - 3x Burn Heals",
+        "category": ["Hidden item"],
+        "requires": "|Pokedex| AND |Train pass| AND |Uniform|"
+    },
+    {
+        "name": "Motostoke - Repel",
+        "category": ["Hidden item"],
+        "requires": "|Pokedex| AND |Train pass| AND |Uniform|"
+    },
+    {
+        "name": "Motostoke - Silk Scarf",
+        "category": ["Item"],
+        "requires": "|Pokedex| AND |Train pass| AND |Uniform|"
+    },
+    {
+        "name": "Motostoke - 3x Great Balls",
+        "category": ["Item"],
+        "requires": "|Pokedex| AND |Train pass| AND |Uniform|"
+    },
+    {
+        "name": "Motostoke - Black Glasses",
+        "category": ["Item"],
+        "requires": "|Pokedex| AND |Train pass| AND |Uniform|"
+    },
+    {
+        "name": "Motostoke - Revival Herb",
+        "category": ["Hidden item"],
+        "requires": "|Pokedex| AND |Train pass| AND |Uniform|"
+    },
+    {
+        "name": "Motostoke - X Accuracy",
+        "category": ["Hidden item"],
+        "requires": "|Pokedex| AND |Train pass| AND |Uniform|"
+    },
+    {
+        "name": "Motostoke - Poke Doll",
+        "category": ["Hidden item"],
+        "requires": "|Pokedex| AND |Train pass| AND |Uniform|"
+    },
+    {
+        "name": "Motostoke - TM02 Pay Day",
+        "category": ["Item"],
+        "requires": "|Pokedex| AND |Train pass| AND |Uniform|"
+    },
+    {
+        "name": "Motostoke - Throat Spray",
+        "category": ["Item"],
+        "requires": "|Pokedex| AND |Train pass| AND |Uniform|"
+    },
+    {
+        "name": "Route 3 - Big Mushroom",
+        "category": ["Hidden item"],
+        "requires": "|Pokedex| AND |Train pass| AND |Uniform|"
+    },
+    {
+        "name": "Route 3 - 3 Heal Ball",
+        "category": ["Item"],
+        "requires": "|Pokedex| AND |Train pass| AND |Uniform|"
+    },
+    {
+        "name": "Route 3 - Burn Heal",
+        "category": ["Hidden item"],
+        "requires": "|Pokedex| AND |Train pass| AND |Uniform|"
+    },
+    {
+        "name": "Route 3 - Revive",
+        "category": ["Hidden item"],
+        "requires": "|Pokedex| AND |Train pass| AND |Uniform|"
+    },
+    {
+        "name": "Route 3 - TM37 Beat Up",
+        "category": ["Item"],
+        "requires": "|Pokedex| AND |Train pass| AND |Uniform|"
+    },
+    {
+        "name": "Route 3 - Cheri Berry",
+        "category": ["Item"],
+        "requires": "|Pokedex| AND |Train pass| AND |Uniform|"
+    },
+    {
+        "name": "Route 3 - Super Potion",
+        "category": ["Item"],
+        "requires": "|Pokedex| AND |Train pass| AND |Uniform|"
+    },
+    {
+        "name": "Route 3 - 2x X Defense",
+        "category": ["Hidden item"],
+        "requires": "|Pokedex| AND |Train pass| AND |Uniform|"
+    },
+    {
+        "name": "Route 3 - TM54 Rock Blast",
+        "category": ["Item"],
+        "requires": "|Pokedex| AND |Train pass| AND |Uniform|"
+    },
+    {
+        "name": "Galar Mine - Star Piece",
+        "category": ["Hidden item"],
+        "requires": "|Pokedex| AND |Train pass| AND |Uniform|"
+    },
+    {
+        "name": "Galar Mine - Revive",
+        "category": ["Hidden item"],
+        "requires": "|Pokedex| AND |Train pass| AND |Uniform|"
+    },
+    {
+        "name": "Galar Mine - 3 Great Balls",
+        "category": ["Hidden item"],
+        "requires": "|Pokedex| AND |Train pass| AND |Uniform|"
+    },
+    {
+        "name": "Galar Mine - TM26 Scary Face",
+        "category": ["Item"],
+        "requires": "|Pokedex| AND |Train pass| AND |Uniform|"
+    },
+    {
+        "name": "Galar Mine - Hard Stone",
+        "category": ["Hidden item"],
+        "requires": "|Pokedex| AND |Train pass| AND |Uniform|"
+    },
+    {
+        "name": "Galar Mine - Bag of Stardust",
+        "category": ["Hidden item"],
+        "requires": "|Pokedex| AND |Train pass| AND |Uniform|"
+    },
+    {
+        "name": "Galar Mine - Heavy Duty Boots",
+        "category": ["Item"],
+        "requires": "|Pokedex| AND |Train pass| AND |Uniform|"
+    },
+    {
+        "name": "Galar Mine - Ether",
+        "category": ["Hidden item"],
+        "requires": "|Pokedex| AND |Train pass| AND |Uniform|"
+    },
+    {
+        "name": "Galar Mine - Revive 2",
+        "category": ["Hidden item"],
+        "requires": "|Pokedex| AND |Train pass| AND |Uniform|"
+    },
+    {
+        "name": "Galar Mine - 2x Super Potion",
+        "category": ["Item"],
+        "requires": "|Pokedex| AND |Train pass| AND |Uniform|"
+    },
+    {
+        "name": "Galar Mine - Bag of Stardust 2",
+        "category": ["Hidden item"],
+        "requires": "|Pokedex| AND |Train pass| AND |Uniform|"
+    },
+    {
+        "name": "Route 4 - Energy Powder",
+        "category": ["Hidden item"],
+        "requires": "|Pokedex| AND |Train pass| AND |Uniform|"
+    },
+    {
+        "name": "Route 4 - Ether",
+        "category": ["Hidden item"],
+        "requires": "|Pokedex| AND |Train pass| AND |Uniform|"
+    },
+    {
+        "name": "Route 4 - Cleanse Tag",
+        "category": ["Item"],
+        "requires": "|Pokedex| AND |Train pass| AND |Uniform|"
+    },
+    {
+        "name": "Route 4 - Paralyze Heal",
+        "category": ["Hidden item"],
+        "requires": "|Pokedex| AND |Train pass| AND |Uniform|"
+    },
+    {
+        "name": "Route 4 - Paralyze Heal 2",
+        "category": ["Hidden item"],
+        "requires": "|Pokedex| AND |Train pass| AND |Uniform|"
+    },
+    {
+        "name": "Route 4 - 3x Nest Balls",
+        "category": ["Item"],
+        "requires": "|Pokedex| AND |Train pass| AND |Uniform|"
+    },
+    {
+        "name": "Route 4 - Rare Candy",
+        "category": ["Hidden item"],
+        "requires": "|Pokedex| AND |Train pass| AND |Uniform|"
+    },
+    {
+        "name": "Route 4 - 2x Energie Powder",
+        "category": ["Hidden item"],
+        "requires": "|Pokedex| AND |Train pass| AND |Uniform|"
+    },
+    {
+        "name": "Route 4 - Sharp Beak",
+        "category": ["Item"],
+        "requires": "|Pokedex| AND |Train pass| AND |Uniform|"
+    },
+    {
+        "name": "Route 4 - 2x X accuracy",
+        "category": ["Hidden item"],
+        "requires": "|Pokedex| AND |Train pass| AND |Uniform|"
+    },
+    {
+        "name": "Route 4 - Energy Root",
+        "category": ["Hidden item"],
+        "requires": "|Pokedex| AND |Train pass| AND |Uniform|"
+    },
+    {
+        "name": "Route 4 - Silver Powder",
+        "category": ["Item"],
+        "requires": "|Pokedex| AND |Train pass| AND |Uniform|"
+    },
+    {
+        "name": "Route 4 - Repel",
+        "category": ["Hidden item"],
+        "requires": "|Pokedex| AND |Train pass| AND |Uniform|"
+    },
+    {
+        "name": "Route 4 - TM07 Pin Missile",
+        "category": ["Item"],
+        "requires": "|Pokedex| AND |Train pass| AND |Uniform|"
+    },
+    {
+        "name": "Route 4 - Revival Herb",
+        "category": ["Hidden item"],
+        "requires": "|Pokedex| AND |Train pass| AND |Uniform|"
+    },
+    {
+        "name": "Turffield - Energy Root",
+        "category": ["Hidden item"],
+        "requires": "|Pokedex| AND |Train pass| AND |Uniform|"
+    },
+    {
+        "name": "Turffield - Everstone",
+        "category": ["Hidden item"],
+        "requires": "|Pokedex| AND |Train pass| AND |Uniform|"
+    },
+    {
+        "name": "Turffield - TM97 Brutal Swing",
+        "category": ["Item"],
+        "requires": "|Pokedex| AND |Train pass| AND |Uniform|"
+    },
+    {
+        "name": "Turffield - Max Revive",
+        "category": ["Item"],
+        "requires": "|Pokedex| AND |Train pass| AND |Uniform|"
+    },
+    {
+        "name": "Turffield - 3x X Attack",
+        "category": ["Item"],
+        "requires": "|Pokedex| AND |Train pass| AND |Uniform|"
+    },
+    {
+        "name": "Turffield - Leaf Stone",
+        "category": ["Hidden item"],
+        "requires": "|Pokedex| AND |Train pass| AND |Uniform|"
+    },
+    {
+        "name": "Turffield - Expert Belt",
+        "category": ["Hidden item"],
+        "requires": "|Pokedex| AND |Train pass| AND |Uniform|"
+    },
+    {
+        "name": "Turffield - TM11 Solar Beam",
+        "category": ["Item"],
+        "requires": "|Pokedex| AND |Train pass| AND |Uniform| AND |Progressive bike:2|"
+    }
+]

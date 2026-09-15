@@ -1,0 +1,112 @@
+[
+    {
+        "name": "Route 2 - Youngster Jake",
+        "category": ["Trainers"],
+        "requires": "|Pokedex|"
+    },
+    {
+        "name": "Route 2 - Lass Lauren",
+        "category": ["Trainers"],
+        "requires": "|Pokedex|"
+    },
+    {
+        "name": "Route 2 - Youngster Benjamin",
+        "category": ["Trainers"],
+        "requires": "|Pokedex|"
+    },
+    {
+        "name": "Route 3 - Lass Rei",
+        "category": ["Trainers"],
+        "requires": "|Pokedex| AND |Train pass| AND |Uniform|"
+    },
+    {
+        "name": "Route 3 - Schoolgirl Hanna",
+        "category": ["Trainers"],
+        "requires": "|Pokedex| AND |Train pass| AND |Uniform|"
+    },
+    {
+        "name": "Route 3 - Schoolboy Marvin",
+        "category": ["Trainers"],
+        "requires": "|Pokedex| AND |Train pass| AND |Uniform|"
+    },
+    {
+        "name": "Route 3 - Schoolgirl Kayleigh",
+        "category": ["Trainers"],
+        "requires": "|Pokedex| AND |Train pass| AND |Uniform|"
+    },
+    {
+        "name": "Route 3 - postman Tad",
+        "category": ["Trainers"],
+        "requires": "|Pokedex| AND |Train pass| AND |Uniform|"
+    },
+    {
+        "name": "Route 3 - Schoolboy Peter",
+        "category": ["Trainers"],
+        "requires": "|Pokedex| AND |Train pass| AND |Uniform|"
+    },
+    {
+        "name": "Galar Mine - Worker Keith",
+        "category": ["Trainers"],
+        "requires": "|Pokedex| AND |Train pass| AND |Uniform|"
+    },
+    {
+        "name": "Galar Mine - Worker Georgia",
+        "category": ["Trainers"],
+        "requires": "|Pokedex| AND |Train pass| AND |Uniform|"
+    },
+    {
+        "name": "Galar Mine - Worker Sandra",
+        "category": ["Trainers"],
+        "requires": "|Pokedex| AND |Train pass| AND |Uniform|"
+    },
+    {
+        "name": "Galar Mine - Worker Russel",
+        "category": ["Trainers"],
+        "requires": "|Pokedex| AND |Train pass| AND |Uniform|"
+    },
+    {
+        "name": "Route 4 - Breeder Jamie",
+        "category": ["Trainers"],
+        "requires": "|Pokedex| AND |Train pass| AND |Uniform|"
+    },
+    {
+        "name": "Route 4 - Poke Kid Shane",
+        "category": ["Trainers"],
+        "requires": "|Pokedex| AND |Train pass| AND |Uniform|"
+    },
+    {
+        "name": "Route 4 - Breeder Bradley",
+        "category": ["Trainers"],
+        "requires": "|Pokedex| AND |Train pass| AND |Uniform|"
+    },
+    {
+        "name": "Route 4 - Poke Kid Sunny",
+        "category": ["Trainers"],
+        "requires": "|Pokedex| AND |Train pass| AND |Uniform|"
+    },
+    {
+        "name": "Route 4 - Poke Kid Mia",
+        "category": ["Trainers"],
+        "requires": "|Pokedex| AND |Train pass| AND |Uniform|"
+    },
+    {
+        "name": "Route 4 - Poke Kid Rhys",
+        "category": ["Trainers"],
+        "requires": "|Pokedex| AND |Train pass| AND |Uniform|"
+    },
+    {
+        "name": "Grass Gym - Gym Trainer Samuel",
+        "category": ["Trainers"],
+        "requires": "|Pokedex| AND |Train pass| AND |Uniform| AND |Progressive Badge|"
+    },
+    {
+        "name": "Grass Gym - Gym Trainer Mark",
+        "category": ["Trainers"],
+        "requires": "|Pokedex| AND |Train pass| AND |Uniform| AND |Progressive Badge|"
+    },
+    {
+        "name": "Grass Gym - Gym Trainer Leah",
+        "category": ["Trainers"],
+        "requires": "|Pokedex| AND |Train pass| AND |Uniform| AND |Progressive Badge|"
+    }
+]
